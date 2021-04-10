@@ -1,0 +1,175 @@
+{
+  "uid" : "e1eae3243cd4d280",
+  "name" : "园业务web_教职工考勤管理",
+  "fullName" : "interfacedemo.testcases.园业务web.yadong_campus_clife_cn_园业务web_教职工考勤管理_test.TestCaseYadongCampusClifeCn园业务Web教职工考勤管理#test_start",
+  "historyId" : "572e011690b08df0607d762da46864f9",
+  "time" : {
+    "start" : 1618047925295,
+    "stop" : 1618047925383,
+    "duration" : 88
+  },
+  "description" : "TestCase ID: ae50e28d-ebbb-44ac-a1e9-7bb0687df7bb",
+  "descriptionHtml" : "<p>TestCase ID: ae50e28d-ebbb-44ac-a1e9-7bb0687df7bb</p>\n",
+  "status" : "broken",
+  "statusMessage" : "httprunner.exceptions.ValidationFailure: assert body.code equal 0(int)\t==> fail\ncheck_item: body.code\ncheck_value: 100021400(int)\nassert_method: equal\nexpect_value: 0(int)",
+  "statusTrace" : "..\\env\\lib\\site-packages\\httprunner\\runner.py:456: in test_start\n    TestCase(config=self.__config, teststeps=self.__teststeps)\n..\\env\\lib\\site-packages\\httprunner\\runner.py:357: in run_testcase\n    extract_mapping = self.__run_step(step)\n..\\env\\lib\\site-packages\\httprunner\\runner.py:295: in __run_step\n    step_data = self.__run_step_request(step)\n..\\env\\lib\\site-packages\\httprunner\\runner.py:209: in __run_step_request\n    validators, variables_mapping, self.__project_meta.functions\n..\\env\\lib\\site-packages\\httprunner\\response.py:270: in validate\n    raise ValidationFailure(failures_string)\nE   httprunner.exceptions.ValidationFailure: assert body.code equal 0(int)\t==> fail\nE   check_item: body.code\nE   check_value: 100021400(int)\nE   assert_method: equal\nE   expect_value: 0(int)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1618047924707,
+      "stop" : 1618047924782,
+      "duration" : 75
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1618047924782,
+      "stop" : 1618047924782,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1618047924782,
+      "stop" : 1618047924782,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1618047925295,
+      "stop" : 1618047925295,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1618047924782,
+      "stop" : 1618047924782,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "TestCase ID: ae50e28d-ebbb-44ac-a1e9-7bb0687df7bb",
+    "status" : "broken",
+    "statusMessage" : "httprunner.exceptions.ValidationFailure: assert body.code equal 0(int)\t==> fail\ncheck_item: body.code\ncheck_value: 100021400(int)\nassert_method: equal\nexpect_value: 0(int)",
+    "statusTrace" : "..\\env\\lib\\site-packages\\httprunner\\runner.py:456: in test_start\n    TestCase(config=self.__config, teststeps=self.__teststeps)\n..\\env\\lib\\site-packages\\httprunner\\runner.py:357: in run_testcase\n    extract_mapping = self.__run_step(step)\n..\\env\\lib\\site-packages\\httprunner\\runner.py:295: in __run_step\n    step_data = self.__run_step_request(step)\n..\\env\\lib\\site-packages\\httprunner\\runner.py:209: in __run_step_request\n    validators, variables_mapping, self.__project_meta.functions\n..\\env\\lib\\site-packages\\httprunner\\response.py:270: in validate\n    raise ValidationFailure(failures_string)\nE   httprunner.exceptions.ValidationFailure: assert body.code equal 0(int)\t==> fail\nE   check_item: body.code\nE   check_value: 100021400(int)\nE   assert_method: equal\nE   expect_value: 0(int)",
+    "steps" : [ {
+      "name" : "step: 园业务web_登陆",
+      "time" : {
+        "start" : 1618047925298,
+        "stop" : 1618047925381,
+        "duration" : 83
+      },
+      "status" : "broken",
+      "statusMessage" : "httprunner.exceptions.ValidationFailure: assert body.code equal 0(int)\t==> fail\ncheck_item: body.code\ncheck_value: 100021400(int)\nassert_method: equal\nexpect_value: 0(int)\n",
+      "statusTrace" : "  File \"d:\\workspace\\python\\env\\lib\\site-packages\\httprunner\\runner.py\", line 357, in run_testcase\n    extract_mapping = self.__run_step(step)\n  File \"d:\\workspace\\python\\env\\lib\\site-packages\\httprunner\\runner.py\", line 295, in __run_step\n    step_data = self.__run_step_request(step)\n  File \"d:\\workspace\\python\\env\\lib\\site-packages\\httprunner\\runner.py\", line 209, in __run_step_request\n    validators, variables_mapping, self.__project_meta.functions\n  File \"d:\\workspace\\python\\env\\lib\\site-packages\\httprunner\\response.py\", line 270, in validate\n    raise ValidationFailure(failures_string)\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "f083ce7e2192a463",
+      "name" : "stderr",
+      "source" : "f083ce7e2192a463.txt",
+      "type" : "text/plain",
+      "size" : 5535
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "interfacedemo.testcases.园业务web"
+  }, {
+    "name" : "suite",
+    "value" : "yadong_campus_clife_cn_园业务web_教职工考勤管理_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCaseYadongCampusClifeCn园业务Web教职工考勤管理"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-2HOSDBOE"
+  }, {
+    "name" : "thread",
+    "value" : "9576-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "interfacedemo.testcases.园业务web.yadong_campus_clife_cn_园业务web_教职工考勤管理_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "e1eae3243cd4d280.json",
+  "parameterValues" : [ ]
+}

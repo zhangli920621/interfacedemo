@@ -1,0 +1,178 @@
+{
+  "uid" : "ad9f64f7d0eaf35e",
+  "name" : "教师H5_教职工考勤",
+  "fullName" : "interfacedemo.testcases.教师H5.yadong_campus_clife_cn_教师H5_教职工考勤_test.TestCaseYadongCampusClifeCn教师H5教职工考勤#test_start",
+  "historyId" : "a4425cf33b819feafbc706ef8758a341",
+  "time" : {
+    "start" : 1618047925166,
+    "stop" : 1618047925268,
+    "duration" : 102
+  },
+  "description" : "TestCase ID: cd67c050-962d-4d2e-81c8-6a567dab9cef",
+  "descriptionHtml" : "<p>TestCase ID: cd67c050-962d-4d2e-81c8-6a567dab9cef</p>\n",
+  "status" : "broken",
+  "statusMessage" : "httprunner.exceptions.ValidationFailure: assert body.code equal 0(int)\t==> fail\ncheck_item: body.code\ncheck_value: 100021400(int)\nassert_method: equal\nexpect_value: 0(int)",
+  "statusTrace" : "interfacedemo\\testcases\\教师H5\\yadong_campus_clife_cn_教师H5_教职工考勤_test.py:20: in test_start\n    super().test_start(param)\n..\\env\\lib\\site-packages\\httprunner\\runner.py:456: in test_start\n    TestCase(config=self.__config, teststeps=self.__teststeps)\n..\\env\\lib\\site-packages\\httprunner\\runner.py:357: in run_testcase\n    extract_mapping = self.__run_step(step)\n..\\env\\lib\\site-packages\\httprunner\\runner.py:295: in __run_step\n    step_data = self.__run_step_request(step)\n..\\env\\lib\\site-packages\\httprunner\\runner.py:209: in __run_step_request\n    validators, variables_mapping, self.__project_meta.functions\n..\\env\\lib\\site-packages\\httprunner\\response.py:270: in validate\n    raise ValidationFailure(failures_string)\nE   httprunner.exceptions.ValidationFailure: assert body.code equal 0(int)\t==> fail\nE   check_item: body.code\nE   check_value: 100021400(int)\nE   assert_method: equal\nE   expect_value: 0(int)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1618047924707,
+      "stop" : 1618047924782,
+      "duration" : 75
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1618047924782,
+      "stop" : 1618047924782,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1618047925165,
+      "stop" : 1618047925165,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1618047924782,
+      "stop" : 1618047924782,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1618047924782,
+      "stop" : 1618047924782,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "TestCase ID: cd67c050-962d-4d2e-81c8-6a567dab9cef",
+    "status" : "broken",
+    "statusMessage" : "httprunner.exceptions.ValidationFailure: assert body.code equal 0(int)\t==> fail\ncheck_item: body.code\ncheck_value: 100021400(int)\nassert_method: equal\nexpect_value: 0(int)",
+    "statusTrace" : "interfacedemo\\testcases\\教师H5\\yadong_campus_clife_cn_教师H5_教职工考勤_test.py:20: in test_start\n    super().test_start(param)\n..\\env\\lib\\site-packages\\httprunner\\runner.py:456: in test_start\n    TestCase(config=self.__config, teststeps=self.__teststeps)\n..\\env\\lib\\site-packages\\httprunner\\runner.py:357: in run_testcase\n    extract_mapping = self.__run_step(step)\n..\\env\\lib\\site-packages\\httprunner\\runner.py:295: in __run_step\n    step_data = self.__run_step_request(step)\n..\\env\\lib\\site-packages\\httprunner\\runner.py:209: in __run_step_request\n    validators, variables_mapping, self.__project_meta.functions\n..\\env\\lib\\site-packages\\httprunner\\response.py:270: in validate\n    raise ValidationFailure(failures_string)\nE   httprunner.exceptions.ValidationFailure: assert body.code equal 0(int)\t==> fail\nE   check_item: body.code\nE   check_value: 100021400(int)\nE   assert_method: equal\nE   expect_value: 0(int)",
+    "steps" : [ {
+      "name" : "step: 教师H5_登陆",
+      "time" : {
+        "start" : 1618047925168,
+        "stop" : 1618047925267,
+        "duration" : 99
+      },
+      "status" : "broken",
+      "statusMessage" : "httprunner.exceptions.ValidationFailure: assert body.code equal 0(int)\t==> fail\ncheck_item: body.code\ncheck_value: 100021400(int)\nassert_method: equal\nexpect_value: 0(int)\n",
+      "statusTrace" : "  File \"d:\\workspace\\python\\env\\lib\\site-packages\\httprunner\\runner.py\", line 357, in run_testcase\n    extract_mapping = self.__run_step(step)\n  File \"d:\\workspace\\python\\env\\lib\\site-packages\\httprunner\\runner.py\", line 295, in __run_step\n    step_data = self.__run_step_request(step)\n  File \"d:\\workspace\\python\\env\\lib\\site-packages\\httprunner\\runner.py\", line 209, in __run_step_request\n    validators, variables_mapping, self.__project_meta.functions\n  File \"d:\\workspace\\python\\env\\lib\\site-packages\\httprunner\\response.py\", line 270, in validate\n    raise ValidationFailure(failures_string)\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "cf23f183d9aff0d2",
+      "name" : "stderr",
+      "source" : "cf23f183d9aff0d2.txt",
+      "type" : "text/plain",
+      "size" : 5644
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "interfacedemo.testcases.教师H5"
+  }, {
+    "name" : "suite",
+    "value" : "yadong_campus_clife_cn_教师H5_教职工考勤_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCaseYadongCampusClifeCn教师H5教职工考勤"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-2HOSDBOE"
+  }, {
+    "name" : "thread",
+    "value" : "9576-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "interfacedemo.testcases.教师H5.yadong_campus_clife_cn_教师H5_教职工考勤_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "param",
+    "value" : "{'username': '16620847001', 'password': 'VUsFjBeODaABgu37tXzPbw=='}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "ad9f64f7d0eaf35e.json",
+  "parameterValues" : [ "{'username': '16620847001', 'password': 'VUsFjBeODaABgu37tXzPbw=='}" ]
+}
