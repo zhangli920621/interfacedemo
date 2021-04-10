@@ -1,0 +1,260 @@
+config:
+    name: 教师H5_教职工考勤
+    variables:
+        host: yadong.campus.clife.cn
+        donainname: yadong
+    parameters:
+        username: [ "16620847001" ]
+        password: [ "VUsFjBeODaABgu37tXzPbw==" ]
+    verify: false
+teststeps:
+-   name: 教师H5_登陆
+    request:
+        data:
+            systemCode: h5garden
+            username: $username
+            password: $password
+        headers:
+            Accept: application/json, text/plain, */*
+            Accept-Encoding: gzip, deflate, br
+            Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+            Connection: keep-alive
+            Content-Length: '78'
+            Content-Type: application/x-www-form-urlencoded;charset=UTF-8
+            Host: $host
+            Origin: https://$host
+            Referer: https://$host/school/m/
+            User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/604.1.38
+                (KHTML, like Gecko) Version/12.0 Mobile/15A372 Safari/604.1
+            X-Requested-With: XMLHttpRequest
+            domainName: $donainname
+        method: POST
+        url: https://$host/v1/web/eduaccount/sys/login
+    extract:
+        token: body.data.token
+    validate:
+    -   eq:
+        - status_code
+        - 200
+    -   eq:
+        - headers.Content-Type
+        - application/json;charset=UTF-8
+    -   eq:
+        - body.code
+        - 0
+-   name: 应用-列表收藏应用（账号收藏的应用）
+    request:
+        headers:
+            Accept: application/json, text/plain, */*
+            Accept-Encoding: gzip, deflate, br
+            Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+            Connection: keep-alive
+            Content-Type: application/json;charset=utf-8
+            Host: $host
+            Referer: https://$host/school/m/
+            User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/604.1.38
+                (KHTML, like Gecko) Version/12.0 Mobile/15A372 Safari/604.1
+            X-Access-Token: $token
+            X-Requested-With: XMLHttpRequest
+            domainName: $donainname
+        method: GET
+        params:
+            platform: '2'
+        url: https://$host/v1/web/edudistrict/apps/personal
+    validate:
+    -   eq:
+        - status_code
+        - 200
+    -   eq:
+        - headers.Content-Type
+        - application/json;charset=UTF-8
+    -   eq:
+        - body.code
+        - 0
+-   name: 登录相关-获取身份列表(H5)
+    request:
+        headers:
+            Accept: application/json, text/plain, */*
+            Accept-Encoding: gzip, deflate, br
+            Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+            Connection: keep-alive
+            Content-Type: application/json;charset=utf-8
+            Host: $host
+            Referer: https://$host/school/m/
+            User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/604.1.38
+                (KHTML, like Gecko) Version/12.0 Mobile/15A372 Safari/604.1
+            X-Access-Token: $token
+            X-Requested-With: XMLHttpRequest
+            domainName: $donainname
+        method: GET
+        params:
+            showMsgCount: '1'
+            systemCode: h5garden
+        url: https://$host/v1/web/eduaccount/user/h5/identitys
+    validate:
+    -   eq:
+        - status_code
+        - 200
+    -   eq:
+        - headers.Content-Type
+        - application/json;charset=UTF-8
+    -   eq:
+        - body.code
+        - 0
+-   name: 应用-推荐应用-全部应用（账号角色可用的应用，可识别账号收藏的应用）
+    request:
+        headers:
+            Accept: application/json, text/plain, */*
+            Accept-Encoding: gzip, deflate, br
+            Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+            Connection: keep-alive
+            Content-Type: application/json;charset=utf-8
+            Host: $host
+            Referer: https://$host/school/m/
+            User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/604.1.38
+                (KHTML, like Gecko) Version/12.0 Mobile/15A372 Safari/604.1
+            X-Access-Token: $token
+            X-Requested-With: XMLHttpRequest
+            domainName: $donainname
+        method: GET
+        params:
+            platform: '2'
+        url: https://$host/v1/web/edudistrict/apps/org
+    validate:
+    -   eq:
+        - status_code
+        - 200
+    -   eq:
+        - headers.Content-Type
+        - application/json;charset=UTF-8
+    -   eq:
+        - body.code
+        - 0
+-   name: 考勤统计-月度数据列表
+    request:
+        headers:
+            Accept: application/json, text/plain, */*
+            Accept-Encoding: gzip, deflate, br
+            Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+            Connection: keep-alive
+            Content-Type: application/json;charset=utf-8
+            Host: $host
+            Referer: https://$host/school/m/
+            User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/604.1.38
+                (KHTML, like Gecko) Version/12.0 Mobile/15A372 Safari/604.1
+            X-Access-Token: $token
+            X-Requested-With: XMLHttpRequest
+            domainName: $donainname
+        method: GET
+        params:
+            endTime: '2021-04-30'
+            startTime: '2021-04-01'
+            systemCode: H5
+        url: https://$host/v1/web/edugarden/attendance/statistics/monthDataList
+    validate:
+    -   eq:
+        - status_code
+        - 200
+    -   eq:
+        - headers.Content-Type
+        - application/json;charset=UTF-8
+    -   eq:
+        - body.code
+        - 0
+-   name: 考勤统计-日考勤详情
+    request:
+        headers:
+            Accept: application/json, text/plain, */*
+            Accept-Encoding: gzip, deflate, br
+            Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+            Connection: keep-alive
+            Content-Type: application/json;charset=utf-8
+            Host: $host
+            Referer: https://$host/school/m/
+            User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/604.1.38
+                (KHTML, like Gecko) Version/12.0 Mobile/15A372 Safari/604.1
+            X-Access-Token: $token
+            X-Requested-With: XMLHttpRequest
+            domainName: $donainname
+        method: GET
+        params:
+            endTime: '2021-04-06'
+            staffId: '22002488967173'
+            startTime: '2021-04-06'
+            systemCode: H5
+        url: https://$host/v1/web/edugarden/attendance/statistics/attendanceDayItem
+    validate:
+    -   eq:
+        - status_code
+        - 200
+    -   eq:
+        - headers.Content-Type
+        - application/json;charset=UTF-8
+    -   eq:
+        - body.code
+        - 0
+-   name: 考勤统计-人员考勤有数据的月份
+    request:
+        headers:
+            Accept: application/json, text/plain, */*
+            Accept-Encoding: gzip, deflate, br
+            Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+            Connection: keep-alive
+            Content-Type: application/json;charset=utf-8
+            Host: $host
+            Referer: https://$host/school/m/
+            User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/604.1.38
+                (KHTML, like Gecko) Version/12.0 Mobile/15A372 Safari/604.1
+            X-Access-Token: $token
+            X-Requested-With: XMLHttpRequest
+            domainName: $donainname
+        method: GET
+        params:
+            systemCode: H5
+            year: '2021'
+        url: https://$host/v1/web/edugarden/attendance/statistics/getAttendanceYearItem
+    validate:
+    -   eq:
+        - status_code
+        - 200
+    -   eq:
+        - headers.Content-Type
+        - application/json;charset=UTF-8
+    -   eq:
+        - body.code
+        - 0
+-   name: 考勤统计-人员考勤月汇总明细
+    parameters:
+        valid: ['1','2','3','4','5','6','8','9']
+    request:
+        headers:
+            Accept: application/json, text/plain, */*
+            Accept-Encoding: gzip, deflate, br
+            Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+            Connection: keep-alive
+            Content-Type: application/json;charset=utf-8
+            Host: $host
+            Referer: https://$host/school/m/
+            User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/604.1.38
+                (KHTML, like Gecko) Version/12.0 Mobile/15A372 Safari/604.1
+            X-Access-Token: $token
+            X-Requested-With: XMLHttpRequest
+            domainName: $donainname
+        method: GET
+        params:
+            endTime: '2021-04-30'
+            staffId: '22002488967173'
+            startTime: '2021-04-01'
+            systemCode: H5
+            valid: $valid
+        url: https://$host/v1/web/edugarden/attendance/statistics/attendanceMonthItem
+    validate:
+    -   eq:
+        - status_code
+        - 200
+    -   eq:
+        - headers.Content-Type
+        - application/json;charset=UTF-8
+    -   eq:
+        - body.code
+        - 0

@@ -1,0 +1,78 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "LAPTOP-2HOSDBOE",
+    "children" : [ {
+      "name" : "9576-MainThread",
+      "children" : [ {
+        "name" : "家长H5_幼儿考勤",
+        "uid" : "79a06daf5defba8a",
+        "parentUid" : "8043e3443d4ab9636bf2a668c41b53f1",
+        "status" : "broken",
+        "time" : {
+          "start" : 1618047924783,
+          "stop" : 1618047925016,
+          "duration" : 233
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'username': '16620847001', 'password': 'VUsFjBeODaABgu37tXzPbw=='}" ]
+      }, {
+        "name" : "教师H5_幼儿考勤",
+        "uid" : "8fdeafbaf123b8f",
+        "parentUid" : "8043e3443d4ab9636bf2a668c41b53f1",
+        "status" : "broken",
+        "time" : {
+          "start" : 1618047925048,
+          "stop" : 1618047925136,
+          "duration" : 88
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'username': '16620847001', 'password': 'VUsFjBeODaABgu37tXzPbw=='}" ]
+      }, {
+        "name" : "教师H5_教职工考勤",
+        "uid" : "ad9f64f7d0eaf35e",
+        "parentUid" : "8043e3443d4ab9636bf2a668c41b53f1",
+        "status" : "broken",
+        "time" : {
+          "start" : 1618047925166,
+          "stop" : 1618047925268,
+          "duration" : 102
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'username': '16620847001', 'password': 'VUsFjBeODaABgu37tXzPbw=='}" ]
+      }, {
+        "name" : "园业务web_幼儿考勤管理",
+        "uid" : "2c33e6693e2d46ae",
+        "parentUid" : "8043e3443d4ab9636bf2a668c41b53f1",
+        "status" : "broken",
+        "time" : {
+          "start" : 1618047925420,
+          "stop" : 1618047925501,
+          "duration" : 81
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'username': '16620847001', 'password': 'VUsFjBeODaABgu37tXzPbw=='}" ]
+      }, {
+        "name" : "园业务web_教职工考勤管理",
+        "uid" : "e1eae3243cd4d280",
+        "parentUid" : "8043e3443d4ab9636bf2a668c41b53f1",
+        "status" : "broken",
+        "time" : {
+          "start" : 1618047925295,
+          "stop" : 1618047925383,
+          "duration" : 88
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "8043e3443d4ab9636bf2a668c41b53f1"
+    } ],
+    "uid" : "332cdb0348f89bd8b103e3919828e8e6"
+  } ]
+}

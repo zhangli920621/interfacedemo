@@ -1,0 +1,102 @@
+{
+  "572e011690b08df0607d762da46864f9" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e1eae3243cd4d280",
+      "status" : "broken",
+      "statusDetails" : "httprunner.exceptions.ValidationFailure: assert body.code equal 0(int)\t==> fail\ncheck_item: body.code\ncheck_value: 100021400(int)\nassert_method: equal\nexpect_value: 0(int)",
+      "time" : {
+        "start" : 1618047925295,
+        "stop" : 1618047925383,
+        "duration" : 88
+      }
+    } ]
+  },
+  "e6e1702e41176f93be7d0b2b47a367b8" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "8fdeafbaf123b8f",
+      "status" : "broken",
+      "statusDetails" : "httprunner.exceptions.ValidationFailure: assert body.code equal 0(int)\t==> fail\ncheck_item: body.code\ncheck_value: 100021400(int)\nassert_method: equal\nexpect_value: 0(int)",
+      "time" : {
+        "start" : 1618047925048,
+        "stop" : 1618047925136,
+        "duration" : 88
+      }
+    } ]
+  },
+  "a4425cf33b819feafbc706ef8758a341" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ad9f64f7d0eaf35e",
+      "status" : "broken",
+      "statusDetails" : "httprunner.exceptions.ValidationFailure: assert body.code equal 0(int)\t==> fail\ncheck_item: body.code\ncheck_value: 100021400(int)\nassert_method: equal\nexpect_value: 0(int)",
+      "time" : {
+        "start" : 1618047925166,
+        "stop" : 1618047925268,
+        "duration" : 102
+      }
+    } ]
+  },
+  "774369ad2d5f66460a2b4379465f9a3a" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "2c33e6693e2d46ae",
+      "status" : "broken",
+      "statusDetails" : "httprunner.exceptions.ValidationFailure: assert body.code equal 0(int)\t==> fail\ncheck_item: body.code\ncheck_value: 100021400(int)\nassert_method: equal\nexpect_value: 0(int)",
+      "time" : {
+        "start" : 1618047925420,
+        "stop" : 1618047925501,
+        "duration" : 81
+      }
+    } ]
+  },
+  "72f3aec665c5d5ef557228ac4de2afd9" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "79a06daf5defba8a",
+      "status" : "broken",
+      "statusDetails" : "httprunner.exceptions.ValidationFailure: assert body.code equal 0(int)\t==> fail\ncheck_item: body.code\ncheck_value: 100021400(int)\nassert_method: equal\nexpect_value: 0(int)",
+      "time" : {
+        "start" : 1618047924783,
+        "stop" : 1618047925016,
+        "duration" : 233
+      }
+    } ]
+  }
+}
