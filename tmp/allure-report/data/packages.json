@@ -4,98 +4,98 @@
   "children" : [ {
     "name" : "interfacedemo.testcases",
     "children" : [ {
-      "name" : "家长H5.yadong_campus_clife_cn_家长H5_幼儿考勤_test",
-      "children" : [ {
-        "name" : "家长H5_幼儿考勤",
-        "uid" : "79a06daf5defba8a",
-        "parentUid" : "b0a78e2894a8574ef58e3a8f3ffa960a",
-        "status" : "broken",
-        "time" : {
-          "start" : 1618047924783,
-          "stop" : 1618047925016,
-          "duration" : 233
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "{'username': '16620847001', 'password': 'VUsFjBeODaABgu37tXzPbw=='}" ]
-      } ],
-      "uid" : "家长H5.yadong_campus_clife_cn_家长H5_幼儿考勤_test"
-    }, {
-      "name" : "教师H5",
-      "children" : [ {
-        "name" : "yadong_campus_clife_cn_教师H5_幼儿考勤_test",
-        "children" : [ {
-          "name" : "教师H5_幼儿考勤",
-          "uid" : "8fdeafbaf123b8f",
-          "parentUid" : "38f2a1947e3107c32d35ab0cfdce7248",
-          "status" : "broken",
-          "time" : {
-            "start" : 1618047925048,
-            "stop" : 1618047925136,
-            "duration" : 88
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ "{'username': '16620847001', 'password': 'VUsFjBeODaABgu37tXzPbw=='}" ]
-        } ],
-        "uid" : "38f2a1947e3107c32d35ab0cfdce7248"
-      }, {
-        "name" : "yadong_campus_clife_cn_教师H5_教职工考勤_test",
-        "children" : [ {
-          "name" : "教师H5_教职工考勤",
-          "uid" : "ad9f64f7d0eaf35e",
-          "parentUid" : "83412d81d12ece04e7558c8be5dd8060",
-          "status" : "broken",
-          "time" : {
-            "start" : 1618047925166,
-            "stop" : 1618047925268,
-            "duration" : 102
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ "{'username': '16620847001', 'password': 'VUsFjBeODaABgu37tXzPbw=='}" ]
-        } ],
-        "uid" : "83412d81d12ece04e7558c8be5dd8060"
-      } ],
-      "uid" : "9dc9e2f8c6932f85cc098e194e6a529e"
-    }, {
       "name" : "园业务web",
       "children" : [ {
+        "name" : "yadong_campus_clife_cn_园业务web_幼儿考勤管理_test",
+        "children" : [ {
+          "name" : "园业务web_幼儿考勤管理",
+          "uid" : "aba0ee9f61b2d469",
+          "parentUid" : "b66aa3ada9d4daae4f29745f677b7c80",
+          "status" : "broken",
+          "time" : {
+            "start" : 1618110176377,
+            "stop" : 1618110176473,
+            "duration" : 96
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "b66aa3ada9d4daae4f29745f677b7c80"
+      }, {
         "name" : "yadong_campus_clife_cn_园业务web_教职工考勤管理_test",
         "children" : [ {
           "name" : "园业务web_教职工考勤管理",
-          "uid" : "e1eae3243cd4d280",
+          "uid" : "4383be7376618165",
           "parentUid" : "c30d6e4fa56458f1870183f669746a4b",
           "status" : "broken",
           "time" : {
-            "start" : 1618047925295,
-            "stop" : 1618047925383,
-            "duration" : 88
+            "start" : 1618110176839,
+            "stop" : 1618110176926,
+            "duration" : 87
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         } ],
         "uid" : "c30d6e4fa56458f1870183f669746a4b"
-      }, {
-        "name" : "yadong_campus_clife_cn_园业务web_幼儿考勤管理_test",
+      } ],
+      "uid" : "1669bc4e5a65c03a103977da4e0d8802"
+    }, {
+      "name" : "教师H5",
+      "children" : [ {
+        "name" : "yadong_campus_clife_cn_教师H5_教职工考勤_test",
         "children" : [ {
-          "name" : "园业务web_幼儿考勤管理",
-          "uid" : "2c33e6693e2d46ae",
-          "parentUid" : "b66aa3ada9d4daae4f29745f677b7c80",
+          "name" : "教师H5_教职工考勤",
+          "uid" : "9eecd09e39fa5607",
+          "parentUid" : "83412d81d12ece04e7558c8be5dd8060",
           "status" : "broken",
           "time" : {
-            "start" : 1618047925420,
-            "stop" : 1618047925501,
-            "duration" : 81
+            "start" : 1618110176512,
+            "stop" : 1618110176604,
+            "duration" : 92
           },
           "flaky" : false,
           "newFailed" : false,
-          "parameters" : [ "{'username': '16620847001', 'password': 'VUsFjBeODaABgu37tXzPbw=='}" ]
+          "parameters" : [ ]
         } ],
-        "uid" : "b66aa3ada9d4daae4f29745f677b7c80"
+        "uid" : "83412d81d12ece04e7558c8be5dd8060"
+      }, {
+        "name" : "yadong_campus_clife_cn_教师H5_幼儿考勤_test",
+        "children" : [ {
+          "name" : "教师H5_幼儿考勤",
+          "uid" : "f2c499c54cdfc3e7",
+          "parentUid" : "38f2a1947e3107c32d35ab0cfdce7248",
+          "status" : "broken",
+          "time" : {
+            "start" : 1618110176742,
+            "stop" : 1618110176810,
+            "duration" : 68
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "38f2a1947e3107c32d35ab0cfdce7248"
       } ],
-      "uid" : "1669bc4e5a65c03a103977da4e0d8802"
+      "uid" : "9dc9e2f8c6932f85cc098e194e6a529e"
+    }, {
+      "name" : "家长H5.yadong_campus_clife_cn_家长H5_幼儿考勤_test",
+      "children" : [ {
+        "name" : "家长H5_幼儿考勤",
+        "uid" : "d4afcf8b37045e68",
+        "parentUid" : "b0a78e2894a8574ef58e3a8f3ffa960a",
+        "status" : "broken",
+        "time" : {
+          "start" : 1618110176643,
+          "stop" : 1618110176712,
+          "duration" : 69
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "家长H5.yadong_campus_clife_cn_家长H5_幼儿考勤_test"
     } ],
     "uid" : "interfacedemo.testcases"
   } ]

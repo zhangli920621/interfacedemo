@@ -1,11 +1,9 @@
 config:
     name: 家长H5_幼儿考勤
     variables:
-        host: yadong.campus.clife.cn
-        donainname: yadong
-    parameters:
-        username: [ "16620847001" ]
-        password: [ "VUsFjBeODaABgu37tXzPbw==" ]
+        Protocol: ${ENV(Protocol)}
+        host: ${ENV(HOST)}
+        donainname: ${ENV(DONAIN_NAME)}
     verify: false
 teststeps:
 -   name: 家长H5_登陆
@@ -14,8 +12,8 @@ teststeps:
     request:
         data:
             systemCode: h5garden
-            username: $username
-            password: $password
+            username: ${ENV(GARDEN_USERNAME)}
+            password: ${ENV(GARDEN_PASSWORD)}
         headers:
             Accept: application/json, text/plain, */*
             Accept-Encoding: gzip, deflate, br
@@ -24,14 +22,14 @@ teststeps:
             Content-Length: '78'
             Content-Type: application/x-www-form-urlencoded;charset=UTF-8
             Host: $host
-            Origin: https://$host
-            Referer: https://$host/school/m/
+            Origin: $Protocol://$host
+            Referer: $Protocol://$host/school/m/
             User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/604.1.38
                 (KHTML, like Gecko) Version/12.0 Mobile/15A372 Safari/604.1
             X-Requested-With: XMLHttpRequest
             domainName: $donainname
         method: POST
-        url: https://$host/v1/web/eduaccount/sys/login
+        url: $Protocol://$host/v1/web/eduaccount/sys/login
     extract:
         token1: body.data.token
     validate:
@@ -53,7 +51,7 @@ teststeps:
             Connection: keep-alive
             Content-Type: application/json;charset=utf-8
             Host: $host
-            Referer: https://$host/school/m/
+            Referer: $Protocol://$host/school/m/
             User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/604.1.38
                 (KHTML, like Gecko) Version/12.0 Mobile/15A372 Safari/604.1
             X-Access-Token: $token1
@@ -62,7 +60,7 @@ teststeps:
         method: GET
         params:
             platform: '2'
-        url: https://$host/v1/web/edudistrict/apps/personal
+        url: $Protocol://$host/v1/web/edudistrict/apps/personal
     validate:
     -   eq:
         - status_code
@@ -82,7 +80,7 @@ teststeps:
             Connection: keep-alive
             Content-Type: application/json;charset=utf-8
             Host: $host
-            Referer: https://$host/school/m/
+            Referer: $Protocol://$host/school/m/
             User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/604.1.38
                 (KHTML, like Gecko) Version/12.0 Mobile/15A372 Safari/604.1
             X-Access-Token: $token1
@@ -92,7 +90,7 @@ teststeps:
         params:
             showMsgCount: '1'
             systemCode: h5garden
-        url: https://$host/v1/web/eduaccount/user/h5/identitys
+        url: $Protocol://$host/v1/web/eduaccount/user/h5/identitys
     validate:
     -   eq:
         - status_code
@@ -117,15 +115,15 @@ teststeps:
             Content-Length: '52'
             Content-Type: application/x-www-form-urlencoded;charset=UTF-8
             Host: $host
-            Origin: https://$host
-            Referer: https://$host/school/m/
+            Origin: $Protocol://$host
+            Referer: $Protocol://$host/school/m/
             User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/604.1.38
                 (KHTML, like Gecko) Version/12.0 Mobile/15A372 Safari/604.1
             X-Access-Token: $token1
             X-Requested-With: XMLHttpRequest
             domainName: $donainname
         method: POST
-        url: https://$host/v1/web/eduaccount/sys/changeId
+        url: $Protocol://$host/v1/web/eduaccount/sys/changeId
     extract:
         token2: body.data.token
     validate:
@@ -147,7 +145,7 @@ teststeps:
             Connection: keep-alive
             Content-Type: application/json;charset=utf-8
             Host: $host
-            Referer: https://$host/school/m/
+            Referer: $Protocol://$host/school/m/
             User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/604.1.38
                 (KHTML, like Gecko) Version/12.0 Mobile/15A372 Safari/604.1
             X-Access-Token: $token2
@@ -157,7 +155,7 @@ teststeps:
         params:
             showMsgCount: '1'
             systemCode: h5garden
-        url: https://$host/v1/web/eduaccount/user/h5/identitys
+        url: $Protocol://$host/v1/web/eduaccount/user/h5/identitys
     validate:
     -   eq:
         - status_code
@@ -177,7 +175,7 @@ teststeps:
             Connection: keep-alive
             Content-Type: application/json;charset=utf-8
             Host: $host
-            Referer: https://$host/school/m/
+            Referer: $Protocol://$host/school/m/
             User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/604.1.38
                 (KHTML, like Gecko) Version/12.0 Mobile/15A372 Safari/604.1
             X-Access-Token: $token2
@@ -186,7 +184,7 @@ teststeps:
         method: GET
         params:
             platform: '2'
-        url: https://$host/v1/web/edudistrict/apps/personal
+        url: $Protocol://$host/v1/web/edudistrict/apps/personal
     validate:
     -   eq:
         - status_code
@@ -206,7 +204,7 @@ teststeps:
             Connection: keep-alive
             Content-Type: application/json;charset=utf-8
             Host: $host
-            Referer: https://$host/school/m/
+            Referer: $Protocol://$host/school/m/
             User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/604.1.38
                 (KHTML, like Gecko) Version/12.0 Mobile/15A372 Safari/604.1
             X-Access-Token: $token2
@@ -215,7 +213,7 @@ teststeps:
         method: GET
         params:
             platform: '2'
-        url: https://$host/v1/web/edudistrict/apps/org
+        url: $Protocol://$host/v1/web/edudistrict/apps/org
     validate:
     -   eq:
         - status_code
@@ -235,7 +233,7 @@ teststeps:
             Connection: keep-alive
             Content-Type: application/json;charset=utf-8
             Host: $host
-            Referer: https://$host/school/m/
+            Referer: $Protocol://$host/school/m/
             User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/604.1.38
                 (KHTML, like Gecko) Version/12.0 Mobile/15A372 Safari/604.1
             X-Access-Token: $token2
@@ -246,7 +244,7 @@ teststeps:
             date: '2021-04-07'
             gradeId: '8'
             studentId: $studentId
-        url: https://$host/v1/web/edugarden/attendance/roster/get
+        url: $Protocol://$host/v1/web/edugarden/attendance/roster/get
     validate:
     -   eq:
         - status_code
@@ -266,7 +264,7 @@ teststeps:
             Connection: keep-alive
             Content-Type: application/json;charset=utf-8
             Host: $host
-            Referer: https://$host/school/m/
+            Referer: $Protocol://$host/school/m/
             User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/604.1.38
                 (KHTML, like Gecko) Version/12.0 Mobile/15A372 Safari/604.1
             X-Access-Token: $token2
@@ -277,7 +275,7 @@ teststeps:
             endDate: '2021-04-07'
             startDate: '2021-04-01'
             studentId: $studentId
-        url: https://$host/v1/web/edugarden/statistic/queryAll
+        url: $Protocol://$host/v1/web/edugarden/statistic/queryAll
     validate:
     -   eq:
         - status_code

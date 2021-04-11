@@ -1,8 +1,9 @@
 config:
     name: 园业务web_教职工考勤管理
     variables:
-        host: yadong.campus.clife.cn
-        donainname: yadong
+        Protocol: ${ENV(Protocol)}
+        host: ${ENV(HOST)}
+        donainname: ${ENV(DONAIN_NAME)}
     verify: false
 teststeps:
 -   name: 园业务web_登陆
@@ -19,14 +20,14 @@ teststeps:
             Content-Length: '76'
             Content-Type: application/x-www-form-urlencoded;charset=UTF-8
             Host: $host
-            Origin: https://$host
-            Referer: https://$host/school/
+            Origin: $Protocol://$host
+            Referer: $Protocol://$host/school/
             User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:86.0) Gecko/20100101
                 Firefox/86.0
             X-Requested-With: XMLHttpRequest
             domainName: $donainname
         method: POST
-        url: https://$host/v1/web/eduaccount/sys/login
+        url: $Protocol://$host/v1/web/eduaccount/sys/login
     extract:
         token: body.data.token
     validate:
@@ -50,14 +51,14 @@ teststeps:
             Content-Type: application/json;charset=utf-8
             Host: $host
             Pragma: no-cache
-            Referer: https://$host/school/
+            Referer: $Protocol://$host/school/
             User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:86.0) Gecko/20100101
                 Firefox/86.0
             X-Access-Token: $token
             X-Requested-With: XMLHttpRequest
             domainName: $donainname
         method: GET
-        url: https://$host/v1/web/edumanage/system/allDict?
+        url: $Protocol://$host/v1/web/edumanage/system/allDict?
     validate:
     -   eq:
         - status_code
@@ -79,14 +80,14 @@ teststeps:
             Content-Type: application/json;charset=utf-8
             Host: $host
             Pragma: no-cache
-            Referer: https://$host/school/
+            Referer: $Protocol://$host/school/
             User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:86.0) Gecko/20100101
                 Firefox/86.0
             X-Access-Token: $token
             X-Requested-With: XMLHttpRequest
             domainName: $donainname
         method: GET
-        url: https://$host/v1/web/edumanage/provincialCascade/all?
+        url: $Protocol://$host/v1/web/edumanage/provincialCascade/all?
     validate:
     -   eq:
         - status_code
@@ -108,7 +109,7 @@ teststeps:
             Content-Type: application/json;charset=utf-8
             Host: $host
             Pragma: no-cache
-            Referer: https://$host/school/
+            Referer: $Protocol://$host/school/
             User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:86.0) Gecko/20100101
                 Firefox/86.0
             X-Access-Token: $token
@@ -118,7 +119,7 @@ teststeps:
         params:
             archivesId: '22034717999105'
             orgId: '6672712597506'
-        url: https://$host/v1/web/edudistrict/staff/get
+        url: $Protocol://$host/v1/web/edudistrict/staff/get
     validate:
     -   eq:
         - status_code
@@ -140,7 +141,7 @@ teststeps:
             Content-Type: application/json;charset=utf-8
             Host: $host
             Pragma: no-cache
-            Referer: https://$host/school/
+            Referer: $Protocol://$host/school/
             User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:86.0) Gecko/20100101
                 Firefox/86.0
             X-Access-Token: $token
@@ -151,7 +152,7 @@ teststeps:
             pageIndex: '1'
             pageRows: '12'
             systemCode: district
-        url: https://$host/v1/web/eduaccount/user/identitys
+        url: $Protocol://$host/v1/web/eduaccount/user/identitys
     validate:
     -   eq:
         - status_code
@@ -173,7 +174,7 @@ teststeps:
             Content-Type: application/json;charset=utf-8
             Host: $host
             Pragma: no-cache
-            Referer: https://$host/school/
+            Referer: $Protocol://$host/school/
             User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:86.0) Gecko/20100101
                 Firefox/86.0
             X-Access-Token: $token
@@ -182,7 +183,7 @@ teststeps:
         method: GET
         params:
             domainName: $donainname
-        url: https://$host/v1/web/eduaccount/org/getOrgByDomainName
+        url: $Protocol://$host/v1/web/eduaccount/org/getOrgByDomainName
     validate:
     -   eq:
         - status_code
@@ -204,14 +205,14 @@ teststeps:
             Content-Type: application/json;charset=utf-8
             Host: $host
             Pragma: no-cache
-            Referer: https://$host/school/
+            Referer: $Protocol://$host/school/
             User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:86.0) Gecko/20100101
                 Firefox/86.0
             X-Access-Token: $token
             X-Requested-With: XMLHttpRequest
             domainName: $donainname
         method: GET
-        url: https://$host/v1/web/edudistrict/works/weather?
+        url: $Protocol://$host/v1/web/edudistrict/works/weather?
     validate:
     -   eq:
         - status_code
@@ -233,7 +234,7 @@ teststeps:
             Content-Type: application/json;charset=utf-8
             Host: $host
             Pragma: no-cache
-            Referer: https://$host/school/
+            Referer: $Protocol://$host/school/
             User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:86.0) Gecko/20100101
                 Firefox/86.0
             X-Access-Token: $token
@@ -243,7 +244,7 @@ teststeps:
         params:
             pageIndex: '1'
             pageRows: '20'
-        url: https://$host/v1/web/edugarden/attendance/shift/list
+        url: $Protocol://$host/v1/web/edugarden/attendance/shift/list
     validate:
     -   eq:
         - status_code
@@ -266,15 +267,15 @@ teststeps:
             Content-Length: '22'
             Content-Type: application/x-www-form-urlencoded;charset=UTF-8
             Host: $host
-            Origin: https://$host
-            Referer: https://$host/school/
+            Origin: $Protocol://$host
+            Referer: $Protocol://$host/school/
             User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:86.0) Gecko/20100101
                 Firefox/86.0
             X-Access-Token: $token
             X-Requested-With: XMLHttpRequest
             domainName: $donainname
         method: POST
-        url: https://$host/v1/web/edugarden/attendance/shift/get
+        url: $Protocol://$host/v1/web/edugarden/attendance/shift/get
     validate:
     -   eq:
         - status_code
@@ -295,8 +296,8 @@ teststeps:
             Content-Length: '377'
             Content-Type: application/json
             Host: $host
-            Origin: https://$host
-            Referer: https://$host/school/
+            Origin: $Protocol://$host
+            Referer: $Protocol://$host/school/
             User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:86.0) Gecko/20100101
                 Firefox/86.0
             X-Access-Token: $token
@@ -321,7 +322,7 @@ teststeps:
             unit3: 1
             unit4: 1
         method: POST
-        url: https://$host/v1/web/edugarden/attendance/shift/insertOrUpdate
+        url: $Protocol://$host/v1/web/edugarden/attendance/shift/insertOrUpdate
     validate:
     -   eq:
         - status_code
@@ -346,15 +347,15 @@ teststeps:
             Content-Length: '0'
             Content-Type: application/x-www-form-urlencoded;charset=UTF-8
             Host: $host
-            Origin: https://$host
-            Referer: https://$host/school/
+            Origin: $Protocol://$host
+            Referer: $Protocol://$host/school/
             User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:86.0) Gecko/20100101
                 Firefox/86.0
             X-Access-Token: $token
             X-Requested-With: XMLHttpRequest
             domainName: $donainname
         method: POST
-        url: https://$host/v1/web/edugarden/attendance/shift/selectAll
+        url: $Protocol://$host/v1/web/edugarden/attendance/shift/selectAll
     validate:
     -   eq:
         - status_code
@@ -376,14 +377,14 @@ teststeps:
             Content-Type: application/json;charset=utf-8
             Host: $host
             Pragma: no-cache
-            Referer: https://$host/school/
+            Referer: $Protocol://$host/school/
             User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:86.0) Gecko/20100101
                 Firefox/86.0
             X-Access-Token: $token
             X-Requested-With: XMLHttpRequest
             domainName: $donainname
         method: GET
-        url: https://$host/v1/web/edugarden/holiday/selectAll?
+        url: $Protocol://$host/v1/web/edugarden/holiday/selectAll?
     validate:
     -   eq:
         - status_code
@@ -405,7 +406,7 @@ teststeps:
             Content-Type: application/json;charset=utf-8
             Host: $host
             Pragma: no-cache
-            Referer: https://$host/school/
+            Referer: $Protocol://$host/school/
             User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:86.0) Gecko/20100101
                 Firefox/86.0
             X-Access-Token: $token
@@ -415,7 +416,7 @@ teststeps:
         params:
             pageIndex: '1'
             pageRows: '20'
-        url: https://$host/v1/web/edugarden/attendance/group/list
+        url: $Protocol://$host/v1/web/edugarden/attendance/group/list
     validate:
     -   eq:
         - status_code
@@ -438,15 +439,15 @@ teststeps:
             Content-Length: '22'
             Content-Type: application/x-www-form-urlencoded;charset=UTF-8
             Host: $host
-            Origin: https://$host
-            Referer: https://$host/school/
+            Origin: $Protocol://$host
+            Referer: $Protocol://$host/school/
             User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:86.0) Gecko/20100101
                 Firefox/86.0
             X-Access-Token: $token
             X-Requested-With: XMLHttpRequest
             domainName: $donainname
         method: POST
-        url: https://$host/v1/web/edugarden/attendance/group/get
+        url: $Protocol://$host/v1/web/edugarden/attendance/group/get
     validate:
     -   eq:
         - status_code
@@ -472,15 +473,15 @@ teststeps:
             Content-Length: '65'
             Content-Type: application/x-www-form-urlencoded;charset=UTF-8
             Host: $host
-            Origin: https://$host
-            Referer: https://$host/school/
+            Origin: $Protocol://$host
+            Referer: $Protocol://$host/school/
             User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:86.0) Gecko/20100101
                 Firefox/86.0
             X-Access-Token: $token
             X-Requested-With: XMLHttpRequest
             domainName: $donainname
         method: POST
-        url: https://$host/v1/web/edugarden/attendance/schedules/list
+        url: $Protocol://$host/v1/web/edugarden/attendance/schedules/list
     validate:
     -   eq:
         - status_code
@@ -504,15 +505,15 @@ teststeps:
             Content-Length: '41'
             Content-Type: application/x-www-form-urlencoded;charset=UTF-8
             Host: $host
-            Origin: https://$host
-            Referer: https://$host/school/
+            Origin: $Protocol://$host
+            Referer: $Protocol://$host/school/
             User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:86.0) Gecko/20100101
                 Firefox/86.0
             X-Access-Token: $token
             X-Requested-With: XMLHttpRequest
             domainName: $donainname
         method: POST
-        url: https://$host/v1/web/edugarden/attendance/schedules/getShiftStatistics
+        url: $Protocol://$host/v1/web/edugarden/attendance/schedules/getShiftStatistics
     validate:
     -   eq:
         - status_code
@@ -534,7 +535,7 @@ teststeps:
             Content-Type: application/json;charset=utf-8
             Host: $host
             Pragma: no-cache
-            Referer: https://$host/school/
+            Referer: $Protocol://$host/school/
             User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:86.0) Gecko/20100101
                 Firefox/86.0
             X-Access-Token: $token
@@ -544,7 +545,7 @@ teststeps:
         params:
             endTime: '2021-04-07'
             startTime: '2021-04-01'
-        url: https://$host/v1/web/edugarden/attendance/shift/getInUseShift
+        url: $Protocol://$host/v1/web/edugarden/attendance/shift/getInUseShift
     validate:
     -   eq:
         - status_code
@@ -566,7 +567,7 @@ teststeps:
             Content-Type: application/json;charset=utf-8
             Host: $host
             Pragma: no-cache
-            Referer: https://$host/school/
+            Referer: $Protocol://$host/school/
             User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:86.0) Gecko/20100101
                 Firefox/86.0
             X-Access-Token: $token
@@ -578,7 +579,7 @@ teststeps:
             pageIndex: '1'
             pageRows: '20'
             startTime: '2021-04-01'
-        url: https://$host/v1/web/edugarden/attendance/statistics/monthDataList
+        url: $Protocol://$host/v1/web/edugarden/attendance/statistics/monthDataList
     validate:
     -   eq:
         - status_code
@@ -600,7 +601,7 @@ teststeps:
             Content-Type: application/json;charset=utf-8
             Host: $host
             Pragma: no-cache
-            Referer: https://$host/school/
+            Referer: $Protocol://$host/school/
             User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:86.0) Gecko/20100101
                 Firefox/86.0
             X-Access-Token: $token
@@ -612,7 +613,7 @@ teststeps:
             pageIndex: '1'
             pageRows: '20'
             startTime: '2021-04-01'
-        url: https://$host/v1/web/edugarden/attendance/statistics/originalRecordList
+        url: $Protocol://$host/v1/web/edugarden/attendance/statistics/originalRecordList
     validate:
     -   eq:
         - status_code
@@ -634,14 +635,14 @@ teststeps:
             Content-Type: application/json;charset=utf-8
             Host: $host
             Pragma: no-cache
-            Referer: https://$host/school/
+            Referer: $Protocol://$host/school/
             User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:86.0) Gecko/20100101
                 Firefox/86.0
             X-Access-Token: $token
             X-Requested-With: XMLHttpRequest
             domainName: $donainname
         method: GET
-        url: https://$host/v1/web/edugarden/attendance/group/selectAll?
+        url: $Protocol://$host/v1/web/edugarden/attendance/group/selectAll?
     validate:
     -   eq:
         - status_code
@@ -663,7 +664,7 @@ teststeps:
             Content-Type: application/json;charset=utf-8
             Host: $host
             Pragma: no-cache
-            Referer: https://$host/school/
+            Referer: $Protocol://$host/school/
             User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:86.0) Gecko/20100101
                 Firefox/86.0
             X-Access-Token: $token
@@ -674,7 +675,7 @@ teststeps:
             groupId: '21523178586113'
             pageIndex: '1'
             pageRows: '20'
-        url: https://$host/v1/web/edugarden/attendance/group/getAttGroupStaffList
+        url: $Protocol://$host/v1/web/edugarden/attendance/group/getAttGroupStaffList
     validate:
     -   eq:
         - status_code

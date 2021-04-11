@@ -9,17 +9,17 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "e1eae3243cd4d280",
+      "uid" : "4383be7376618165",
       "status" : "broken",
       "statusDetails" : "httprunner.exceptions.ValidationFailure: assert body.code equal 0(int)\t==> fail\ncheck_item: body.code\ncheck_value: 100021400(int)\nassert_method: equal\nexpect_value: 0(int)",
       "time" : {
-        "start" : 1618047925295,
-        "stop" : 1618047925383,
-        "duration" : 88
+        "start" : 1618110176839,
+        "stop" : 1618110176926,
+        "duration" : 87
       }
     } ]
   },
-  "e6e1702e41176f93be7d0b2b47a367b8" : {
+  "ed7fe1806335110452bf973c6ba3dfaf" : {
     "statistic" : {
       "failed" : 0,
       "broken" : 1,
@@ -29,17 +29,17 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "8fdeafbaf123b8f",
+      "uid" : "d4afcf8b37045e68",
       "status" : "broken",
       "statusDetails" : "httprunner.exceptions.ValidationFailure: assert body.code equal 0(int)\t==> fail\ncheck_item: body.code\ncheck_value: 100021400(int)\nassert_method: equal\nexpect_value: 0(int)",
       "time" : {
-        "start" : 1618047925048,
-        "stop" : 1618047925136,
-        "duration" : 88
+        "start" : 1618110176643,
+        "stop" : 1618110176712,
+        "duration" : 69
       }
     } ]
   },
-  "a4425cf33b819feafbc706ef8758a341" : {
+  "a73eecd06bba653d8f87a45644e1d896" : {
     "statistic" : {
       "failed" : 0,
       "broken" : 1,
@@ -49,17 +49,17 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "ad9f64f7d0eaf35e",
+      "uid" : "f2c499c54cdfc3e7",
       "status" : "broken",
       "statusDetails" : "httprunner.exceptions.ValidationFailure: assert body.code equal 0(int)\t==> fail\ncheck_item: body.code\ncheck_value: 100021400(int)\nassert_method: equal\nexpect_value: 0(int)",
       "time" : {
-        "start" : 1618047925166,
-        "stop" : 1618047925268,
-        "duration" : 102
+        "start" : 1618110176742,
+        "stop" : 1618110176810,
+        "duration" : 68
       }
     } ]
   },
-  "774369ad2d5f66460a2b4379465f9a3a" : {
+  "04d7810cbe1e3dd8505c740a444d4672" : {
     "statistic" : {
       "failed" : 0,
       "broken" : 1,
@@ -69,17 +69,17 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "2c33e6693e2d46ae",
+      "uid" : "aba0ee9f61b2d469",
       "status" : "broken",
       "statusDetails" : "httprunner.exceptions.ValidationFailure: assert body.code equal 0(int)\t==> fail\ncheck_item: body.code\ncheck_value: 100021400(int)\nassert_method: equal\nexpect_value: 0(int)",
       "time" : {
-        "start" : 1618047925420,
-        "stop" : 1618047925501,
-        "duration" : 81
+        "start" : 1618110176377,
+        "stop" : 1618110176473,
+        "duration" : 96
       }
     } ]
   },
-  "72f3aec665c5d5ef557228ac4de2afd9" : {
+  "95b70eccee1e0e94a1ca197f1ba47ad2" : {
     "statistic" : {
       "failed" : 0,
       "broken" : 1,
@@ -89,13 +89,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "79a06daf5defba8a",
+      "uid" : "9eecd09e39fa5607",
       "status" : "broken",
       "statusDetails" : "httprunner.exceptions.ValidationFailure: assert body.code equal 0(int)\t==> fail\ncheck_item: body.code\ncheck_value: 100021400(int)\nassert_method: equal\nexpect_value: 0(int)",
       "time" : {
-        "start" : 1618047924783,
-        "stop" : 1618047925016,
-        "duration" : 233
+        "start" : 1618110176512,
+        "stop" : 1618110176604,
+        "duration" : 92
       }
     } ]
   }

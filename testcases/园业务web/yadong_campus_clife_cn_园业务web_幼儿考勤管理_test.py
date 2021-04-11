@@ -2,33 +2,27 @@
 # FROM: testcases\园业务web\yadong.campus.clife.cn_园业务web_幼儿考勤管理.yml
 
 
-import pytest
-from httprunner import Parameters
-
-
 from httprunner import HttpRunner, Config, Step, RunRequest, RunTestCase
 
 
 class TestCaseYadongCampusClifeCn园业务Web幼儿考勤管理(HttpRunner):
-    @pytest.mark.parametrize(
-        "param",
-        Parameters(
-            {"username": ["16620847001"], "password": ["VUsFjBeODaABgu37tXzPbw=="]}
-        ),
-    )
-    def test_start(self, param):
-        super().test_start(param)
 
     config = (
         Config("园业务web_幼儿考勤管理")
-        .variables(**{"host": "yadong.campus.clife.cn", "donainname": "yadong"})
+        .variables(
+            **{
+                "Protocol": "${ENV(Protocol)}",
+                "host": "${ENV(HOST)}",
+                "donainname": "${ENV(DONAIN_NAME)}",
+            }
+        )
         .verify(False)
     )
 
     teststeps = [
         Step(
             RunRequest("园业务web_登陆")
-            .post("https://$host/v1/web/eduaccount/sys/login")
+            .post("$Protocol://$host/v1/web/eduaccount/sys/login")
             .with_headers(
                 **{
                     "Accept": "application/json, text/plain, */*",
@@ -38,8 +32,8 @@ class TestCaseYadongCampusClifeCn园业务Web幼儿考勤管理(HttpRunner):
                     "Content-Length": "76",
                     "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
                     "Host": "$host",
-                    "Origin": "https://$host",
-                    "Referer": "https://$host/school/",
+                    "Origin": "$Protocol://$host",
+                    "Referer": "$Protocol://$host/school/",
                     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:86.0) Gecko/20100101 Firefox/86.0",
                     "X-Requested-With": "XMLHttpRequest",
                     "domainName": "$donainname",
@@ -48,8 +42,8 @@ class TestCaseYadongCampusClifeCn园业务Web幼儿考勤管理(HttpRunner):
             .with_data(
                 {
                     "systemCode": "garden",
-                    "username": "$username",
-                    "password": "$password",
+                    "username": "${ENV(GARDEN_USERNAME)}",
+                    "password": "${ENV(GARDEN_PASSWORD)}",
                 }
             )
             .extract()
@@ -61,7 +55,7 @@ class TestCaseYadongCampusClifeCn园业务Web幼儿考勤管理(HttpRunner):
         ),
         Step(
             RunRequest("数据字典-所有字典")
-            .get("https://$host/v1/web/edumanage/system/allDict?")
+            .get("$Protocol://$host/v1/web/edumanage/system/allDict?")
             .with_headers(
                 **{
                     "Accept": "application/json, text/plain, */*",
@@ -72,7 +66,7 @@ class TestCaseYadongCampusClifeCn园业务Web幼儿考勤管理(HttpRunner):
                     "Content-Type": "application/json;charset=utf-8",
                     "Host": "$host",
                     "Pragma": "no-cache",
-                    "Referer": "https://$host/school/",
+                    "Referer": "$Protocol://$host/school/",
                     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:86.0) Gecko/20100101 Firefox/86.0",
                     "X-Access-Token": "$token",
                     "X-Requested-With": "XMLHttpRequest",
@@ -86,7 +80,7 @@ class TestCaseYadongCampusClifeCn园业务Web幼儿考勤管理(HttpRunner):
         ),
         Step(
             RunRequest("省市区级联-根据国家标识获取省份、城市、地区数据")
-            .get("https://$host/v1/web/edumanage/provincialCascade/all?")
+            .get("$Protocol://$host/v1/web/edumanage/provincialCascade/all?")
             .with_headers(
                 **{
                     "Accept": "application/json, text/plain, */*",
@@ -97,7 +91,7 @@ class TestCaseYadongCampusClifeCn园业务Web幼儿考勤管理(HttpRunner):
                     "Content-Type": "application/json;charset=utf-8",
                     "Host": "$host",
                     "Pragma": "no-cache",
-                    "Referer": "https://$host/school/",
+                    "Referer": "$Protocol://$host/school/",
                     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:86.0) Gecko/20100101 Firefox/86.0",
                     "X-Access-Token": "$token",
                     "X-Requested-With": "XMLHttpRequest",
@@ -111,7 +105,7 @@ class TestCaseYadongCampusClifeCn园业务Web幼儿考勤管理(HttpRunner):
         ),
         Step(
             RunRequest("登录相关-获取身份列表")
-            .get("https://$host/v1/web/eduaccount/user/identitys")
+            .get("$Protocol://$host/v1/web/eduaccount/user/identitys")
             .with_params(
                 **{"pageIndex": "1", "pageRows": "12", "systemCode": "district"}
             )
@@ -125,7 +119,7 @@ class TestCaseYadongCampusClifeCn园业务Web幼儿考勤管理(HttpRunner):
                     "Content-Type": "application/json;charset=utf-8",
                     "Host": "$host",
                     "Pragma": "no-cache",
-                    "Referer": "https://$host/school/",
+                    "Referer": "$Protocol://$host/school/",
                     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:86.0) Gecko/20100101 Firefox/86.0",
                     "X-Access-Token": "$token",
                     "X-Requested-With": "XMLHttpRequest",
@@ -139,7 +133,7 @@ class TestCaseYadongCampusClifeCn园业务Web幼儿考勤管理(HttpRunner):
         ),
         Step(
             RunRequest("登录相关-根据域名获取机构简介")
-            .get("https://$host/v1/web/eduaccount/org/getOrgByDomainName")
+            .get("$Protocol://$host/v1/web/eduaccount/org/getOrgByDomainName")
             .with_params(**{"domainName": "$donainname"})
             .with_headers(
                 **{
@@ -151,7 +145,7 @@ class TestCaseYadongCampusClifeCn园业务Web幼儿考勤管理(HttpRunner):
                     "Content-Type": "application/json;charset=utf-8",
                     "Host": "$host",
                     "Pragma": "no-cache",
-                    "Referer": "https://$host/school/",
+                    "Referer": "$Protocol://$host/school/",
                     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:86.0) Gecko/20100101 Firefox/86.0",
                     "X-Access-Token": "$token",
                     "X-Requested-With": "XMLHttpRequest",
@@ -165,7 +159,7 @@ class TestCaseYadongCampusClifeCn园业务Web幼儿考勤管理(HttpRunner):
         ),
         Step(
             RunRequest("应用-列表收藏应用（账号收藏的应用）")
-            .get("https://$host/v1/web/edudistrict/apps/personal")
+            .get("$Protocol://$host/v1/web/edudistrict/apps/personal")
             .with_params(**{"platform": "1"})
             .with_headers(
                 **{
@@ -177,7 +171,7 @@ class TestCaseYadongCampusClifeCn园业务Web幼儿考勤管理(HttpRunner):
                     "Content-Type": "application/json;charset=utf-8",
                     "Host": "$host",
                     "Pragma": "no-cache",
-                    "Referer": "https://$host/school/",
+                    "Referer": "$Protocol://$host/school/",
                     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:86.0) Gecko/20100101 Firefox/86.0",
                     "X-Access-Token": "$token",
                     "X-Requested-With": "XMLHttpRequest",
@@ -191,7 +185,7 @@ class TestCaseYadongCampusClifeCn园业务Web幼儿考勤管理(HttpRunner):
         ),
         Step(
             RunRequest("全园概况")
-            .get("https://$host/v1/web/edugarden/statistic/attendanceStatistic")
+            .get("$Protocol://$host/v1/web/edugarden/statistic/attendanceStatistic")
             .with_params(**{"date": "2021-04-08"})
             .with_headers(
                 **{
@@ -203,7 +197,7 @@ class TestCaseYadongCampusClifeCn园业务Web幼儿考勤管理(HttpRunner):
                     "Content-Type": "application/json;charset=utf-8",
                     "Host": "$host",
                     "Pragma": "no-cache",
-                    "Referer": "https://$host/school/",
+                    "Referer": "$Protocol://$host/school/",
                     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:86.0) Gecko/20100101 Firefox/86.0",
                     "X-Access-Token": "$token",
                     "X-Requested-With": "XMLHttpRequest",
@@ -217,7 +211,7 @@ class TestCaseYadongCampusClifeCn园业务Web幼儿考勤管理(HttpRunner):
         ),
         Step(
             RunRequest("获取{年级{班级}} 二级树形结构")
-            .get("https://$host/v1/web/edugarden/statistic/selectClass?")
+            .get("$Protocol://$host/v1/web/edugarden/statistic/selectClass?")
             .with_headers(
                 **{
                     "Accept": "application/json, text/plain, */*",
@@ -228,7 +222,7 @@ class TestCaseYadongCampusClifeCn园业务Web幼儿考勤管理(HttpRunner):
                     "Content-Type": "application/json;charset=utf-8",
                     "Host": "$host",
                     "Pragma": "no-cache",
-                    "Referer": "https://$host/school/",
+                    "Referer": "$Protocol://$host/school/",
                     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:86.0) Gecko/20100101 Firefox/86.0",
                     "X-Access-Token": "$token",
                     "X-Requested-With": "XMLHttpRequest",
@@ -242,7 +236,7 @@ class TestCaseYadongCampusClifeCn园业务Web幼儿考勤管理(HttpRunner):
         ),
         Step(
             RunRequest("班级概况")
-            .get("https://$host/v1/web/edugarden/statistic/classOverview")
+            .get("$Protocol://$host/v1/web/edugarden/statistic/classOverview")
             .with_params(
                 **{"classId": "16807134625793", "date": "2021-04-08", "gradeId": "5"}
             )
@@ -256,7 +250,7 @@ class TestCaseYadongCampusClifeCn园业务Web幼儿考勤管理(HttpRunner):
                     "Content-Type": "application/json;charset=utf-8",
                     "Host": "$host",
                     "Pragma": "no-cache",
-                    "Referer": "https://$host/school/",
+                    "Referer": "$Protocol://$host/school/",
                     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:86.0) Gecko/20100101 Firefox/86.0",
                     "X-Access-Token": "$token",
                     "X-Requested-With": "XMLHttpRequest",
@@ -270,7 +264,7 @@ class TestCaseYadongCampusClifeCn园业务Web幼儿考勤管理(HttpRunner):
         ),
         Step(
             RunRequest("/v1/web/edugarden/statistic/classStatistic")
-            .get("https://$host/v1/web/edugarden/statistic/classStatistic")
+            .get("$Protocol://$host/v1/web/edugarden/statistic/classStatistic")
             .with_params(
                 **{
                     "date": "2021-04-08",
@@ -289,7 +283,7 @@ class TestCaseYadongCampusClifeCn园业务Web幼儿考勤管理(HttpRunner):
                     "Content-Type": "application/json;charset=utf-8",
                     "Host": "$host",
                     "Pragma": "no-cache",
-                    "Referer": "https://$host/school/",
+                    "Referer": "$Protocol://$host/school/",
                     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:86.0) Gecko/20100101 Firefox/86.0",
                     "X-Access-Token": "$token",
                     "X-Requested-With": "XMLHttpRequest",
@@ -303,7 +297,7 @@ class TestCaseYadongCampusClifeCn园业务Web幼儿考勤管理(HttpRunner):
         ),
         Step(
             RunRequest("每日统计列表数据")
-            .get("https://$host/v1/web/edugarden/attendance/student/getDailyList")
+            .get("$Protocol://$host/v1/web/edugarden/attendance/student/getDailyList")
             .with_params(
                 **{
                     "pageIndex": "1",
@@ -322,7 +316,7 @@ class TestCaseYadongCampusClifeCn园业务Web幼儿考勤管理(HttpRunner):
                     "Content-Type": "application/json;charset=utf-8",
                     "Host": "$host",
                     "Pragma": "no-cache",
-                    "Referer": "https://$host/school/",
+                    "Referer": "$Protocol://$host/school/",
                     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:86.0) Gecko/20100101 Firefox/86.0",
                     "X-Access-Token": "$token",
                     "X-Requested-With": "XMLHttpRequest",
@@ -337,7 +331,7 @@ class TestCaseYadongCampusClifeCn园业务Web幼儿考勤管理(HttpRunner):
         Step(
             RunRequest("月度数据-获取月度数据列表")
             .get(
-                "https://$host/v1/web/edugarden/attendance/student/getStuAttReportPager"
+                "$Protocol://$host/v1/web/edugarden/attendance/student/getStuAttReportPager"
             )
             .with_params(
                 **{
@@ -357,7 +351,7 @@ class TestCaseYadongCampusClifeCn园业务Web幼儿考勤管理(HttpRunner):
                     "Content-Type": "application/json;charset=utf-8",
                     "Host": "$host",
                     "Pragma": "no-cache",
-                    "Referer": "https://$host/school/",
+                    "Referer": "$Protocol://$host/school/",
                     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:86.0) Gecko/20100101 Firefox/86.0",
                     "X-Access-Token": "$token",
                     "X-Requested-With": "XMLHttpRequest",
@@ -371,7 +365,7 @@ class TestCaseYadongCampusClifeCn园业务Web幼儿考勤管理(HttpRunner):
         ),
         Step(
             RunRequest("原始记录")
-            .get("https://$host/v1/web/edugarden/original/list")
+            .get("$Protocol://$host/v1/web/edugarden/original/list")
             .with_params(
                 **{
                     "endDate": "2021-04-08",
@@ -390,7 +384,7 @@ class TestCaseYadongCampusClifeCn园业务Web幼儿考勤管理(HttpRunner):
                     "Content-Type": "application/json;charset=utf-8",
                     "Host": "$host",
                     "Pragma": "no-cache",
-                    "Referer": "https://$host/school/",
+                    "Referer": "$Protocol://$host/school/",
                     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:86.0) Gecko/20100101 Firefox/86.0",
                     "X-Access-Token": "$token",
                     "X-Requested-With": "XMLHttpRequest",
@@ -404,7 +398,7 @@ class TestCaseYadongCampusClifeCn园业务Web幼儿考勤管理(HttpRunner):
         ),
         Step(
             RunRequest("出勤设置-展示已有的设置")
-            .get("https://$host/v1/web/edugarden/infantAttendance/list?")
+            .get("$Protocol://$host/v1/web/edugarden/infantAttendance/list?")
             .with_headers(
                 **{
                     "Accept": "application/json, text/plain, */*",
@@ -415,7 +409,7 @@ class TestCaseYadongCampusClifeCn园业务Web幼儿考勤管理(HttpRunner):
                     "Content-Type": "application/json;charset=utf-8",
                     "Host": "$host",
                     "Pragma": "no-cache",
-                    "Referer": "https://$host/school/",
+                    "Referer": "$Protocol://$host/school/",
                     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:86.0) Gecko/20100101 Firefox/86.0",
                     "X-Access-Token": "$token",
                     "X-Requested-With": "XMLHttpRequest",
@@ -429,7 +423,7 @@ class TestCaseYadongCampusClifeCn园业务Web幼儿考勤管理(HttpRunner):
         ),
         Step(
             RunRequest("出勤设置-保存")
-            .post("https://$host/v1/web/edugarden/infantAttendance/setting")
+            .post("$Protocol://$host/v1/web/edugarden/infantAttendance/setting")
             .with_headers(
                 **{
                     "Accept": "application/json, text/plain, */*",
@@ -439,8 +433,8 @@ class TestCaseYadongCampusClifeCn园业务Web幼儿考勤管理(HttpRunner):
                     "Content-Length": "1785",
                     "Content-Type": "application/json",
                     "Host": "$host",
-                    "Origin": "https://$host",
-                    "Referer": "https://$host/school/",
+                    "Origin": "$Protocol://$host",
+                    "Referer": "$Protocol://$host/school/",
                     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:86.0) Gecko/20100101 Firefox/86.0",
                     "X-Access-Token": "$token",
                     "X-Requested-With": "XMLHttpRequest",

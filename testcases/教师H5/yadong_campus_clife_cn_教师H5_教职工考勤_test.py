@@ -2,33 +2,27 @@
 # FROM: testcases\教师H5\yadong.campus.clife.cn_教师H5_教职工考勤.yml
 
 
-import pytest
-from httprunner import Parameters
-
-
 from httprunner import HttpRunner, Config, Step, RunRequest, RunTestCase
 
 
 class TestCaseYadongCampusClifeCn教师H5教职工考勤(HttpRunner):
-    @pytest.mark.parametrize(
-        "param",
-        Parameters(
-            {"username": ["16620847001"], "password": ["VUsFjBeODaABgu37tXzPbw=="]}
-        ),
-    )
-    def test_start(self, param):
-        super().test_start(param)
 
     config = (
         Config("教师H5_教职工考勤")
-        .variables(**{"host": "yadong.campus.clife.cn", "donainname": "yadong"})
+        .variables(
+            **{
+                "Protocol": "${ENV(Protocol)}",
+                "host": "${ENV(HOST)}",
+                "donainname": "${ENV(DONAIN_NAME)}",
+            }
+        )
         .verify(False)
     )
 
     teststeps = [
         Step(
             RunRequest("教师H5_登陆")
-            .post("https://$host/v1/web/eduaccount/sys/login")
+            .post("$Protocol://$host/v1/web/eduaccount/sys/login")
             .with_headers(
                 **{
                     "Accept": "application/json, text/plain, */*",
@@ -38,8 +32,8 @@ class TestCaseYadongCampusClifeCn教师H5教职工考勤(HttpRunner):
                     "Content-Length": "78",
                     "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
                     "Host": "$host",
-                    "Origin": "https://$host",
-                    "Referer": "https://$host/school/m/",
+                    "Origin": "$Protocol://$host",
+                    "Referer": "$Protocol://$host/school/m/",
                     "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/12.0 Mobile/15A372 Safari/604.1",
                     "X-Requested-With": "XMLHttpRequest",
                     "domainName": "$donainname",
@@ -48,8 +42,8 @@ class TestCaseYadongCampusClifeCn教师H5教职工考勤(HttpRunner):
             .with_data(
                 {
                     "systemCode": "h5garden",
-                    "username": "$username",
-                    "password": "$password",
+                    "username": "${ENV(GARDEN_USERNAME)}",
+                    "password": "${ENV(GARDEN_PASSWORD)}",
                 }
             )
             .extract()
@@ -61,7 +55,7 @@ class TestCaseYadongCampusClifeCn教师H5教职工考勤(HttpRunner):
         ),
         Step(
             RunRequest("应用-列表收藏应用（账号收藏的应用）")
-            .get("https://$host/v1/web/edudistrict/apps/personal")
+            .get("$Protocol://$host/v1/web/edudistrict/apps/personal")
             .with_params(**{"platform": "2"})
             .with_headers(
                 **{
@@ -71,7 +65,7 @@ class TestCaseYadongCampusClifeCn教师H5教职工考勤(HttpRunner):
                     "Connection": "keep-alive",
                     "Content-Type": "application/json;charset=utf-8",
                     "Host": "$host",
-                    "Referer": "https://$host/school/m/",
+                    "Referer": "$Protocol://$host/school/m/",
                     "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/12.0 Mobile/15A372 Safari/604.1",
                     "X-Access-Token": "$token",
                     "X-Requested-With": "XMLHttpRequest",
@@ -85,7 +79,7 @@ class TestCaseYadongCampusClifeCn教师H5教职工考勤(HttpRunner):
         ),
         Step(
             RunRequest("登录相关-获取身份列表(H5)")
-            .get("https://$host/v1/web/eduaccount/user/h5/identitys")
+            .get("$Protocol://$host/v1/web/eduaccount/user/h5/identitys")
             .with_params(**{"showMsgCount": "1", "systemCode": "h5garden"})
             .with_headers(
                 **{
@@ -95,7 +89,7 @@ class TestCaseYadongCampusClifeCn教师H5教职工考勤(HttpRunner):
                     "Connection": "keep-alive",
                     "Content-Type": "application/json;charset=utf-8",
                     "Host": "$host",
-                    "Referer": "https://$host/school/m/",
+                    "Referer": "$Protocol://$host/school/m/",
                     "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/12.0 Mobile/15A372 Safari/604.1",
                     "X-Access-Token": "$token",
                     "X-Requested-With": "XMLHttpRequest",
@@ -109,7 +103,7 @@ class TestCaseYadongCampusClifeCn教师H5教职工考勤(HttpRunner):
         ),
         Step(
             RunRequest("应用-推荐应用-全部应用（账号角色可用的应用，可识别账号收藏的应用）")
-            .get("https://$host/v1/web/edudistrict/apps/org")
+            .get("$Protocol://$host/v1/web/edudistrict/apps/org")
             .with_params(**{"platform": "2"})
             .with_headers(
                 **{
@@ -119,7 +113,7 @@ class TestCaseYadongCampusClifeCn教师H5教职工考勤(HttpRunner):
                     "Connection": "keep-alive",
                     "Content-Type": "application/json;charset=utf-8",
                     "Host": "$host",
-                    "Referer": "https://$host/school/m/",
+                    "Referer": "$Protocol://$host/school/m/",
                     "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/12.0 Mobile/15A372 Safari/604.1",
                     "X-Access-Token": "$token",
                     "X-Requested-With": "XMLHttpRequest",
@@ -133,7 +127,9 @@ class TestCaseYadongCampusClifeCn教师H5教职工考勤(HttpRunner):
         ),
         Step(
             RunRequest("考勤统计-月度数据列表")
-            .get("https://$host/v1/web/edugarden/attendance/statistics/monthDataList")
+            .get(
+                "$Protocol://$host/v1/web/edugarden/attendance/statistics/monthDataList"
+            )
             .with_params(
                 **{
                     "endTime": "2021-04-30",
@@ -149,7 +145,7 @@ class TestCaseYadongCampusClifeCn教师H5教职工考勤(HttpRunner):
                     "Connection": "keep-alive",
                     "Content-Type": "application/json;charset=utf-8",
                     "Host": "$host",
-                    "Referer": "https://$host/school/m/",
+                    "Referer": "$Protocol://$host/school/m/",
                     "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/12.0 Mobile/15A372 Safari/604.1",
                     "X-Access-Token": "$token",
                     "X-Requested-With": "XMLHttpRequest",
@@ -164,7 +160,7 @@ class TestCaseYadongCampusClifeCn教师H5教职工考勤(HttpRunner):
         Step(
             RunRequest("考勤统计-日考勤详情")
             .get(
-                "https://$host/v1/web/edugarden/attendance/statistics/attendanceDayItem"
+                "$Protocol://$host/v1/web/edugarden/attendance/statistics/attendanceDayItem"
             )
             .with_params(
                 **{
@@ -182,7 +178,7 @@ class TestCaseYadongCampusClifeCn教师H5教职工考勤(HttpRunner):
                     "Connection": "keep-alive",
                     "Content-Type": "application/json;charset=utf-8",
                     "Host": "$host",
-                    "Referer": "https://$host/school/m/",
+                    "Referer": "$Protocol://$host/school/m/",
                     "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/12.0 Mobile/15A372 Safari/604.1",
                     "X-Access-Token": "$token",
                     "X-Requested-With": "XMLHttpRequest",
@@ -197,7 +193,7 @@ class TestCaseYadongCampusClifeCn教师H5教职工考勤(HttpRunner):
         Step(
             RunRequest("考勤统计-人员考勤有数据的月份")
             .get(
-                "https://$host/v1/web/edugarden/attendance/statistics/getAttendanceYearItem"
+                "$Protocol://$host/v1/web/edugarden/attendance/statistics/getAttendanceYearItem"
             )
             .with_params(**{"systemCode": "H5", "year": "2021"})
             .with_headers(
@@ -208,7 +204,7 @@ class TestCaseYadongCampusClifeCn教师H5教职工考勤(HttpRunner):
                     "Connection": "keep-alive",
                     "Content-Type": "application/json;charset=utf-8",
                     "Host": "$host",
-                    "Referer": "https://$host/school/m/",
+                    "Referer": "$Protocol://$host/school/m/",
                     "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/12.0 Mobile/15A372 Safari/604.1",
                     "X-Access-Token": "$token",
                     "X-Requested-With": "XMLHttpRequest",
@@ -223,7 +219,7 @@ class TestCaseYadongCampusClifeCn教师H5教职工考勤(HttpRunner):
         Step(
             RunRequest("考勤统计-人员考勤月汇总明细")
             .get(
-                "https://$host/v1/web/edugarden/attendance/statistics/attendanceMonthItem"
+                "$Protocol://$host/v1/web/edugarden/attendance/statistics/attendanceMonthItem"
             )
             .with_params(
                 **{
@@ -242,7 +238,7 @@ class TestCaseYadongCampusClifeCn教师H5教职工考勤(HttpRunner):
                     "Connection": "keep-alive",
                     "Content-Type": "application/json;charset=utf-8",
                     "Host": "$host",
-                    "Referer": "https://$host/school/m/",
+                    "Referer": "$Protocol://$host/school/m/",
                     "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/12.0 Mobile/15A372 Safari/604.1",
                     "X-Access-Token": "$token",
                     "X-Requested-With": "XMLHttpRequest",
