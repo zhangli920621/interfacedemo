@@ -1,6 +1,7 @@
-.env
-reports/*
+tmp/allure-report/*
+tmp/allure-results/*
+testcases/__pycache__/*
+logs/*
 __pycache__/*
 *.pyc
 .python-version
-logs/*

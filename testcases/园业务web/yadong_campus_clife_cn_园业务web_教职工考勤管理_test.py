@@ -104,32 +104,6 @@ class TestCaseYadongCampusClifeCn园业务Web教职工考勤管理(HttpRunner):
             .assert_equal("body.code", 0)
         ),
         Step(
-            RunRequest("查看教职工信息")
-            .get("$Protocol://$host/v1/web/edudistrict/staff/get")
-            .with_params(**{"archivesId": "22034717999105", "orgId": "6672712597506"})
-            .with_headers(
-                **{
-                    "Accept": "application/json, text/plain, */*",
-                    "Accept-Encoding": "gzip, deflate, br",
-                    "Accept-Language": "zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2",
-                    "Cache-Control": "no-cache",
-                    "Connection": "keep-alive",
-                    "Content-Type": "application/json;charset=utf-8",
-                    "Host": "$host",
-                    "Pragma": "no-cache",
-                    "Referer": "$Protocol://$host/school/",
-                    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:86.0) Gecko/20100101 Firefox/86.0",
-                    "X-Access-Token": "$token",
-                    "X-Requested-With": "XMLHttpRequest",
-                    "domainName": "$donainname",
-                }
-            )
-            .validate()
-            .assert_equal("status_code", 200)
-            .assert_equal('headers."Content-Type"', "application/json;charset=UTF-8")
-            .assert_equal("body.code", 0)
-        ),
-        Step(
             RunRequest("登录相关-获取身份列表")
             .get("$Protocol://$host/v1/web/eduaccount/user/identitys")
             .with_params(
@@ -254,7 +228,7 @@ class TestCaseYadongCampusClifeCn园业务Web教职工考勤管理(HttpRunner):
                     "domainName": "$donainname",
                 }
             )
-            .with_data({"shiftId": "21518604697601"})
+            .with_data({"shiftId": "19095106486273"})
             .validate()
             .assert_equal("status_code", 200)
             .assert_equal('headers."Content-Type"', "application/json;charset=UTF-8")

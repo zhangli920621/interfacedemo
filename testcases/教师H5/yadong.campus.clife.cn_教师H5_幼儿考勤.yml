@@ -231,7 +231,7 @@ teststeps:
             domainName: $donainname
         method: GET
         params:
-            classId: '16807134625793'
+            classId: '11666912313345'
             date: '2021-04-08'
             gradeId: '5'
         url: $Protocol://$host/v1/web/edugarden/statistic/classOverview
@@ -321,7 +321,7 @@ teststeps:
             domainName: $donainname
         method: GET
         params:
-            classId: '16807319175169'
+            classId: '11666912313345'
             date: '2021-04-08'
         url: $Protocol://$host/v1/web/edugarden/attendance/roster/all
     validate:

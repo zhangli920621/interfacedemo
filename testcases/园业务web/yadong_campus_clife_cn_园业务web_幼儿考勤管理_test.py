@@ -14,6 +14,7 @@ class TestCaseYadongCampusClifeCn园业务Web幼儿考勤管理(HttpRunner):
                 "Protocol": "${ENV(Protocol)}",
                 "host": "${ENV(HOST)}",
                 "donainname": "${ENV(DONAIN_NAME)}",
+                "date": "${get_date()}",
             }
         )
         .verify(False)
@@ -238,7 +239,7 @@ class TestCaseYadongCampusClifeCn园业务Web幼儿考勤管理(HttpRunner):
             RunRequest("班级概况")
             .get("$Protocol://$host/v1/web/edugarden/statistic/classOverview")
             .with_params(
-                **{"classId": "16807134625793", "date": "2021-04-08", "gradeId": "5"}
+                **{"classId": "11666912313345", "date": "2021-04-08", "gradeId": "5"}
             )
             .with_headers(
                 **{

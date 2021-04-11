@@ -1,0 +1,2835 @@
+[32m2021-04-11 11:59:14.925[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36mtest_start[0m:[36m451[0m - [1mStart to run testcase: 教师H5_教职工考勤, TestCase ID: 84bed4a8-f342-4802-9faa-53a08829ec02[0m
+[32m2021-04-11 11:59:14.926[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: 教师H5_登陆 >>>>>>[0m
+[32m2021-04-11 11:59:15.072[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 192.168.0.104, Port: 63283[0m
+[32m2021-04-11 11:59:15.072[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 119.29.116.47, Port: 80[0m
+[32m2021-04-11 11:59:15.073[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== request details ==================
+method   : POST
+url      : http://yadongitest.icampus.clife.net/v1/web/eduaccount/sys/login
+headers  : {
+    "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/12.0 Mobile/15A372 Safari/604.1",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2",
+    "Content-Length": "78",
+    "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
+    "Host": "yadongitest.icampus.clife.net",
+    "Origin": "http://yadongitest.icampus.clife.net",
+    "Referer": "http://yadongitest.icampus.clife.net/school/m/",
+    "X-Requested-With": "XMLHttpRequest",
+    "domainName": "yadongitest",
+    "HRUN-Request-ID": "HRUN-84bed4a8-f342-4802-9faa-53a08829ec02-554926"
+}
+cookies  : {}
+body     : systemCode=h5garden&username=16620849001&password=VUsFjBeODaABgu37tXzPbw%3D%3D
+[0m
+[32m2021-04-11 11:59:15.075[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Sun, 11 Apr 2021 03:59:18 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "667",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "X-Requested-With",
+    "Access-Control-Allow-Methods": "GET,POST,OPTIONS"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "code": 0,
+    "data": {
+        "positionName": "\u9662\u957f",
+        "orgType": 3,
+        "userInfo": {
+            "userId": 2490607730689,
+            "username": "16620849001",
+            "realname": "\u4e9a\u4e1c\u53bf\u5e7c\u513f\u56ed-1\u53f7-",
+            "password": null,
+            "orgId": 6438733348866,
+            "orgCode": null,
+            "avatar": null,
+            "status": null,
+            "userType": 1,
+            "createTime": null
+        },
+        "classSize": 16,
+        "orgName": "\u4e9a\u4e1c\u5e7c\u513f\u56ed-\u5f20\u4e3d\u4e0d\u51c6\u52a8",
+        "domainName": "yadongitest",
+        "userType": 1,
+        "systemUrl": "./user_manage.html",
+        "orgId": 6438733348866,
+        "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjYyMDg0OTAwMSIsInVzZXJUeXBlIjoiMSIsImV4cCI6MTYxODEyMDc1OCwidXNlcklkIjoiMjQ5MDYwNzczMDY4OSIsIm9yZ0lkIjoiNjQzODczMzM0ODg2NiJ9.dU4913ry8_88LBkOhc7aw5R0tAXsdAku6ZQU5CBhBQ4",
+        "dataPermission": 1
+    }
+}
+[0m
+[32m2021-04-11 11:59:15.075[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m218[0m - [1mstatus_code: 200, response_time(ms): 146.61 ms, response_length: 0 bytes[0m
+[32m2021-04-11 11:59:15.076[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mextract[0m:[36m176[0m - [1mextract mapping: {'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjYyMDg0OTAwMSIsInVzZXJUeXBlIjoiMSIsImV4cCI6MTYxODEyMDc1OCwidXNlcklkIjoiMjQ5MDYwNzczMDY4OSIsIm9yZ0lkIjoiNjQzODczMzM0ODg2NiJ9.dU4913ry8_88LBkOhc7aw5R0tAXsdAku6ZQU5CBhBQ4'}[0m
+[32m2021-04-11 11:59:15.076[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert status_code equal 200(int)	==> pass[0m
+[32m2021-04-11 11:59:15.076[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass[0m
+[32m2021-04-11 11:59:15.076[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert body.code equal 0(int)	==> pass[0m
+[32m2021-04-11 11:59:15.076[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: 教师H5_登陆 <<<<<<
+[0m
+[32m2021-04-11 11:59:15.077[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: 应用-列表收藏应用（账号收藏的应用） >>>>>>[0m
+[32m2021-04-11 11:59:15.160[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 192.168.0.104, Port: 63283[0m
+[32m2021-04-11 11:59:15.160[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 119.29.116.47, Port: 80[0m
+[32m2021-04-11 11:59:15.161[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== request details ==================
+method   : GET
+url      : http://yadongitest.icampus.clife.net/v1/web/edudistrict/apps/personal?platform=2
+headers  : {
+    "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/12.0 Mobile/15A372 Safari/604.1",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2",
+    "Content-Type": "application/json;charset=utf-8",
+    "Host": "yadongitest.icampus.clife.net",
+    "Referer": "http://yadongitest.icampus.clife.net/school/m/",
+    "X-Access-Token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjYyMDg0OTAwMSIsInVzZXJUeXBlIjoiMSIsImV4cCI6MTYxODEyMDc1OCwidXNlcklkIjoiMjQ5MDYwNzczMDY4OSIsIm9yZ0lkIjoiNjQzODczMzM0ODg2NiJ9.dU4913ry8_88LBkOhc7aw5R0tAXsdAku6ZQU5CBhBQ4",
+    "X-Requested-With": "XMLHttpRequest",
+    "domainName": "yadongitest",
+    "HRUN-Request-ID": "HRUN-84bed4a8-f342-4802-9faa-53a08829ec02-555077"
+}
+cookies  : {}
+body     : None
+[0m
+[32m2021-04-11 11:59:15.163[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Sun, 11 Apr 2021 03:59:18 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Methods": "GET,POST,OPTIONS,PUT,DELETE, GET,POST,OPTIONS",
+    "Set-Cookie": "rememberMe=deleteMe; Path=/clife-campus-education-district-api-web; Max-Age=0; Expires=Sat, 10-Apr-2021 03:59:18 GMT",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "X-Requested-With"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "code": 0,
+    "data": [
+        {
+            "resourceId": 32000,
+            "resourceName": "\u667a\u80fd\u81b3\u98df\u7ba1\u7406",
+            "actionUrl": "intelligentDietManagement",
+            "h5ActionUrl": "/intelligentDietManagement",
+            "parentId": 0,
+            "resourceIcon": "icon-intelligentDietManagement",
+            "selected": 1,
+            "sortId": null,
+            "commendStation": 0,
+            "startDate": "2021-01-06",
+            "endDate": "2117-08-19",
+            "expired": null,
+            "children": [
+                {
+                    "resourceId": 32003,
+                    "resourceName": "\u8425\u517b\u5206\u6790",
+                    "actionUrl": "/intelligentDietManagement/dietaryNutritionAnalysis",
+                    "h5ActionUrl": null,
+                    "parentId": 32000,
+                    "resourceIcon": null,
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                },
+                {
+                    "resourceId": 32004,
+                    "resourceName": "\u91c7\u8d2d\u8ba1\u5212",
+                    "actionUrl": "/intelligentDietManagement/procurementPlan",
+                    "h5ActionUrl": null,
+                    "parentId": 32000,
+                    "resourceIcon": null,
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                },
+                {
+                    "resourceId": 32005,
+                    "resourceName": "\u98df\u54c1\u7559\u6837",
+                    "actionUrl": "/intelligentDietManagement/FoodReservedSample",
+                    "h5ActionUrl": null,
+                    "parentId": 32000,
+                    "resourceIcon": null,
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                },
+                {
+                    "resourceId": 32006,
+                    "resourceName": "\u966a\u9910\u7ba1\u7406",
+                    "actionUrl": "/intelligentDietManagement/accompanyingMealMng",
+                    "h5ActionUrl": null,
+                    "parentId": 32000,
+                    "resourceIcon": null,
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                }
+            ]
+        },
+        {
+            "resourceId": 13173,
+            "resourceName": "\u6559\u5b66\u8ba1\u5212\u7ba1\u7406",
+            "actionUrl": "teachPlanManage",
+            "h5ActionUrl": "/teachPlanManage/weekPlan",
+            "parentId": 0,
+            "resourceIcon": "icon-teachPlanManage",
+            "selected": 1,
+            "sortId": null,
+            "commendStation": 0,
+            "startDate": "2021-01-06",
+            "endDate": "2117-08-19",
+            "expired": null,
+            "children": [
+                {
+                    "resourceId": 13174,
+                    "resourceName": "\u5468\u8ba1\u5212",
+                    "actionUrl": "/teachPlanManage/weekPlan",
+                    "h5ActionUrl": "",
+                    "parentId": 13173,
+                    "resourceIcon": "",
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                }
+            ]
+        },
+        {
+            "resourceId": 50000,
+            "resourceName": "\u8eab\u9ad8\u4f53\u91cd",
+            "actionUrl": "childrenBmi",
+            "h5ActionUrl": "/childBmi",
+            "parentId": 0,
+            "resourceIcon": "icon-bmi",
+            "selected": 1,
+            "sortId": null,
+            "commendStation": 0,
+            "startDate": "2021-01-06",
+            "endDate": "2117-08-19",
+            "expired": null,
+            "children": [
+                {
+                    "resourceId": 50001,
+                    "resourceName": "\u8eab\u9ad8\u4f53\u91cd\u6982\u51b5",
+                    "actionUrl": "/childrenBmi/bmiBasic",
+                    "h5ActionUrl": "/childBmi/general",
+                    "parentId": 50000,
+                    "resourceIcon": null,
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                },
+                {
+                    "resourceId": 50002,
+                    "resourceName": "\u73ed\u7ea7\u8eab\u9ad8\u4f53\u91cd",
+                    "actionUrl": "/childrenBmi/classBmi",
+                    "h5ActionUrl": "/childBmi/class",
+                    "parentId": 50000,
+                    "resourceIcon": null,
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                },
+                {
+                    "resourceId": 50003,
+                    "resourceName": "\u8eab\u9ad8\u4f53\u91cd\u8be6\u60c5",
+                    "actionUrl": "/childrenBmi/bmiDetail",
+                    "h5ActionUrl": "/childBmi/data",
+                    "parentId": 50000,
+                    "resourceIcon": null,
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                },
+                {
+                    "resourceId": 50004,
+                    "resourceName": "\u8eab\u9ad8\u4f53\u91cd\u8bb0\u5f55",
+                    "actionUrl": "/childrenBmi/bmiData",
+                    "h5ActionUrl": "/childBmi/growthLine",
+                    "parentId": 50000,
+                    "resourceIcon": null,
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                }
+            ]
+        },
+        {
+            "resourceId": 41000,
+            "resourceName": "\u5e7c\u513f\u8bf7\u5047",
+            "actionUrl": "childrenAttendance",
+            "h5ActionUrl": "/childrenLeave/teachRecord",
+            "parentId": 0,
+            "resourceIcon": "icon-childrenAttendance",
+            "selected": 1,
+            "sortId": null,
+            "commendStation": 0,
+            "startDate": "2021-01-06",
+            "endDate": "2117-08-19",
+            "expired": null,
+            "children": [
+                {
+                    "resourceId": 41002,
+                    "resourceName": "\u8bf7\u5047\u8bb0\u5f55",
+                    "actionUrl": "/childrenAttendance/childLeaveRecord",
+                    "h5ActionUrl": "",
+                    "parentId": 41000,
+                    "resourceIcon": "",
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                }
+            ]
+        },
+        {
+            "resourceId": 60000,
+            "resourceName": "\u5b9d\u5b9d\u62a5\u544a",
+            "actionUrl": "babyReport",
+            "h5ActionUrl": "/babyDayReport",
+            "parentId": 0,
+            "resourceIcon": "icon-babyReport",
+            "selected": 1,
+            "sortId": null,
+            "commendStation": 0,
+            "startDate": "2021-01-06",
+            "endDate": "2117-08-19",
+            "expired": null,
+            "children": [
+                {
+                    "resourceId": 60003,
+                    "resourceName": "\u65e5\u62a5\u6982\u51b5",
+                    "actionUrl": "",
+                    "h5ActionUrl": "/gardenDayReport/teacher",
+                    "parentId": 60000,
+                    "resourceIcon": "icon-gardenDayReport",
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                },
+                {
+                    "resourceId": 60004,
+                    "resourceName": "\u73ed\u7ea7\u65e5\u62a5",
+                    "actionUrl": "",
+                    "h5ActionUrl": "/classDayReport/teacher",
+                    "parentId": 60000,
+                    "resourceIcon": "icon-classDayReport",
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                },
+                {
+                    "resourceId": 60005,
+                    "resourceName": "\u65e5\u62a5\u8be6\u60c5",
+                    "actionUrl": "",
+                    "h5ActionUrl": "/dayReportDetail/teacher",
+                    "parentId": 60000,
+                    "resourceIcon": "icon-dayReportDetail",
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                }
+            ]
+        },
+        {
+            "resourceId": 1121,
+            "resourceName": "\u5e7c\u513f\u6210\u957f\u6863\u6848",
+            "actionUrl": "growthFiles",
+            "h5ActionUrl": "/trackRecord",
+            "parentId": 0,
+            "resourceIcon": "icon-trackRecord",
+            "selected": 1,
+            "sortId": null,
+            "commendStation": 0,
+            "startDate": "2021-01-06",
+            "endDate": "2117-08-19",
+            "expired": null,
+            "children": [
+                {
+                    "resourceId": 1122,
+                    "resourceName": "\u5e7c\u513f\u6210\u957f\u6863\u6848",
+                    "actionUrl": "/growthFiles",
+                    "h5ActionUrl": "/trackRecord",
+                    "parentId": 1121,
+                    "resourceIcon": "",
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                }
+            ]
+        },
+        {
+            "resourceId": 49000,
+            "resourceName": "\u5e7c\u513f\u5348\u7761",
+            "actionUrl": "childSiesta",
+            "h5ActionUrl": "/childSiesta",
+            "parentId": 0,
+            "resourceIcon": "icon-sleep",
+            "selected": 1,
+            "sortId": null,
+            "commendStation": 0,
+            "startDate": "2021-01-06",
+            "endDate": "2117-08-19",
+            "expired": null,
+            "children": [
+                {
+                    "resourceId": 49001,
+                    "resourceName": "\u5348\u7761\u6982\u51b5",
+                    "actionUrl": "/childSiesta/siestaOverview",
+                    "h5ActionUrl": "/childSiesta/siestaOverview",
+                    "parentId": 49000,
+                    "resourceIcon": "",
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                },
+                {
+                    "resourceId": 49002,
+                    "resourceName": "\u73ed\u7ea7\u5348\u7761",
+                    "actionUrl": "/childSiesta/classSiesta",
+                    "h5ActionUrl": "",
+                    "parentId": 49000,
+                    "resourceIcon": "",
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                },
+                {
+                    "resourceId": 49003,
+                    "resourceName": "\u5348\u7761\u660e\u7ec6",
+                    "actionUrl": "/childSiesta/siestaDetail",
+                    "h5ActionUrl": "",
+                    "parentId": 49000,
+                    "resourceIcon": "",
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                }
+            ]
+        },
+        {
+            "resourceId": 1151,
+            "resourceName": "\u4fe1\u606f\u4e0a\u62a5",
+            "actionUrl": "infoReport",
+            "h5ActionUrl": "/messageReport/infoReceive",
+            "parentId": 0,
+            "resourceIcon": "icon-messageReport",
+            "selected": 1,
+            "sortId": null,
+            "commendStation": 0,
+            "startDate": "2021-01-06",
+            "endDate": "2117-08-19",
+            "expired": null,
+            "children": [
+                {
+                    "resourceId": 1152,
+                    "resourceName": "\u5df2\u53d1\u9001",
+                    "actionUrl": "/infoReport/infoDelivery",
+                    "h5ActionUrl": "",
+                    "parentId": 1151,
+                    "resourceIcon": "",
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                },
+                {
+                    "resourceId": 1153,
+                    "resourceName": "\u65b0\u5efa\u4e0a\u62a5\u4fe1\u606f",
+                    "actionUrl": "/infoReport/addInfo",
+                    "h5ActionUrl": "",
+                    "parentId": 1151,
+                    "resourceIcon": "",
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                }
+            ]
+        },
+        {
+            "resourceId": 1141,
+            "resourceName": "\u5e7c\u513f\u6668\u5348\u68c0",
+            "actionUrl": "mornArvoCheck",
+            "h5ActionUrl": "/mornArvoCheck/entrance",
+            "parentId": 0,
+            "resourceIcon": "icon-mornArvoCheck",
+            "selected": 1,
+            "sortId": null,
+            "commendStation": 0,
+            "startDate": "2021-01-06",
+            "endDate": "2117-08-19",
+            "expired": null,
+            "children": [
+                {
+                    "resourceId": 1142,
+                    "resourceName": "\u6668\u5348\u68c0\u6982\u51b5",
+                    "actionUrl": "/mornArvoCheck/survey",
+                    "h5ActionUrl": "/mornArvoCheck/entrance",
+                    "parentId": 1141,
+                    "resourceIcon": "",
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                },
+                {
+                    "resourceId": 1143,
+                    "resourceName": "\u8bb0\u5f55\u67e5\u8be2",
+                    "actionUrl": "/mornArvoCheck/query",
+                    "h5ActionUrl": "",
+                    "parentId": 1141,
+                    "resourceIcon": "",
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                },
+                {
+                    "resourceId": 1144,
+                    "resourceName": "\u6668\u5348\u68c0\u5904\u7406",
+                    "actionUrl": "/mornArvoCheck/recordQuery",
+                    "h5ActionUrl": "",
+                    "parentId": 1141,
+                    "resourceIcon": "",
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                }
+            ]
+        },
+        {
+            "resourceId": 43000,
+            "resourceName": "\u5e7c\u513f\u5174\u8da3",
+            "actionUrl": "interestAreaManage",
+            "h5ActionUrl": "/interest",
+            "parentId": 0,
+            "resourceIcon": "icon-interestAreaManage",
+            "selected": 1,
+            "sortId": null,
+            "commendStation": 0,
+            "startDate": "2021-01-06",
+            "endDate": "2117-08-19",
+            "expired": null,
+            "children": [
+                {
+                    "resourceId": 43005,
+                    "resourceName": "\u5174\u8da3\u6982\u51b5",
+                    "actionUrl": "/interestAreaManage/schoolProfile",
+                    "h5ActionUrl": "/interest/schoolProfile",
+                    "parentId": 43000,
+                    "resourceIcon": "",
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                },
+                {
+                    "resourceId": 43006,
+                    "resourceName": "\u73ed\u7ea7\u5174\u8da3",
+                    "actionUrl": "/interestAreaManage/classProfile",
+                    "h5ActionUrl": "/interest/classProfile",
+                    "parentId": 43000,
+                    "resourceIcon": "",
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                }
+            ]
+        },
+        {
+            "resourceId": 62000,
+            "resourceName": "\u6559\u804c\u5de5\u51fa\u52e4",
+            "actionUrl": "attendance",
+            "h5ActionUrl": "/staff/attendance",
+            "parentId": 0,
+            "resourceIcon": "icon-attendance",
+            "selected": 1,
+            "sortId": null,
+            "commendStation": 0,
+            "startDate": "2021-01-06",
+            "endDate": "2117-08-19",
+            "expired": null,
+            "children": null
+        }
+    ]
+}
+[0m
+[32m2021-04-11 11:59:15.163[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m218[0m - [1mstatus_code: 200, response_time(ms): 82.78 ms, response_length: 0 bytes[0m
+[32m2021-04-11 11:59:15.164[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert status_code equal 200(int)	==> pass[0m
+[32m2021-04-11 11:59:15.164[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass[0m
+[32m2021-04-11 11:59:15.164[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert body.code equal 0(int)	==> pass[0m
+[32m2021-04-11 11:59:15.165[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: 应用-列表收藏应用（账号收藏的应用） <<<<<<
+[0m
+[32m2021-04-11 11:59:15.165[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: 登录相关-获取身份列表(H5) >>>>>>[0m
+[32m2021-04-11 11:59:15.341[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 192.168.0.104, Port: 63283[0m
+[32m2021-04-11 11:59:15.341[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 119.29.116.47, Port: 80[0m
+[32m2021-04-11 11:59:15.341[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== request details ==================
+method   : GET
+url      : http://yadongitest.icampus.clife.net/v1/web/eduaccount/user/h5/identitys?showMsgCount=1&systemCode=h5garden
+headers  : {
+    "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/12.0 Mobile/15A372 Safari/604.1",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2",
+    "Content-Type": "application/json;charset=utf-8",
+    "Host": "yadongitest.icampus.clife.net",
+    "Referer": "http://yadongitest.icampus.clife.net/school/m/",
+    "X-Access-Token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjYyMDg0OTAwMSIsInVzZXJUeXBlIjoiMSIsImV4cCI6MTYxODEyMDc1OCwidXNlcklkIjoiMjQ5MDYwNzczMDY4OSIsIm9yZ0lkIjoiNjQzODczMzM0ODg2NiJ9.dU4913ry8_88LBkOhc7aw5R0tAXsdAku6ZQU5CBhBQ4",
+    "X-Requested-With": "XMLHttpRequest",
+    "domainName": "yadongitest",
+    "HRUN-Request-ID": "HRUN-84bed4a8-f342-4802-9faa-53a08829ec02-555166"
+}
+cookies  : {}
+body     : None
+[0m
+[32m2021-04-11 11:59:15.342[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Sun, 11 Apr 2021 03:59:18 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Methods": "GET,POST,OPTIONS,PUT,DELETE, GET,POST,OPTIONS",
+    "Set-Cookie": "rememberMe=deleteMe; Path=/clife-campus-education-account-api-web; Max-Age=0; Expires=Sat, 10-Apr-2021 03:59:18 GMT",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "X-Requested-With"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "code": 0,
+    "data": {
+        "studentList": [
+            {
+                "userId": 2490607730689,
+                "studentId": 2477378895874,
+                "userName": "16620849001",
+                "realName": "\u8d75\u4e3d\u9896\u4e00\u53f7~\u00a5@sm",
+                "domainName": "yadongitest",
+                "orgName": "\u4e9a\u4e1c\u5e7c\u513f\u56ed-\u5f20\u4e3d\u4e0d\u51c6\u52a8",
+                "orgId": 6438733348866,
+                "positionName": null,
+                "className": "\u5c0f\u4e8c\u73ed",
+                "gradeName": "\u5c0f\u73ed",
+                "createTime": null,
+                "parentUserId": null,
+                "parentUserName": null,
+                "roleNames": null,
+                "avatar": "http://200.200.200.58/group1/M00/08/C8/yMjIOmBsKaKAIatNAAGAuIse_6U199.jpg",
+                "mobile": null,
+                "sex": 1,
+                "userType": 2,
+                "orgType": null,
+                "status": null,
+                "classSize": null,
+                "unreadMsgCount": 1
+            },
+            {
+                "userId": 2490607730689,
+                "studentId": 2477806714882,
+                "userName": "16620849001",
+                "realName": "\u8d75\u4e3d\u9896\u4e8c\u53f7",
+                "domainName": "yadongitest",
+                "orgName": "\u4e9a\u4e1c\u5e7c\u513f\u56ed-\u5f20\u4e3d\u4e0d\u51c6\u52a8",
+                "orgId": 6438733348866,
+                "positionName": null,
+                "className": "\u5927\u4e00\u73ed",
+                "gradeName": "\u5927\u73ed",
+                "createTime": null,
+                "parentUserId": null,
+                "parentUserName": null,
+                "roleNames": null,
+                "avatar": null,
+                "mobile": null,
+                "sex": 1,
+                "userType": 2,
+                "orgType": null,
+                "status": null,
+                "classSize": null,
+                "unreadMsgCount": 2
+            },
+            {
+                "userId": 2490607730689,
+                "studentId": 2479132114945,
+                "userName": "16620849001",
+                "realName": "\u5218\u4ea6\u83f2\u4e00\u53f7\u00a5\u00a5@",
+                "domainName": "yadongitest",
+                "orgName": "\u4e9a\u4e1c\u5e7c\u513f\u56ed-\u5f20\u4e3d\u4e0d\u51c6\u52a8",
+                "orgId": 6438733348866,
+                "positionName": null,
+                "className": "\u4e2d\u4e00\u73ed",
+                "gradeName": "\u4e2d\u73ed",
+                "createTime": null,
+                "parentUserId": null,
+                "parentUserName": null,
+                "roleNames": null,
+                "avatar": "http://skinsecret.clife.cn/f360457e41db42b470830c5ca8b94fea.jpeg",
+                "mobile": null,
+                "sex": 2,
+                "userType": 2,
+                "orgType": null,
+                "status": null,
+                "classSize": null,
+                "unreadMsgCount": 0
+            },
+            {
+                "userId": 2490607730689,
+                "studentId": 2479570419713,
+                "userName": "16620849001",
+                "realName": "\u5218\u4ea6\u83f2\u4e8c\u53f7",
+                "domainName": "yadongitest",
+                "orgName": "\u4e9a\u4e1c\u5e7c\u513f\u56ed-\u5f20\u4e3d\u4e0d\u51c6\u52a8",
+                "orgId": 6438733348866,
+                "positionName": null,
+                "className": "\u6258\u4e09\u73ed",
+                "gradeName": "\u6258\u73ed",
+                "createTime": null,
+                "parentUserId": null,
+                "parentUserName": null,
+                "roleNames": null,
+                "avatar": "https://skinsecret.clife.cn/292659ff6a714ce5efc0f7c274ad1274.jpg",
+                "mobile": null,
+                "sex": 1,
+                "userType": 2,
+                "orgType": null,
+                "status": null,
+                "classSize": null,
+                "unreadMsgCount": 0
+            },
+            {
+                "userId": 2490607730689,
+                "studentId": 4275028230145,
+                "userName": "16620849001",
+                "realName": "\u8d75\u4e3d\u9896\u4e09\u53f7",
+                "domainName": "yadongitest",
+                "orgName": "\u4e9a\u4e1c\u5e7c\u513f\u56ed-\u5f20\u4e3d\u4e0d\u51c6\u52a8",
+                "orgId": 6438733348866,
+                "positionName": null,
+                "className": "\u4e2d\u4e00\u73ed",
+                "gradeName": "\u4e2d\u73ed",
+                "createTime": null,
+                "parentUserId": null,
+                "parentUserName": null,
+                "roleNames": null,
+                "avatar": "https://skinsecret.clife.cn/3bd4cd386607f4ae0c7e78ba8b1a0f76.jpg",
+                "mobile": null,
+                "sex": 1,
+                "userType": 2,
+                "orgType": null,
+                "status": null,
+                "classSize": null,
+                "unreadMsgCount": 0
+            },
+            {
+                "userId": 2490607730689,
+                "studentId": 5014754557953,
+                "userName": "16620849001",
+                "realName": "\u5218\u4ea6\u83f2\u4e09\u53f7",
+                "domainName": "yadongitest",
+                "orgName": "\u4e9a\u4e1c\u5e7c\u513f\u56ed-\u5f20\u4e3d\u4e0d\u51c6\u52a8",
+                "orgId": 6438733348866,
+                "positionName": null,
+                "className": "\u4e2d\u4e00\u73ed",
+                "gradeName": "\u4e2d\u73ed",
+                "createTime": null,
+                "parentUserId": null,
+                "parentUserName": null,
+                "roleNames": null,
+                "avatar": "https://skinsecret.clife.cn/c977692e7aa7c7cef41e88f2959985ae.jpg",
+                "mobile": null,
+                "sex": 2,
+                "userType": 2,
+                "orgType": null,
+                "status": null,
+                "classSize": null,
+                "unreadMsgCount": 0
+            },
+            {
+                "userId": 2490607730689,
+                "studentId": 6078570561537,
+                "userName": "16620849001",
+                "realName": "\u8d75\u4e3d\u9896\u56db\u53f7\u6211\u6211\u800c\u6b27\u7f8e",
+                "domainName": "yadongitest",
+                "orgName": "\u4e9a\u4e1c\u5e7c\u513f\u56ed-\u5f20\u4e3d\u4e0d\u51c6\u52a8",
+                "orgId": 6438733348866,
+                "positionName": null,
+                "className": "\u6258\u4e00\u73ed",
+                "gradeName": "\u6258\u73ed",
+                "createTime": null,
+                "parentUserId": null,
+                "parentUserName": null,
+                "roleNames": null,
+                "avatar": "http://skinsecret.clife.cn/a228cd761cfafa9cd1df1ee0316110b5.jpeg",
+                "mobile": null,
+                "sex": 1,
+                "userType": 2,
+                "orgType": null,
+                "status": null,
+                "classSize": null,
+                "unreadMsgCount": 1
+            },
+            {
+                "userId": 2490607730689,
+                "studentId": 6080468484097,
+                "userName": "16620849001",
+                "realName": "\u8d75\u4e3d\u9896\u4e94\u53f7",
+                "domainName": "yadongitest",
+                "orgName": "\u4e9a\u4e1c\u5e7c\u513f\u56ed-\u5f20\u4e3d\u4e0d\u51c6\u52a8",
+                "orgId": 6438733348866,
+                "positionName": null,
+                "className": "\u6258\u4e8c\u73ed",
+                "gradeName": "\u6258\u73ed",
+                "createTime": null,
+                "parentUserId": null,
+                "parentUserName": null,
+                "roleNames": null,
+                "avatar": "https://skinsecret.clife.cn/b3eb1e473e107de2b1c3e0ed47f88fd8.png",
+                "mobile": null,
+                "sex": 1,
+                "userType": 2,
+                "orgType": null,
+                "status": null,
+                "classSize": null,
+                "unreadMsgCount": 0
+            },
+            {
+                "userId": 2490607730689,
+                "studentId": 6094418739201,
+                "userName": "16620849001",
+                "realName": "\u8d75\u4e3d\u9896\u516d\u53f7~~~~~",
+                "domainName": "yadongitest",
+                "orgName": "\u4e9a\u4e1c\u5e7c\u513f\u56ed-\u5f20\u4e3d\u4e0d\u51c6\u52a8",
+                "orgId": 6438733348866,
+                "positionName": null,
+                "className": "\u5927\u4e00\u73ed",
+                "gradeName": "\u5927\u73ed",
+                "createTime": null,
+                "parentUserId": null,
+                "parentUserName": null,
+                "roleNames": null,
+                "avatar": null,
+                "mobile": null,
+                "sex": 1,
+                "userType": 2,
+                "orgType": null,
+                "status": null,
+                "classSize": null,
+                "unreadMsgCount": 0
+            },
+            {
+                "userId": 2490607730689,
+                "studentId": 15112753250305,
+                "userName": "16620849001",
+                "realName": "\u8d75\u4e3d\u9896\u4e03\u53f7",
+                "domainName": "yadongitest",
+                "orgName": "\u4e9a\u4e1c\u5e7c\u513f\u56ed-\u5f20\u4e3d\u4e0d\u51c6\u52a8",
+                "orgId": 6438733348866,
+                "positionName": null,
+                "className": "\u6258\u4e09\u73ed",
+                "gradeName": "\u6258\u73ed",
+                "createTime": null,
+                "parentUserId": null,
+                "parentUserName": null,
+                "roleNames": null,
+                "avatar": "https://skinsecret.clife.cn/17822eacd85ae21f0976de63099e3fd9.png",
+                "mobile": null,
+                "sex": 2,
+                "userType": 2,
+                "orgType": null,
+                "status": null,
+                "classSize": null,
+                "unreadMsgCount": 0
+            },
+            {
+                "userId": 2490607730689,
+                "studentId": 15112849719297,
+                "userName": "16620849001",
+                "realName": "\u8d75\u4e3d\u9896\u516b\u53f7",
+                "domainName": "yadongitest",
+                "orgName": "\u4e9a\u4e1c\u5e7c\u513f\u56ed-\u5f20\u4e3d\u4e0d\u51c6\u52a8",
+                "orgId": 6438733348866,
+                "positionName": null,
+                "className": "\u6258\u56db\u73ed",
+                "gradeName": "\u6258\u73ed",
+                "createTime": null,
+                "parentUserId": null,
+                "parentUserName": null,
+                "roleNames": null,
+                "avatar": "https://skinsecret.clife.cn/5568c5d32d2aa8025db4e9f246298536.jpg",
+                "mobile": null,
+                "sex": 1,
+                "userType": 2,
+                "orgType": null,
+                "status": null,
+                "classSize": null,
+                "unreadMsgCount": 0
+            },
+            {
+                "userId": 2490607730689,
+                "studentId": 15112971354113,
+                "userName": "16620849001",
+                "realName": "\u8d75\u4e3d\u9896\u4e5d\u53f7",
+                "domainName": "yadongitest",
+                "orgName": "\u4e9a\u4e1c\u5e7c\u513f\u56ed-\u5f20\u4e3d\u4e0d\u51c6\u52a8",
+                "orgId": 6438733348866,
+                "positionName": null,
+                "className": "\u6258\u4e94\u73ed",
+                "gradeName": "\u6258\u73ed",
+                "createTime": null,
+                "parentUserId": null,
+                "parentUserName": null,
+                "roleNames": null,
+                "avatar": null,
+                "mobile": null,
+                "sex": 2,
+                "userType": 2,
+                "orgType": null,
+                "status": null,
+                "classSize": null,
+                "unreadMsgCount": 0
+            },
+            {
+                "userId": 2490607730689,
+                "studentId": 15114032513025,
+                "userName": "16620849001",
+                "realName": "\u8d75\u4e3d\u9896\u5341\u53f7",
+                "domainName": "yadongitest",
+                "orgName": "\u4e9a\u4e1c\u5e7c\u513f\u56ed-\u5f20\u4e3d\u4e0d\u51c6\u52a8",
+                "orgId": 6438733348866,
+                "positionName": null,
+                "className": "\u5927\u4e00\u73ed",
+                "gradeName": "\u5927\u73ed",
+                "createTime": null,
+                "parentUserId": null,
+                "parentUserName": null,
+                "roleNames": null,
+                "avatar": null,
+                "mobile": null,
+                "sex": 1,
+                "userType": 2,
+                "orgType": null,
+                "status": null,
+                "classSize": null,
+                "unreadMsgCount": 0
+            },
+            {
+                "userId": 2490607730689,
+                "studentId": 18945487273985,
+                "userName": "16620849001",
+                "realName": "\u8d75\u4e3d\u9896\u5341\u4e00\u53f7",
+                "domainName": "yadongitest",
+                "orgName": "\u4e9a\u4e1c\u5e7c\u513f\u56ed-\u5f20\u4e3d\u4e0d\u51c6\u52a8",
+                "orgId": 6438733348866,
+                "positionName": null,
+                "className": "\u4e2d\u4e00\u73ed",
+                "gradeName": "\u4e2d\u73ed",
+                "createTime": null,
+                "parentUserId": null,
+                "parentUserName": null,
+                "roleNames": null,
+                "avatar": "https://skinsecret.clife.cn/d2a7751f22ecbd2542d606a6e864a011.jpg",
+                "mobile": null,
+                "sex": 2,
+                "userType": 2,
+                "orgType": null,
+                "status": null,
+                "classSize": null,
+                "unreadMsgCount": 0
+            },
+            {
+                "userId": 2490607730689,
+                "studentId": 18946558918657,
+                "userName": "16620849001",
+                "realName": "\u8d75\u4e3d\u9896\u5341\u4e8c\u53f7",
+                "domainName": "yadongitest",
+                "orgName": "\u4e9a\u4e1c\u5e7c\u513f\u56ed-\u5f20\u4e3d\u4e0d\u51c6\u52a8",
+                "orgId": 6438733348866,
+                "positionName": null,
+                "className": "\u5c0f\u4e8c\u73ed",
+                "gradeName": "\u5c0f\u73ed",
+                "createTime": null,
+                "parentUserId": null,
+                "parentUserName": null,
+                "roleNames": null,
+                "avatar": "https://skinsecret.clife.cn/04ac176e50568267464a684d139bbb0a.jpg",
+                "mobile": null,
+                "sex": 1,
+                "userType": 2,
+                "orgType": null,
+                "status": null,
+                "classSize": null,
+                "unreadMsgCount": 0
+            },
+            {
+                "userId": 2490607730689,
+                "studentId": 20026107756545,
+                "userName": "16620849001",
+                "realName": "\u8d75\u4e3d\u9896\u5341\u4e09\u53f7",
+                "domainName": "yadongitest",
+                "orgName": "\u4e9a\u4e1c\u5e7c\u513f\u56ed-\u5f20\u4e3d\u4e0d\u51c6\u52a8",
+                "orgId": 6438733348866,
+                "positionName": null,
+                "className": "\u5c0f\u4e09\u73ed",
+                "gradeName": "\u5c0f\u73ed",
+                "createTime": null,
+                "parentUserId": null,
+                "parentUserName": null,
+                "roleNames": null,
+                "avatar": "https://skinsecret.clife.cn/2f4ebd7fb5acb741b24ce27441f6fb86.jpg",
+                "mobile": null,
+                "sex": 1,
+                "userType": 2,
+                "orgType": null,
+                "status": null,
+                "classSize": null,
+                "unreadMsgCount": 0
+            },
+            {
+                "userId": 2490607730689,
+                "studentId": 20026426523649,
+                "userName": "16620849001",
+                "realName": "\u8d75\u4e3d\u9896\u5341\u56db\u53f7",
+                "domainName": "yadongitest",
+                "orgName": "\u4e9a\u4e1c\u5e7c\u513f\u56ed-\u5f20\u4e3d\u4e0d\u51c6\u52a8",
+                "orgId": 6438733348866,
+                "positionName": null,
+                "className": "\u5b66\u524d\u73ed-\u5b66\u4e8c\u73ed",
+                "gradeName": "\u5b66\u524d\u73ed",
+                "createTime": null,
+                "parentUserId": null,
+                "parentUserName": null,
+                "roleNames": null,
+                "avatar": "https://skinsecret.clife.cn/eb9b7ab282f0677d459e795a0d3ec6b1.jpg",
+                "mobile": null,
+                "sex": 2,
+                "userType": 2,
+                "orgType": null,
+                "status": null,
+                "classSize": null,
+                "unreadMsgCount": 0
+            }
+        ],
+        "teacherList": [
+            {
+                "userId": 2490607730689,
+                "studentId": null,
+                "userName": "16620849001",
+                "realName": "\u4e9a\u4e1c\u53bf\u5e7c\u513f\u56ed-1\u53f7-",
+                "domainName": "yadongitest",
+                "orgName": "\u4e9a\u4e1c\u5e7c\u513f\u56ed-\u5f20\u4e3d\u4e0d\u51c6\u52a8",
+                "orgId": 6438733348866,
+                "positionName": "\u9662\u957f",
+                "className": null,
+                "gradeName": null,
+                "createTime": null,
+                "parentUserId": null,
+                "parentUserName": null,
+                "roleNames": null,
+                "avatar": null,
+                "mobile": null,
+                "sex": null,
+                "userType": 1,
+                "orgType": 3,
+                "status": null,
+                "classSize": 16,
+                "unreadMsgCount": 0
+            },
+            {
+                "userId": 2490607730689,
+                "studentId": null,
+                "userName": "16620849001",
+                "realName": "\u4e9a\u4e1c\u53bf\u5e7c\u513f\u56ed-1\u53f7-",
+                "domainName": "yyyyy",
+                "orgName": "\u56ed\u7ea7\u95e8\u6237",
+                "orgId": 2681557614593,
+                "positionName": null,
+                "className": null,
+                "gradeName": null,
+                "createTime": null,
+                "parentUserId": null,
+                "parentUserName": null,
+                "roleNames": null,
+                "avatar": null,
+                "mobile": null,
+                "sex": null,
+                "userType": 1,
+                "orgType": 3,
+                "status": null,
+                "classSize": 22,
+                "unreadMsgCount": 0
+            }
+        ]
+    }
+}
+[0m
+[32m2021-04-11 11:59:15.343[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m218[0m - [1mstatus_code: 200, response_time(ms): 174.57 ms, response_length: 0 bytes[0m
+[32m2021-04-11 11:59:15.343[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert status_code equal 200(int)	==> pass[0m
+[32m2021-04-11 11:59:15.343[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass[0m
+[32m2021-04-11 11:59:15.344[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert body.code equal 0(int)	==> pass[0m
+[32m2021-04-11 11:59:15.344[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: 登录相关-获取身份列表(H5) <<<<<<
+[0m
+[32m2021-04-11 11:59:15.344[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: 应用-推荐应用-全部应用（账号角色可用的应用，可识别账号收藏的应用） >>>>>>[0m
+[32m2021-04-11 11:59:15.432[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 192.168.0.104, Port: 63283[0m
+[32m2021-04-11 11:59:15.432[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 119.29.116.47, Port: 80[0m
+[32m2021-04-11 11:59:15.432[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== request details ==================
+method   : GET
+url      : http://yadongitest.icampus.clife.net/v1/web/edudistrict/apps/org?platform=2
+headers  : {
+    "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/12.0 Mobile/15A372 Safari/604.1",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2",
+    "Content-Type": "application/json;charset=utf-8",
+    "Host": "yadongitest.icampus.clife.net",
+    "Referer": "http://yadongitest.icampus.clife.net/school/m/",
+    "X-Access-Token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjYyMDg0OTAwMSIsInVzZXJUeXBlIjoiMSIsImV4cCI6MTYxODEyMDc1OCwidXNlcklkIjoiMjQ5MDYwNzczMDY4OSIsIm9yZ0lkIjoiNjQzODczMzM0ODg2NiJ9.dU4913ry8_88LBkOhc7aw5R0tAXsdAku6ZQU5CBhBQ4",
+    "X-Requested-With": "XMLHttpRequest",
+    "domainName": "yadongitest",
+    "HRUN-Request-ID": "HRUN-84bed4a8-f342-4802-9faa-53a08829ec02-555344"
+}
+cookies  : {}
+body     : None
+[0m
+[32m2021-04-11 11:59:15.445[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Sun, 11 Apr 2021 03:59:18 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Methods": "GET,POST,OPTIONS,PUT,DELETE, GET,POST,OPTIONS",
+    "Set-Cookie": "rememberMe=deleteMe; Path=/clife-campus-education-district-api-web; Max-Age=0; Expires=Sat, 10-Apr-2021 03:59:18 GMT",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "X-Requested-With"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "code": 0,
+    "data": [
+        {
+            "resourceId": 1121,
+            "resourceName": "\u5e7c\u513f\u6210\u957f\u6863\u6848",
+            "actionUrl": "growthFiles",
+            "h5ActionUrl": "/trackRecord",
+            "parentId": 0,
+            "resourceIcon": "icon-trackRecord",
+            "selected": 1,
+            "sortId": null,
+            "commendStation": 0,
+            "startDate": "2021-01-06",
+            "endDate": "2117-08-19",
+            "expired": null,
+            "children": [
+                {
+                    "resourceId": 1122,
+                    "resourceName": "\u5e7c\u513f\u6210\u957f\u6863\u6848",
+                    "actionUrl": "/growthFiles",
+                    "h5ActionUrl": "/trackRecord",
+                    "parentId": 1121,
+                    "resourceIcon": "",
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                }
+            ]
+        },
+        {
+            "resourceId": 1141,
+            "resourceName": "\u5e7c\u513f\u6668\u5348\u68c0",
+            "actionUrl": "mornArvoCheck",
+            "h5ActionUrl": "/mornArvoCheck/entrance",
+            "parentId": 0,
+            "resourceIcon": "icon-mornArvoCheck",
+            "selected": 1,
+            "sortId": null,
+            "commendStation": 0,
+            "startDate": "2021-01-06",
+            "endDate": "2117-08-19",
+            "expired": null,
+            "children": [
+                {
+                    "resourceId": 1142,
+                    "resourceName": "\u6668\u5348\u68c0\u6982\u51b5",
+                    "actionUrl": "/mornArvoCheck/survey",
+                    "h5ActionUrl": "/mornArvoCheck/entrance",
+                    "parentId": 1141,
+                    "resourceIcon": "",
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                },
+                {
+                    "resourceId": 1143,
+                    "resourceName": "\u8bb0\u5f55\u67e5\u8be2",
+                    "actionUrl": "/mornArvoCheck/query",
+                    "h5ActionUrl": "",
+                    "parentId": 1141,
+                    "resourceIcon": "",
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                },
+                {
+                    "resourceId": 1144,
+                    "resourceName": "\u6668\u5348\u68c0\u5904\u7406",
+                    "actionUrl": "/mornArvoCheck/recordQuery",
+                    "h5ActionUrl": "",
+                    "parentId": 1141,
+                    "resourceIcon": "",
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                }
+            ]
+        },
+        {
+            "resourceId": 1151,
+            "resourceName": "\u4fe1\u606f\u4e0a\u62a5",
+            "actionUrl": "infoReport",
+            "h5ActionUrl": "/messageReport/infoReceive",
+            "parentId": 0,
+            "resourceIcon": "icon-messageReport",
+            "selected": 1,
+            "sortId": null,
+            "commendStation": 0,
+            "startDate": "2021-01-06",
+            "endDate": "2117-08-19",
+            "expired": null,
+            "children": [
+                {
+                    "resourceId": 1152,
+                    "resourceName": "\u5df2\u53d1\u9001",
+                    "actionUrl": "/infoReport/infoDelivery",
+                    "h5ActionUrl": "",
+                    "parentId": 1151,
+                    "resourceIcon": "",
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                },
+                {
+                    "resourceId": 1153,
+                    "resourceName": "\u65b0\u5efa\u4e0a\u62a5\u4fe1\u606f",
+                    "actionUrl": "/infoReport/addInfo",
+                    "h5ActionUrl": "",
+                    "parentId": 1151,
+                    "resourceIcon": "",
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                }
+            ]
+        },
+        {
+            "resourceId": 13173,
+            "resourceName": "\u6559\u5b66\u8ba1\u5212\u7ba1\u7406",
+            "actionUrl": "teachPlanManage",
+            "h5ActionUrl": "/teachPlanManage/weekPlan",
+            "parentId": 0,
+            "resourceIcon": "icon-teachPlanManage",
+            "selected": 1,
+            "sortId": null,
+            "commendStation": 0,
+            "startDate": "2021-01-06",
+            "endDate": "2117-08-19",
+            "expired": null,
+            "children": [
+                {
+                    "resourceId": 13174,
+                    "resourceName": "\u5468\u8ba1\u5212",
+                    "actionUrl": "/teachPlanManage/weekPlan",
+                    "h5ActionUrl": "",
+                    "parentId": 13173,
+                    "resourceIcon": "",
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                }
+            ]
+        },
+        {
+            "resourceId": 15600,
+            "resourceName": "\u5e7c\u513f\u5582\u836f",
+            "actionUrl": "medicineManage",
+            "h5ActionUrl": "/medicineManage",
+            "parentId": 0,
+            "resourceIcon": "icon-medicineManage",
+            "selected": 0,
+            "sortId": null,
+            "commendStation": 0,
+            "startDate": "2021-01-06",
+            "endDate": "2117-08-19",
+            "expired": null,
+            "children": [
+                {
+                    "resourceId": 15601,
+                    "resourceName": "\u5e7c\u513f\u5582\u836f",
+                    "actionUrl": "/medicineManage",
+                    "h5ActionUrl": "/medicineManage",
+                    "parentId": 15600,
+                    "resourceIcon": null,
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                }
+            ]
+        },
+        {
+            "resourceId": 18003,
+            "resourceName": "\u5e7c\u513f\u89c6\u529b",
+            "actionUrl": "childrenEyesight",
+            "h5ActionUrl": "/childrenEyesight",
+            "parentId": 0,
+            "resourceIcon": "icon-childrenEyesight",
+            "selected": 0,
+            "sortId": null,
+            "commendStation": 0,
+            "startDate": "2021-01-06",
+            "endDate": "2117-08-19",
+            "expired": null,
+            "children": [
+                {
+                    "resourceId": 18004,
+                    "resourceName": "\u5e7c\u513f\u89c6\u529b",
+                    "actionUrl": "/childrenEyesight/childrenEyesight",
+                    "h5ActionUrl": " ",
+                    "parentId": 18003,
+                    "resourceIcon": null,
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                },
+                {
+                    "resourceId": 18005,
+                    "resourceName": "\u89c6\u529b\u6570\u636e",
+                    "actionUrl": "/childrenEyesight/visualData",
+                    "h5ActionUrl": " ",
+                    "parentId": 18003,
+                    "resourceIcon": null,
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                }
+            ]
+        },
+        {
+            "resourceId": 32000,
+            "resourceName": "\u667a\u80fd\u81b3\u98df\u7ba1\u7406",
+            "actionUrl": "intelligentDietManagement",
+            "h5ActionUrl": "/intelligentDietManagement",
+            "parentId": 0,
+            "resourceIcon": "icon-intelligentDietManagement",
+            "selected": 1,
+            "sortId": null,
+            "commendStation": 0,
+            "startDate": "2021-01-06",
+            "endDate": "2117-08-19",
+            "expired": null,
+            "children": [
+                {
+                    "resourceId": 32003,
+                    "resourceName": "\u8425\u517b\u5206\u6790",
+                    "actionUrl": "/intelligentDietManagement/dietaryNutritionAnalysis",
+                    "h5ActionUrl": null,
+                    "parentId": 32000,
+                    "resourceIcon": null,
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                },
+                {
+                    "resourceId": 32004,
+                    "resourceName": "\u91c7\u8d2d\u8ba1\u5212",
+                    "actionUrl": "/intelligentDietManagement/procurementPlan",
+                    "h5ActionUrl": null,
+                    "parentId": 32000,
+                    "resourceIcon": null,
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                },
+                {
+                    "resourceId": 32005,
+                    "resourceName": "\u98df\u54c1\u7559\u6837",
+                    "actionUrl": "/intelligentDietManagement/FoodReservedSample",
+                    "h5ActionUrl": null,
+                    "parentId": 32000,
+                    "resourceIcon": null,
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                },
+                {
+                    "resourceId": 32006,
+                    "resourceName": "\u966a\u9910\u7ba1\u7406",
+                    "actionUrl": "/intelligentDietManagement/accompanyingMealMng",
+                    "h5ActionUrl": null,
+                    "parentId": 32000,
+                    "resourceIcon": null,
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                }
+            ]
+        },
+        {
+            "resourceId": 41000,
+            "resourceName": "\u5e7c\u513f\u8bf7\u5047",
+            "actionUrl": "childrenAttendance",
+            "h5ActionUrl": "/childrenLeave/teachRecord",
+            "parentId": 0,
+            "resourceIcon": "icon-childrenAttendance",
+            "selected": 1,
+            "sortId": null,
+            "commendStation": 0,
+            "startDate": "2021-01-06",
+            "endDate": "2117-08-19",
+            "expired": null,
+            "children": [
+                {
+                    "resourceId": 41002,
+                    "resourceName": "\u8bf7\u5047\u8bb0\u5f55",
+                    "actionUrl": "/childrenAttendance/childLeaveRecord",
+                    "h5ActionUrl": "",
+                    "parentId": 41000,
+                    "resourceIcon": "",
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                }
+            ]
+        },
+        {
+            "resourceId": 43000,
+            "resourceName": "\u5e7c\u513f\u5174\u8da3",
+            "actionUrl": "interestAreaManage",
+            "h5ActionUrl": "/interest",
+            "parentId": 0,
+            "resourceIcon": "icon-interestAreaManage",
+            "selected": 1,
+            "sortId": null,
+            "commendStation": 0,
+            "startDate": "2021-01-06",
+            "endDate": "2117-08-19",
+            "expired": null,
+            "children": [
+                {
+                    "resourceId": 43005,
+                    "resourceName": "\u5174\u8da3\u6982\u51b5",
+                    "actionUrl": "/interestAreaManage/schoolProfile",
+                    "h5ActionUrl": "/interest/schoolProfile",
+                    "parentId": 43000,
+                    "resourceIcon": "",
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                },
+                {
+                    "resourceId": 43006,
+                    "resourceName": "\u73ed\u7ea7\u5174\u8da3",
+                    "actionUrl": "/interestAreaManage/classProfile",
+                    "h5ActionUrl": "/interest/classProfile",
+                    "parentId": 43000,
+                    "resourceIcon": "",
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                }
+            ]
+        },
+        {
+            "resourceId": 45000,
+            "resourceName": "\u901a\u77e5\u516c\u544a",
+            "actionUrl": "notice",
+            "h5ActionUrl": "/notification/notiList",
+            "parentId": 0,
+            "resourceIcon": "icon-notice",
+            "selected": 0,
+            "sortId": null,
+            "commendStation": 0,
+            "startDate": "2021-01-06",
+            "endDate": "2117-08-19",
+            "expired": null,
+            "children": [
+                {
+                    "resourceId": 45001,
+                    "resourceName": "\u65b0\u5efa\u901a\u77e5",
+                    "actionUrl": "/notice/addNotice",
+                    "h5ActionUrl": "/notification/newNotice",
+                    "parentId": 45000,
+                    "resourceIcon": "",
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                },
+                {
+                    "resourceId": 45002,
+                    "resourceName": "\u63a5\u6536\u8bb0\u5f55",
+                    "actionUrl": "/notice/receiveRecord",
+                    "h5ActionUrl": "",
+                    "parentId": 45000,
+                    "resourceIcon": "",
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                },
+                {
+                    "resourceId": 45003,
+                    "resourceName": "\u53d1\u5e03\u8bb0\u5f55",
+                    "actionUrl": "/notice/releaseRecord",
+                    "h5ActionUrl": "",
+                    "parentId": 45000,
+                    "resourceIcon": "",
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                },
+                {
+                    "resourceId": 45004,
+                    "resourceName": "\u5168\u56ed\u901a\u77e5\u8bb0\u5f55",
+                    "actionUrl": "/notice/fullNotice",
+                    "h5ActionUrl": "",
+                    "parentId": 45000,
+                    "resourceIcon": "",
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                }
+            ]
+        },
+        {
+            "resourceId": 46000,
+            "resourceName": "\u5e7c\u513f\u51fa\u52e4",
+            "actionUrl": "childAttendance",
+            "h5ActionUrl": "/childrensAttendance/list",
+            "parentId": 0,
+            "resourceIcon": "icon-childAttendance",
+            "selected": 0,
+            "sortId": null,
+            "commendStation": 0,
+            "startDate": "2021-01-06",
+            "endDate": "2117-08-19",
+            "expired": null,
+            "children": null
+        },
+        {
+            "resourceId": 48000,
+            "resourceName": "\u5e7c\u513f\u996e\u6c34",
+            "actionUrl": "childDrinking",
+            "h5ActionUrl": "/childDrinking",
+            "parentId": 0,
+            "resourceIcon": "icon-drinking",
+            "selected": 0,
+            "sortId": null,
+            "commendStation": 0,
+            "startDate": "2021-01-06",
+            "endDate": "2117-08-19",
+            "expired": null,
+            "children": [
+                {
+                    "resourceId": 48001,
+                    "resourceName": "\u996e\u6c34\u6982\u51b5",
+                    "actionUrl": "/childDrinking/drinkbBsic",
+                    "h5ActionUrl": "/childDrinking",
+                    "parentId": 48000,
+                    "resourceIcon": "",
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                },
+                {
+                    "resourceId": 48002,
+                    "resourceName": "\u73ed\u7ea7\u996e\u6c34",
+                    "actionUrl": "/childDrinking/classDrink",
+                    "h5ActionUrl": null,
+                    "parentId": 48000,
+                    "resourceIcon": null,
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                },
+                {
+                    "resourceId": 48003,
+                    "resourceName": "\u996e\u6c34\u660e\u7ec6",
+                    "actionUrl": "/childDrinking/drinkDetail",
+                    "h5ActionUrl": null,
+                    "parentId": 48000,
+                    "resourceIcon": null,
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                },
+                {
+                    "resourceId": 48004,
+                    "resourceName": "\u996e\u6c34\u8bbe\u7f6e",
+                    "actionUrl": "/childDrinking/drinkEvaluation",
+                    "h5ActionUrl": null,
+                    "parentId": 48000,
+                    "resourceIcon": null,
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                }
+            ]
+        },
+        {
+            "resourceId": 49000,
+            "resourceName": "\u5e7c\u513f\u5348\u7761",
+            "actionUrl": "childSiesta",
+            "h5ActionUrl": "/childSiesta",
+            "parentId": 0,
+            "resourceIcon": "icon-sleep",
+            "selected": 1,
+            "sortId": null,
+            "commendStation": 0,
+            "startDate": "2021-01-06",
+            "endDate": "2117-08-19",
+            "expired": null,
+            "children": [
+                {
+                    "resourceId": 49001,
+                    "resourceName": "\u5348\u7761\u6982\u51b5",
+                    "actionUrl": "/childSiesta/siestaOverview",
+                    "h5ActionUrl": "/childSiesta/siestaOverview",
+                    "parentId": 49000,
+                    "resourceIcon": "",
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                },
+                {
+                    "resourceId": 49002,
+                    "resourceName": "\u73ed\u7ea7\u5348\u7761",
+                    "actionUrl": "/childSiesta/classSiesta",
+                    "h5ActionUrl": "",
+                    "parentId": 49000,
+                    "resourceIcon": "",
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                },
+                {
+                    "resourceId": 49003,
+                    "resourceName": "\u5348\u7761\u660e\u7ec6",
+                    "actionUrl": "/childSiesta/siestaDetail",
+                    "h5ActionUrl": "",
+                    "parentId": 49000,
+                    "resourceIcon": "",
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                }
+            ]
+        },
+        {
+            "resourceId": 50000,
+            "resourceName": "\u8eab\u9ad8\u4f53\u91cd",
+            "actionUrl": "childrenBmi",
+            "h5ActionUrl": "/childBmi",
+            "parentId": 0,
+            "resourceIcon": "icon-bmi",
+            "selected": 1,
+            "sortId": null,
+            "commendStation": 0,
+            "startDate": "2021-01-06",
+            "endDate": "2117-08-19",
+            "expired": null,
+            "children": [
+                {
+                    "resourceId": 50001,
+                    "resourceName": "\u8eab\u9ad8\u4f53\u91cd\u6982\u51b5",
+                    "actionUrl": "/childrenBmi/bmiBasic",
+                    "h5ActionUrl": "/childBmi/general",
+                    "parentId": 50000,
+                    "resourceIcon": null,
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                },
+                {
+                    "resourceId": 50002,
+                    "resourceName": "\u73ed\u7ea7\u8eab\u9ad8\u4f53\u91cd",
+                    "actionUrl": "/childrenBmi/classBmi",
+                    "h5ActionUrl": "/childBmi/class",
+                    "parentId": 50000,
+                    "resourceIcon": null,
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                },
+                {
+                    "resourceId": 50003,
+                    "resourceName": "\u8eab\u9ad8\u4f53\u91cd\u8be6\u60c5",
+                    "actionUrl": "/childrenBmi/bmiDetail",
+                    "h5ActionUrl": "/childBmi/data",
+                    "parentId": 50000,
+                    "resourceIcon": null,
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                },
+                {
+                    "resourceId": 50004,
+                    "resourceName": "\u8eab\u9ad8\u4f53\u91cd\u8bb0\u5f55",
+                    "actionUrl": "/childrenBmi/bmiData",
+                    "h5ActionUrl": "/childBmi/growthLine",
+                    "parentId": 50000,
+                    "resourceIcon": null,
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                }
+            ]
+        },
+        {
+            "resourceId": 60000,
+            "resourceName": "\u5b9d\u5b9d\u62a5\u544a",
+            "actionUrl": "babyReport",
+            "h5ActionUrl": "/babyDayReport",
+            "parentId": 0,
+            "resourceIcon": "icon-babyReport",
+            "selected": 1,
+            "sortId": null,
+            "commendStation": 0,
+            "startDate": "2021-01-06",
+            "endDate": "2117-08-19",
+            "expired": null,
+            "children": [
+                {
+                    "resourceId": 60003,
+                    "resourceName": "\u65e5\u62a5\u6982\u51b5",
+                    "actionUrl": "",
+                    "h5ActionUrl": "/gardenDayReport/teacher",
+                    "parentId": 60000,
+                    "resourceIcon": "icon-gardenDayReport",
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                },
+                {
+                    "resourceId": 60004,
+                    "resourceName": "\u73ed\u7ea7\u65e5\u62a5",
+                    "actionUrl": "",
+                    "h5ActionUrl": "/classDayReport/teacher",
+                    "parentId": 60000,
+                    "resourceIcon": "icon-classDayReport",
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                },
+                {
+                    "resourceId": 60005,
+                    "resourceName": "\u65e5\u62a5\u8be6\u60c5",
+                    "actionUrl": "",
+                    "h5ActionUrl": "/dayReportDetail/teacher",
+                    "parentId": 60000,
+                    "resourceIcon": "icon-dayReportDetail",
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                }
+            ]
+        },
+        {
+            "resourceId": 62000,
+            "resourceName": "\u6559\u804c\u5de5\u51fa\u52e4",
+            "actionUrl": "attendance",
+            "h5ActionUrl": "/staff/attendance",
+            "parentId": 0,
+            "resourceIcon": "icon-attendance",
+            "selected": 1,
+            "sortId": null,
+            "commendStation": 0,
+            "startDate": "2021-01-06",
+            "endDate": "2117-08-19",
+            "expired": null,
+            "children": null
+        }
+    ]
+}
+[0m
+[32m2021-04-11 11:59:15.445[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m218[0m - [1mstatus_code: 200, response_time(ms): 87.77 ms, response_length: 0 bytes[0m
+[32m2021-04-11 11:59:15.446[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert status_code equal 200(int)	==> pass[0m
+[32m2021-04-11 11:59:15.446[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass[0m
+[32m2021-04-11 11:59:15.446[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert body.code equal 0(int)	==> pass[0m
+[32m2021-04-11 11:59:15.446[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: 应用-推荐应用-全部应用（账号角色可用的应用，可识别账号收藏的应用） <<<<<<
+[0m
+[32m2021-04-11 11:59:15.447[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: 考勤统计-月度数据列表 >>>>>>[0m
+[32m2021-04-11 11:59:15.563[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 192.168.0.104, Port: 63283[0m
+[32m2021-04-11 11:59:15.563[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 119.29.116.47, Port: 80[0m
+[32m2021-04-11 11:59:15.564[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== request details ==================
+method   : GET
+url      : http://yadongitest.icampus.clife.net/v1/web/edugarden/attendance/statistics/monthDataList?endTime=2021-04-30&startTime=2021-04-01&systemCode=H5
+headers  : {
+    "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/12.0 Mobile/15A372 Safari/604.1",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2",
+    "Content-Type": "application/json;charset=utf-8",
+    "Host": "yadongitest.icampus.clife.net",
+    "Referer": "http://yadongitest.icampus.clife.net/school/m/",
+    "X-Access-Token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjYyMDg0OTAwMSIsInVzZXJUeXBlIjoiMSIsImV4cCI6MTYxODEyMDc1OCwidXNlcklkIjoiMjQ5MDYwNzczMDY4OSIsIm9yZ0lkIjoiNjQzODczMzM0ODg2NiJ9.dU4913ry8_88LBkOhc7aw5R0tAXsdAku6ZQU5CBhBQ4",
+    "X-Requested-With": "XMLHttpRequest",
+    "domainName": "yadongitest",
+    "HRUN-Request-ID": "HRUN-84bed4a8-f342-4802-9faa-53a08829ec02-555447"
+}
+cookies  : {}
+body     : None
+[0m
+[32m2021-04-11 11:59:15.566[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Sun, 11 Apr 2021 03:59:18 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Methods": "GET,POST,OPTIONS,PUT,DELETE, GET,POST,OPTIONS",
+    "Set-Cookie": "rememberMe=deleteMe; Path=/clife-campus-education-garden-api-web; Max-Age=0; Expires=Sat, 10-Apr-2021 03:59:18 GMT",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "X-Requested-With"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "code": 0,
+    "data": {
+        "list": [
+            {
+                "recordId": 6694,
+                "orgId": 6438733348866,
+                "staffId": 18985643540487,
+                "realName": "\u4e9a\u4e1c\u53bf\u5e7c\u513f\u56ed-1\u53f7-",
+                "shiftId": 18950757416961,
+                "shiftName": null,
+                "groupId": 19095106486273,
+                "groupName": "\u56fa\u5b9a\u5236-\u8003\u52e4\u7ec4-1",
+                "deptId": null,
+                "deptName": "\u7ba1\u7406\u5904",
+                "positionName": "\u9662\u957f",
+                "createTime": null,
+                "updateTime": null,
+                "attendanceDays": 9,
+                "workHours": 0.0,
+                "shiftArray": [
+                    {
+                        "shiftId": 18951187333121,
+                        "shiftName": "\u8003\u52e4\u73ed\u6b21D",
+                        "useNum": 1,
+                        "shift": {
+                            "shiftId": 18951187333121,
+                            "orgId": 6438733348866,
+                            "shiftName": "\u8003\u52e4\u73ed\u6b21D",
+                            "clockType": 1,
+                            "clockTimeOne": "09:00:00",
+                            "clockOneCurrentMorrow": 1,
+                            "clockTimeOneBegin": "08:50:00",
+                            "clockTimeOneEnd": "09:30:00",
+                            "clockOneNeed": 1,
+                            "closingTimeOne": "00:30:00",
+                            "closingOneCurrentMorrow": 2,
+                            "closingTimeOneBegin": "17:00:00",
+                            "closingTimeOneEnd": "02:00:00",
+                            "closingOneNeed": 1,
+                            "clockTimeTwo": null,
+                            "clockTwoCurrentMorrow": 0,
+                            "clockTimeTwoBegin": null,
+                            "clockTimeTwoEnd": null,
+                            "clockTwoNeed": 0,
+                            "closingTimeTwo": null,
+                            "closingTwoCurrentMorrow": 0,
+                            "closingTimeTwoBegin": null,
+                            "closingTimeTwoEnd": null,
+                            "closingTwoNeed": 0,
+                            "deleted": 1,
+                            "createTime": "2021-03-16 15:16:02",
+                            "updateTime": "2021-03-16 15:12:01",
+                            "groupList": [],
+                            "workday": 0,
+                            "unit1": 1,
+                            "unit2": 1,
+                            "unit3": 1,
+                            "unit4": 2,
+                            "unit5": 0,
+                            "unit6": 0,
+                            "unit7": 0,
+                            "unit8": 0
+                        }
+                    },
+                    {
+                        "shiftId": 18950757416961,
+                        "shiftName": "\u8003\u52e4\u73ed\u6b21C",
+                        "useNum": 2,
+                        "shift": {
+                            "shiftId": 18950757416961,
+                            "orgId": 6438733348866,
+                            "shiftName": "\u8003\u52e4\u73ed\u6b21C",
+                            "clockType": 1,
+                            "clockTimeOne": "09:00:00",
+                            "clockOneCurrentMorrow": 1,
+                            "clockTimeOneBegin": "08:40:00",
+                            "clockTimeOneEnd": "09:30:00",
+                            "clockOneNeed": 1,
+                            "closingTimeOne": "14:00:00",
+                            "closingOneCurrentMorrow": 1,
+                            "closingTimeOneBegin": "13:00:00",
+                            "closingTimeOneEnd": "15:30:00",
+                            "closingOneNeed": 1,
+                            "clockTimeTwo": null,
+                            "clockTwoCurrentMorrow": 0,
+                            "clockTimeTwoBegin": null,
+                            "clockTimeTwoEnd": null,
+                            "clockTwoNeed": 0,
+                            "closingTimeTwo": null,
+                            "closingTwoCurrentMorrow": 0,
+                            "closingTimeTwoBegin": null,
+                            "closingTimeTwoEnd": null,
+                            "closingTwoNeed": 0,
+                            "deleted": 1,
+                            "createTime": "2021-03-16 15:12:36",
+                            "updateTime": "2021-03-16 15:12:01",
+                            "groupList": [],
+                            "workday": 0,
+                            "unit1": 1,
+                            "unit2": 1,
+                            "unit3": 1,
+                            "unit4": 1,
+                            "unit5": 0,
+                            "unit6": 0,
+                            "unit7": 0,
+                            "unit8": 0
+                        }
+                    }
+                ],
+                "restDays": 1,
+                "lateNum": 3,
+                "lateTime": 17.0,
+                "leaveEarlyNum": 0,
+                "leaveEarlyTime": 0.0,
+                "upLackCardNum": 7,
+                "downLackCardNum": 10,
+                "absentDays": 6,
+                "validRecordList": null,
+                "validJsonArray": [
+                    {
+                        "date": "2021-04-01",
+                        "item": [
+                            {
+                                "recordId": 6694,
+                                "orgId": 6438733348866,
+                                "staffId": 18985643540487,
+                                "realName": null,
+                                "shiftId": 18950757416961,
+                                "shiftName": null,
+                                "groupId": 19095106486273,
+                                "groupName": null,
+                                "deptId": null,
+                                "deptName": null,
+                                "positionName": null,
+                                "createTime": null,
+                                "updateTime": null,
+                                "attendanceDate": "2021-04-01",
+                                "attendanceTime": "2021-04-01 09:00:00",
+                                "clockTime": "2021-04-01 09:15:00",
+                                "clockResult": "\u8fdf\u523015\u5206\u949f",
+                                "clockPhoto": "\u56fe\u7247",
+                                "dataSource": "\u6d4b\u8bd5\u6253\u5361",
+                                "clockSerialNo": null,
+                                "valid": 2,
+                                "workClosing": 1,
+                                "lateAdvMin": 15,
+                                "shift": null
+                            },
+                            {
+                                "recordId": 6695,
+                                "orgId": 6438733348866,
+                                "staffId": 18985643540487,
+                                "realName": null,
+                                "shiftId": 18950757416961,
+                                "shiftName": null,
+                                "groupId": 19095106486273,
+                                "groupName": null,
+                                "deptId": null,
+                                "deptName": null,
+                                "positionName": null,
+                                "createTime": null,
+                                "updateTime": null,
+                                "attendanceDate": "2021-04-01",
+                                "attendanceTime": "2021-04-01 14:00:00",
+                                "clockTime": null,
+                                "clockResult": "\u4e0b\u73ed\u7f3a\u5361",
+                                "clockPhoto": "\u56fe\u7247",
+                                "dataSource": null,
+                                "clockSerialNo": null,
+                                "valid": 5,
+                                "workClosing": 2,
+                                "lateAdvMin": 0,
+                                "shift": null
+                            }
+                        ]
+                    },
+                    {
+                        "date": "2021-04-02",
+                        "item": [
+                            {
+                                "recordId": 6820,
+                                "orgId": 6438733348866,
+                                "staffId": 18985643540487,
+                                "realName": null,
+                                "shiftId": 18913600077825,
+                                "shiftName": null,
+                                "groupId": 19095106486273,
+                                "groupName": null,
+                                "deptId": null,
+                                "deptName": null,
+                                "positionName": null,
+                                "createTime": null,
+                                "updateTime": null,
+                                "attendanceDate": "2021-04-02",
+                                "attendanceTime": "2021-04-02 00:00:00",
+                                "clockTime": null,
+                                "clockResult": "\u65f7\u5de5",
+                                "clockPhoto": null,
+                                "dataSource": null,
+                                "clockSerialNo": null,
+                                "valid": 6,
+                                "workClosing": 1,
+                                "lateAdvMin": 0,
+                                "shift": null
+                            }
+                        ]
+                    },
+                    {
+                        "date": "2021-04-03",
+                        "item": [
+                            {
+                                "recordId": 6880,
+                                "orgId": 6438733348866,
+                                "staffId": 18985643540487,
+                                "realName": null,
+                                "shiftId": 18913769947137,
+                                "shiftName": null,
+                                "groupId": 19095106486273,
+                                "groupName": null,
+                                "deptId": null,
+                                "deptName": null,
+                                "positionName": null,
+                                "createTime": null,
+                                "updateTime": null,
+                                "attendanceDate": "2021-04-03",
+                                "attendanceTime": "2021-04-03 00:00:00",
+                                "clockTime": null,
+                                "clockResult": "\u65f7\u5de5",
+                                "clockPhoto": null,
+                                "dataSource": null,
+                                "clockSerialNo": null,
+                                "valid": 6,
+                                "workClosing": 1,
+                                "lateAdvMin": 0,
+                                "shift": null
+                            }
+                        ]
+                    },
+                    {
+                        "date": "2021-04-04",
+                        "item": [
+                            {
+                                "recordId": 6930,
+                                "orgId": 6438733348866,
+                                "staffId": 18985643540487,
+                                "realName": null,
+                                "shiftId": null,
+                                "shiftName": null,
+                                "groupId": 19095106486273,
+                                "groupName": null,
+                                "deptId": null,
+                                "deptName": null,
+                                "positionName": null,
+                                "createTime": null,
+                                "updateTime": null,
+                                "attendanceDate": "2021-04-04",
+                                "attendanceTime": null,
+                                "clockTime": null,
+                                "clockResult": "\u4f11\u606f",
+                                "clockPhoto": null,
+                                "dataSource": null,
+                                "clockSerialNo": null,
+                                "valid": 8,
+                                "workClosing": 0,
+                                "lateAdvMin": 0,
+                                "shift": null
+                            }
+                        ]
+                    },
+                    {
+                        "date": "2021-04-05",
+                        "item": [
+                            {
+                                "recordId": 6995,
+                                "orgId": 6438733348866,
+                                "staffId": 18985643540487,
+                                "realName": null,
+                                "shiftId": 18797967310849,
+                                "shiftName": null,
+                                "groupId": 19095106486273,
+                                "groupName": null,
+                                "deptId": null,
+                                "deptName": null,
+                                "positionName": null,
+                                "createTime": null,
+                                "updateTime": null,
+                                "attendanceDate": "2021-04-05",
+                                "attendanceTime": "2021-04-05 00:00:00",
+                                "clockTime": null,
+                                "clockResult": "\u65f7\u5de5",
+                                "clockPhoto": null,
+                                "dataSource": null,
+                                "clockSerialNo": null,
+                                "valid": 6,
+                                "workClosing": 1,
+                                "lateAdvMin": 0,
+                                "shift": null
+                            }
+                        ]
+                    },
+                    {
+                        "date": "2021-04-06",
+                        "item": [
+                            {
+                                "recordId": 7067,
+                                "orgId": 6438733348866,
+                                "staffId": 18985643540487,
+                                "realName": null,
+                                "shiftId": 18951839547393,
+                                "shiftName": null,
+                                "groupId": 19095106486273,
+                                "groupName": null,
+                                "deptId": null,
+                                "deptName": null,
+                                "positionName": null,
+                                "createTime": null,
+                                "updateTime": null,
+                                "attendanceDate": "2021-04-06",
+                                "attendanceTime": "2021-04-06 00:00:00",
+                                "clockTime": null,
+                                "clockResult": "\u65f7\u5de5",
+                                "clockPhoto": null,
+                                "dataSource": null,
+                                "clockSerialNo": null,
+                                "valid": 6,
+                                "workClosing": 2,
+                                "lateAdvMin": 0,
+                                "shift": null
+                            }
+                        ]
+                    },
+                    {
+                        "date": "2021-04-07",
+                        "item": [
+                            {
+                                "recordId": 7145,
+                                "orgId": 6438733348866,
+                                "staffId": 18985643540487,
+                                "realName": null,
+                                "shiftId": 18951187333121,
+                                "shiftName": null,
+                                "groupId": 19095106486273,
+                                "groupName": null,
+                                "deptId": null,
+                                "deptName": null,
+                                "positionName": null,
+                                "createTime": null,
+                                "updateTime": null,
+                                "attendanceDate": "2021-04-07",
+                                "attendanceTime": "2021-04-07 09:00:00",
+                                "clockTime": null,
+                                "clockResult": "\u4e0b\u73ed\u7f3a\u5361",
+                                "clockPhoto": null,
+                                "dataSource": null,
+                                "clockSerialNo": null,
+                                "valid": 5,
+                                "workClosing": 2,
+                                "lateAdvMin": 0,
+                                "shift": null
+                            },
+                            {
+                                "recordId": 7146,
+                                "orgId": 6438733348866,
+                                "staffId": 18985643540487,
+                                "realName": null,
+                                "shiftId": 18951187333121,
+                                "shiftName": null,
+                                "groupId": 19095106486273,
+                                "groupName": null,
+                                "deptId": null,
+                                "deptName": null,
+                                "positionName": null,
+                                "createTime": null,
+                                "updateTime": null,
+                                "attendanceDate": "2021-04-07",
+                                "attendanceTime": "2021-04-08 00:30:00",
+                                "clockTime": "2021-04-08 00:31:00",
+                                "clockResult": "\u8fdf\u52301\u5206\u949f",
+                                "clockPhoto": null,
+                                "dataSource": "\u7ba1\u7406\u5458\u4fee\u6539",
+                                "clockSerialNo": null,
+                                "valid": 2,
+                                "workClosing": 3,
+                                "lateAdvMin": 1,
+                                "shift": null
+                            }
+                        ]
+                    },
+                    {
+                        "date": "2021-04-08",
+                        "item": [
+                            {
+                                "recordId": 7215,
+                                "orgId": 6438733348866,
+                                "staffId": 18985643540487,
+                                "realName": null,
+                                "shiftId": 18950757416961,
+                                "shiftName": null,
+                                "groupId": 19095106486273,
+                                "groupName": null,
+                                "deptId": null,
+                                "deptName": null,
+                                "positionName": null,
+                                "createTime": null,
+                                "updateTime": null,
+                                "attendanceDate": "2021-04-08",
+                                "attendanceTime": "2021-04-08 09:00:00",
+                                "clockTime": "2021-04-08 09:01:00",
+                                "clockResult": "\u8fdf\u52301\u5206\u949f",
+                                "clockPhoto": null,
+                                "dataSource": "\u7ba1\u7406\u5458\u4fee\u6539",
+                                "clockSerialNo": null,
+                                "valid": 2,
+                                "workClosing": 1,
+                                "lateAdvMin": 1,
+                                "shift": null
+                            },
+                            {
+                                "recordId": 7216,
+                                "orgId": 6438733348866,
+                                "staffId": 18985643540487,
+                                "realName": null,
+                                "shiftId": 18950757416961,
+                                "shiftName": null,
+                                "groupId": 19095106486273,
+                                "groupName": null,
+                                "deptId": null,
+                                "deptName": null,
+                                "positionName": null,
+                                "createTime": null,
+                                "updateTime": null,
+                                "attendanceDate": "2021-04-08",
+                                "attendanceTime": "2021-04-08 14:00:00",
+                                "clockTime": null,
+                                "clockResult": "\u7f3a\u5361",
+                                "clockPhoto": null,
+                                "dataSource": null,
+                                "clockSerialNo": null,
+                                "valid": 5,
+                                "workClosing": 2,
+                                "lateAdvMin": 0,
+                                "shift": null
+                            }
+                        ]
+                    },
+                    {
+                        "date": "2021-04-09",
+                        "item": [
+                            {
+                                "recordId": 7289,
+                                "orgId": 6438733348866,
+                                "staffId": 18985643540487,
+                                "realName": null,
+                                "shiftId": 18913600077825,
+                                "shiftName": null,
+                                "groupId": 19095106486273,
+                                "groupName": null,
+                                "deptId": null,
+                                "deptName": null,
+                                "positionName": null,
+                                "createTime": null,
+                                "updateTime": null,
+                                "attendanceDate": "2021-04-09",
+                                "attendanceTime": "2021-04-09 00:00:00",
+                                "clockTime": null,
+                                "clockResult": "\u65f7\u5de5",
+                                "clockPhoto": null,
+                                "dataSource": null,
+                                "clockSerialNo": null,
+                                "valid": 6,
+                                "workClosing": 1,
+                                "lateAdvMin": 0,
+                                "shift": null
+                            }
+                        ]
+                    },
+                    {
+                        "date": "2021-04-10",
+                        "item": [
+                            {
+                                "recordId": 7340,
+                                "orgId": 6438733348866,
+                                "staffId": 18985643540487,
+                                "realName": null,
+                                "shiftId": 18913769947137,
+                                "shiftName": null,
+                                "groupId": 19095106486273,
+                                "groupName": null,
+                                "deptId": null,
+                                "deptName": null,
+                                "positionName": null,
+                                "createTime": null,
+                                "updateTime": null,
+                                "attendanceDate": "2021-04-10",
+                                "attendanceTime": "2021-04-10 00:00:00",
+                                "clockTime": null,
+                                "clockResult": "\u65f7\u5de5",
+                                "clockPhoto": null,
+                                "dataSource": null,
+                                "clockSerialNo": null,
+                                "valid": 6,
+                                "workClosing": 1,
+                                "lateAdvMin": 0,
+                                "shift": null
+                            }
+                        ]
+                    },
+                    {
+                        "date": "2021-04-11"
+                    },
+                    {
+                        "date": "2021-04-12"
+                    },
+                    {
+                        "date": "2021-04-13"
+                    },
+                    {
+                        "date": "2021-04-14"
+                    },
+                    {
+                        "date": "2021-04-15"
+                    },
+                    {
+                        "date": "2021-04-16"
+                    },
+                    {
+                        "date": "2021-04-17"
+                    },
+                    {
+                        "date": "2021-04-18"
+                    },
+                    {
+                        "date": "2021-04-19"
+                    },
+                    {
+                        "date": "2021-04-20"
+                    },
+                    {
+                        "date": "2021-04-21"
+                    },
+                    {
+                        "date": "2021-04-22"
+                    },
+                    {
+                        "date": "2021-04-23"
+                    },
+                    {
+                        "date": "2021-04-24"
+                    },
+                    {
+                        "date": "2021-04-25"
+                    },
+                    {
+                        "date": "2021-04-26"
+                    },
+                    {
+                        "date": "2021-04-27"
+                    },
+                    {
+                        "date": "2021-04-28"
+                    },
+                    {
+                        "date": "2021-04-29"
+                    },
+                    {
+                        "date": "2021-04-30"
+                    }
+                ],
+                "staffIds": null,
+                "notShift": 0
+            }
+        ],
+        "pager": {
+            "totalRows": 1,
+            "pageRows": 10,
+            "pageIndex": 1,
+            "paged": false,
+            "currPageRows": 1,
+            "pageStartRow": 0,
+            "defaultPageRows": 20,
+            "pageEndRow": 9,
+            "hasPrevPage": false,
+            "hasNextPage": false,
+            "totalPages": 1
+        }
+    }
+}
+[0m
+[32m2021-04-11 11:59:15.567[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m218[0m - [1mstatus_code: 200, response_time(ms): 115.69 ms, response_length: 0 bytes[0m
+[32m2021-04-11 11:59:15.567[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert status_code equal 200(int)	==> pass[0m
+[32m2021-04-11 11:59:15.567[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass[0m
+[32m2021-04-11 11:59:15.567[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert body.code equal 0(int)	==> pass[0m
+[32m2021-04-11 11:59:15.568[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: 考勤统计-月度数据列表 <<<<<<
+[0m
+[32m2021-04-11 11:59:15.568[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: 考勤统计-日考勤详情 >>>>>>[0m
+[32m2021-04-11 11:59:15.650[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 192.168.0.104, Port: 63283[0m
+[32m2021-04-11 11:59:15.650[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 119.29.116.47, Port: 80[0m
+[32m2021-04-11 11:59:15.650[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== request details ==================
+method   : GET
+url      : http://yadongitest.icampus.clife.net/v1/web/edugarden/attendance/statistics/attendanceDayItem?endTime=2021-04-06&staffId=22002488967173&startTime=2021-04-06&systemCode=H5
+headers  : {
+    "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/12.0 Mobile/15A372 Safari/604.1",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2",
+    "Content-Type": "application/json;charset=utf-8",
+    "Host": "yadongitest.icampus.clife.net",
+    "Referer": "http://yadongitest.icampus.clife.net/school/m/",
+    "X-Access-Token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjYyMDg0OTAwMSIsInVzZXJUeXBlIjoiMSIsImV4cCI6MTYxODEyMDc1OCwidXNlcklkIjoiMjQ5MDYwNzczMDY4OSIsIm9yZ0lkIjoiNjQzODczMzM0ODg2NiJ9.dU4913ry8_88LBkOhc7aw5R0tAXsdAku6ZQU5CBhBQ4",
+    "X-Requested-With": "XMLHttpRequest",
+    "domainName": "yadongitest",
+    "HRUN-Request-ID": "HRUN-84bed4a8-f342-4802-9faa-53a08829ec02-555568"
+}
+cookies  : {}
+body     : None
+[0m
+[32m2021-04-11 11:59:15.651[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Sun, 11 Apr 2021 03:59:18 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "1447",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Methods": "GET,POST,OPTIONS,PUT,DELETE, GET,POST,OPTIONS",
+    "Set-Cookie": "rememberMe=deleteMe; Path=/clife-campus-education-garden-api-web; Max-Age=0; Expires=Sat, 10-Apr-2021 03:59:18 GMT",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "X-Requested-With"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "code": 0,
+    "data": {
+        "clockItem": [
+            {
+                "recordId": 7067,
+                "valid": 5,
+                "clockResult": "\u7f3a\u5361",
+                "attendanceTime": 1617670800000,
+                "workClosing": 2,
+                "clockTime": null,
+                "lateAdvMin": 0
+            },
+            {
+                "recordId": 7068,
+                "valid": 4,
+                "clockResult": "\u7f3a\u5361",
+                "attendanceTime": 1617678000000,
+                "workClosing": 3,
+                "clockTime": null,
+                "lateAdvMin": 0
+            },
+            {
+                "recordId": 7069,
+                "valid": 5,
+                "clockResult": "\u7f3a\u5361",
+                "attendanceTime": 1617688800000,
+                "workClosing": 4,
+                "clockTime": null,
+                "lateAdvMin": 0
+            },
+            {
+                "recordId": 7070,
+                "valid": 4,
+                "clockResult": "\u7f3a\u5361",
+                "attendanceTime": 1617728400000,
+                "workClosing": 5,
+                "clockTime": null,
+                "lateAdvMin": 0
+            }
+        ],
+        "shift": {
+            "shiftId": 18951839547393,
+            "orgId": 6438733348866,
+            "shiftName": "\u8003\u52e4\u73ed\u6b21E",
+            "clockType": 2,
+            "clockTimeOne": "09:00:00",
+            "clockOneCurrentMorrow": 1,
+            "clockTimeOneBegin": "08:30:00",
+            "clockTimeOneEnd": "10:00:00",
+            "clockOneNeed": 1,
+            "closingTimeOne": "11:00:00",
+            "closingOneCurrentMorrow": 1,
+            "closingTimeOneBegin": "10:30:00",
+            "closingTimeOneEnd": "11:30:00",
+            "closingOneNeed": 0,
+            "clockTimeTwo": "14:00:00",
+            "clockTwoCurrentMorrow": 1,
+            "clockTimeTwoBegin": "13:30:00",
+            "clockTimeTwoEnd": "14:30:00",
+            "clockTwoNeed": 0,
+            "closingTimeTwo": "01:00:00",
+            "closingTwoCurrentMorrow": 2,
+            "closingTimeTwoBegin": "20:00:00",
+            "closingTimeTwoEnd": "02:00:00",
+            "closingTwoNeed": 1,
+            "deleted": 1,
+            "createTime": "2021-03-16 15:21:12",
+            "updateTime": "2021-03-22 14:07:25",
+            "groupList": [],
+            "workday": 0,
+            "unit1": 1,
+            "unit2": 1,
+            "unit3": 1,
+            "unit4": 1,
+            "unit5": 1,
+            "unit6": 1,
+            "unit7": 1,
+            "unit8": 2
+        },
+        "staffName": "\u4e9a\u4e1c\u53bf\u5e7c\u513f\u56ed-1\u53f7-",
+        "attendanceDate": 1617638400000
+    }
+}
+[0m
+[32m2021-04-11 11:59:15.651[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m218[0m - [1mstatus_code: 200, response_time(ms): 80.82 ms, response_length: 0 bytes[0m
+[32m2021-04-11 11:59:15.651[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert status_code equal 200(int)	==> pass[0m
+[32m2021-04-11 11:59:15.651[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass[0m
+[32m2021-04-11 11:59:15.652[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert body.code equal 0(int)	==> pass[0m
+[32m2021-04-11 11:59:15.652[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: 考勤统计-日考勤详情 <<<<<<
+[0m
+[32m2021-04-11 11:59:15.652[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: 考勤统计-人员考勤有数据的月份 >>>>>>[0m
+[32m2021-04-11 11:59:15.732[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 192.168.0.104, Port: 63283[0m
+[32m2021-04-11 11:59:15.732[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 119.29.116.47, Port: 80[0m
+[32m2021-04-11 11:59:15.733[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== request details ==================
+method   : GET
+url      : http://yadongitest.icampus.clife.net/v1/web/edugarden/attendance/statistics/getAttendanceYearItem?systemCode=H5&year=2021
+headers  : {
+    "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/12.0 Mobile/15A372 Safari/604.1",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2",
+    "Content-Type": "application/json;charset=utf-8",
+    "Host": "yadongitest.icampus.clife.net",
+    "Referer": "http://yadongitest.icampus.clife.net/school/m/",
+    "X-Access-Token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjYyMDg0OTAwMSIsInVzZXJUeXBlIjoiMSIsImV4cCI6MTYxODEyMDc1OCwidXNlcklkIjoiMjQ5MDYwNzczMDY4OSIsIm9yZ0lkIjoiNjQzODczMzM0ODg2NiJ9.dU4913ry8_88LBkOhc7aw5R0tAXsdAku6ZQU5CBhBQ4",
+    "X-Requested-With": "XMLHttpRequest",
+    "domainName": "yadongitest",
+    "HRUN-Request-ID": "HRUN-84bed4a8-f342-4802-9faa-53a08829ec02-555652"
+}
+cookies  : {}
+body     : None
+[0m
+[32m2021-04-11 11:59:15.733[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Sun, 11 Apr 2021 03:59:18 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "39",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Methods": "GET,POST,OPTIONS,PUT,DELETE, GET,POST,OPTIONS",
+    "Set-Cookie": "rememberMe=deleteMe; Path=/clife-campus-education-garden-api-web; Max-Age=0; Expires=Sat, 10-Apr-2021 03:59:18 GMT",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "X-Requested-With"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "code": 0,
+    "data": [
+        "2021-03",
+        "2021-04"
+    ]
+}
+[0m
+[32m2021-04-11 11:59:15.734[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m218[0m - [1mstatus_code: 200, response_time(ms): 80.78 ms, response_length: 0 bytes[0m
+[32m2021-04-11 11:59:15.734[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert status_code equal 200(int)	==> pass[0m
+[32m2021-04-11 11:59:15.734[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass[0m
+[32m2021-04-11 11:59:15.734[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert body.code equal 0(int)	==> pass[0m
+[32m2021-04-11 11:59:15.734[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: 考勤统计-人员考勤有数据的月份 <<<<<<
+[0m
+[32m2021-04-11 11:59:15.735[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: 考勤统计-人员考勤月汇总明细 >>>>>>[0m
+[32m2021-04-11 11:59:15.735[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36mtest_start[0m:[36m460[0m - [1mgenerate testcase log: D:\WorkSpace\Python\HogWort9\interfacedemo\logs\84bed4a8-f342-4802-9faa-53a08829ec02.run.log[0m

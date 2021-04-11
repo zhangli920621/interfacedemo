@@ -9,13 +9,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "4383be7376618165",
+      "uid" : "6172ee08795dbe3a",
       "status" : "broken",
-      "statusDetails" : "httprunner.exceptions.ValidationFailure: assert body.code equal 0(int)\t==> fail\ncheck_item: body.code\ncheck_value: 100021400(int)\nassert_method: equal\nexpect_value: 0(int)",
+      "statusDetails" : "httprunner.exceptions.ValidationFailure: assert body.code equal 0(int)\t==> fail\ncheck_item: body.code\ncheck_value: -1(int)\nassert_method: equal\nexpect_value: 0(int)\nassert body.data equal 成功(str)\t==> fail\ncheck_item: body.data\ncheck_value: None(NoneType)\nassert_method: equal\nexpect_value: 成功(str)",
       "time" : {
-        "start" : 1618110176839,
-        "stop" : 1618110176926,
-        "duration" : 87
+        "start" : 1618113551614,
+        "stop" : 1618113553120,
+        "duration" : 1506
       }
     } ]
   },
@@ -29,13 +29,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "d4afcf8b37045e68",
+      "uid" : "eb91eb42e910ef2d",
       "status" : "broken",
-      "statusDetails" : "httprunner.exceptions.ValidationFailure: assert body.code equal 0(int)\t==> fail\ncheck_item: body.code\ncheck_value: 100021400(int)\nassert_method: equal\nexpect_value: 0(int)",
+      "statusDetails" : "httprunner.exceptions.VariableNotFound: studentId not found in {'Protocol': 'http', 'host': 'yadongitest.icampus.clife.net', 'donainname': 'yadongitest', 'token1': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjYyMDg0OTAwMSIsInVzZXJUeXBlIjoiMSIsImV4cCI6MTYxODEyMDc1MiwidXNlcklkIjoiMjQ5MDYwNzczMDY4OSIsIm9yZ0lkIjoiNjQzODczMzM0ODg2NiJ9.buK_BZ_T3brTHyPDeYm6uKGWZ-RcjIqEJar2D9_M4I0'}",
       "time" : {
-        "start" : 1618110176643,
-        "stop" : 1618110176712,
-        "duration" : 69
+        "start" : 1618113549065,
+        "stop" : 1618113549896,
+        "duration" : 831
       }
     } ]
   },
@@ -49,33 +49,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "f2c499c54cdfc3e7",
+      "uid" : "98d4627205825135",
       "status" : "broken",
-      "statusDetails" : "httprunner.exceptions.ValidationFailure: assert body.code equal 0(int)\t==> fail\ncheck_item: body.code\ncheck_value: 100021400(int)\nassert_method: equal\nexpect_value: 0(int)",
+      "statusDetails" : "httprunner.exceptions.ValidationFailure: assert body.code equal 0(int)\t==> fail\ncheck_item: body.code\ncheck_value: 500(int)\nassert_method: equal\nexpect_value: 0(int)",
       "time" : {
-        "start" : 1618110176742,
-        "stop" : 1618110176810,
-        "duration" : 68
-      }
-    } ]
-  },
-  "04d7810cbe1e3dd8505c740a444d4672" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 1,
-      "skipped" : 0,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "aba0ee9f61b2d469",
-      "status" : "broken",
-      "statusDetails" : "httprunner.exceptions.ValidationFailure: assert body.code equal 0(int)\t==> fail\ncheck_item: body.code\ncheck_value: 100021400(int)\nassert_method: equal\nexpect_value: 0(int)",
-      "time" : {
-        "start" : 1618110176377,
-        "stop" : 1618110176473,
-        "duration" : 96
+        "start" : 1618113549942,
+        "stop" : 1618113551588,
+        "duration" : 1646
       }
     } ]
   },
@@ -89,13 +69,33 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "9eecd09e39fa5607",
+      "uid" : "8100d0a9a80e89ce",
       "status" : "broken",
-      "statusDetails" : "httprunner.exceptions.ValidationFailure: assert body.code equal 0(int)\t==> fail\ncheck_item: body.code\ncheck_value: 100021400(int)\nassert_method: equal\nexpect_value: 0(int)",
+      "statusDetails" : "httprunner.exceptions.VariableNotFound: valid not found in {'Protocol': 'http', 'host': 'yadongitest.icampus.clife.net', 'donainname': 'yadongitest', 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjYyMDg0OTAwMSIsInVzZXJUeXBlIjoiMSIsImV4cCI6MTYxODEyMDc1OCwidXNlcklkIjoiMjQ5MDYwNzczMDY4OSIsIm9yZ0lkIjoiNjQzODczMzM0ODg2NiJ9.dU4913ry8_88LBkOhc7aw5R0tAXsdAku6ZQU5CBhBQ4'}",
       "time" : {
-        "start" : 1618110176512,
-        "stop" : 1618110176604,
-        "duration" : 92
+        "start" : 1618113554921,
+        "stop" : 1618113555737,
+        "duration" : 816
+      }
+    } ]
+  },
+  "04d7810cbe1e3dd8505c740a444d4672" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e1ed60f4f8011e3",
+      "status" : "broken",
+      "statusDetails" : "httprunner.exceptions.ValidationFailure: assert body.code equal 0(int)\t==> fail\ncheck_item: body.code\ncheck_value: 500(int)\nassert_method: equal\nexpect_value: 0(int)",
+      "time" : {
+        "start" : 1618113553150,
+        "stop" : 1618113554887,
+        "duration" : 1737
       }
     } ]
   }

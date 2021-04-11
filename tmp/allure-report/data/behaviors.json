@@ -2,66 +2,66 @@
   "uid" : "b1a8273437954620fa374b796ffaacdd",
   "name" : "behaviors",
   "children" : [ {
-    "name" : "园业务web_幼儿考勤管理",
-    "uid" : "aba0ee9f61b2d469",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "broken",
-    "time" : {
-      "start" : 1618110176377,
-      "stop" : 1618110176473,
-      "duration" : 96
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ ]
-  }, {
-    "name" : "教师H5_教职工考勤",
-    "uid" : "9eecd09e39fa5607",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "broken",
-    "time" : {
-      "start" : 1618110176512,
-      "stop" : 1618110176604,
-      "duration" : 92
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ ]
-  }, {
     "name" : "家长H5_幼儿考勤",
-    "uid" : "d4afcf8b37045e68",
+    "uid" : "eb91eb42e910ef2d",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "broken",
     "time" : {
-      "start" : 1618110176643,
-      "stop" : 1618110176712,
-      "duration" : 69
+      "start" : 1618113549065,
+      "stop" : 1618113549896,
+      "duration" : 831
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ ]
   }, {
     "name" : "教师H5_幼儿考勤",
-    "uid" : "f2c499c54cdfc3e7",
+    "uid" : "98d4627205825135",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "broken",
     "time" : {
-      "start" : 1618110176742,
-      "stop" : 1618110176810,
-      "duration" : 68
+      "start" : 1618113549942,
+      "stop" : 1618113551588,
+      "duration" : 1646
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ ]
   }, {
     "name" : "园业务web_教职工考勤管理",
-    "uid" : "4383be7376618165",
+    "uid" : "6172ee08795dbe3a",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "broken",
     "time" : {
-      "start" : 1618110176839,
-      "stop" : 1618110176926,
-      "duration" : 87
+      "start" : 1618113551614,
+      "stop" : 1618113553120,
+      "duration" : 1506
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "园业务web_幼儿考勤管理",
+    "uid" : "e1ed60f4f8011e3",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "broken",
+    "time" : {
+      "start" : 1618113553150,
+      "stop" : 1618113554887,
+      "duration" : 1737
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "教师H5_教职工考勤",
+    "uid" : "8100d0a9a80e89ce",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "broken",
+    "time" : {
+      "start" : 1618113554921,
+      "stop" : 1618113555737,
+      "duration" : 816
     },
     "flaky" : false,
     "newFailed" : false,

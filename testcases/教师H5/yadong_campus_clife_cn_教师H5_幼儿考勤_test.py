@@ -200,7 +200,7 @@ class TestCaseYadongCampusClifeCn教师H5幼儿考勤(HttpRunner):
             RunRequest("班级概况")
             .get("$Protocol://$host/v1/web/edugarden/statistic/classOverview")
             .with_params(
-                **{"classId": "16807134625793", "date": "2021-04-08", "gradeId": "5"}
+                **{"classId": "11666912313345", "date": "2021-04-08", "gradeId": "5"}
             )
             .with_headers(
                 **{
@@ -273,7 +273,7 @@ class TestCaseYadongCampusClifeCn教师H5幼儿考勤(HttpRunner):
         Step(
             RunRequest("考勤花名册-概况")
             .get("$Protocol://$host/v1/web/edugarden/attendance/roster/all")
-            .with_params(**{"classId": "16807319175169", "date": "2021-04-08"})
+            .with_params(**{"classId": "11666912313345", "date": "2021-04-08"})
             .with_headers(
                 **{
                     "Accept": "application/json, text/plain, */*",

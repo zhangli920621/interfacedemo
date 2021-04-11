@@ -1,8 +1,8 @@
 {
   "total" : 3,
   "items" : [ {
-    "uid" : "6f112cf7c01c7c6f6b0651d5fcdefb06",
-    "name" : "interfacedemo.testcases.园业务web",
+    "uid" : "b688498eda0e712a0fce6f1e665fa87b",
+    "name" : "interfacedemo.testcases.教师H5",
     "statistic" : {
       "failed" : 0,
       "broken" : 2,
@@ -12,8 +12,8 @@
       "total" : 2
     }
   }, {
-    "uid" : "b688498eda0e712a0fce6f1e665fa87b",
-    "name" : "interfacedemo.testcases.教师H5",
+    "uid" : "6f112cf7c01c7c6f6b0651d5fcdefb06",
+    "name" : "interfacedemo.testcases.园业务web",
     "statistic" : {
       "failed" : 0,
       "broken" : 2,
