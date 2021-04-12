@@ -28,7 +28,7 @@ teststeps:
             domainName: $domainName
         method: POST
         url: $Protocol://$host/v1/web/eduaccount/sys/login
-    extrsact:
+    extract:
         token: body.data.token
     validate:
     -   eq:

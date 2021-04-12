@@ -303,7 +303,6 @@ class TestCaseYadongitestIcampusClifeNet教师H5职工考勤(HttpRunner):
         ),
         Step(
             RunRequest("/v1/web/edugarden/attendance/statistics/attendanceMonthItem")
-            .with_variables(**{"validnum": ["1", "2", "3", "4", "5", "6", "8", "9"]})
             .get(
                 "$Protocol://$host/v1/web/edugarden/attendance/statistics/attendanceMonthItem"
             )
@@ -312,7 +311,7 @@ class TestCaseYadongitestIcampusClifeNet教师H5职工考勤(HttpRunner):
                     "endTime": "2021-04-30",
                     "startTime": "2021-04-01",
                     "systemCode": "H5",
-                    "valid": "$validnum",
+                    "valid": "1",
                 }
             )
             .with_headers(

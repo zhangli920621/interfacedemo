@@ -46,6 +46,8 @@ class TestCaseYadongitestIcampusClifeNet园业务Web教职工考勤管理(HttpRu
                     "username": "${ENV(GARDEN_USERNAME)}",
                 }
             )
+            .extract()
+            .with_jmespath("body.data.token", "token")
             .validate()
             .assert_equal("status_code", 200)
             .assert_equal('headers."Content-Type"', "application/json;charset=UTF-8")

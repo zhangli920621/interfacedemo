@@ -1,4 +1,23 @@
 {
+  "bcbeef5ecf4c71ccbdd291f02e21719c" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "25cb72d07e3be1b7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1618220217107,
+        "stop" : 1618220220568,
+        "duration" : 3461
+      }
+    } ]
+  },
   "8f0b874fe4c432f121d48e741ac4fb13" : {
     "statistic" : {
       "failed" : 0,
@@ -9,52 +28,31 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "3ede9fd1dd3c33f1",
+      "uid" : "ec7fb046729b0e13",
       "status" : "passed",
       "time" : {
-        "start" : 1618215579597,
-        "stop" : 1618215582816,
-        "duration" : 3219
-      }
-    } ]
-  },
-  "bcbeef5ecf4c71ccbdd291f02e21719c" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 1,
-      "skipped" : 0,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "5b4087a13f79a352",
-      "status" : "broken",
-      "statusDetails" : "httprunner.exceptions.VariableNotFound: valid not found in {'Protocol': 'http', 'host': 'yadongitest.icampus.clife.net', 'domainName': 'yadongitest', 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjYyMDg0OTAwMSIsInVzZXJUeXBlIjoiMSIsImV4cCI6MTYxODIyMjc4NywidXNlcklkIjoiMjQ5MDYwNzczMDY4OSIsIm9yZ0lkIjoiNjQzODczMzM0ODg2NiJ9.MA4e-Qz6nyiJqx5nE5HV8fCotL31uCSPnx-hCDujIVU'}",
-      "time" : {
-        "start" : 1618215582820,
-        "stop" : 1618215584142,
-        "duration" : 1322
+        "start" : 1618220213106,
+        "stop" : 1618220217093,
+        "duration" : 3987
       }
     } ]
   },
   "ddc7e23feafc162ea25154e91bd7dbc2" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "3155ad092dbf15bb",
-      "status" : "broken",
-      "statusDetails" : "httprunner.exceptions.VariableNotFound: token not found in {'Protocol': 'http', 'host': 'yadongitest.icampus.clife.net', 'domainName': 'yadongitest'}",
+      "uid" : "f1c518b4785a7874",
+      "status" : "passed",
       "time" : {
-        "start" : 1618215578368,
-        "stop" : 1618215579552,
-        "duration" : 1184
+        "start" : 1618220211227,
+        "stop" : 1618220213094,
+        "duration" : 1867
       }
     } ]
   }

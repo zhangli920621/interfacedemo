@@ -1,43 +1,5 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "name" : "categories",
-  "children" : [ {
-    "name" : "Test defects",
-    "children" : [ {
-      "name" : "httprunner.exceptions.VariableNotFound: token not found in {'Protocol': 'http', 'host': 'yadongitest.icampus.clife.net', 'domainName': 'yadongitest'}",
-      "children" : [ {
-        "name" : "testcase description",
-        "uid" : "3155ad092dbf15bb",
-        "parentUid" : "8e4e806fd0f15324c948b0d46c929ba8",
-        "status" : "broken",
-        "time" : {
-          "start" : 1618215578368,
-          "stop" : 1618215579552,
-          "duration" : 1184
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "8e4e806fd0f15324c948b0d46c929ba8"
-    }, {
-      "name" : "httprunner.exceptions.VariableNotFound: valid not found in {'Protocol': 'http', 'host': 'yadongitest.icampus.clife.net', 'domainName': 'yadongitest', 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjYyMDg0OTAwMSIsInVzZXJUeXBlIjoiMSIsImV4cCI6MTYxODIyMjc4NywidXNlcklkIjoiMjQ5MDYwNzczMDY4OSIsIm9yZ0lkIjoiNjQzODczMzM0ODg2NiJ9.MA4e-Qz6nyiJqx5nE5HV8fCotL31uCSPnx-hCDujIVU'}",
-      "children" : [ {
-        "name" : "testcase description",
-        "uid" : "5b4087a13f79a352",
-        "parentUid" : "e42a0c434611db5a173f7fc8631692b4",
-        "status" : "broken",
-        "time" : {
-          "start" : 1618215582820,
-          "stop" : 1618215584142,
-          "duration" : 1322
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "e42a0c434611db5a173f7fc8631692b4"
-    } ],
-    "uid" : "bdbf199525818fae7a8651db9eafe741"
-  } ]
+  "children" : [ ]
 }

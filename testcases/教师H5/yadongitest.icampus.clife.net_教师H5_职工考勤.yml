@@ -4,6 +4,8 @@ config:
         Protocol: ${ENV(Protocol)}
         host: ${ENV(HOST)}
         domainName: ${ENV(DONAIN_NAME)}
+#    parameters:
+#        validnum: [ '1','2','3','4']
     verify: false
 teststeps:
 -   name: /v1/web/eduaccount/sys/login
@@ -314,8 +316,6 @@ teststeps:
         - body.code
         - 0
 -   name: /v1/web/edugarden/attendance/statistics/attendanceMonthItem
-    variables:
-        validnum: [ '1','2','3','4','5','6','8','9' ]
     request:
         headers:
             Accept: application/json, text/plain, */*
@@ -335,7 +335,7 @@ teststeps:
             endTime: '2021-04-30'
             startTime: '2021-04-01'
             systemCode: H5
-            valid: $validnum
+            valid: '1'
         url: $Protocol://$host/v1/web/edugarden/attendance/statistics/attendanceMonthItem
     validate:
     -   eq:
