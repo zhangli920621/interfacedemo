@@ -35,7 +35,7 @@ class TestCaseYadongitestIcampusClifeNet园业务Web幼儿考勤管理(HttpRunne
                     "Origin": "$Protocol://$host",
                     "Referer": "$Protocol://$host/school/",
                     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36",
-                    "X-Requested-With": "XMLhttpRequest",
+                    "X-Requested-With": "XMLHttpRequest",
                     "domainName": "$domainName",
                 }
             )
@@ -70,7 +70,7 @@ class TestCaseYadongitestIcampusClifeNet园业务Web幼儿考勤管理(HttpRunne
                     "Referer": "$Protocol://$host/school/",
                     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36",
                     "X-Access-Token": "$token",
-                    "X-Requested-With": "XMLhttpRequest",
+                    "X-Requested-With": "XMLHttpRequest",
                     "domainName": "$domainName",
                 }
             )
@@ -95,7 +95,7 @@ class TestCaseYadongitestIcampusClifeNet园业务Web幼儿考勤管理(HttpRunne
                     "Referer": "$Protocol://$host/school/",
                     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36",
                     "X-Access-Token": "$token",
-                    "X-Requested-With": "XMLhttpRequest",
+                    "X-Requested-With": "XMLHttpRequest",
                     "domainName": "$domainName",
                 }
             )
@@ -123,7 +123,7 @@ class TestCaseYadongitestIcampusClifeNet园业务Web幼儿考勤管理(HttpRunne
                     "Referer": "$Protocol://$host/school/",
                     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36",
                     "X-Access-Token": "$token",
-                    "X-Requested-With": "XMLhttpRequest",
+                    "X-Requested-With": "XMLHttpRequest",
                     "domainName": "$domainName",
                 }
             )
@@ -156,7 +156,7 @@ class TestCaseYadongitestIcampusClifeNet园业务Web幼儿考勤管理(HttpRunne
                     "Referer": "$Protocol://$host/school/",
                     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36",
                     "X-Access-Token": "$token",
-                    "X-Requested-With": "XMLhttpRequest",
+                    "X-Requested-With": "XMLHttpRequest",
                     "domainName": "$domainName",
                 }
             )
@@ -184,7 +184,7 @@ class TestCaseYadongitestIcampusClifeNet园业务Web幼儿考勤管理(HttpRunne
                     "Referer": "$Protocol://$host/school/",
                     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36",
                     "X-Access-Token": "$token",
-                    "X-Requested-With": "XMLhttpRequest",
+                    "X-Requested-With": "XMLHttpRequest",
                     "domainName": "$domainName",
                 }
             )
@@ -219,7 +219,7 @@ class TestCaseYadongitestIcampusClifeNet园业务Web幼儿考勤管理(HttpRunne
                     "Referer": "$Protocol://$host/school/",
                     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36",
                     "X-Access-Token": "$token",
-                    "X-Requested-With": "XMLhttpRequest",
+                    "X-Requested-With": "XMLHttpRequest",
                     "domainName": "$domainName",
                 }
             )
@@ -252,7 +252,7 @@ class TestCaseYadongitestIcampusClifeNet园业务Web幼儿考勤管理(HttpRunne
                     "Referer": "$Protocol://$host/school/",
                     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36",
                     "X-Access-Token": "$token",
-                    "X-Requested-With": "XMLhttpRequest",
+                    "X-Requested-With": "XMLHttpRequest",
                     "domainName": "$domainName",
                 }
             )
@@ -277,7 +277,7 @@ class TestCaseYadongitestIcampusClifeNet园业务Web幼儿考勤管理(HttpRunne
                     "Referer": "$Protocol://$host/school/",
                     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36",
                     "X-Access-Token": "$token",
-                    "X-Requested-With": "XMLhttpRequest",
+                    "X-Requested-With": "XMLHttpRequest",
                     "domainName": "$domainName",
                 }
             )
@@ -302,7 +302,7 @@ class TestCaseYadongitestIcampusClifeNet园业务Web幼儿考勤管理(HttpRunne
                     "Referer": "$Protocol://$host/school/",
                     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36",
                     "X-Access-Token": "$token",
-                    "X-Requested-With": "XMLhttpRequest",
+                    "X-Requested-With": "XMLHttpRequest",
                     "domainName": "$domainName",
                 }
             )
@@ -411,7 +411,7 @@ class TestCaseYadongitestIcampusClifeNet园业务Web幼儿考勤管理(HttpRunne
                     "Referer": "$Protocol://$host/school/",
                     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36",
                     "X-Access-Token": "$token",
-                    "X-Requested-With": "XMLhttpRequest",
+                    "X-Requested-With": "XMLHttpRequest",
                     "domainName": "$domainName",
                 }
             )

@@ -1,3 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Mon Apr 12 15:59:50 CST 2021","Mon Apr 12 15:59:54 CST 2021","3586","interfacedemo.testcases.园业务web","yadongitest_icampus_clife_net_园业务web_幼儿考勤管理_test","TestCaseYadongitestIcampusClifeNet园业务Web幼儿考勤管理","","","testcase description","TestCase ID: 609739f9-a289-40ed-8489-9a15f7e2e3db"
-"passed","Mon Apr 12 15:59:54 CST 2021","Mon Apr 12 15:59:56 CST 2021","1873","interfacedemo.testcases.园业务web","yadongitest_icampus_clife_net_园业务web_教职工考勤管理_test","TestCaseYadongitestIcampusClifeNet园业务Web教职工考勤管理","","","testcase description","TestCase ID: ae880ee7-6d32-46d8-a445-4fc4f7f04290"

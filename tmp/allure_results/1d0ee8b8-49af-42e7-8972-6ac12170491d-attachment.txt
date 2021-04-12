@@ -1,8 +1,8 @@
-[32m2021-04-12 15:59:50.684[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36mtest_start[0m:[36m451[0m - [1mStart to run testcase: testcase description, TestCase ID: 609739f9-a289-40ed-8489-9a15f7e2e3db[0m
-[32m2021-04-12 15:59:50.685[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: /v1/web/eduaccount/sys/login >>>>>>[0m
-[32m2021-04-12 15:59:50.822[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 192.168.0.102, Port: 63674[0m
-[32m2021-04-12 15:59:50.823[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 119.29.116.47, Port: 80[0m
-[32m2021-04-12 15:59:50.825[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+[32m2021-04-12 16:19:39.598[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36mtest_start[0m:[36m451[0m - [1mStart to run testcase: testcase description, TestCase ID: c73a9595-ec48-4ad4-9073-74addc1b9c2b[0m
+[32m2021-04-12 16:19:39.599[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: /v1/web/eduaccount/sys/login >>>>>>[0m
+[32m2021-04-12 16:19:39.728[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 192.168.0.102, Port: 53707[0m
+[32m2021-04-12 16:19:39.728[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 119.29.116.47, Port: 80[0m
+[32m2021-04-12 16:19:39.729[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
 ================== request details ==================
 method   : POST
 url      : http://yadongitest.icampus.clife.net/v1/web/eduaccount/sys/login
@@ -17,19 +17,19 @@ headers  : {
     "Host": "yadongitest.icampus.clife.net",
     "Origin": "http://yadongitest.icampus.clife.net",
     "Referer": "http://yadongitest.icampus.clife.net/school/",
-    "X-Requested-With": "XMLhttpRequest",
+    "X-Requested-With": "XMLHttpRequest",
     "domainName": "yadongitest",
-    "HRUN-Request-ID": "HRUN-609739f9-a289-40ed-8489-9a15f7e2e3db-390685"
+    "HRUN-Request-ID": "HRUN-c73a9595-ec48-4ad4-9073-74addc1b9c2b-579599"
 }
 cookies  : {}
 body     : systemCode=garden&password=VUsFjBeODaABgu37tXzPbw%3D%3D&username=16620849001
 [0m
-[32m2021-04-12 15:59:50.826[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+[32m2021-04-12 16:19:39.730[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
 ================== response details ==================
 status_code : 200
 headers  : {
     "Server": "nginx",
-    "Date": "Mon, 12 Apr 2021 07:59:55 GMT",
+    "Date": "Mon, 12 Apr 2021 08:19:44 GMT",
     "Content-Type": "application/json;charset=UTF-8",
     "Content-Length": "667",
     "Connection": "keep-alive",
@@ -63,22 +63,22 @@ body     : {
         "userType": 1,
         "systemUrl": "./user_manage.html",
         "orgId": 6438733348866,
-        "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjYyMDg0OTAwMSIsInVzZXJUeXBlIjoiMSIsImV4cCI6MTYxODIyMTU5NSwidXNlcklkIjoiMjQ5MDYwNzczMDY4OSIsIm9yZ0lkIjoiNjQzODczMzM0ODg2NiJ9.pmZi9x9KhD4rPp-kZGoirr6aHC-_IdJ0DAnGgbvfHMo",
+        "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjYyMDg0OTAwMSIsInVzZXJUeXBlIjoiMSIsImV4cCI6MTYxODIyMjc4NCwidXNlcklkIjoiMjQ5MDYwNzczMDY4OSIsIm9yZ0lkIjoiNjQzODczMzM0ODg2NiJ9.kheQJDi7lVar3UHVcG29HbPPPiVBUUO_WQ2jJXoi_Nc",
         "dataPermission": 1
     }
 }
 [0m
-[32m2021-04-12 15:59:50.826[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m218[0m - [1mstatus_code: 200, response_time(ms): 136.6 ms, response_length: 0 bytes[0m
-[32m2021-04-12 15:59:50.826[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mextract[0m:[36m176[0m - [1mextract mapping: {'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjYyMDg0OTAwMSIsInVzZXJUeXBlIjoiMSIsImV4cCI6MTYxODIyMTU5NSwidXNlcklkIjoiMjQ5MDYwNzczMDY4OSIsIm9yZ0lkIjoiNjQzODczMzM0ODg2NiJ9.pmZi9x9KhD4rPp-kZGoirr6aHC-_IdJ0DAnGgbvfHMo'}[0m
-[32m2021-04-12 15:59:50.827[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert status_code equal 200(int)	==> pass[0m
-[32m2021-04-12 15:59:50.827[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass[0m
-[32m2021-04-12 15:59:50.828[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert body.code equal 0(int)	==> pass[0m
-[32m2021-04-12 15:59:50.828[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: /v1/web/eduaccount/sys/login <<<<<<
+[32m2021-04-12 16:19:39.730[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m218[0m - [1mstatus_code: 200, response_time(ms): 128.69 ms, response_length: 0 bytes[0m
+[32m2021-04-12 16:19:39.731[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mextract[0m:[36m176[0m - [1mextract mapping: {'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjYyMDg0OTAwMSIsInVzZXJUeXBlIjoiMSIsImV4cCI6MTYxODIyMjc4NCwidXNlcklkIjoiMjQ5MDYwNzczMDY4OSIsIm9yZ0lkIjoiNjQzODczMzM0ODg2NiJ9.kheQJDi7lVar3UHVcG29HbPPPiVBUUO_WQ2jJXoi_Nc'}[0m
+[32m2021-04-12 16:19:39.731[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert status_code equal 200(int)	==> pass[0m
+[32m2021-04-12 16:19:39.731[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass[0m
+[32m2021-04-12 16:19:39.731[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert body.code equal 0(int)	==> pass[0m
+[32m2021-04-12 16:19:39.731[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: /v1/web/eduaccount/sys/login <<<<<<
 [0m
-[32m2021-04-12 15:59:50.829[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: /v1/web/edugarden/statistic/attendanceStatistic >>>>>>[0m
-[32m2021-04-12 15:59:51.025[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 192.168.0.102, Port: 63674[0m
-[32m2021-04-12 15:59:51.025[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 119.29.116.47, Port: 80[0m
-[32m2021-04-12 15:59:51.027[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+[32m2021-04-12 16:19:39.732[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: /v1/web/edugarden/statistic/attendanceStatistic >>>>>>[0m
+[32m2021-04-12 16:19:40.058[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 192.168.0.102, Port: 53707[0m
+[32m2021-04-12 16:19:40.059[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 119.29.116.47, Port: 80[0m
+[32m2021-04-12 16:19:40.060[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
 ================== request details ==================
 method   : GET
 url      : http://yadongitest.icampus.clife.net/v1/web/edugarden/statistic/attendanceStatistic?date=2021-04-12
@@ -93,25 +93,25 @@ headers  : {
     "Host": "yadongitest.icampus.clife.net",
     "Pragma": "no-cache",
     "Referer": "http://yadongitest.icampus.clife.net/school/",
-    "X-Access-Token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjYyMDg0OTAwMSIsInVzZXJUeXBlIjoiMSIsImV4cCI6MTYxODIyMTU5NSwidXNlcklkIjoiMjQ5MDYwNzczMDY4OSIsIm9yZ0lkIjoiNjQzODczMzM0ODg2NiJ9.pmZi9x9KhD4rPp-kZGoirr6aHC-_IdJ0DAnGgbvfHMo",
-    "X-Requested-With": "XMLhttpRequest",
+    "X-Access-Token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjYyMDg0OTAwMSIsInVzZXJUeXBlIjoiMSIsImV4cCI6MTYxODIyMjc4NCwidXNlcklkIjoiMjQ5MDYwNzczMDY4OSIsIm9yZ0lkIjoiNjQzODczMzM0ODg2NiJ9.kheQJDi7lVar3UHVcG29HbPPPiVBUUO_WQ2jJXoi_Nc",
+    "X-Requested-With": "XMLHttpRequest",
     "domainName": "yadongitest",
-    "HRUN-Request-ID": "HRUN-609739f9-a289-40ed-8489-9a15f7e2e3db-390829"
+    "HRUN-Request-ID": "HRUN-c73a9595-ec48-4ad4-9073-74addc1b9c2b-579732"
 }
 cookies  : {}
 body     : None
 [0m
-[32m2021-04-12 15:59:51.030[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+[32m2021-04-12 16:19:40.062[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
 ================== response details ==================
 status_code : 200
 headers  : {
     "Server": "nginx",
-    "Date": "Mon, 12 Apr 2021 07:59:55 GMT",
+    "Date": "Mon, 12 Apr 2021 08:19:44 GMT",
     "Content-Type": "application/json;charset=UTF-8",
     "Content-Length": "1019",
     "Connection": "keep-alive",
     "Access-Control-Allow-Methods": "GET,POST,OPTIONS,PUT,DELETE, GET,POST,OPTIONS",
-    "Set-Cookie": "rememberMe=deleteMe; Path=/clife-campus-education-garden-api-web; Max-Age=0; Expires=Sun, 11-Apr-2021 07:59:55 GMT",
+    "Set-Cookie": "rememberMe=deleteMe; Path=/clife-campus-education-garden-api-web; Max-Age=0; Expires=Sun, 11-Apr-2021 08:19:44 GMT",
     "Access-Control-Allow-Origin": "*",
     "Access-Control-Allow-Headers": "X-Requested-With"
 }
@@ -203,16 +203,16 @@ body     : {
     }
 }
 [0m
-[32m2021-04-12 15:59:51.031[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m218[0m - [1mstatus_code: 200, response_time(ms): 195.47 ms, response_length: 0 bytes[0m
-[32m2021-04-12 15:59:51.032[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert status_code equal 200(int)	==> pass[0m
-[32m2021-04-12 15:59:51.033[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass[0m
-[32m2021-04-12 15:59:51.034[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert body.code equal 0(int)	==> pass[0m
-[32m2021-04-12 15:59:51.035[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: /v1/web/edugarden/statistic/attendanceStatistic <<<<<<
+[32m2021-04-12 16:19:40.063[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m218[0m - [1mstatus_code: 200, response_time(ms): 326.1 ms, response_length: 0 bytes[0m
+[32m2021-04-12 16:19:40.064[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert status_code equal 200(int)	==> pass[0m
+[32m2021-04-12 16:19:40.064[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass[0m
+[32m2021-04-12 16:19:40.065[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert body.code equal 0(int)	==> pass[0m
+[32m2021-04-12 16:19:40.065[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: /v1/web/edugarden/statistic/attendanceStatistic <<<<<<
 [0m
-[32m2021-04-12 15:59:51.036[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: /v1/web/edugarden/statistic/selectClass >>>>>>[0m
-[32m2021-04-12 15:59:51.378[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 192.168.0.102, Port: 63674[0m
-[32m2021-04-12 15:59:51.379[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 119.29.116.47, Port: 80[0m
-[32m2021-04-12 15:59:51.379[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+[32m2021-04-12 16:19:40.066[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: /v1/web/edugarden/statistic/selectClass >>>>>>[0m
+[32m2021-04-12 16:19:40.434[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 192.168.0.102, Port: 53707[0m
+[32m2021-04-12 16:19:40.434[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 119.29.116.47, Port: 80[0m
+[32m2021-04-12 16:19:40.435[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
 ================== request details ==================
 method   : GET
 url      : http://yadongitest.icampus.clife.net/v1/web/edugarden/statistic/selectClass
@@ -227,25 +227,25 @@ headers  : {
     "Host": "yadongitest.icampus.clife.net",
     "Pragma": "no-cache",
     "Referer": "http://yadongitest.icampus.clife.net/school/",
-    "X-Access-Token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjYyMDg0OTAwMSIsInVzZXJUeXBlIjoiMSIsImV4cCI6MTYxODIyMTU5NSwidXNlcklkIjoiMjQ5MDYwNzczMDY4OSIsIm9yZ0lkIjoiNjQzODczMzM0ODg2NiJ9.pmZi9x9KhD4rPp-kZGoirr6aHC-_IdJ0DAnGgbvfHMo",
-    "X-Requested-With": "XMLhttpRequest",
+    "X-Access-Token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjYyMDg0OTAwMSIsInVzZXJUeXBlIjoiMSIsImV4cCI6MTYxODIyMjc4NCwidXNlcklkIjoiMjQ5MDYwNzczMDY4OSIsIm9yZ0lkIjoiNjQzODczMzM0ODg2NiJ9.kheQJDi7lVar3UHVcG29HbPPPiVBUUO_WQ2jJXoi_Nc",
+    "X-Requested-With": "XMLHttpRequest",
     "domainName": "yadongitest",
-    "HRUN-Request-ID": "HRUN-609739f9-a289-40ed-8489-9a15f7e2e3db-391037"
+    "HRUN-Request-ID": "HRUN-c73a9595-ec48-4ad4-9073-74addc1b9c2b-580067"
 }
 cookies  : {}
 body     : None
 [0m
-[32m2021-04-12 15:59:51.380[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+[32m2021-04-12 16:19:40.436[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
 ================== response details ==================
 status_code : 200
 headers  : {
     "Server": "nginx",
-    "Date": "Mon, 12 Apr 2021 07:59:55 GMT",
+    "Date": "Mon, 12 Apr 2021 08:19:44 GMT",
     "Content-Type": "application/json;charset=UTF-8",
     "Content-Length": "1995",
     "Connection": "keep-alive",
     "Access-Control-Allow-Methods": "GET,POST,OPTIONS,PUT,DELETE, GET,POST,OPTIONS",
-    "Set-Cookie": "rememberMe=deleteMe; Path=/clife-campus-education-garden-api-web; Max-Age=0; Expires=Sun, 11-Apr-2021 07:59:55 GMT",
+    "Set-Cookie": "rememberMe=deleteMe; Path=/clife-campus-education-garden-api-web; Max-Age=0; Expires=Sun, 11-Apr-2021 08:19:44 GMT",
     "Access-Control-Allow-Origin": "*",
     "Access-Control-Allow-Headers": "X-Requested-With"
 }
@@ -404,16 +404,16 @@ body     : {
     }
 }
 [0m
-[32m2021-04-12 15:59:51.380[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m218[0m - [1mstatus_code: 200, response_time(ms): 340.22 ms, response_length: 0 bytes[0m
-[32m2021-04-12 15:59:51.381[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert status_code equal 200(int)	==> pass[0m
-[32m2021-04-12 15:59:51.381[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass[0m
-[32m2021-04-12 15:59:51.381[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert body.code equal 0(int)	==> pass[0m
-[32m2021-04-12 15:59:51.381[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: /v1/web/edugarden/statistic/selectClass <<<<<<
+[32m2021-04-12 16:19:40.436[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m218[0m - [1mstatus_code: 200, response_time(ms): 366.02 ms, response_length: 0 bytes[0m
+[32m2021-04-12 16:19:40.436[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert status_code equal 200(int)	==> pass[0m
+[32m2021-04-12 16:19:40.437[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass[0m
+[32m2021-04-12 16:19:40.437[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert body.code equal 0(int)	==> pass[0m
+[32m2021-04-12 16:19:40.437[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: /v1/web/edugarden/statistic/selectClass <<<<<<
 [0m
-[32m2021-04-12 15:59:51.381[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: /v1/web/edugarden/statistic/classOverview >>>>>>[0m
-[32m2021-04-12 15:59:51.877[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 192.168.0.102, Port: 63674[0m
-[32m2021-04-12 15:59:51.878[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 119.29.116.47, Port: 80[0m
-[32m2021-04-12 15:59:51.880[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+[32m2021-04-12 16:19:40.437[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: /v1/web/edugarden/statistic/classOverview >>>>>>[0m
+[32m2021-04-12 16:19:40.925[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 192.168.0.102, Port: 53707[0m
+[32m2021-04-12 16:19:40.925[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 119.29.116.47, Port: 80[0m
+[32m2021-04-12 16:19:40.925[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
 ================== request details ==================
 method   : GET
 url      : http://yadongitest.icampus.clife.net/v1/web/edugarden/statistic/classOverview?classId=11666912313345&date=2021-04-12&gradeId=5
@@ -428,25 +428,25 @@ headers  : {
     "Host": "yadongitest.icampus.clife.net",
     "Pragma": "no-cache",
     "Referer": "http://yadongitest.icampus.clife.net/school/",
-    "X-Access-Token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjYyMDg0OTAwMSIsInVzZXJUeXBlIjoiMSIsImV4cCI6MTYxODIyMTU5NSwidXNlcklkIjoiMjQ5MDYwNzczMDY4OSIsIm9yZ0lkIjoiNjQzODczMzM0ODg2NiJ9.pmZi9x9KhD4rPp-kZGoirr6aHC-_IdJ0DAnGgbvfHMo",
-    "X-Requested-With": "XMLhttpRequest",
+    "X-Access-Token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjYyMDg0OTAwMSIsInVzZXJUeXBlIjoiMSIsImV4cCI6MTYxODIyMjc4NCwidXNlcklkIjoiMjQ5MDYwNzczMDY4OSIsIm9yZ0lkIjoiNjQzODczMzM0ODg2NiJ9.kheQJDi7lVar3UHVcG29HbPPPiVBUUO_WQ2jJXoi_Nc",
+    "X-Requested-With": "XMLHttpRequest",
     "domainName": "yadongitest",
-    "HRUN-Request-ID": "HRUN-609739f9-a289-40ed-8489-9a15f7e2e3db-391382"
+    "HRUN-Request-ID": "HRUN-c73a9595-ec48-4ad4-9073-74addc1b9c2b-580437"
 }
 cookies  : {}
 body     : None
 [0m
-[32m2021-04-12 15:59:51.882[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+[32m2021-04-12 16:19:40.926[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
 ================== response details ==================
 status_code : 200
 headers  : {
     "Server": "nginx",
-    "Date": "Mon, 12 Apr 2021 07:59:56 GMT",
+    "Date": "Mon, 12 Apr 2021 08:19:45 GMT",
     "Content-Type": "application/json;charset=UTF-8",
     "Content-Length": "700",
     "Connection": "keep-alive",
     "Access-Control-Allow-Methods": "GET,POST,OPTIONS,PUT,DELETE, GET,POST,OPTIONS",
-    "Set-Cookie": "rememberMe=deleteMe; Path=/clife-campus-education-garden-api-web; Max-Age=0; Expires=Sun, 11-Apr-2021 07:59:55 GMT",
+    "Set-Cookie": "rememberMe=deleteMe; Path=/clife-campus-education-garden-api-web; Max-Age=0; Expires=Sun, 11-Apr-2021 08:19:45 GMT",
     "Access-Control-Allow-Origin": "*",
     "Access-Control-Allow-Headers": "X-Requested-With"
 }
@@ -496,16 +496,16 @@ body     : {
     }
 }
 [0m
-[32m2021-04-12 15:59:51.884[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m218[0m - [1mstatus_code: 200, response_time(ms): 486.7 ms, response_length: 0 bytes[0m
-[32m2021-04-12 15:59:51.885[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert status_code equal 200(int)	==> pass[0m
-[32m2021-04-12 15:59:51.886[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass[0m
-[32m2021-04-12 15:59:51.887[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert body.code equal 0(int)	==> pass[0m
-[32m2021-04-12 15:59:51.887[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: /v1/web/edugarden/statistic/classOverview <<<<<<
+[32m2021-04-12 16:19:40.926[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m218[0m - [1mstatus_code: 200, response_time(ms): 487.37 ms, response_length: 0 bytes[0m
+[32m2021-04-12 16:19:40.926[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert status_code equal 200(int)	==> pass[0m
+[32m2021-04-12 16:19:40.926[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass[0m
+[32m2021-04-12 16:19:40.927[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert body.code equal 0(int)	==> pass[0m
+[32m2021-04-12 16:19:40.927[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: /v1/web/edugarden/statistic/classOverview <<<<<<
 [0m
-[32m2021-04-12 15:59:51.889[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: /v1/web/edugarden/statistic/classStatistic >>>>>>[0m
-[32m2021-04-12 15:59:52.662[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 192.168.0.102, Port: 63674[0m
-[32m2021-04-12 15:59:52.663[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 119.29.116.47, Port: 80[0m
-[32m2021-04-12 15:59:52.664[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+[32m2021-04-12 16:19:40.927[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: /v1/web/edugarden/statistic/classStatistic >>>>>>[0m
+[32m2021-04-12 16:19:41.636[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 192.168.0.102, Port: 53707[0m
+[32m2021-04-12 16:19:41.637[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 119.29.116.47, Port: 80[0m
+[32m2021-04-12 16:19:41.638[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
 ================== request details ==================
 method   : GET
 url      : http://yadongitest.icampus.clife.net/v1/web/edugarden/statistic/classStatistic?date=2021-04-12&pageIndex=1&pageRows=20&sort=0
@@ -520,25 +520,25 @@ headers  : {
     "Host": "yadongitest.icampus.clife.net",
     "Pragma": "no-cache",
     "Referer": "http://yadongitest.icampus.clife.net/school/",
-    "X-Access-Token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjYyMDg0OTAwMSIsInVzZXJUeXBlIjoiMSIsImV4cCI6MTYxODIyMTU5NSwidXNlcklkIjoiMjQ5MDYwNzczMDY4OSIsIm9yZ0lkIjoiNjQzODczMzM0ODg2NiJ9.pmZi9x9KhD4rPp-kZGoirr6aHC-_IdJ0DAnGgbvfHMo",
-    "X-Requested-With": "XMLhttpRequest",
+    "X-Access-Token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjYyMDg0OTAwMSIsInVzZXJUeXBlIjoiMSIsImV4cCI6MTYxODIyMjc4NCwidXNlcklkIjoiMjQ5MDYwNzczMDY4OSIsIm9yZ0lkIjoiNjQzODczMzM0ODg2NiJ9.kheQJDi7lVar3UHVcG29HbPPPiVBUUO_WQ2jJXoi_Nc",
+    "X-Requested-With": "XMLHttpRequest",
     "domainName": "yadongitest",
-    "HRUN-Request-ID": "HRUN-609739f9-a289-40ed-8489-9a15f7e2e3db-391891"
+    "HRUN-Request-ID": "HRUN-c73a9595-ec48-4ad4-9073-74addc1b9c2b-580927"
 }
 cookies  : {}
 body     : None
 [0m
-[32m2021-04-12 15:59:52.677[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+[32m2021-04-12 16:19:41.670[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
 ================== response details ==================
 status_code : 200
 headers  : {
     "Server": "nginx",
-    "Date": "Mon, 12 Apr 2021 07:59:57 GMT",
+    "Date": "Mon, 12 Apr 2021 08:19:46 GMT",
     "Content-Type": "application/json;charset=UTF-8",
     "Transfer-Encoding": "chunked",
     "Connection": "keep-alive",
     "Access-Control-Allow-Methods": "GET,POST,OPTIONS,PUT,DELETE, GET,POST,OPTIONS",
-    "Set-Cookie": "rememberMe=deleteMe; Path=/clife-campus-education-garden-api-web; Max-Age=0; Expires=Sun, 11-Apr-2021 07:59:56 GMT",
+    "Set-Cookie": "rememberMe=deleteMe; Path=/clife-campus-education-garden-api-web; Max-Age=0; Expires=Sun, 11-Apr-2021 08:19:45 GMT",
     "Access-Control-Allow-Origin": "*",
     "Access-Control-Allow-Headers": "X-Requested-With"
 }
@@ -758,16 +758,16 @@ body     : {
     }
 }
 [0m
-[32m2021-04-12 15:59:52.678[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m218[0m - [1mstatus_code: 200, response_time(ms): 771.02 ms, response_length: 0 bytes[0m
-[32m2021-04-12 15:59:52.679[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert status_code equal 200(int)	==> pass[0m
-[32m2021-04-12 15:59:52.680[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass[0m
-[32m2021-04-12 15:59:52.681[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert body.code equal 0(int)	==> pass[0m
-[32m2021-04-12 15:59:52.681[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: /v1/web/edugarden/statistic/classStatistic <<<<<<
+[32m2021-04-12 16:19:41.670[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m218[0m - [1mstatus_code: 200, response_time(ms): 708.55 ms, response_length: 0 bytes[0m
+[32m2021-04-12 16:19:41.671[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert status_code equal 200(int)	==> pass[0m
+[32m2021-04-12 16:19:41.671[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass[0m
+[32m2021-04-12 16:19:41.671[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert body.code equal 0(int)	==> pass[0m
+[32m2021-04-12 16:19:41.672[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: /v1/web/edugarden/statistic/classStatistic <<<<<<
 [0m
-[32m2021-04-12 15:59:52.682[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: /v1/web/edugarden/attendance/student/getDailyList >>>>>>[0m
-[32m2021-04-12 15:59:52.940[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 192.168.0.102, Port: 63674[0m
-[32m2021-04-12 15:59:52.941[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 119.29.116.47, Port: 80[0m
-[32m2021-04-12 15:59:52.941[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+[32m2021-04-12 16:19:41.672[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: /v1/web/edugarden/attendance/student/getDailyList >>>>>>[0m
+[32m2021-04-12 16:19:41.770[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 192.168.0.102, Port: 53707[0m
+[32m2021-04-12 16:19:41.771[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 119.29.116.47, Port: 80[0m
+[32m2021-04-12 16:19:41.771[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
 ================== request details ==================
 method   : GET
 url      : http://yadongitest.icampus.clife.net/v1/web/edugarden/attendance/student/getDailyList?pageIndex=1&pageRows=20&statisticDate=2021-04-12
@@ -782,25 +782,25 @@ headers  : {
     "Host": "yadongitest.icampus.clife.net",
     "Pragma": "no-cache",
     "Referer": "http://yadongitest.icampus.clife.net/school/",
-    "X-Access-Token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjYyMDg0OTAwMSIsInVzZXJUeXBlIjoiMSIsImV4cCI6MTYxODIyMTU5NSwidXNlcklkIjoiMjQ5MDYwNzczMDY4OSIsIm9yZ0lkIjoiNjQzODczMzM0ODg2NiJ9.pmZi9x9KhD4rPp-kZGoirr6aHC-_IdJ0DAnGgbvfHMo",
-    "X-Requested-With": "XMLhttpRequest",
+    "X-Access-Token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjYyMDg0OTAwMSIsInVzZXJUeXBlIjoiMSIsImV4cCI6MTYxODIyMjc4NCwidXNlcklkIjoiMjQ5MDYwNzczMDY4OSIsIm9yZ0lkIjoiNjQzODczMzM0ODg2NiJ9.kheQJDi7lVar3UHVcG29HbPPPiVBUUO_WQ2jJXoi_Nc",
+    "X-Requested-With": "XMLHttpRequest",
     "domainName": "yadongitest",
-    "HRUN-Request-ID": "HRUN-609739f9-a289-40ed-8489-9a15f7e2e3db-392683"
+    "HRUN-Request-ID": "HRUN-c73a9595-ec48-4ad4-9073-74addc1b9c2b-581673"
 }
 cookies  : {}
 body     : None
 [0m
-[32m2021-04-12 15:59:52.946[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+[32m2021-04-12 16:19:41.773[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
 ================== response details ==================
 status_code : 200
 headers  : {
     "Server": "nginx",
-    "Date": "Mon, 12 Apr 2021 07:59:57 GMT",
+    "Date": "Mon, 12 Apr 2021 08:19:46 GMT",
     "Content-Type": "application/json;charset=UTF-8",
     "Transfer-Encoding": "chunked",
     "Connection": "keep-alive",
     "Access-Control-Allow-Methods": "GET,POST,OPTIONS,PUT,DELETE, GET,POST,OPTIONS",
-    "Set-Cookie": "rememberMe=deleteMe; Path=/clife-campus-education-garden-api-web; Max-Age=0; Expires=Sun, 11-Apr-2021 07:59:57 GMT",
+    "Set-Cookie": "rememberMe=deleteMe; Path=/clife-campus-education-garden-api-web; Max-Age=0; Expires=Sun, 11-Apr-2021 08:19:46 GMT",
     "Access-Control-Allow-Origin": "*",
     "Access-Control-Allow-Headers": "X-Requested-With"
 }
@@ -1408,16 +1408,16 @@ body     : {
     }
 }
 [0m
-[32m2021-04-12 15:59:52.947[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m218[0m - [1mstatus_code: 200, response_time(ms): 256.32 ms, response_length: 0 bytes[0m
-[32m2021-04-12 15:59:52.949[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert status_code equal 200(int)	==> pass[0m
-[32m2021-04-12 15:59:52.950[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass[0m
-[32m2021-04-12 15:59:52.950[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert body.code equal 0(int)	==> pass[0m
-[32m2021-04-12 15:59:52.951[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: /v1/web/edugarden/attendance/student/getDailyList <<<<<<
+[32m2021-04-12 16:19:41.773[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m218[0m - [1mstatus_code: 200, response_time(ms): 97.76 ms, response_length: 0 bytes[0m
+[32m2021-04-12 16:19:41.773[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert status_code equal 200(int)	==> pass[0m
+[32m2021-04-12 16:19:41.774[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass[0m
+[32m2021-04-12 16:19:41.774[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert body.code equal 0(int)	==> pass[0m
+[32m2021-04-12 16:19:41.774[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: /v1/web/edugarden/attendance/student/getDailyList <<<<<<
 [0m
-[32m2021-04-12 15:59:52.952[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: /v1/web/edugarden/attendance/student/getStuAttReportPager >>>>>>[0m
-[32m2021-04-12 15:59:53.399[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 192.168.0.102, Port: 63674[0m
-[32m2021-04-12 15:59:53.400[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 119.29.116.47, Port: 80[0m
-[32m2021-04-12 15:59:53.402[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+[32m2021-04-12 16:19:41.774[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: /v1/web/edugarden/attendance/student/getStuAttReportPager >>>>>>[0m
+[32m2021-04-12 16:19:41.973[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 192.168.0.102, Port: 53707[0m
+[32m2021-04-12 16:19:41.973[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 119.29.116.47, Port: 80[0m
+[32m2021-04-12 16:19:41.974[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
 ================== request details ==================
 method   : GET
 url      : http://yadongitest.icampus.clife.net/v1/web/edugarden/attendance/student/getStuAttReportPager?endDate=2021-04-12&pageIndex=1&pageRows=20&startDate=2021-04-01
@@ -1432,25 +1432,25 @@ headers  : {
     "Host": "yadongitest.icampus.clife.net",
     "Pragma": "no-cache",
     "Referer": "http://yadongitest.icampus.clife.net/school/",
-    "X-Access-Token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjYyMDg0OTAwMSIsInVzZXJUeXBlIjoiMSIsImV4cCI6MTYxODIyMTU5NSwidXNlcklkIjoiMjQ5MDYwNzczMDY4OSIsIm9yZ0lkIjoiNjQzODczMzM0ODg2NiJ9.pmZi9x9KhD4rPp-kZGoirr6aHC-_IdJ0DAnGgbvfHMo",
-    "X-Requested-With": "XMLhttpRequest",
+    "X-Access-Token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjYyMDg0OTAwMSIsInVzZXJUeXBlIjoiMSIsImV4cCI6MTYxODIyMjc4NCwidXNlcklkIjoiMjQ5MDYwNzczMDY4OSIsIm9yZ0lkIjoiNjQzODczMzM0ODg2NiJ9.kheQJDi7lVar3UHVcG29HbPPPiVBUUO_WQ2jJXoi_Nc",
+    "X-Requested-With": "XMLHttpRequest",
     "domainName": "yadongitest",
-    "HRUN-Request-ID": "HRUN-609739f9-a289-40ed-8489-9a15f7e2e3db-392953"
+    "HRUN-Request-ID": "HRUN-c73a9595-ec48-4ad4-9073-74addc1b9c2b-581775"
 }
 cookies  : {}
 body     : None
 [0m
-[32m2021-04-12 15:59:53.793[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+[32m2021-04-12 16:19:41.999[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
 ================== response details ==================
 status_code : 200
 headers  : {
     "Server": "nginx",
-    "Date": "Mon, 12 Apr 2021 07:59:57 GMT",
+    "Date": "Mon, 12 Apr 2021 08:19:46 GMT",
     "Content-Type": "application/json;charset=UTF-8",
     "Transfer-Encoding": "chunked",
     "Connection": "keep-alive",
     "Access-Control-Allow-Methods": "GET,POST,OPTIONS,PUT,DELETE, GET,POST,OPTIONS",
-    "Set-Cookie": "rememberMe=deleteMe; Path=/clife-campus-education-garden-api-web; Max-Age=0; Expires=Sun, 11-Apr-2021 07:59:57 GMT",
+    "Set-Cookie": "rememberMe=deleteMe; Path=/clife-campus-education-garden-api-web; Max-Age=0; Expires=Sun, 11-Apr-2021 08:19:46 GMT",
     "Access-Control-Allow-Origin": "*",
     "Access-Control-Allow-Headers": "X-Requested-With"
 }
@@ -2778,16 +2778,16 @@ body     : {
     }
 }
 [0m
-[32m2021-04-12 15:59:53.796[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m218[0m - [1mstatus_code: 200, response_time(ms): 444.87 ms, response_length: 0 bytes[0m
-[32m2021-04-12 15:59:53.797[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert status_code equal 200(int)	==> pass[0m
-[32m2021-04-12 15:59:53.797[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass[0m
-[32m2021-04-12 15:59:53.798[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert body.code equal 0(int)	==> pass[0m
-[32m2021-04-12 15:59:53.798[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: /v1/web/edugarden/attendance/student/getStuAttReportPager <<<<<<
+[32m2021-04-12 16:19:42.000[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m218[0m - [1mstatus_code: 200, response_time(ms): 197.47 ms, response_length: 0 bytes[0m
+[32m2021-04-12 16:19:42.000[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert status_code equal 200(int)	==> pass[0m
+[32m2021-04-12 16:19:42.000[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass[0m
+[32m2021-04-12 16:19:42.001[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert body.code equal 0(int)	==> pass[0m
+[32m2021-04-12 16:19:42.001[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: /v1/web/edugarden/attendance/student/getStuAttReportPager <<<<<<
 [0m
-[32m2021-04-12 15:59:53.798[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: /v1/web/edugarden/original/list >>>>>>[0m
-[32m2021-04-12 15:59:53.878[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 192.168.0.102, Port: 63674[0m
-[32m2021-04-12 15:59:53.878[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 119.29.116.47, Port: 80[0m
-[32m2021-04-12 15:59:53.879[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+[32m2021-04-12 16:19:42.001[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: /v1/web/edugarden/original/list >>>>>>[0m
+[32m2021-04-12 16:19:42.176[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 192.168.0.102, Port: 53707[0m
+[32m2021-04-12 16:19:42.177[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 119.29.116.47, Port: 80[0m
+[32m2021-04-12 16:19:42.177[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
 ================== request details ==================
 method   : GET
 url      : http://yadongitest.icampus.clife.net/v1/web/edugarden/original/list?endDate=2021-04-12&pageIndex=1&pageRows=20&startDate=2021-04-01
@@ -2802,25 +2802,25 @@ headers  : {
     "Host": "yadongitest.icampus.clife.net",
     "Pragma": "no-cache",
     "Referer": "http://yadongitest.icampus.clife.net/school/",
-    "X-Access-Token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjYyMDg0OTAwMSIsInVzZXJUeXBlIjoiMSIsImV4cCI6MTYxODIyMTU5NSwidXNlcklkIjoiMjQ5MDYwNzczMDY4OSIsIm9yZ0lkIjoiNjQzODczMzM0ODg2NiJ9.pmZi9x9KhD4rPp-kZGoirr6aHC-_IdJ0DAnGgbvfHMo",
-    "X-Requested-With": "XMLhttpRequest",
+    "X-Access-Token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjYyMDg0OTAwMSIsInVzZXJUeXBlIjoiMSIsImV4cCI6MTYxODIyMjc4NCwidXNlcklkIjoiMjQ5MDYwNzczMDY4OSIsIm9yZ0lkIjoiNjQzODczMzM0ODg2NiJ9.kheQJDi7lVar3UHVcG29HbPPPiVBUUO_WQ2jJXoi_Nc",
+    "X-Requested-With": "XMLHttpRequest",
     "domainName": "yadongitest",
-    "HRUN-Request-ID": "HRUN-609739f9-a289-40ed-8489-9a15f7e2e3db-393798"
+    "HRUN-Request-ID": "HRUN-c73a9595-ec48-4ad4-9073-74addc1b9c2b-582001"
 }
 cookies  : {}
 body     : None
 [0m
-[32m2021-04-12 15:59:53.895[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+[32m2021-04-12 16:19:42.179[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
 ================== response details ==================
 status_code : 200
 headers  : {
     "Server": "nginx",
-    "Date": "Mon, 12 Apr 2021 07:59:58 GMT",
+    "Date": "Mon, 12 Apr 2021 08:19:46 GMT",
     "Content-Type": "application/json;charset=UTF-8",
     "Transfer-Encoding": "chunked",
     "Connection": "keep-alive",
     "Access-Control-Allow-Methods": "GET,POST,OPTIONS,PUT,DELETE, GET,POST,OPTIONS",
-    "Set-Cookie": "rememberMe=deleteMe; Path=/clife-campus-education-garden-api-web; Max-Age=0; Expires=Sun, 11-Apr-2021 07:59:58 GMT",
+    "Set-Cookie": "rememberMe=deleteMe; Path=/clife-campus-education-garden-api-web; Max-Age=0; Expires=Sun, 11-Apr-2021 08:19:46 GMT",
     "Access-Control-Allow-Origin": "*",
     "Access-Control-Allow-Headers": "X-Requested-With"
 }
@@ -3228,16 +3228,16 @@ body     : {
     }
 }
 [0m
-[32m2021-04-12 15:59:53.895[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m218[0m - [1mstatus_code: 200, response_time(ms): 80.19 ms, response_length: 0 bytes[0m
-[32m2021-04-12 15:59:53.896[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert status_code equal 200(int)	==> pass[0m
-[32m2021-04-12 15:59:53.896[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass[0m
-[32m2021-04-12 15:59:53.896[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert body.code equal 0(int)	==> pass[0m
-[32m2021-04-12 15:59:53.896[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: /v1/web/edugarden/original/list <<<<<<
+[32m2021-04-12 16:19:42.179[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m218[0m - [1mstatus_code: 200, response_time(ms): 174.54 ms, response_length: 0 bytes[0m
+[32m2021-04-12 16:19:42.179[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert status_code equal 200(int)	==> pass[0m
+[32m2021-04-12 16:19:42.180[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass[0m
+[32m2021-04-12 16:19:42.180[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert body.code equal 0(int)	==> pass[0m
+[32m2021-04-12 16:19:42.180[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: /v1/web/edugarden/original/list <<<<<<
 [0m
-[32m2021-04-12 15:59:53.897[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: /v1/web/edugarden/infantAttendance/list >>>>>>[0m
-[32m2021-04-12 15:59:54.011[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 192.168.0.102, Port: 63674[0m
-[32m2021-04-12 15:59:54.011[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 119.29.116.47, Port: 80[0m
-[32m2021-04-12 15:59:54.011[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+[32m2021-04-12 16:19:42.180[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: /v1/web/edugarden/infantAttendance/list >>>>>>[0m
+[32m2021-04-12 16:19:42.307[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 192.168.0.102, Port: 53707[0m
+[32m2021-04-12 16:19:42.307[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 119.29.116.47, Port: 80[0m
+[32m2021-04-12 16:19:42.307[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
 ================== request details ==================
 method   : GET
 url      : http://yadongitest.icampus.clife.net/v1/web/edugarden/infantAttendance/list
@@ -3252,25 +3252,25 @@ headers  : {
     "Host": "yadongitest.icampus.clife.net",
     "Pragma": "no-cache",
     "Referer": "http://yadongitest.icampus.clife.net/school/",
-    "X-Access-Token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjYyMDg0OTAwMSIsInVzZXJUeXBlIjoiMSIsImV4cCI6MTYxODIyMTU5NSwidXNlcklkIjoiMjQ5MDYwNzczMDY4OSIsIm9yZ0lkIjoiNjQzODczMzM0ODg2NiJ9.pmZi9x9KhD4rPp-kZGoirr6aHC-_IdJ0DAnGgbvfHMo",
-    "X-Requested-With": "XMLhttpRequest",
+    "X-Access-Token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjYyMDg0OTAwMSIsInVzZXJUeXBlIjoiMSIsImV4cCI6MTYxODIyMjc4NCwidXNlcklkIjoiMjQ5MDYwNzczMDY4OSIsIm9yZ0lkIjoiNjQzODczMzM0ODg2NiJ9.kheQJDi7lVar3UHVcG29HbPPPiVBUUO_WQ2jJXoi_Nc",
+    "X-Requested-With": "XMLHttpRequest",
     "domainName": "yadongitest",
-    "HRUN-Request-ID": "HRUN-609739f9-a289-40ed-8489-9a15f7e2e3db-393897"
+    "HRUN-Request-ID": "HRUN-c73a9595-ec48-4ad4-9073-74addc1b9c2b-582180"
 }
 cookies  : {}
 body     : None
 [0m
-[32m2021-04-12 15:59:54.012[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+[32m2021-04-12 16:19:42.308[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
 ================== response details ==================
 status_code : 200
 headers  : {
     "Server": "nginx",
-    "Date": "Mon, 12 Apr 2021 07:59:58 GMT",
+    "Date": "Mon, 12 Apr 2021 08:19:46 GMT",
     "Content-Type": "application/json;charset=UTF-8",
     "Transfer-Encoding": "chunked",
     "Connection": "keep-alive",
     "Access-Control-Allow-Methods": "GET,POST,OPTIONS,PUT,DELETE, GET,POST,OPTIONS",
-    "Set-Cookie": "rememberMe=deleteMe; Path=/clife-campus-education-garden-api-web; Max-Age=0; Expires=Sun, 11-Apr-2021 07:59:58 GMT",
+    "Set-Cookie": "rememberMe=deleteMe; Path=/clife-campus-education-garden-api-web; Max-Age=0; Expires=Sun, 11-Apr-2021 08:19:46 GMT",
     "Access-Control-Allow-Origin": "*",
     "Access-Control-Allow-Headers": "X-Requested-With"
 }
@@ -3294,7 +3294,7 @@ body     : {
                 "amNormalTime": "09:20:00",
                 "pmNormalTime": "11:00:00",
                 "createTime": "2021-03-04 22:32:18",
-                "updateTime": "2021-04-12 15:53:33"
+                "updateTime": "2021-04-12 16:14:25"
             },
             {
                 "ruleId": 16815940567042,
@@ -3304,7 +3304,7 @@ body     : {
                 "amNormalTime": "10:10:00",
                 "pmNormalTime": "13:30:00",
                 "createTime": "2021-03-04 22:32:18",
-                "updateTime": "2021-04-12 15:53:33"
+                "updateTime": "2021-04-12 16:14:25"
             },
             {
                 "ruleId": 16815940567043,
@@ -3314,7 +3314,7 @@ body     : {
                 "amNormalTime": "10:00:00",
                 "pmNormalTime": "14:30:00",
                 "createTime": "2021-03-04 22:32:18",
-                "updateTime": "2021-04-12 15:53:33"
+                "updateTime": "2021-04-12 16:14:25"
             },
             {
                 "ruleId": 16815940567044,
@@ -3324,7 +3324,7 @@ body     : {
                 "amNormalTime": "12:00:00",
                 "pmNormalTime": "15:11:00",
                 "createTime": "2021-03-04 22:32:18",
-                "updateTime": "2021-04-12 15:53:33"
+                "updateTime": "2021-04-12 16:14:25"
             },
             {
                 "ruleId": 16815940567045,
@@ -3334,7 +3334,7 @@ body     : {
                 "amNormalTime": "12:50:00",
                 "pmNormalTime": "18:00:00",
                 "createTime": "2021-03-04 22:32:18",
-                "updateTime": "2021-04-12 15:53:33"
+                "updateTime": "2021-04-12 16:14:25"
             }
         ],
         "holidayList": [
@@ -3401,40 +3401,40 @@ body     : {
                 "remark": "234567890-=-09\u5455iu\u9884\u70ed\u6211\u53bb\u800c\u9000\u54e6iu\u72b9\u592a\u4eba\u88ab1234",
                 "status": null,
                 "deleted": 1,
-                "createTime": "2021-04-12 15:53:33",
-                "updateTime": "2021-04-12 15:53:33"
+                "createTime": "2021-04-12 16:14:25",
+                "updateTime": "2021-04-12 16:14:25"
             }
         ],
         "permit": 1,
         "broadcastList": [
             {
-                "broadcastId": 103,
+                "broadcastId": 109,
                 "orgId": 6438733348866,
                 "type": 1,
                 "message": "\u6b22\u8fce{sn}\u5c0f\u670b\u53cb\u5165\u56ed",
-                "updateTime": "2021-04-12 07:53:33"
+                "updateTime": "2021-04-12 08:14:25"
             },
             {
-                "broadcastId": 104,
+                "broadcastId": 110,
                 "orgId": 6438733348866,
                 "type": 2,
                 "message": "{sn}\u5c0f\u670b\u53cb\uff0c\u5bb6\u957f\u6765\u63a5\u5566",
-                "updateTime": "2021-04-12 07:53:33"
+                "updateTime": "2021-04-12 08:14:25"
             }
         ]
     }
 }
 [0m
-[32m2021-04-12 15:59:54.012[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m218[0m - [1mstatus_code: 200, response_time(ms): 113.7 ms, response_length: 0 bytes[0m
-[32m2021-04-12 15:59:54.012[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert status_code equal 200(int)	==> pass[0m
-[32m2021-04-12 15:59:54.013[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass[0m
-[32m2021-04-12 15:59:54.013[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert body.code equal 0(int)	==> pass[0m
-[32m2021-04-12 15:59:54.013[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: /v1/web/edugarden/infantAttendance/list <<<<<<
+[32m2021-04-12 16:19:42.308[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m218[0m - [1mstatus_code: 200, response_time(ms): 125.66 ms, response_length: 0 bytes[0m
+[32m2021-04-12 16:19:42.309[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert status_code equal 200(int)	==> pass[0m
+[32m2021-04-12 16:19:42.309[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass[0m
+[32m2021-04-12 16:19:42.309[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert body.code equal 0(int)	==> pass[0m
+[32m2021-04-12 16:19:42.309[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: /v1/web/edugarden/infantAttendance/list <<<<<<
 [0m
-[32m2021-04-12 15:59:54.013[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: /v1/web/edugarden/infantAttendance/setting >>>>>>[0m
-[32m2021-04-12 15:59:54.163[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 192.168.0.102, Port: 63674[0m
-[32m2021-04-12 15:59:54.163[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 119.29.116.47, Port: 80[0m
-[32m2021-04-12 15:59:54.164[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+[32m2021-04-12 16:19:42.309[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: /v1/web/edugarden/infantAttendance/setting >>>>>>[0m
+[32m2021-04-12 16:19:42.593[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 192.168.0.102, Port: 53707[0m
+[32m2021-04-12 16:19:42.593[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 119.29.116.47, Port: 80[0m
+[32m2021-04-12 16:19:42.594[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
 ================== request details ==================
 method   : POST
 url      : http://yadongitest.icampus.clife.net/v1/web/edugarden/infantAttendance/setting
@@ -3449,10 +3449,10 @@ headers  : {
     "Host": "yadongitest.icampus.clife.net",
     "Origin": "http://yadongitest.icampus.clife.net",
     "Referer": "http://yadongitest.icampus.clife.net/school/",
-    "X-Access-Token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjYyMDg0OTAwMSIsInVzZXJUeXBlIjoiMSIsImV4cCI6MTYxODIyMTU5NSwidXNlcklkIjoiMjQ5MDYwNzczMDY4OSIsIm9yZ0lkIjoiNjQzODczMzM0ODg2NiJ9.pmZi9x9KhD4rPp-kZGoirr6aHC-_IdJ0DAnGgbvfHMo",
-    "X-Requested-With": "XMLhttpRequest",
+    "X-Access-Token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjYyMDg0OTAwMSIsInVzZXJUeXBlIjoiMSIsImV4cCI6MTYxODIyMjc4NCwidXNlcklkIjoiMjQ5MDYwNzczMDY4OSIsIm9yZ0lkIjoiNjQzODczMzM0ODg2NiJ9.kheQJDi7lVar3UHVcG29HbPPPiVBUUO_WQ2jJXoi_Nc",
+    "X-Requested-With": "XMLHttpRequest",
     "domainName": "yadongitest",
-    "HRUN-Request-ID": "HRUN-609739f9-a289-40ed-8489-9a15f7e2e3db-394014"
+    "HRUN-Request-ID": "HRUN-c73a9595-ec48-4ad4-9073-74addc1b9c2b-582310"
 }
 cookies  : {}
 body     : {
@@ -3543,18 +3543,18 @@ body     : {
     "startTime": "07:00:00"
 }
 [0m
-[32m2021-04-12 15:59:54.165[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+[32m2021-04-12 16:19:42.594[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
 ================== response details ==================
 status_code : 200
 headers  : {
     "Server": "nginx",
-    "Date": "Mon, 12 Apr 2021 07:59:58 GMT",
+    "Date": "Mon, 12 Apr 2021 08:19:47 GMT",
     "Content-Type": "application/json;charset=UTF-8",
     "Content-Length": "32",
     "Connection": "keep-alive",
     "Access-Control-Allow-Methods": "GET,POST,OPTIONS,PUT,DELETE, GET,POST,OPTIONS",
     "Access-Control-Allow-Origin": "http://yadongitest.icampus.clife.net, *",
-    "Set-Cookie": "rememberMe=deleteMe; Path=/clife-campus-education-garden-api-web; Max-Age=0; Expires=Sun, 11-Apr-2021 07:59:58 GMT",
+    "Set-Cookie": "rememberMe=deleteMe; Path=/clife-campus-education-garden-api-web; Max-Age=0; Expires=Sun, 11-Apr-2021 08:19:46 GMT",
     "Access-Control-Allow-Headers": "X-Requested-With"
 }
 cookies  : {}
@@ -3565,17 +3565,17 @@ body     : {
     "data": "\u64cd\u4f5c\u6210\u529f"
 }
 [0m
-[32m2021-04-12 15:59:54.165[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m218[0m - [1mstatus_code: 200, response_time(ms): 149.61 ms, response_length: 0 bytes[0m
-[32m2021-04-12 15:59:54.165[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert status_code equal 200(int)	==> pass[0m
-[32m2021-04-12 15:59:54.165[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass[0m
-[32m2021-04-12 15:59:54.165[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert body.code equal 0(int)	==> pass[0m
-[32m2021-04-12 15:59:54.166[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert body.data equal 操作成功(str)	==> pass[0m
-[32m2021-04-12 15:59:54.166[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: /v1/web/edugarden/infantAttendance/setting <<<<<<
+[32m2021-04-12 16:19:42.594[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m218[0m - [1mstatus_code: 200, response_time(ms): 283.24 ms, response_length: 0 bytes[0m
+[32m2021-04-12 16:19:42.595[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert status_code equal 200(int)	==> pass[0m
+[32m2021-04-12 16:19:42.595[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass[0m
+[32m2021-04-12 16:19:42.595[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert body.code equal 0(int)	==> pass[0m
+[32m2021-04-12 16:19:42.596[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert body.data equal 操作成功(str)	==> pass[0m
+[32m2021-04-12 16:19:42.599[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: /v1/web/edugarden/infantAttendance/setting <<<<<<
 [0m
-[32m2021-04-12 15:59:54.166[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: /v1/web/edugarden/infantAttendance/list >>>>>>[0m
-[32m2021-04-12 15:59:54.266[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 192.168.0.102, Port: 63674[0m
-[32m2021-04-12 15:59:54.266[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 119.29.116.47, Port: 80[0m
-[32m2021-04-12 15:59:54.266[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+[32m2021-04-12 16:19:42.599[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: /v1/web/edugarden/infantAttendance/list >>>>>>[0m
+[32m2021-04-12 16:19:42.813[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 192.168.0.102, Port: 53707[0m
+[32m2021-04-12 16:19:42.813[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 119.29.116.47, Port: 80[0m
+[32m2021-04-12 16:19:42.813[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
 ================== request details ==================
 method   : GET
 url      : http://yadongitest.icampus.clife.net/v1/web/edugarden/infantAttendance/list
@@ -3590,25 +3590,25 @@ headers  : {
     "Host": "yadongitest.icampus.clife.net",
     "Pragma": "no-cache",
     "Referer": "http://yadongitest.icampus.clife.net/school/",
-    "X-Access-Token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjYyMDg0OTAwMSIsInVzZXJUeXBlIjoiMSIsImV4cCI6MTYxODIyMTU5NSwidXNlcklkIjoiMjQ5MDYwNzczMDY4OSIsIm9yZ0lkIjoiNjQzODczMzM0ODg2NiJ9.pmZi9x9KhD4rPp-kZGoirr6aHC-_IdJ0DAnGgbvfHMo",
-    "X-Requested-With": "XMLhttpRequest",
+    "X-Access-Token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjYyMDg0OTAwMSIsInVzZXJUeXBlIjoiMSIsImV4cCI6MTYxODIyMjc4NCwidXNlcklkIjoiMjQ5MDYwNzczMDY4OSIsIm9yZ0lkIjoiNjQzODczMzM0ODg2NiJ9.kheQJDi7lVar3UHVcG29HbPPPiVBUUO_WQ2jJXoi_Nc",
+    "X-Requested-With": "XMLHttpRequest",
     "domainName": "yadongitest",
-    "HRUN-Request-ID": "HRUN-609739f9-a289-40ed-8489-9a15f7e2e3db-394166"
+    "HRUN-Request-ID": "HRUN-c73a9595-ec48-4ad4-9073-74addc1b9c2b-582599"
 }
 cookies  : {}
 body     : None
 [0m
-[32m2021-04-12 15:59:54.267[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+[32m2021-04-12 16:19:42.814[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
 ================== response details ==================
 status_code : 200
 headers  : {
     "Server": "nginx",
-    "Date": "Mon, 12 Apr 2021 07:59:58 GMT",
+    "Date": "Mon, 12 Apr 2021 08:19:47 GMT",
     "Content-Type": "application/json;charset=UTF-8",
     "Transfer-Encoding": "chunked",
     "Connection": "keep-alive",
     "Access-Control-Allow-Methods": "GET,POST,OPTIONS,PUT,DELETE, GET,POST,OPTIONS",
-    "Set-Cookie": "rememberMe=deleteMe; Path=/clife-campus-education-garden-api-web; Max-Age=0; Expires=Sun, 11-Apr-2021 07:59:58 GMT",
+    "Set-Cookie": "rememberMe=deleteMe; Path=/clife-campus-education-garden-api-web; Max-Age=0; Expires=Sun, 11-Apr-2021 08:19:47 GMT",
     "Access-Control-Allow-Origin": "*",
     "Access-Control-Allow-Headers": "X-Requested-With"
 }
@@ -3632,7 +3632,7 @@ body     : {
                 "amNormalTime": "09:20:00",
                 "pmNormalTime": "11:00:00",
                 "createTime": "2021-03-04 22:32:18",
-                "updateTime": "2021-04-12 15:59:59"
+                "updateTime": "2021-04-12 16:19:47"
             },
             {
                 "ruleId": 16815940567042,
@@ -3642,7 +3642,7 @@ body     : {
                 "amNormalTime": "10:10:00",
                 "pmNormalTime": "13:30:00",
                 "createTime": "2021-03-04 22:32:18",
-                "updateTime": "2021-04-12 15:59:59"
+                "updateTime": "2021-04-12 16:19:47"
             },
             {
                 "ruleId": 16815940567043,
@@ -3652,7 +3652,7 @@ body     : {
                 "amNormalTime": "10:00:00",
                 "pmNormalTime": "14:30:00",
                 "createTime": "2021-03-04 22:32:18",
-                "updateTime": "2021-04-12 15:59:59"
+                "updateTime": "2021-04-12 16:19:47"
             },
             {
                 "ruleId": 16815940567044,
@@ -3662,7 +3662,7 @@ body     : {
                 "amNormalTime": "12:00:00",
                 "pmNormalTime": "15:11:00",
                 "createTime": "2021-03-04 22:32:18",
-                "updateTime": "2021-04-12 15:59:59"
+                "updateTime": "2021-04-12 16:19:47"
             },
             {
                 "ruleId": 16815940567045,
@@ -3672,7 +3672,7 @@ body     : {
                 "amNormalTime": "12:50:00",
                 "pmNormalTime": "18:00:00",
                 "createTime": "2021-03-04 22:32:18",
-                "updateTime": "2021-04-12 15:59:59"
+                "updateTime": "2021-04-12 16:19:47"
             }
         ],
         "holidayList": [
@@ -3739,34 +3739,34 @@ body     : {
                 "remark": "234567890-=-09\u5455iu\u9884\u70ed\u6211\u53bb\u800c\u9000\u54e6iu\u72b9\u592a\u4eba\u88ab1234",
                 "status": null,
                 "deleted": 1,
-                "createTime": "2021-04-12 15:59:59",
-                "updateTime": "2021-04-12 15:59:59"
+                "createTime": "2021-04-12 16:19:47",
+                "updateTime": "2021-04-12 16:19:47"
             }
         ],
         "permit": 1,
         "broadcastList": [
             {
-                "broadcastId": 105,
+                "broadcastId": 111,
                 "orgId": 6438733348866,
                 "type": 1,
                 "message": "\u6b22\u8fce{sn}\u5c0f\u670b\u53cb\u5165\u56ed",
-                "updateTime": "2021-04-12 07:59:59"
+                "updateTime": "2021-04-12 08:19:47"
             },
             {
-                "broadcastId": 106,
+                "broadcastId": 112,
                 "orgId": 6438733348866,
                 "type": 2,
                 "message": "{sn}\u5c0f\u670b\u53cb\uff0c\u5bb6\u957f\u6765\u63a5\u5566",
-                "updateTime": "2021-04-12 07:59:59"
+                "updateTime": "2021-04-12 08:19:47"
             }
         ]
     }
 }
 [0m
-[32m2021-04-12 15:59:54.267[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m218[0m - [1mstatus_code: 200, response_time(ms): 99.5 ms, response_length: 0 bytes[0m
-[32m2021-04-12 15:59:54.268[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert status_code equal 200(int)	==> pass[0m
-[32m2021-04-12 15:59:54.268[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass[0m
-[32m2021-04-12 15:59:54.268[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert body.code equal 0(int)	==> pass[0m
-[32m2021-04-12 15:59:54.268[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: /v1/web/edugarden/infantAttendance/list <<<<<<
+[32m2021-04-12 16:19:42.815[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m218[0m - [1mstatus_code: 200, response_time(ms): 213.62 ms, response_length: 0 bytes[0m
+[32m2021-04-12 16:19:42.815[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert status_code equal 200(int)	==> pass[0m
+[32m2021-04-12 16:19:42.815[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass[0m
+[32m2021-04-12 16:19:42.815[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert body.code equal 0(int)	==> pass[0m
+[32m2021-04-12 16:19:42.815[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: /v1/web/edugarden/infantAttendance/list <<<<<<
 [0m
-[32m2021-04-12 15:59:54.268[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36mtest_start[0m:[36m460[0m - [1mgenerate testcase log: D:\WorkSpace\Python\HogWort9\interfacedemo\logs\609739f9-a289-40ed-8489-9a15f7e2e3db.run.log[0m
+[32m2021-04-12 16:19:42.816[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36mtest_start[0m:[36m460[0m - [1mgenerate testcase log: D:\WorkSpace\Python\HogWort9\interfacedemo\logs\c73a9595-ec48-4ad4-9073-74addc1b9c2b.run.log[0m

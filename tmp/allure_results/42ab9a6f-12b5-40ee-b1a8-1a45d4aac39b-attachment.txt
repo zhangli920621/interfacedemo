@@ -1,0 +1,78 @@
+[32m2021-04-12 16:19:38.370[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36mtest_start[0m:[36m451[0m - [1mStart to run testcase: testcase description, TestCase ID: 8ed7dfa0-6b91-4573-a010-730cd67bc87a[0m
+[32m2021-04-12 16:19:38.370[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: /v1/web/eduaccount/sys/login >>>>>>[0m
+[32m2021-04-12 16:19:39.546[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 192.168.0.102, Port: 53698[0m
+[32m2021-04-12 16:19:39.547[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 119.29.116.47, Port: 80[0m
+[32m2021-04-12 16:19:39.547[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== request details ==================
+method   : POST
+url      : http://yadongitest.icampus.clife.net/v1/web/eduaccount/sys/login
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
+    "Content-Length": "76",
+    "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
+    "Host": "yadongitest.icampus.clife.net",
+    "Origin": "http://yadongitest.icampus.clife.net",
+    "Referer": "http://yadongitest.icampus.clife.net/school/",
+    "X-Requested-With": "XMLhttpRequest",
+    "domainName": "yadongitest",
+    "HRUN-Request-ID": "HRUN-8ed7dfa0-6b91-4573-a010-730cd67bc87a-578371"
+}
+cookies  : {}
+body     : systemCode=garden&password=VUsFjBeODaABgu37tXzPbw%3D%3D&username=16620849001
+[0m
+[32m2021-04-12 16:19:39.548[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Mon, 12 Apr 2021 08:19:44 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "667",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "X-Requested-With",
+    "Access-Control-Allow-Methods": "GET,POST,OPTIONS"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "code": 0,
+    "data": {
+        "positionName": "\u9662\u957f",
+        "orgType": 3,
+        "userInfo": {
+            "userId": 2490607730689,
+            "username": "16620849001",
+            "realname": "\u4e9a\u4e1c\u53bf\u5e7c\u513f\u56ed-1\u53f7-",
+            "password": null,
+            "orgId": 6438733348866,
+            "orgCode": null,
+            "avatar": null,
+            "status": null,
+            "userType": 1,
+            "createTime": null
+        },
+        "classSize": 16,
+        "orgName": "\u4e9a\u4e1c\u5e7c\u513f\u56ed-\u5f20\u4e3d\u4e0d\u51c6\u52a8",
+        "domainName": "yadongitest",
+        "userType": 1,
+        "systemUrl": "./user_manage.html",
+        "orgId": 6438733348866,
+        "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjYyMDg0OTAwMSIsInVzZXJUeXBlIjoiMSIsImV4cCI6MTYxODIyMjc4NCwidXNlcklkIjoiMjQ5MDYwNzczMDY4OSIsIm9yZ0lkIjoiNjQzODczMzM0ODg2NiJ9.kheQJDi7lVar3UHVcG29HbPPPiVBUUO_WQ2jJXoi_Nc",
+        "dataPermission": 1
+    }
+}
+[0m
+[32m2021-04-12 16:19:39.548[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m218[0m - [1mstatus_code: 200, response_time(ms): 1174.88 ms, response_length: 0 bytes[0m
+[32m2021-04-12 16:19:39.548[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert status_code equal 200(int)	==> pass[0m
+[32m2021-04-12 16:19:39.548[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass[0m
+[32m2021-04-12 16:19:39.549[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert body.code equal 0(int)	==> pass[0m
+[32m2021-04-12 16:19:39.549[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: /v1/web/eduaccount/sys/login <<<<<<
+[0m
+[32m2021-04-12 16:19:39.549[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: /v1/web/edugarden/attendance/shift/list >>>>>>[0m
+[32m2021-04-12 16:19:39.550[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36mtest_start[0m:[36m460[0m - [1mgenerate testcase log: D:\WorkSpace\Python\HogWort9\interfacedemo\logs\8ed7dfa0-6b91-4573-a010-730cd67bc87a.run.log[0m

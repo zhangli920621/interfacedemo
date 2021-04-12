@@ -24,7 +24,7 @@ teststeps:
             Referer: $Protocol://$host/school/
             User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
                 like Gecko) Chrome/86.0.4240.198 Safari/537.36
-            X-Requested-With: XMLhttpRequest
+            X-Requested-With: XMLHttpRequest
             domainName: $domainName
         method: POST
         url: $Protocol://$host/v1/web/eduaccount/sys/login
@@ -55,7 +55,7 @@ teststeps:
             User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
                 like Gecko) Chrome/86.0.4240.198 Safari/537.36
             X-Access-Token: $token
-            X-Requested-With: XMLhttpRequest
+            X-Requested-With: XMLHttpRequest
             domainName: $domainName
         method: GET
         params:
@@ -86,7 +86,7 @@ teststeps:
             User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
                 like Gecko) Chrome/86.0.4240.198 Safari/537.36
             X-Access-Token: $token
-            X-Requested-With: XMLhttpRequest
+            X-Requested-With: XMLHttpRequest
             domainName: $domainName
         method: GET
         url: $Protocol://$host/v1/web/edugarden/statistic/selectClass?
@@ -115,7 +115,7 @@ teststeps:
             User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
                 like Gecko) Chrome/86.0.4240.198 Safari/537.36
             X-Access-Token: $token
-            X-Requested-With: XMLhttpRequest
+            X-Requested-With: XMLHttpRequest
             domainName: $domainName
         method: GET
         params:
@@ -148,7 +148,7 @@ teststeps:
             User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
                 like Gecko) Chrome/86.0.4240.198 Safari/537.36
             X-Access-Token: $token
-            X-Requested-With: XMLhttpRequest
+            X-Requested-With: XMLHttpRequest
             domainName: $domainName
         method: GET
         params:
@@ -182,7 +182,7 @@ teststeps:
             User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
                 like Gecko) Chrome/86.0.4240.198 Safari/537.36
             X-Access-Token: $token
-            X-Requested-With: XMLhttpRequest
+            X-Requested-With: XMLHttpRequest
             domainName: $domainName
         method: GET
         params:
@@ -215,7 +215,7 @@ teststeps:
             User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
                 like Gecko) Chrome/86.0.4240.198 Safari/537.36
             X-Access-Token: $token
-            X-Requested-With: XMLhttpRequest
+            X-Requested-With: XMLHttpRequest
             domainName: $domainName
         method: GET
         params:
@@ -249,7 +249,7 @@ teststeps:
             User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
                 like Gecko) Chrome/86.0.4240.198 Safari/537.36
             X-Access-Token: $token
-            X-Requested-With: XMLhttpRequest
+            X-Requested-With: XMLHttpRequest
             domainName: $domainName
         method: GET
         params:
@@ -283,7 +283,7 @@ teststeps:
             User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
                 like Gecko) Chrome/86.0.4240.198 Safari/537.36
             X-Access-Token: $token
-            X-Requested-With: XMLhttpRequest
+            X-Requested-With: XMLHttpRequest
             domainName: $domainName
         method: GET
         url: $Protocol://$host/v1/web/edugarden/infantAttendance/list?
@@ -312,7 +312,7 @@ teststeps:
             User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
                 like Gecko) Chrome/86.0.4240.198 Safari/537.36
             X-Access-Token: $token
-            X-Requested-With: XMLhttpRequest
+            X-Requested-With: XMLHttpRequest
             domainName: $domainName
         json:
             broadcastList:
@@ -411,7 +411,7 @@ teststeps:
             User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
                 like Gecko) Chrome/86.0.4240.198 Safari/537.36
             X-Access-Token: $token
-            X-Requested-With: XMLhttpRequest
+            X-Requested-With: XMLHttpRequest
             domainName: $domainName
         method: GET
         url: $Protocol://$host/v1/web/edugarden/infantAttendance/list?
