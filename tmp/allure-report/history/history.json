@@ -9,13 +9,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "6172ee08795dbe3a",
+      "uid" : "f5ba4bffdfad516",
       "status" : "broken",
       "statusDetails" : "httprunner.exceptions.ValidationFailure: assert body.code equal 0(int)\t==> fail\ncheck_item: body.code\ncheck_value: -1(int)\nassert_method: equal\nexpect_value: 0(int)\nassert body.data equal 成功(str)\t==> fail\ncheck_item: body.data\ncheck_value: None(NoneType)\nassert_method: equal\nexpect_value: 成功(str)",
       "time" : {
-        "start" : 1618113551614,
-        "stop" : 1618113553120,
-        "duration" : 1506
+        "start" : 1618187223904,
+        "stop" : 1618187230793,
+        "duration" : 6889
       }
     } ]
   },
@@ -29,13 +29,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "eb91eb42e910ef2d",
+      "uid" : "e16016c6c5c2bb25",
       "status" : "broken",
-      "statusDetails" : "httprunner.exceptions.VariableNotFound: studentId not found in {'Protocol': 'http', 'host': 'yadongitest.icampus.clife.net', 'donainname': 'yadongitest', 'token1': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjYyMDg0OTAwMSIsInVzZXJUeXBlIjoiMSIsImV4cCI6MTYxODEyMDc1MiwidXNlcklkIjoiMjQ5MDYwNzczMDY4OSIsIm9yZ0lkIjoiNjQzODczMzM0ODg2NiJ9.buK_BZ_T3brTHyPDeYm6uKGWZ-RcjIqEJar2D9_M4I0'}",
+      "statusDetails" : "httprunner.exceptions.VariableNotFound: studentId not found in {'Protocol': 'http', 'host': 'yadongitest.icampus.clife.net', 'donainname': 'yadongitest', 'token1': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjYyMDg0OTAwMSIsInVzZXJUeXBlIjoiMSIsImV4cCI6MTYxODE5NDQyMCwidXNlcklkIjoiMjQ5MDYwNzczMDY4OSIsIm9yZ0lkIjoiNjQzODczMzM0ODg2NiJ9.xqO0VUepfrrMfPLESiiBIUA-5Nb55XSnSV-s9_Yfbzg'}",
       "time" : {
-        "start" : 1618113549065,
-        "stop" : 1618113549896,
-        "duration" : 831
+        "start" : 1618187216533,
+        "stop" : 1618187217104,
+        "duration" : 571
       }
     } ]
   },
@@ -49,13 +49,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "98d4627205825135",
+      "uid" : "c92adf0c2cf3f07c",
       "status" : "broken",
       "statusDetails" : "httprunner.exceptions.ValidationFailure: assert body.code equal 0(int)\t==> fail\ncheck_item: body.code\ncheck_value: 500(int)\nassert_method: equal\nexpect_value: 0(int)",
       "time" : {
-        "start" : 1618113549942,
-        "stop" : 1618113551588,
-        "duration" : 1646
+        "start" : 1618187217162,
+        "stop" : 1618187219223,
+        "duration" : 2061
       }
     } ]
   },
@@ -69,13 +69,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "8100d0a9a80e89ce",
+      "uid" : "ba4dfdfcda93e3c3",
       "status" : "broken",
-      "statusDetails" : "httprunner.exceptions.VariableNotFound: valid not found in {'Protocol': 'http', 'host': 'yadongitest.icampus.clife.net', 'donainname': 'yadongitest', 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjYyMDg0OTAwMSIsInVzZXJUeXBlIjoiMSIsImV4cCI6MTYxODEyMDc1OCwidXNlcklkIjoiMjQ5MDYwNzczMDY4OSIsIm9yZ0lkIjoiNjQzODczMzM0ODg2NiJ9.dU4913ry8_88LBkOhc7aw5R0tAXsdAku6ZQU5CBhBQ4'}",
+      "statusDetails" : "httprunner.exceptions.VariableNotFound: valid not found in {'Protocol': 'http', 'host': 'yadongitest.icampus.clife.net', 'donainname': 'yadongitest', 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjYyMDg0OTAwMSIsInVzZXJUeXBlIjoiMSIsImV4cCI6MTYxODE5NDQyNiwidXNlcklkIjoiMjQ5MDYwNzczMDY4OSIsIm9yZ0lkIjoiNjQzODczMzM0ODg2NiJ9.oec_oWiM7OGs3pfoylwNBqS4Mw2fIC5eXK1qUITFaCc'}",
       "time" : {
-        "start" : 1618113554921,
-        "stop" : 1618113555737,
-        "duration" : 816
+        "start" : 1618187222602,
+        "stop" : 1618187223835,
+        "duration" : 1233
       }
     } ]
   },
@@ -89,13 +89,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "e1ed60f4f8011e3",
+      "uid" : "75ccead63e8ac4d5",
       "status" : "broken",
       "statusDetails" : "httprunner.exceptions.ValidationFailure: assert body.code equal 0(int)\t==> fail\ncheck_item: body.code\ncheck_value: 500(int)\nassert_method: equal\nexpect_value: 0(int)",
       "time" : {
-        "start" : 1618113553150,
-        "stop" : 1618113554887,
-        "duration" : 1737
+        "start" : 1618187219270,
+        "stop" : 1618187222549,
+        "duration" : 3279
       }
     } ]
   }

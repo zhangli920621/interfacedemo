@@ -9,13 +9,13 @@
         "name" : "TestCaseYadongCampusClifeCn家长H5幼儿考勤",
         "children" : [ {
           "name" : "家长H5_幼儿考勤",
-          "uid" : "eb91eb42e910ef2d",
+          "uid" : "e16016c6c5c2bb25",
           "parentUid" : "9c400dcb856f9332495629bba94d651f",
           "status" : "broken",
           "time" : {
-            "start" : 1618113549065,
-            "stop" : 1618113549896,
-            "duration" : 831
+            "start" : 1618187216533,
+            "stop" : 1618187217104,
+            "duration" : 571
           },
           "flaky" : false,
           "newFailed" : false,
@@ -34,13 +34,13 @@
         "name" : "TestCaseYadongCampusClifeCn教师H5幼儿考勤",
         "children" : [ {
           "name" : "教师H5_幼儿考勤",
-          "uid" : "98d4627205825135",
+          "uid" : "c92adf0c2cf3f07c",
           "parentUid" : "3852d3882833d444ddf3589023996f8d",
           "status" : "broken",
           "time" : {
-            "start" : 1618113549942,
-            "stop" : 1618113551588,
-            "duration" : 1646
+            "start" : 1618187217162,
+            "stop" : 1618187219223,
+            "duration" : 2061
           },
           "flaky" : false,
           "newFailed" : false,
@@ -55,13 +55,13 @@
         "name" : "TestCaseYadongCampusClifeCn教师H5教职工考勤",
         "children" : [ {
           "name" : "教师H5_教职工考勤",
-          "uid" : "8100d0a9a80e89ce",
+          "uid" : "ba4dfdfcda93e3c3",
           "parentUid" : "e3925d7cb1eda7bb7edb05bc07c0b4a9",
           "status" : "broken",
           "time" : {
-            "start" : 1618113554921,
-            "stop" : 1618113555737,
-            "duration" : 816
+            "start" : 1618187222602,
+            "stop" : 1618187223835,
+            "duration" : 1233
           },
           "flaky" : false,
           "newFailed" : false,
@@ -75,39 +75,18 @@
   }, {
     "name" : "interfacedemo.testcases.园业务web",
     "children" : [ {
-      "name" : "yadong_campus_clife_cn_园业务web_教职工考勤管理_test",
-      "children" : [ {
-        "name" : "TestCaseYadongCampusClifeCn园业务Web教职工考勤管理",
-        "children" : [ {
-          "name" : "园业务web_教职工考勤管理",
-          "uid" : "6172ee08795dbe3a",
-          "parentUid" : "d32bc34a309633197aebc09ebe785127",
-          "status" : "broken",
-          "time" : {
-            "start" : 1618113551614,
-            "stop" : 1618113553120,
-            "duration" : 1506
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ ]
-        } ],
-        "uid" : "d32bc34a309633197aebc09ebe785127"
-      } ],
-      "uid" : "831031b89ea6a1ff749d0f0564df31b2"
-    }, {
       "name" : "yadong_campus_clife_cn_园业务web_幼儿考勤管理_test",
       "children" : [ {
         "name" : "TestCaseYadongCampusClifeCn园业务Web幼儿考勤管理",
         "children" : [ {
           "name" : "园业务web_幼儿考勤管理",
-          "uid" : "e1ed60f4f8011e3",
+          "uid" : "75ccead63e8ac4d5",
           "parentUid" : "9ae5343b500c00d10c348b659445b46b",
           "status" : "broken",
           "time" : {
-            "start" : 1618113553150,
-            "stop" : 1618113554887,
-            "duration" : 1737
+            "start" : 1618187219270,
+            "stop" : 1618187222549,
+            "duration" : 3279
           },
           "flaky" : false,
           "newFailed" : false,
@@ -116,6 +95,27 @@
         "uid" : "9ae5343b500c00d10c348b659445b46b"
       } ],
       "uid" : "dc52b02bcbffd172846972b976a7f19e"
+    }, {
+      "name" : "yadong_campus_clife_cn_园业务web_教职工考勤管理_test",
+      "children" : [ {
+        "name" : "TestCaseYadongCampusClifeCn园业务Web教职工考勤管理",
+        "children" : [ {
+          "name" : "园业务web_教职工考勤管理",
+          "uid" : "f5ba4bffdfad516",
+          "parentUid" : "d32bc34a309633197aebc09ebe785127",
+          "status" : "broken",
+          "time" : {
+            "start" : 1618187223904,
+            "stop" : 1618187230793,
+            "duration" : 6889
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "d32bc34a309633197aebc09ebe785127"
+      } ],
+      "uid" : "831031b89ea6a1ff749d0f0564df31b2"
     } ],
     "uid" : "6f112cf7c01c7c6f6b0651d5fcdefb06"
   } ]

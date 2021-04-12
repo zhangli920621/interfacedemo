@@ -1,5 +1,4 @@
 import time
-
 from httprunner import __version__
 
 
@@ -22,6 +21,3 @@ def teardown_hook():
 def get_date():
     struct_time = time.localtime()
     return '-'.join([str(struct_time.tm_year), str(struct_time.tm_mon), str(struct_time.tm_mday)])
-
-
-

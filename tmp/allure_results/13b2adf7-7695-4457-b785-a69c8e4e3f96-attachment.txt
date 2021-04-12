@@ -1,8 +1,8 @@
-[32m2021-04-11 11:59:09.068[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36mtest_start[0m:[36m451[0m - [1mStart to run testcase: 家长H5_幼儿考勤, TestCase ID: a1e9e7af-9cf8-4cc0-a5e8-c73269b4fac9[0m
-[32m2021-04-11 11:59:09.069[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: 家长H5_登陆 >>>>>>[0m
-[32m2021-04-11 11:59:09.495[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 192.168.0.104, Port: 63277[0m
-[32m2021-04-11 11:59:09.495[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 119.29.116.47, Port: 80[0m
-[32m2021-04-11 11:59:09.498[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+[32m2021-04-12 08:26:56.535[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36mtest_start[0m:[36m451[0m - [1mStart to run testcase: 家长H5_幼儿考勤, TestCase ID: df10af37-6b1d-4fa4-b294-c07896fafc0b[0m
+[32m2021-04-12 08:26:56.536[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: 家长H5_登陆 >>>>>>[0m
+[32m2021-04-12 08:26:56.704[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 192.168.0.102, Port: 51079[0m
+[32m2021-04-12 08:26:56.705[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 119.29.116.47, Port: 80[0m
+[32m2021-04-12 08:26:56.708[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
 ================== request details ==================
 method   : POST
 url      : http://yadongitest.icampus.clife.net/v1/web/eduaccount/sys/login
@@ -19,17 +19,17 @@ headers  : {
     "Referer": "http://yadongitest.icampus.clife.net/school/m/",
     "X-Requested-With": "XMLHttpRequest",
     "domainName": "yadongitest",
-    "HRUN-Request-ID": "HRUN-a1e9e7af-9cf8-4cc0-a5e8-c73269b4fac9-549070"
+    "HRUN-Request-ID": "HRUN-df10af37-6b1d-4fa4-b294-c07896fafc0b-216536"
 }
 cookies  : {}
 body     : systemCode=h5garden&username=16620849001&password=VUsFjBeODaABgu37tXzPbw%3D%3D
 [0m
-[32m2021-04-11 11:59:09.499[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+[32m2021-04-12 08:26:56.711[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
 ================== response details ==================
 status_code : 200
 headers  : {
     "Server": "nginx",
-    "Date": "Sun, 11 Apr 2021 03:59:12 GMT",
+    "Date": "Mon, 12 Apr 2021 00:27:00 GMT",
     "Content-Type": "application/json;charset=UTF-8",
     "Content-Length": "667",
     "Connection": "keep-alive",
@@ -63,22 +63,22 @@ body     : {
         "userType": 1,
         "systemUrl": "./user_manage.html",
         "orgId": 6438733348866,
-        "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjYyMDg0OTAwMSIsInVzZXJUeXBlIjoiMSIsImV4cCI6MTYxODEyMDc1MiwidXNlcklkIjoiMjQ5MDYwNzczMDY4OSIsIm9yZ0lkIjoiNjQzODczMzM0ODg2NiJ9.buK_BZ_T3brTHyPDeYm6uKGWZ-RcjIqEJar2D9_M4I0",
+        "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjYyMDg0OTAwMSIsInVzZXJUeXBlIjoiMSIsImV4cCI6MTYxODE5NDQyMCwidXNlcklkIjoiMjQ5MDYwNzczMDY4OSIsIm9yZ0lkIjoiNjQzODczMzM0ODg2NiJ9.xqO0VUepfrrMfPLESiiBIUA-5Nb55XSnSV-s9_Yfbzg",
         "dataPermission": 1
     }
 }
 [0m
-[32m2021-04-11 11:59:09.499[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m218[0m - [1mstatus_code: 200, response_time(ms): 424.86 ms, response_length: 0 bytes[0m
-[32m2021-04-11 11:59:09.500[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mextract[0m:[36m176[0m - [1mextract mapping: {'token1': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjYyMDg0OTAwMSIsInVzZXJUeXBlIjoiMSIsImV4cCI6MTYxODEyMDc1MiwidXNlcklkIjoiMjQ5MDYwNzczMDY4OSIsIm9yZ0lkIjoiNjQzODczMzM0ODg2NiJ9.buK_BZ_T3brTHyPDeYm6uKGWZ-RcjIqEJar2D9_M4I0'}[0m
-[32m2021-04-11 11:59:09.500[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert status_code equal 200(int)	==> pass[0m
-[32m2021-04-11 11:59:09.500[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass[0m
-[32m2021-04-11 11:59:09.500[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert body.code equal 0(int)	==> pass[0m
-[32m2021-04-11 11:59:09.501[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: 家长H5_登陆 <<<<<<
+[32m2021-04-12 08:26:56.712[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m218[0m - [1mstatus_code: 200, response_time(ms): 167.58 ms, response_length: 0 bytes[0m
+[32m2021-04-12 08:26:56.713[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mextract[0m:[36m176[0m - [1mextract mapping: {'token1': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjYyMDg0OTAwMSIsInVzZXJUeXBlIjoiMSIsImV4cCI6MTYxODE5NDQyMCwidXNlcklkIjoiMjQ5MDYwNzczMDY4OSIsIm9yZ0lkIjoiNjQzODczMzM0ODg2NiJ9.xqO0VUepfrrMfPLESiiBIUA-5Nb55XSnSV-s9_Yfbzg'}[0m
+[32m2021-04-12 08:26:56.715[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert status_code equal 200(int)	==> pass[0m
+[32m2021-04-12 08:26:56.716[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass[0m
+[32m2021-04-12 08:26:56.717[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert body.code equal 0(int)	==> pass[0m
+[32m2021-04-12 08:26:56.717[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: 家长H5_登陆 <<<<<<
 [0m
-[32m2021-04-11 11:59:09.501[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: 应用-列表收藏应用（账号收藏的应用） >>>>>>[0m
-[32m2021-04-11 11:59:09.649[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 192.168.0.104, Port: 63277[0m
-[32m2021-04-11 11:59:09.649[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 119.29.116.47, Port: 80[0m
-[32m2021-04-11 11:59:09.649[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+[32m2021-04-12 08:26:56.719[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: 应用-列表收藏应用（账号收藏的应用） >>>>>>[0m
+[32m2021-04-12 08:26:56.848[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 192.168.0.102, Port: 51079[0m
+[32m2021-04-12 08:26:56.849[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 119.29.116.47, Port: 80[0m
+[32m2021-04-12 08:26:56.850[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
 ================== request details ==================
 method   : GET
 url      : http://yadongitest.icampus.clife.net/v1/web/edudistrict/apps/personal?platform=2
@@ -91,25 +91,25 @@ headers  : {
     "Content-Type": "application/json;charset=utf-8",
     "Host": "yadongitest.icampus.clife.net",
     "Referer": "http://yadongitest.icampus.clife.net/school/m/",
-    "X-Access-Token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjYyMDg0OTAwMSIsInVzZXJUeXBlIjoiMSIsImV4cCI6MTYxODEyMDc1MiwidXNlcklkIjoiMjQ5MDYwNzczMDY4OSIsIm9yZ0lkIjoiNjQzODczMzM0ODg2NiJ9.buK_BZ_T3brTHyPDeYm6uKGWZ-RcjIqEJar2D9_M4I0",
+    "X-Access-Token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjYyMDg0OTAwMSIsInVzZXJUeXBlIjoiMSIsImV4cCI6MTYxODE5NDQyMCwidXNlcklkIjoiMjQ5MDYwNzczMDY4OSIsIm9yZ0lkIjoiNjQzODczMzM0ODg2NiJ9.xqO0VUepfrrMfPLESiiBIUA-5Nb55XSnSV-s9_Yfbzg",
     "X-Requested-With": "XMLHttpRequest",
     "domainName": "yadongitest",
-    "HRUN-Request-ID": "HRUN-a1e9e7af-9cf8-4cc0-a5e8-c73269b4fac9-549501"
+    "HRUN-Request-ID": "HRUN-df10af37-6b1d-4fa4-b294-c07896fafc0b-216720"
 }
 cookies  : {}
 body     : None
 [0m
-[32m2021-04-11 11:59:09.651[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+[32m2021-04-12 08:26:56.861[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
 ================== response details ==================
 status_code : 200
 headers  : {
     "Server": "nginx",
-    "Date": "Sun, 11 Apr 2021 03:59:12 GMT",
+    "Date": "Mon, 12 Apr 2021 00:27:00 GMT",
     "Content-Type": "application/json;charset=UTF-8",
     "Transfer-Encoding": "chunked",
     "Connection": "keep-alive",
     "Access-Control-Allow-Methods": "GET,POST,OPTIONS,PUT,DELETE, GET,POST,OPTIONS",
-    "Set-Cookie": "rememberMe=deleteMe; Path=/clife-campus-education-district-api-web; Max-Age=0; Expires=Sat, 10-Apr-2021 03:59:12 GMT",
+    "Set-Cookie": "rememberMe=deleteMe; Path=/clife-campus-education-district-api-web; Max-Age=0; Expires=Sun, 11-Apr-2021 00:27:00 GMT",
     "Access-Control-Allow-Origin": "*",
     "Access-Control-Allow-Headers": "X-Requested-With"
 }
@@ -657,16 +657,16 @@ body     : {
     ]
 }
 [0m
-[32m2021-04-11 11:59:09.652[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m218[0m - [1mstatus_code: 200, response_time(ms): 146.61 ms, response_length: 0 bytes[0m
-[32m2021-04-11 11:59:09.653[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert status_code equal 200(int)	==> pass[0m
-[32m2021-04-11 11:59:09.653[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass[0m
-[32m2021-04-11 11:59:09.653[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert body.code equal 0(int)	==> pass[0m
-[32m2021-04-11 11:59:09.653[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: 应用-列表收藏应用（账号收藏的应用） <<<<<<
+[32m2021-04-12 08:26:56.863[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m218[0m - [1mstatus_code: 200, response_time(ms): 127.65 ms, response_length: 0 bytes[0m
+[32m2021-04-12 08:26:56.865[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert status_code equal 200(int)	==> pass[0m
+[32m2021-04-12 08:26:56.866[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass[0m
+[32m2021-04-12 08:26:56.867[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert body.code equal 0(int)	==> pass[0m
+[32m2021-04-12 08:26:56.867[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: 应用-列表收藏应用（账号收藏的应用） <<<<<<
 [0m
-[32m2021-04-11 11:59:09.653[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: 登录相关-获取身份列表(H5) >>>>>>[0m
-[32m2021-04-11 11:59:09.872[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 192.168.0.104, Port: 63277[0m
-[32m2021-04-11 11:59:09.872[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 119.29.116.47, Port: 80[0m
-[32m2021-04-11 11:59:09.873[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+[32m2021-04-12 08:26:56.869[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: 登录相关-获取身份列表(H5) >>>>>>[0m
+[32m2021-04-12 08:26:57.073[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 192.168.0.102, Port: 51079[0m
+[32m2021-04-12 08:26:57.074[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 119.29.116.47, Port: 80[0m
+[32m2021-04-12 08:26:57.076[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
 ================== request details ==================
 method   : GET
 url      : http://yadongitest.icampus.clife.net/v1/web/eduaccount/user/h5/identitys?showMsgCount=1&systemCode=h5garden
@@ -679,25 +679,25 @@ headers  : {
     "Content-Type": "application/json;charset=utf-8",
     "Host": "yadongitest.icampus.clife.net",
     "Referer": "http://yadongitest.icampus.clife.net/school/m/",
-    "X-Access-Token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjYyMDg0OTAwMSIsInVzZXJUeXBlIjoiMSIsImV4cCI6MTYxODEyMDc1MiwidXNlcklkIjoiMjQ5MDYwNzczMDY4OSIsIm9yZ0lkIjoiNjQzODczMzM0ODg2NiJ9.buK_BZ_T3brTHyPDeYm6uKGWZ-RcjIqEJar2D9_M4I0",
+    "X-Access-Token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjYyMDg0OTAwMSIsInVzZXJUeXBlIjoiMSIsImV4cCI6MTYxODE5NDQyMCwidXNlcklkIjoiMjQ5MDYwNzczMDY4OSIsIm9yZ0lkIjoiNjQzODczMzM0ODg2NiJ9.xqO0VUepfrrMfPLESiiBIUA-5Nb55XSnSV-s9_Yfbzg",
     "X-Requested-With": "XMLHttpRequest",
     "domainName": "yadongitest",
-    "HRUN-Request-ID": "HRUN-a1e9e7af-9cf8-4cc0-a5e8-c73269b4fac9-549654"
+    "HRUN-Request-ID": "HRUN-df10af37-6b1d-4fa4-b294-c07896fafc0b-216870"
 }
 cookies  : {}
 body     : None
 [0m
-[32m2021-04-11 11:59:09.888[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+[32m2021-04-12 08:26:57.083[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
 ================== response details ==================
 status_code : 200
 headers  : {
     "Server": "nginx",
-    "Date": "Sun, 11 Apr 2021 03:59:12 GMT",
+    "Date": "Mon, 12 Apr 2021 00:27:00 GMT",
     "Content-Type": "application/json;charset=UTF-8",
     "Transfer-Encoding": "chunked",
     "Connection": "keep-alive",
     "Access-Control-Allow-Methods": "GET,POST,OPTIONS,PUT,DELETE, GET,POST,OPTIONS",
-    "Set-Cookie": "rememberMe=deleteMe; Path=/clife-campus-education-account-api-web; Max-Age=0; Expires=Sat, 10-Apr-2021 03:59:12 GMT",
+    "Set-Cookie": "rememberMe=deleteMe; Path=/clife-campus-education-account-api-web; Max-Age=0; Expires=Sun, 11-Apr-2021 00:27:00 GMT",
     "Access-Control-Allow-Origin": "*",
     "Access-Control-Allow-Headers": "X-Requested-With"
 }
@@ -1170,11 +1170,11 @@ body     : {
     }
 }
 [0m
-[32m2021-04-11 11:59:09.889[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m218[0m - [1mstatus_code: 200, response_time(ms): 218.42 ms, response_length: 0 bytes[0m
-[32m2021-04-11 11:59:09.889[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert status_code equal 200(int)	==> pass[0m
-[32m2021-04-11 11:59:09.889[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass[0m
-[32m2021-04-11 11:59:09.889[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert body.code equal 0(int)	==> pass[0m
-[32m2021-04-11 11:59:09.890[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: 登录相关-获取身份列表(H5) <<<<<<
+[32m2021-04-12 08:26:57.086[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m218[0m - [1mstatus_code: 200, response_time(ms): 203.4 ms, response_length: 0 bytes[0m
+[32m2021-04-12 08:26:57.088[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert status_code equal 200(int)	==> pass[0m
+[32m2021-04-12 08:26:57.089[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass[0m
+[32m2021-04-12 08:26:57.090[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert body.code equal 0(int)	==> pass[0m
+[32m2021-04-12 08:26:57.091[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: 登录相关-获取身份列表(H5) <<<<<<
 [0m
-[32m2021-04-11 11:59:09.890[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: 登录相关-切换身份 >>>>>>[0m
-[32m2021-04-11 11:59:09.894[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36mtest_start[0m:[36m460[0m - [1mgenerate testcase log: D:\WorkSpace\Python\HogWort9\interfacedemo\logs\a1e9e7af-9cf8-4cc0-a5e8-c73269b4fac9.run.log[0m
+[32m2021-04-12 08:26:57.092[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: 登录相关-切换身份 >>>>>>[0m
+[32m2021-04-12 08:26:57.101[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36mtest_start[0m:[36m460[0m - [1mgenerate testcase log: D:\WorkSpace\Python\HogWort9\interfacedemo\logs\df10af37-6b1d-4fa4-b294-c07896fafc0b.run.log[0m
