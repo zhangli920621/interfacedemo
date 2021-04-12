@@ -2,101 +2,42 @@
   "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
   "name" : "packages",
   "children" : [ {
-    "name" : "interfacedemo.testcases",
+    "name" : "interfacedemo.testcases.园业务web",
     "children" : [ {
-      "name" : "家长H5.yadong_campus_clife_cn_家长H5_幼儿考勤_test",
+      "name" : "yadongitest_icampus_clife_net_园业务web_幼儿考勤管理_test",
       "children" : [ {
-        "name" : "家长H5_幼儿考勤",
-        "uid" : "e16016c6c5c2bb25",
-        "parentUid" : "b0a78e2894a8574ef58e3a8f3ffa960a",
-        "status" : "broken",
+        "name" : "testcase description",
+        "uid" : "1643e77201b8ab80",
+        "parentUid" : "89e04e2914c8f29bece210fa6746e44a",
+        "status" : "passed",
         "time" : {
-          "start" : 1618187216533,
-          "stop" : 1618187217104,
-          "duration" : 571
+          "start" : 1618214390683,
+          "stop" : 1618214394269,
+          "duration" : 3586
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "家长H5.yadong_campus_clife_cn_家长H5_幼儿考勤_test"
+      "uid" : "89e04e2914c8f29bece210fa6746e44a"
     }, {
-      "name" : "教师H5",
+      "name" : "yadongitest_icampus_clife_net_园业务web_教职工考勤管理_test",
       "children" : [ {
-        "name" : "yadong_campus_clife_cn_教师H5_幼儿考勤_test",
-        "children" : [ {
-          "name" : "教师H5_幼儿考勤",
-          "uid" : "c92adf0c2cf3f07c",
-          "parentUid" : "38f2a1947e3107c32d35ab0cfdce7248",
-          "status" : "broken",
-          "time" : {
-            "start" : 1618187217162,
-            "stop" : 1618187219223,
-            "duration" : 2061
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ ]
-        } ],
-        "uid" : "38f2a1947e3107c32d35ab0cfdce7248"
-      }, {
-        "name" : "yadong_campus_clife_cn_教师H5_教职工考勤_test",
-        "children" : [ {
-          "name" : "教师H5_教职工考勤",
-          "uid" : "ba4dfdfcda93e3c3",
-          "parentUid" : "83412d81d12ece04e7558c8be5dd8060",
-          "status" : "broken",
-          "time" : {
-            "start" : 1618187222602,
-            "stop" : 1618187223835,
-            "duration" : 1233
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ ]
-        } ],
-        "uid" : "83412d81d12ece04e7558c8be5dd8060"
+        "name" : "testcase description",
+        "uid" : "2989325b2709608e",
+        "parentUid" : "a96039281eac64b7e27ce8e8c324e054",
+        "status" : "passed",
+        "time" : {
+          "start" : 1618214394273,
+          "stop" : 1618214396146,
+          "duration" : 1873
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
       } ],
-      "uid" : "9dc9e2f8c6932f85cc098e194e6a529e"
-    }, {
-      "name" : "园业务web",
-      "children" : [ {
-        "name" : "yadong_campus_clife_cn_园业务web_幼儿考勤管理_test",
-        "children" : [ {
-          "name" : "园业务web_幼儿考勤管理",
-          "uid" : "75ccead63e8ac4d5",
-          "parentUid" : "b66aa3ada9d4daae4f29745f677b7c80",
-          "status" : "broken",
-          "time" : {
-            "start" : 1618187219270,
-            "stop" : 1618187222549,
-            "duration" : 3279
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ ]
-        } ],
-        "uid" : "b66aa3ada9d4daae4f29745f677b7c80"
-      }, {
-        "name" : "yadong_campus_clife_cn_园业务web_教职工考勤管理_test",
-        "children" : [ {
-          "name" : "园业务web_教职工考勤管理",
-          "uid" : "f5ba4bffdfad516",
-          "parentUid" : "c30d6e4fa56458f1870183f669746a4b",
-          "status" : "broken",
-          "time" : {
-            "start" : 1618187223904,
-            "stop" : 1618187230793,
-            "duration" : 6889
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ ]
-        } ],
-        "uid" : "c30d6e4fa56458f1870183f669746a4b"
-      } ],
-      "uid" : "1669bc4e5a65c03a103977da4e0d8802"
+      "uid" : "a96039281eac64b7e27ce8e8c324e054"
     } ],
-    "uid" : "interfacedemo.testcases"
+    "uid" : "interfacedemo.testcases.园业务web"
   } ]
 }

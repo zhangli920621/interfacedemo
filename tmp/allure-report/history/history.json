@@ -1,101 +1,39 @@
 {
-  "572e011690b08df0607d762da46864f9" : {
+  "8f0b874fe4c432f121d48e741ac4fb13" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "f5ba4bffdfad516",
-      "status" : "broken",
-      "statusDetails" : "httprunner.exceptions.ValidationFailure: assert body.code equal 0(int)\t==> fail\ncheck_item: body.code\ncheck_value: -1(int)\nassert_method: equal\nexpect_value: 0(int)\nassert body.data equal 成功(str)\t==> fail\ncheck_item: body.data\ncheck_value: None(NoneType)\nassert_method: equal\nexpect_value: 成功(str)",
+      "uid" : "1643e77201b8ab80",
+      "status" : "passed",
       "time" : {
-        "start" : 1618187223904,
-        "stop" : 1618187230793,
-        "duration" : 6889
+        "start" : 1618214390683,
+        "stop" : 1618214394269,
+        "duration" : 3586
       }
     } ]
   },
-  "ed7fe1806335110452bf973c6ba3dfaf" : {
+  "ddc7e23feafc162ea25154e91bd7dbc2" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "e16016c6c5c2bb25",
-      "status" : "broken",
-      "statusDetails" : "httprunner.exceptions.VariableNotFound: studentId not found in {'Protocol': 'http', 'host': 'yadongitest.icampus.clife.net', 'donainname': 'yadongitest', 'token1': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjYyMDg0OTAwMSIsInVzZXJUeXBlIjoiMSIsImV4cCI6MTYxODE5NDQyMCwidXNlcklkIjoiMjQ5MDYwNzczMDY4OSIsIm9yZ0lkIjoiNjQzODczMzM0ODg2NiJ9.xqO0VUepfrrMfPLESiiBIUA-5Nb55XSnSV-s9_Yfbzg'}",
+      "uid" : "2989325b2709608e",
+      "status" : "passed",
       "time" : {
-        "start" : 1618187216533,
-        "stop" : 1618187217104,
-        "duration" : 571
-      }
-    } ]
-  },
-  "a73eecd06bba653d8f87a45644e1d896" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 1,
-      "skipped" : 0,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "c92adf0c2cf3f07c",
-      "status" : "broken",
-      "statusDetails" : "httprunner.exceptions.ValidationFailure: assert body.code equal 0(int)\t==> fail\ncheck_item: body.code\ncheck_value: 500(int)\nassert_method: equal\nexpect_value: 0(int)",
-      "time" : {
-        "start" : 1618187217162,
-        "stop" : 1618187219223,
-        "duration" : 2061
-      }
-    } ]
-  },
-  "95b70eccee1e0e94a1ca197f1ba47ad2" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 1,
-      "skipped" : 0,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "ba4dfdfcda93e3c3",
-      "status" : "broken",
-      "statusDetails" : "httprunner.exceptions.VariableNotFound: valid not found in {'Protocol': 'http', 'host': 'yadongitest.icampus.clife.net', 'donainname': 'yadongitest', 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjYyMDg0OTAwMSIsInVzZXJUeXBlIjoiMSIsImV4cCI6MTYxODE5NDQyNiwidXNlcklkIjoiMjQ5MDYwNzczMDY4OSIsIm9yZ0lkIjoiNjQzODczMzM0ODg2NiJ9.oec_oWiM7OGs3pfoylwNBqS4Mw2fIC5eXK1qUITFaCc'}",
-      "time" : {
-        "start" : 1618187222602,
-        "stop" : 1618187223835,
-        "duration" : 1233
-      }
-    } ]
-  },
-  "04d7810cbe1e3dd8505c740a444d4672" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 1,
-      "skipped" : 0,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "75ccead63e8ac4d5",
-      "status" : "broken",
-      "statusDetails" : "httprunner.exceptions.ValidationFailure: assert body.code equal 0(int)\t==> fail\ncheck_item: body.code\ncheck_value: 500(int)\nassert_method: equal\nexpect_value: 0(int)",
-      "time" : {
-        "start" : 1618187219270,
-        "stop" : 1618187222549,
-        "duration" : 3279
+        "start" : 1618214394273,
+        "stop" : 1618214396146,
+        "duration" : 1873
       }
     } ]
   }

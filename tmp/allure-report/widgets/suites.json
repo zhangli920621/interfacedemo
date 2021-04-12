@@ -1,37 +1,15 @@
 {
-  "total" : 3,
+  "total" : 1,
   "items" : [ {
-    "uid" : "b688498eda0e712a0fce6f1e665fa87b",
-    "name" : "interfacedemo.testcases.教师H5",
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 2,
-      "skipped" : 0,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 2
-    }
-  }, {
     "uid" : "6f112cf7c01c7c6f6b0651d5fcdefb06",
     "name" : "interfacedemo.testcases.园业务web",
     "statistic" : {
       "failed" : 0,
-      "broken" : 2,
+      "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 2,
       "unknown" : 0,
       "total" : 2
-    }
-  }, {
-    "uid" : "ae35c9423fe437bf12bb1ba9c2809865",
-    "name" : "interfacedemo.testcases.家长H5",
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 1,
-      "skipped" : 0,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
     }
   } ]
 }

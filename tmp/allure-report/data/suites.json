@@ -2,120 +2,49 @@
   "uid" : "98d3104e051c652961429bf95fa0b5d6",
   "name" : "suites",
   "children" : [ {
-    "name" : "interfacedemo.testcases.家长H5",
-    "children" : [ {
-      "name" : "yadong_campus_clife_cn_家长H5_幼儿考勤_test",
-      "children" : [ {
-        "name" : "TestCaseYadongCampusClifeCn家长H5幼儿考勤",
-        "children" : [ {
-          "name" : "家长H5_幼儿考勤",
-          "uid" : "e16016c6c5c2bb25",
-          "parentUid" : "9c400dcb856f9332495629bba94d651f",
-          "status" : "broken",
-          "time" : {
-            "start" : 1618187216533,
-            "stop" : 1618187217104,
-            "duration" : 571
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ ]
-        } ],
-        "uid" : "9c400dcb856f9332495629bba94d651f"
-      } ],
-      "uid" : "acaf16acba9494d94dde979888bb04f7"
-    } ],
-    "uid" : "ae35c9423fe437bf12bb1ba9c2809865"
-  }, {
-    "name" : "interfacedemo.testcases.教师H5",
-    "children" : [ {
-      "name" : "yadong_campus_clife_cn_教师H5_幼儿考勤_test",
-      "children" : [ {
-        "name" : "TestCaseYadongCampusClifeCn教师H5幼儿考勤",
-        "children" : [ {
-          "name" : "教师H5_幼儿考勤",
-          "uid" : "c92adf0c2cf3f07c",
-          "parentUid" : "3852d3882833d444ddf3589023996f8d",
-          "status" : "broken",
-          "time" : {
-            "start" : 1618187217162,
-            "stop" : 1618187219223,
-            "duration" : 2061
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ ]
-        } ],
-        "uid" : "3852d3882833d444ddf3589023996f8d"
-      } ],
-      "uid" : "1cc5aef7bdc4a391118b807686ef4ffa"
-    }, {
-      "name" : "yadong_campus_clife_cn_教师H5_教职工考勤_test",
-      "children" : [ {
-        "name" : "TestCaseYadongCampusClifeCn教师H5教职工考勤",
-        "children" : [ {
-          "name" : "教师H5_教职工考勤",
-          "uid" : "ba4dfdfcda93e3c3",
-          "parentUid" : "e3925d7cb1eda7bb7edb05bc07c0b4a9",
-          "status" : "broken",
-          "time" : {
-            "start" : 1618187222602,
-            "stop" : 1618187223835,
-            "duration" : 1233
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ ]
-        } ],
-        "uid" : "e3925d7cb1eda7bb7edb05bc07c0b4a9"
-      } ],
-      "uid" : "34aa9f84db1aff95aa17a3a385293a44"
-    } ],
-    "uid" : "b688498eda0e712a0fce6f1e665fa87b"
-  }, {
     "name" : "interfacedemo.testcases.园业务web",
     "children" : [ {
-      "name" : "yadong_campus_clife_cn_园业务web_幼儿考勤管理_test",
+      "name" : "yadongitest_icampus_clife_net_园业务web_幼儿考勤管理_test",
       "children" : [ {
-        "name" : "TestCaseYadongCampusClifeCn园业务Web幼儿考勤管理",
+        "name" : "TestCaseYadongitestIcampusClifeNet园业务Web幼儿考勤管理",
         "children" : [ {
-          "name" : "园业务web_幼儿考勤管理",
-          "uid" : "75ccead63e8ac4d5",
-          "parentUid" : "9ae5343b500c00d10c348b659445b46b",
-          "status" : "broken",
+          "name" : "testcase description",
+          "uid" : "1643e77201b8ab80",
+          "parentUid" : "7447e3c37eadead7f0fd056f541230cf",
+          "status" : "passed",
           "time" : {
-            "start" : 1618187219270,
-            "stop" : 1618187222549,
-            "duration" : 3279
+            "start" : 1618214390683,
+            "stop" : 1618214394269,
+            "duration" : 3586
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         } ],
-        "uid" : "9ae5343b500c00d10c348b659445b46b"
+        "uid" : "7447e3c37eadead7f0fd056f541230cf"
       } ],
-      "uid" : "dc52b02bcbffd172846972b976a7f19e"
+      "uid" : "8f4c0d260ac5cdae8580da9a19025c81"
     }, {
-      "name" : "yadong_campus_clife_cn_园业务web_教职工考勤管理_test",
+      "name" : "yadongitest_icampus_clife_net_园业务web_教职工考勤管理_test",
       "children" : [ {
-        "name" : "TestCaseYadongCampusClifeCn园业务Web教职工考勤管理",
+        "name" : "TestCaseYadongitestIcampusClifeNet园业务Web教职工考勤管理",
         "children" : [ {
-          "name" : "园业务web_教职工考勤管理",
-          "uid" : "f5ba4bffdfad516",
-          "parentUid" : "d32bc34a309633197aebc09ebe785127",
-          "status" : "broken",
+          "name" : "testcase description",
+          "uid" : "2989325b2709608e",
+          "parentUid" : "19dfcf42fb7ef2351c86db88cd330bbb",
+          "status" : "passed",
           "time" : {
-            "start" : 1618187223904,
-            "stop" : 1618187230793,
-            "duration" : 6889
+            "start" : 1618214394273,
+            "stop" : 1618214396146,
+            "duration" : 1873
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         } ],
-        "uid" : "d32bc34a309633197aebc09ebe785127"
+        "uid" : "19dfcf42fb7ef2351c86db88cd330bbb"
       } ],
-      "uid" : "831031b89ea6a1ff749d0f0564df31b2"
+      "uid" : "f338c38ed5ea9cd6915322c6c9083f7c"
     } ],
     "uid" : "6f112cf7c01c7c6f6b0651d5fcdefb06"
   } ]
