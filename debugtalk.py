@@ -1,13 +1,10 @@
 import time
+import datetime
 from httprunner import __version__
 
 
 def get_httprunner_version():
     return __version__
-
-
-def sleep(n_secs):
-    time.sleep(n_secs)
 
 
 def setup_hook():
@@ -18,6 +15,10 @@ def teardown_hook():
     print("后置操作：teardown!")
 
 
-def get_date():
-    struct_time = time.localtime()
-    return '-'.join([str(struct_time.tm_year), str(struct_time.tm_mon), str(struct_time.tm_mday)])
+def get_date(days=0):
+    if days == 0:
+        date = (datetime.datetime.now()).strftime("%Y-%m-%d")
+    else:
+        date = (datetime.datetime.now() + datetime.timedelta(days=days)).strftime("%Y-%m-%d")
+    return str(date)
+

@@ -56,7 +56,7 @@ class TestCaseYadongitestIcampusClifeNet园业务Web幼儿考勤管理(HttpRunne
         Step(
             RunRequest("/v1/web/edugarden/statistic/attendanceStatistic")
             .get("$Protocol://$host/v1/web/edugarden/statistic/attendanceStatistic")
-            .with_params(**{"date": "2021-04-12"})
+            .with_params(**{"date": "${get_date()}"})
             .with_headers(
                 **{
                     "Accept": "application/json, text/plain, */*",
@@ -108,7 +108,7 @@ class TestCaseYadongitestIcampusClifeNet园业务Web幼儿考勤管理(HttpRunne
             RunRequest("/v1/web/edugarden/statistic/classOverview")
             .get("$Protocol://$host/v1/web/edugarden/statistic/classOverview")
             .with_params(
-                **{"classId": "11666912313345", "date": "2021-04-12", "gradeId": "5"}
+                **{"classId": "11666912313345", "date": "${get_date()}", "gradeId": "5"}
             )
             .with_headers(
                 **{
@@ -137,7 +137,7 @@ class TestCaseYadongitestIcampusClifeNet园业务Web幼儿考勤管理(HttpRunne
             .get("$Protocol://$host/v1/web/edugarden/statistic/classStatistic")
             .with_params(
                 **{
-                    "date": "2021-04-12",
+                    "date": "${get_date()}",
                     "pageIndex": "1",
                     "pageRows": "20",
                     "sort": "0",
@@ -169,7 +169,7 @@ class TestCaseYadongitestIcampusClifeNet园业务Web幼儿考勤管理(HttpRunne
             RunRequest("/v1/web/edugarden/attendance/student/getDailyList")
             .get("$Protocol://$host/v1/web/edugarden/attendance/student/getDailyList")
             .with_params(
-                **{"pageIndex": "1", "pageRows": "20", "statisticDate": "2021-04-12"}
+                **{"pageIndex": "1", "pageRows": "20", "statisticDate": "${get_date()}"}
             )
             .with_headers(
                 **{
@@ -200,10 +200,10 @@ class TestCaseYadongitestIcampusClifeNet园业务Web幼儿考勤管理(HttpRunne
             )
             .with_params(
                 **{
-                    "endDate": "2021-04-12",
+                    "endDate": "${get_date()}",
                     "pageIndex": "1",
                     "pageRows": "20",
-                    "startDate": "2021-04-01",
+                    "startDate": "${get_date(-12)}",
                 }
             )
             .with_headers(
@@ -233,10 +233,10 @@ class TestCaseYadongitestIcampusClifeNet园业务Web幼儿考勤管理(HttpRunne
             .get("$Protocol://$host/v1/web/edugarden/original/list")
             .with_params(
                 **{
-                    "endDate": "2021-04-12",
+                    "endDate": "${get_date()}",
                     "pageIndex": "1",
                     "pageRows": "20",
-                    "startDate": "2021-04-01",
+                    "startDate": "${get_date(-12)}",
                 }
             )
             .with_headers(

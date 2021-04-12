@@ -295,8 +295,8 @@ teststeps:
             domainName: $domainName
         method: GET
         params:
-            endTime: '2021-04-12'
-            startTime: '2021-04-01'
+            endTime: ${get_date()}
+            startTime: ${get_date(-12)}
         url: $Protocol://$host/v1/web/edugarden/attendance/shift/getInUseShift
     validate:
     -   eq:
@@ -327,10 +327,10 @@ teststeps:
             domainName: $domainName
         method: GET
         params:
-            endTime: '2021-04-12'
+            endTime: ${get_date()}
             pageIndex: '1'
             pageRows: '20'
-            startTime: '2021-04-01'
+            startTime: ${get_date(-12)}
         url: $Protocol://$host/v1/web/edugarden/attendance/statistics/monthDataList
     validate:
     -   eq:
@@ -361,10 +361,10 @@ teststeps:
             domainName: $domainName
         method: GET
         params:
-            endTime: '2021-04-12'
+            endTime: ${get_date()}
             pageIndex: '1'
             pageRows: '20'
-            startTime: '2021-04-01'
+            startTime: ${get_date(-12)}
         url: $Protocol://$host/v1/web/edugarden/attendance/statistics/originalRecordList
     validate:
     -   eq:

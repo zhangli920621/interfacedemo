@@ -189,8 +189,8 @@ teststeps:
             domainName: $domainName
         method: GET
         params:
-            endTime: '2021-04-30'
-            startTime: '2021-04-01'
+            endTime: ${get_date()}
+            startTime: ${get_date(-12)}
             systemCode: H5
         url: $Protocol://$host/v1/web/edugarden/attendance/statistics/monthDataList
     validate:
@@ -220,8 +220,8 @@ teststeps:
             domainName: $domainName
         method: GET
         params:
-            endTime: '2021-04-12'
-            startTime: '2021-04-12'
+            endTime: ${get_date()}
+            startTime: ${get_date()}
             systemCode: H5
         url: $Protocol://$host/v1/web/edugarden/attendance/statistics/attendanceDayItem
     validate:
@@ -271,8 +271,8 @@ teststeps:
             domainName: $domainName
         method: GET
         params:
-            endTime: '2021-04-30'
-            startTime: '2021-04-01'
+            endTime: ${get_date()}
+            startTime: ${get_date(-12)}
             systemCode: H5
         url: $Protocol://$host/v1/web/edugarden/attendance/statistics/monthDataList
     validate:
@@ -332,8 +332,8 @@ teststeps:
             domainName: $domainName
         method: GET
         params:
-            endTime: '2021-04-30'
-            startTime: '2021-04-01'
+            endTime: ${get_date()}
+            startTime: ${get_date(-12)}
             systemCode: H5
             valid: '1'
         url: $Protocol://$host/v1/web/edugarden/attendance/statistics/attendanceMonthItem

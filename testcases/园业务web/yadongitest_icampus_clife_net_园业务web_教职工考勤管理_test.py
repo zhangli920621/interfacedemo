@@ -258,7 +258,9 @@ class TestCaseYadongitestIcampusClifeNet园业务Web教职工考勤管理(HttpRu
         Step(
             RunRequest("/v1/web/edugarden/attendance/shift/getInUseShift")
             .get("$Protocol://$host/v1/web/edugarden/attendance/shift/getInUseShift")
-            .with_params(**{"endTime": "2021-04-12", "startTime": "2021-04-01"})
+            .with_params(
+                **{"endTime": "${get_date()}", "startTime": "${get_date(-12)}"}
+            )
             .with_headers(
                 **{
                     "Accept": "application/json, text/plain, */*",
@@ -288,10 +290,10 @@ class TestCaseYadongitestIcampusClifeNet园业务Web教职工考勤管理(HttpRu
             )
             .with_params(
                 **{
-                    "endTime": "2021-04-12",
+                    "endTime": "${get_date()}",
                     "pageIndex": "1",
                     "pageRows": "20",
-                    "startTime": "2021-04-01",
+                    "startTime": "${get_date(-12)}",
                 }
             )
             .with_headers(
@@ -323,10 +325,10 @@ class TestCaseYadongitestIcampusClifeNet园业务Web教职工考勤管理(HttpRu
             )
             .with_params(
                 **{
-                    "endTime": "2021-04-12",
+                    "endTime": "${get_date()}",
                     "pageIndex": "1",
                     "pageRows": "20",
-                    "startTime": "2021-04-01",
+                    "startTime": "${get_date(-12)}",
                 }
             )
             .with_headers(

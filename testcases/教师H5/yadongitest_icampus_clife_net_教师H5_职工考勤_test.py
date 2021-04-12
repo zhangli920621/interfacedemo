@@ -168,8 +168,8 @@ class TestCaseYadongitestIcampusClifeNet教师H5职工考勤(HttpRunner):
             )
             .with_params(
                 **{
-                    "endTime": "2021-04-30",
-                    "startTime": "2021-04-01",
+                    "endTime": "${get_date()}",
+                    "startTime": "${get_date(-12)}",
                     "systemCode": "H5",
                 }
             )
@@ -200,8 +200,8 @@ class TestCaseYadongitestIcampusClifeNet教师H5职工考勤(HttpRunner):
             )
             .with_params(
                 **{
-                    "endTime": "2021-04-12",
-                    "startTime": "2021-04-12",
+                    "endTime": "${get_date()}",
+                    "startTime": "${get_date()}",
                     "systemCode": "H5",
                 }
             )
@@ -250,8 +250,8 @@ class TestCaseYadongitestIcampusClifeNet教师H5职工考勤(HttpRunner):
             )
             .with_params(
                 **{
-                    "endTime": "2021-04-30",
-                    "startTime": "2021-04-01",
+                    "endTime": "${get_date()}",
+                    "startTime": "${get_date(-12)}",
                     "systemCode": "H5",
                 }
             )
@@ -308,8 +308,8 @@ class TestCaseYadongitestIcampusClifeNet教师H5职工考勤(HttpRunner):
             )
             .with_params(
                 **{
-                    "endTime": "2021-04-30",
-                    "startTime": "2021-04-01",
+                    "endTime": "${get_date()}",
+                    "startTime": "${get_date(-12)}",
                     "systemCode": "H5",
                     "valid": "1",
                 }

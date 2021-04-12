@@ -59,7 +59,7 @@ teststeps:
             domainName: $domainName
         method: GET
         params:
-            date: '2021-04-12'
+            date: ${get_date()}
         url: $Protocol://$host/v1/web/edugarden/statistic/attendanceStatistic
     validate:
     -   eq:
@@ -120,7 +120,7 @@ teststeps:
         method: GET
         params:
             classId: '11666912313345'
-            date: '2021-04-12'
+            date: ${get_date()}
             gradeId: '5'
         url: $Protocol://$host/v1/web/edugarden/statistic/classOverview
     validate:
@@ -152,7 +152,7 @@ teststeps:
             domainName: $domainName
         method: GET
         params:
-            date: '2021-04-12'
+            date: ${get_date()}
             pageIndex: '1'
             pageRows: '20'
             sort: '0'
@@ -188,7 +188,7 @@ teststeps:
         params:
             pageIndex: '1'
             pageRows: '20'
-            statisticDate: '2021-04-12'
+            statisticDate: ${get_date()}
         url: $Protocol://$host/v1/web/edugarden/attendance/student/getDailyList
     validate:
     -   eq:
@@ -219,10 +219,10 @@ teststeps:
             domainName: $domainName
         method: GET
         params:
-            endDate: '2021-04-12'
+            endDate: ${get_date()}
             pageIndex: '1'
             pageRows: '20'
-            startDate: '2021-04-01'
+            startDate: ${get_date(-12)}
         url: $Protocol://$host/v1/web/edugarden/attendance/student/getStuAttReportPager
     validate:
     -   eq:
@@ -253,10 +253,10 @@ teststeps:
             domainName: $domainName
         method: GET
         params:
-            endDate: '2021-04-12'
+            endDate: ${get_date()}
             pageIndex: '1'
             pageRows: '20'
-            startDate: '2021-04-01'
+            startDate: ${get_date(-12)}
         url: $Protocol://$host/v1/web/edugarden/original/list
     validate:
     -   eq:
