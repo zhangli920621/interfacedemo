@@ -1,0 +1,427 @@
+config:
+    name: testcase description
+    variables: 
+        Protocol: ${ENV(Protocol)}
+        host: ${ENV(HOST)}
+        domainName:  ${ENV(DONAIN_NAME)}
+    verify: false
+teststeps:
+-   name: /v1/web/eduaccount/sys/login
+    request:
+        data:
+            systemCode: garden
+            password: ${ENV(GARDEN_PASSWORD)}
+            username: ${ENV(GARDEN_USERNAME)}
+        headers:
+            Accept: application/json, text/plain, */*
+            Accept-Encoding: gzip, deflate
+            Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+            Connection: keep-alive
+            Content-Length: '76'
+            Content-Type: application/x-www-form-urlencoded;charset=UTF-8
+            Host: $host
+            Origin: $Protocol://$host
+            Referer: $Protocol://$host/school/
+            User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+                like Gecko) Chrome/86.0.4240.198 Safari/537.36
+            X-Requested-With: XMLhttpRequest
+            domainName: $domainName
+        method: POST
+        url: $Protocol://$host/v1/web/eduaccount/sys/login
+    extract: 
+        token: body.data.token
+    validate:
+    -   eq:
+        - status_code
+        - 200
+    -   eq:
+        - headers.Content-Type
+        - application/json;charset=UTF-8
+    -   eq:
+        - body.code
+        - 0
+-   name: /v1/web/edugarden/statistic/attendanceStatistic
+    request:
+        headers:
+            Accept: application/json, text/plain, */*
+            Accept-Encoding: gzip, deflate
+            Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+            Cache-Control: no-cache
+            Connection: keep-alive
+            Content-Type: application/json;charset=utf-8
+            Host: $host
+            Pragma: no-cache
+            Referer: $Protocol://$host/school/
+            User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+                like Gecko) Chrome/86.0.4240.198 Safari/537.36
+            X-Access-Token: $token
+            X-Requested-With: XMLhttpRequest
+            domainName: $domainName
+        method: GET
+        params:
+            date: '2021-04-12'
+        url: $Protocol://$host/v1/web/edugarden/statistic/attendanceStatistic
+    validate:
+    -   eq:
+        - status_code
+        - 200
+    -   eq:
+        - headers.Content-Type
+        - application/json;charset=UTF-8
+    -   eq:
+        - body.code
+        - 0
+-   name: /v1/web/edugarden/statistic/selectClass
+    request:
+        headers:
+            Accept: application/json, text/plain, */*
+            Accept-Encoding: gzip, deflate
+            Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+            Cache-Control: no-cache
+            Connection: keep-alive
+            Content-Type: application/json;charset=utf-8
+            Host: $host
+            Pragma: no-cache
+            Referer: $Protocol://$host/school/
+            User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+                like Gecko) Chrome/86.0.4240.198 Safari/537.36
+            X-Access-Token: $token
+            X-Requested-With: XMLhttpRequest
+            domainName: $domainName
+        method: GET
+        url: $Protocol://$host/v1/web/edugarden/statistic/selectClass?
+    validate:
+    -   eq:
+        - status_code
+        - 200
+    -   eq:
+        - headers.Content-Type
+        - application/json;charset=UTF-8
+    -   eq:
+        - body.code
+        - 0
+-   name: /v1/web/edugarden/statistic/classOverview
+    request:
+        headers:
+            Accept: application/json, text/plain, */*
+            Accept-Encoding: gzip, deflate
+            Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+            Cache-Control: no-cache
+            Connection: keep-alive
+            Content-Type: application/json;charset=utf-8
+            Host: $host
+            Pragma: no-cache
+            Referer: $Protocol://$host/school/
+            User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+                like Gecko) Chrome/86.0.4240.198 Safari/537.36
+            X-Access-Token: $token
+            X-Requested-With: XMLhttpRequest
+            domainName: $domainName
+        method: GET
+        params:
+            classId: '11666912313345'
+            date: '2021-04-12'
+            gradeId: '5'
+        url: $Protocol://$host/v1/web/edugarden/statistic/classOverview
+    validate:
+    -   eq:
+        - status_code
+        - 200
+    -   eq:
+        - headers.Content-Type
+        - application/json;charset=UTF-8
+    -   eq:
+        - body.code
+        - 0
+-   name: /v1/web/edugarden/statistic/classStatistic
+    request:
+        headers:
+            Accept: application/json, text/plain, */*
+            Accept-Encoding: gzip, deflate
+            Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+            Cache-Control: no-cache
+            Connection: keep-alive
+            Content-Type: application/json;charset=utf-8
+            Host: $host
+            Pragma: no-cache
+            Referer: $Protocol://$host/school/
+            User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+                like Gecko) Chrome/86.0.4240.198 Safari/537.36
+            X-Access-Token: $token
+            X-Requested-With: XMLhttpRequest
+            domainName: $domainName
+        method: GET
+        params:
+            date: '2021-04-12'
+            pageIndex: '1'
+            pageRows: '20'
+            sort: '0'
+        url: $Protocol://$host/v1/web/edugarden/statistic/classStatistic
+    validate:
+    -   eq:
+        - status_code
+        - 200
+    -   eq:
+        - headers.Content-Type
+        - application/json;charset=UTF-8
+    -   eq:
+        - body.code
+        - 0
+-   name: /v1/web/edugarden/attendance/student/getDailyList
+    request:
+        headers:
+            Accept: application/json, text/plain, */*
+            Accept-Encoding: gzip, deflate
+            Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+            Cache-Control: no-cache
+            Connection: keep-alive
+            Content-Type: application/json;charset=utf-8
+            Host: $host
+            Pragma: no-cache
+            Referer: $Protocol://$host/school/
+            User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+                like Gecko) Chrome/86.0.4240.198 Safari/537.36
+            X-Access-Token: $token
+            X-Requested-With: XMLhttpRequest
+            domainName: $domainName
+        method: GET
+        params:
+            pageIndex: '1'
+            pageRows: '20'
+            statisticDate: '2021-04-12'
+        url: $Protocol://$host/v1/web/edugarden/attendance/student/getDailyList
+    validate:
+    -   eq:
+        - status_code
+        - 200
+    -   eq:
+        - headers.Content-Type
+        - application/json;charset=UTF-8
+    -   eq:
+        - body.code
+        - 0
+-   name: /v1/web/edugarden/attendance/student/getStuAttReportPager
+    request:
+        headers:
+            Accept: application/json, text/plain, */*
+            Accept-Encoding: gzip, deflate
+            Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+            Cache-Control: no-cache
+            Connection: keep-alive
+            Content-Type: application/json;charset=utf-8
+            Host: $host
+            Pragma: no-cache
+            Referer: $Protocol://$host/school/
+            User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+                like Gecko) Chrome/86.0.4240.198 Safari/537.36
+            X-Access-Token: $token
+            X-Requested-With: XMLhttpRequest
+            domainName: $domainName
+        method: GET
+        params:
+            endDate: '2021-04-12'
+            pageIndex: '1'
+            pageRows: '20'
+            startDate: '2021-04-01'
+        url: $Protocol://$host/v1/web/edugarden/attendance/student/getStuAttReportPager
+    validate:
+    -   eq:
+        - status_code
+        - 200
+    -   eq:
+        - headers.Content-Type
+        - application/json;charset=UTF-8
+    -   eq:
+        - body.code
+        - 0
+-   name: /v1/web/edugarden/original/list
+    request:
+        headers:
+            Accept: application/json, text/plain, */*
+            Accept-Encoding: gzip, deflate
+            Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+            Cache-Control: no-cache
+            Connection: keep-alive
+            Content-Type: application/json;charset=utf-8
+            Host: $host
+            Pragma: no-cache
+            Referer: $Protocol://$host/school/
+            User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+                like Gecko) Chrome/86.0.4240.198 Safari/537.36
+            X-Access-Token: $token
+            X-Requested-With: XMLhttpRequest
+            domainName: $domainName
+        method: GET
+        params:
+            endDate: '2021-04-12'
+            pageIndex: '1'
+            pageRows: '20'
+            startDate: '2021-04-01'
+        url: $Protocol://$host/v1/web/edugarden/original/list
+    validate:
+    -   eq:
+        - status_code
+        - 200
+    -   eq:
+        - headers.Content-Type
+        - application/json;charset=UTF-8
+    -   eq:
+        - body.code
+        - 0
+-   name: /v1/web/edugarden/infantAttendance/list
+    request:
+        headers:
+            Accept: application/json, text/plain, */*
+            Accept-Encoding: gzip, deflate
+            Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+            Cache-Control: no-cache
+            Connection: keep-alive
+            Content-Type: application/json;charset=utf-8
+            Host: $host
+            Pragma: no-cache
+            Referer: $Protocol://$host/school/
+            User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+                like Gecko) Chrome/86.0.4240.198 Safari/537.36
+            X-Access-Token: $token
+            X-Requested-With: XMLhttpRequest
+            domainName: $domainName
+        method: GET
+        url: $Protocol://$host/v1/web/edugarden/infantAttendance/list?
+    validate:
+    -   eq:
+        - status_code
+        - 200
+    -   eq:
+        - headers.Content-Type
+        - application/json;charset=UTF-8
+    -   eq:
+        - body.code
+        - 0
+-   name: /v1/web/edugarden/infantAttendance/setting
+    request:
+        headers:
+            Accept: application/json, text/plain, */*
+            Accept-Encoding: gzip, deflate
+            Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+            Connection: keep-alive
+            Content-Length: '1742'
+            Content-Type: application/json
+            Host: $host
+            Origin: $Protocol://$host
+            Referer: $Protocol://$host/school/
+            User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+                like Gecko) Chrome/86.0.4240.198 Safari/537.36
+            X-Access-Token: $token
+            X-Requested-With: XMLhttpRequest
+            domainName: $domainName
+        json:
+            broadcastList:
+            -   message: 欢迎{sn}小朋友入园
+                type: 1
+            -   message: '{sn}小朋友，家长来接啦'
+                type: 2
+            endTime: '23:00:00'
+            holidayWeek: 1-2-3-4-5-6
+            noList:
+            -   className: null
+                createTime: '2021-04-12 15:04:33'
+                deleted: 1
+                orgId: 6438733348866
+                remark: 234567890-=-09呕iu预热我去而退哦iu犹太人被1234
+                sex: null
+                status: null
+                studentId: 23841850654721
+                studentName: null
+                updateTime: '2021-04-12 15:04:33'
+            permit: 1
+            ruleList:
+            -   amNormalTime: 09:20:00
+                createTime: '2021-03-04 22:32:18'
+                gradeId: 5
+                gradeName: 托班
+                orgId: 6438733348866
+                pmNormalTime: '11:00:00'
+                ruleId: 16815940567041
+                updateTime: '2021-04-12 15:04:33'
+                uuid: c8450bc7-d5d2-4bab-8754-0b77d355a5aa
+            -   amNormalTime: '10:10:00'
+                createTime: '2021-03-04 22:32:18'
+                gradeId: 6
+                gradeName: 小班
+                orgId: 6438733348866
+                pmNormalTime: '13:30:00'
+                ruleId: 16815940567042
+                updateTime: '2021-04-12 15:04:33'
+                uuid: 7aaef610-a827-42be-8af7-f2ece4b46b30
+            -   amNormalTime: '10:00:00'
+                createTime: '2021-03-04 22:32:18'
+                gradeId: 7
+                gradeName: 中班
+                orgId: 6438733348866
+                pmNormalTime: '14:30:00'
+                ruleId: 16815940567043
+                updateTime: '2021-04-12 15:04:33'
+                uuid: f7e643dd-d19a-4c30-80e2-9f806f4a5c7b
+            -   amNormalTime: '12:00:00'
+                createTime: '2021-03-04 22:32:18'
+                gradeId: 8
+                gradeName: 大班
+                orgId: 6438733348866
+                pmNormalTime: '15:11:00'
+                ruleId: 16815940567044
+                updateTime: '2021-04-12 15:04:33'
+                uuid: cb6b998b-c3f3-45d9-8f06-4f8ea4509655
+            -   amNormalTime: '12:50:00'
+                createTime: '2021-03-04 22:32:18'
+                gradeId: 9
+                gradeName: 学前班
+                orgId: 6438733348866
+                pmNormalTime: '18:00:00'
+                ruleId: 16815940567045
+                updateTime: '2021-04-12 15:04:33'
+                uuid: 07d1e632-fe67-44b0-a59f-a3e1bab0c3f6
+            startTime: 07:00:00
+        method: POST
+        url: $Protocol://$host/v1/web/edugarden/infantAttendance/setting
+    validate:
+    -   eq:
+        - status_code
+        - 200
+    -   eq:
+        - headers.Content-Type
+        - application/json;charset=UTF-8
+    -   eq:
+        - body.code
+        - 0
+    -   eq:
+        - body.data
+        - 操作成功
+-   name: /v1/web/edugarden/infantAttendance/list
+    request:
+        headers:
+            Accept: application/json, text/plain, */*
+            Accept-Encoding: gzip, deflate
+            Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+            Cache-Control: no-cache
+            Connection: keep-alive
+            Content-Type: application/json;charset=utf-8
+            Host: $host
+            Pragma: no-cache
+            Referer: $Protocol://$host/school/
+            User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+                like Gecko) Chrome/86.0.4240.198 Safari/537.36
+            X-Access-Token: $token
+            X-Requested-With: XMLhttpRequest
+            domainName: $domainName
+        method: GET
+        url: $Protocol://$host/v1/web/edugarden/infantAttendance/list?
+    validate:
+    -   eq:
+        - status_code
+        - 200
+    -   eq:
+        - headers.Content-Type
+        - application/json;charset=UTF-8
+    -   eq:
+        - body.code
+        - 0

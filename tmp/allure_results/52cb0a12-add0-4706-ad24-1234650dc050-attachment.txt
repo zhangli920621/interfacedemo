@@ -1,0 +1,3772 @@
+[32m2021-04-12 15:59:50.684[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36mtest_start[0m:[36m451[0m - [1mStart to run testcase: testcase description, TestCase ID: 609739f9-a289-40ed-8489-9a15f7e2e3db[0m
+[32m2021-04-12 15:59:50.685[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: /v1/web/eduaccount/sys/login >>>>>>[0m
+[32m2021-04-12 15:59:50.822[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 192.168.0.102, Port: 63674[0m
+[32m2021-04-12 15:59:50.823[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 119.29.116.47, Port: 80[0m
+[32m2021-04-12 15:59:50.825[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== request details ==================
+method   : POST
+url      : http://yadongitest.icampus.clife.net/v1/web/eduaccount/sys/login
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
+    "Content-Length": "76",
+    "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
+    "Host": "yadongitest.icampus.clife.net",
+    "Origin": "http://yadongitest.icampus.clife.net",
+    "Referer": "http://yadongitest.icampus.clife.net/school/",
+    "X-Requested-With": "XMLhttpRequest",
+    "domainName": "yadongitest",
+    "HRUN-Request-ID": "HRUN-609739f9-a289-40ed-8489-9a15f7e2e3db-390685"
+}
+cookies  : {}
+body     : systemCode=garden&password=VUsFjBeODaABgu37tXzPbw%3D%3D&username=16620849001
+[0m
+[32m2021-04-12 15:59:50.826[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Mon, 12 Apr 2021 07:59:55 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "667",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "X-Requested-With",
+    "Access-Control-Allow-Methods": "GET,POST,OPTIONS"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "code": 0,
+    "data": {
+        "positionName": "\u9662\u957f",
+        "orgType": 3,
+        "userInfo": {
+            "userId": 2490607730689,
+            "username": "16620849001",
+            "realname": "\u4e9a\u4e1c\u53bf\u5e7c\u513f\u56ed-1\u53f7-",
+            "password": null,
+            "orgId": 6438733348866,
+            "orgCode": null,
+            "avatar": null,
+            "status": null,
+            "userType": 1,
+            "createTime": null
+        },
+        "classSize": 16,
+        "orgName": "\u4e9a\u4e1c\u5e7c\u513f\u56ed-\u5f20\u4e3d\u4e0d\u51c6\u52a8",
+        "domainName": "yadongitest",
+        "userType": 1,
+        "systemUrl": "./user_manage.html",
+        "orgId": 6438733348866,
+        "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjYyMDg0OTAwMSIsInVzZXJUeXBlIjoiMSIsImV4cCI6MTYxODIyMTU5NSwidXNlcklkIjoiMjQ5MDYwNzczMDY4OSIsIm9yZ0lkIjoiNjQzODczMzM0ODg2NiJ9.pmZi9x9KhD4rPp-kZGoirr6aHC-_IdJ0DAnGgbvfHMo",
+        "dataPermission": 1
+    }
+}
+[0m
+[32m2021-04-12 15:59:50.826[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m218[0m - [1mstatus_code: 200, response_time(ms): 136.6 ms, response_length: 0 bytes[0m
+[32m2021-04-12 15:59:50.826[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mextract[0m:[36m176[0m - [1mextract mapping: {'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjYyMDg0OTAwMSIsInVzZXJUeXBlIjoiMSIsImV4cCI6MTYxODIyMTU5NSwidXNlcklkIjoiMjQ5MDYwNzczMDY4OSIsIm9yZ0lkIjoiNjQzODczMzM0ODg2NiJ9.pmZi9x9KhD4rPp-kZGoirr6aHC-_IdJ0DAnGgbvfHMo'}[0m
+[32m2021-04-12 15:59:50.827[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert status_code equal 200(int)	==> pass[0m
+[32m2021-04-12 15:59:50.827[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass[0m
+[32m2021-04-12 15:59:50.828[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert body.code equal 0(int)	==> pass[0m
+[32m2021-04-12 15:59:50.828[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: /v1/web/eduaccount/sys/login <<<<<<
+[0m
+[32m2021-04-12 15:59:50.829[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: /v1/web/edugarden/statistic/attendanceStatistic >>>>>>[0m
+[32m2021-04-12 15:59:51.025[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 192.168.0.102, Port: 63674[0m
+[32m2021-04-12 15:59:51.025[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 119.29.116.47, Port: 80[0m
+[32m2021-04-12 15:59:51.027[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== request details ==================
+method   : GET
+url      : http://yadongitest.icampus.clife.net/v1/web/edugarden/statistic/attendanceStatistic?date=2021-04-12
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
+    "Cache-Control": "no-cache",
+    "Content-Type": "application/json;charset=utf-8",
+    "Host": "yadongitest.icampus.clife.net",
+    "Pragma": "no-cache",
+    "Referer": "http://yadongitest.icampus.clife.net/school/",
+    "X-Access-Token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjYyMDg0OTAwMSIsInVzZXJUeXBlIjoiMSIsImV4cCI6MTYxODIyMTU5NSwidXNlcklkIjoiMjQ5MDYwNzczMDY4OSIsIm9yZ0lkIjoiNjQzODczMzM0ODg2NiJ9.pmZi9x9KhD4rPp-kZGoirr6aHC-_IdJ0DAnGgbvfHMo",
+    "X-Requested-With": "XMLhttpRequest",
+    "domainName": "yadongitest",
+    "HRUN-Request-ID": "HRUN-609739f9-a289-40ed-8489-9a15f7e2e3db-390829"
+}
+cookies  : {}
+body     : None
+[0m
+[32m2021-04-12 15:59:51.030[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Mon, 12 Apr 2021 07:59:55 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "1019",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Methods": "GET,POST,OPTIONS,PUT,DELETE, GET,POST,OPTIONS",
+    "Set-Cookie": "rememberMe=deleteMe; Path=/clife-campus-education-garden-api-web; Max-Age=0; Expires=Sun, 11-Apr-2021 07:59:55 GMT",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "X-Requested-With"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "code": 0,
+    "data": {
+        "infant": {
+            "total": 21,
+            "null": 0,
+            "thingsLeave": 0,
+            "absence": 22,
+            "leave": 0,
+            "illLeave": 0,
+            "unInKindergarten": 0,
+            "attendance": 0
+        },
+        "absence": {
+            "statisticAbsence": [
+                {
+                    "classId": 2,
+                    "className": "\u5c0f\u4e8c\u73ed",
+                    "number": 2
+                },
+                {
+                    "classId": 3,
+                    "className": "\u4e2d\u4e00\u73ed",
+                    "number": 5
+                },
+                {
+                    "classId": 4,
+                    "className": "\u5927\u4e00\u73ed",
+                    "number": 3
+                },
+                {
+                    "classId": 11666912313345,
+                    "className": "\u6258\u4e00\u73ed",
+                    "number": 2
+                },
+                {
+                    "classId": 11667111542785,
+                    "className": "\u5c0f\u4e09\u73ed",
+                    "number": 1
+                },
+                {
+                    "classId": 15113126543361,
+                    "className": "\u6258\u4e8c\u73ed",
+                    "number": 1
+                },
+                {
+                    "classId": 15113176875009,
+                    "className": "\u6258\u4e09\u73ed",
+                    "number": 2
+                },
+                {
+                    "classId": 15113212526593,
+                    "className": "\u6258\u56db\u73ed",
+                    "number": 2
+                },
+                {
+                    "classId": 15113258663937,
+                    "className": "\u6258\u4e94\u73ed",
+                    "number": 1
+                },
+                {
+                    "classId": 16234482106369,
+                    "className": "\u5b66\u524d\u73ed-\u5b66\u4e00\u73ed-\u6d4b\u8bd5\u597d\u597d",
+                    "number": 1
+                },
+                {
+                    "classId": 20031000412161,
+                    "className": "\u5b66\u524d\u73ed-\u5b66\u4e8c\u73ed",
+                    "number": 1
+                },
+                {
+                    "classId": 20031086395393,
+                    "className": "\u5b66\u524d\u73ed-\u5b66\u4e09\u73ed",
+                    "number": 1
+                }
+            ],
+            "statisticIll": [],
+            "statisticThings": []
+        },
+        "time": "09:20:00",
+        "attendanceType": 1,
+        "classStudentList": null
+    }
+}
+[0m
+[32m2021-04-12 15:59:51.031[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m218[0m - [1mstatus_code: 200, response_time(ms): 195.47 ms, response_length: 0 bytes[0m
+[32m2021-04-12 15:59:51.032[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert status_code equal 200(int)	==> pass[0m
+[32m2021-04-12 15:59:51.033[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass[0m
+[32m2021-04-12 15:59:51.034[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert body.code equal 0(int)	==> pass[0m
+[32m2021-04-12 15:59:51.035[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: /v1/web/edugarden/statistic/attendanceStatistic <<<<<<
+[0m
+[32m2021-04-12 15:59:51.036[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: /v1/web/edugarden/statistic/selectClass >>>>>>[0m
+[32m2021-04-12 15:59:51.378[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 192.168.0.102, Port: 63674[0m
+[32m2021-04-12 15:59:51.379[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 119.29.116.47, Port: 80[0m
+[32m2021-04-12 15:59:51.379[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== request details ==================
+method   : GET
+url      : http://yadongitest.icampus.clife.net/v1/web/edugarden/statistic/selectClass
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
+    "Cache-Control": "no-cache",
+    "Content-Type": "application/json;charset=utf-8",
+    "Host": "yadongitest.icampus.clife.net",
+    "Pragma": "no-cache",
+    "Referer": "http://yadongitest.icampus.clife.net/school/",
+    "X-Access-Token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjYyMDg0OTAwMSIsInVzZXJUeXBlIjoiMSIsImV4cCI6MTYxODIyMTU5NSwidXNlcklkIjoiMjQ5MDYwNzczMDY4OSIsIm9yZ0lkIjoiNjQzODczMzM0ODg2NiJ9.pmZi9x9KhD4rPp-kZGoirr6aHC-_IdJ0DAnGgbvfHMo",
+    "X-Requested-With": "XMLhttpRequest",
+    "domainName": "yadongitest",
+    "HRUN-Request-ID": "HRUN-609739f9-a289-40ed-8489-9a15f7e2e3db-391037"
+}
+cookies  : {}
+body     : None
+[0m
+[32m2021-04-12 15:59:51.380[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Mon, 12 Apr 2021 07:59:55 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "1995",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Methods": "GET,POST,OPTIONS,PUT,DELETE, GET,POST,OPTIONS",
+    "Set-Cookie": "rememberMe=deleteMe; Path=/clife-campus-education-garden-api-web; Max-Age=0; Expires=Sun, 11-Apr-2021 07:59:55 GMT",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "X-Requested-With"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "code": 0,
+    "data": {
+        "orgId": 6438733348866,
+        "orgName": "\u4e9a\u4e1c\u5e7c\u513f\u56ed-\u5f20\u4e3d\u4e0d\u51c6\u52a8",
+        "gradeList": [
+            {
+                "gradeId": 5,
+                "gradeName": "\u6258\u73ed",
+                "classList": [
+                    {
+                        "classId": 11666912313345,
+                        "className": "\u6258\u4e00\u73ed",
+                        "gradeId": 5,
+                        "gradeName": "\u6258\u73ed",
+                        "studentList": null
+                    },
+                    {
+                        "classId": 15113126543361,
+                        "className": "\u6258\u4e8c\u73ed",
+                        "gradeId": 5,
+                        "gradeName": "\u6258\u73ed",
+                        "studentList": null
+                    },
+                    {
+                        "classId": 15113176875009,
+                        "className": "\u6258\u4e09\u73ed",
+                        "gradeId": 5,
+                        "gradeName": "\u6258\u73ed",
+                        "studentList": null
+                    },
+                    {
+                        "classId": 15113212526593,
+                        "className": "\u6258\u56db\u73ed",
+                        "gradeId": 5,
+                        "gradeName": "\u6258\u73ed",
+                        "studentList": null
+                    },
+                    {
+                        "classId": 15113258663937,
+                        "className": "\u6258\u4e94\u73ed",
+                        "gradeId": 5,
+                        "gradeName": "\u6258\u73ed",
+                        "studentList": null
+                    },
+                    {
+                        "classId": 15113839575041,
+                        "className": "\u6258\u516d\u73ed",
+                        "gradeId": 5,
+                        "gradeName": "\u6258\u73ed",
+                        "studentList": null
+                    },
+                    {
+                        "classId": 15113873129473,
+                        "className": "\u6258\u4e03\u73ed",
+                        "gradeId": 5,
+                        "gradeName": "\u6258\u73ed",
+                        "studentList": null
+                    },
+                    {
+                        "classId": 15113915072513,
+                        "className": "\u6258\u516b\u73ed",
+                        "gradeId": 5,
+                        "gradeName": "\u6258\u73ed",
+                        "studentList": null
+                    }
+                ]
+            },
+            {
+                "gradeId": 6,
+                "gradeName": "\u5c0f\u73ed",
+                "classList": [
+                    {
+                        "classId": 1,
+                        "className": "\u5c0f\u4e00\u73ed",
+                        "gradeId": 6,
+                        "gradeName": "\u5c0f\u73ed",
+                        "studentList": null
+                    },
+                    {
+                        "classId": 2,
+                        "className": "\u5c0f\u4e8c\u73ed",
+                        "gradeId": 6,
+                        "gradeName": "\u5c0f\u73ed",
+                        "studentList": null
+                    },
+                    {
+                        "classId": 11667111542785,
+                        "className": "\u5c0f\u4e09\u73ed",
+                        "gradeId": 6,
+                        "gradeName": "\u5c0f\u73ed",
+                        "studentList": null
+                    }
+                ]
+            },
+            {
+                "gradeId": 7,
+                "gradeName": "\u4e2d\u73ed",
+                "classList": [
+                    {
+                        "classId": 3,
+                        "className": "\u4e2d\u4e00\u73ed",
+                        "gradeId": 7,
+                        "gradeName": "\u4e2d\u73ed",
+                        "studentList": null
+                    }
+                ]
+            },
+            {
+                "gradeId": 8,
+                "gradeName": "\u5927\u73ed",
+                "classList": [
+                    {
+                        "classId": 4,
+                        "className": "\u5927\u4e00\u73ed",
+                        "gradeId": 8,
+                        "gradeName": "\u5927\u73ed",
+                        "studentList": null
+                    }
+                ]
+            },
+            {
+                "gradeId": 9,
+                "gradeName": "\u5b66\u524d\u73ed",
+                "classList": [
+                    {
+                        "classId": 16234482106369,
+                        "className": "\u5b66\u524d\u73ed-\u5b66\u4e00\u73ed-\u6d4b\u8bd5\u597d\u597d",
+                        "gradeId": 9,
+                        "gradeName": "\u5b66\u524d\u73ed",
+                        "studentList": null
+                    },
+                    {
+                        "classId": 20031000412161,
+                        "className": "\u5b66\u524d\u73ed-\u5b66\u4e8c\u73ed",
+                        "gradeId": 9,
+                        "gradeName": "\u5b66\u524d\u73ed",
+                        "studentList": null
+                    },
+                    {
+                        "classId": 20031086395393,
+                        "className": "\u5b66\u524d\u73ed-\u5b66\u4e09\u73ed",
+                        "gradeId": 9,
+                        "gradeName": "\u5b66\u524d\u73ed",
+                        "studentList": null
+                    }
+                ]
+            }
+        ]
+    }
+}
+[0m
+[32m2021-04-12 15:59:51.380[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m218[0m - [1mstatus_code: 200, response_time(ms): 340.22 ms, response_length: 0 bytes[0m
+[32m2021-04-12 15:59:51.381[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert status_code equal 200(int)	==> pass[0m
+[32m2021-04-12 15:59:51.381[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass[0m
+[32m2021-04-12 15:59:51.381[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert body.code equal 0(int)	==> pass[0m
+[32m2021-04-12 15:59:51.381[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: /v1/web/edugarden/statistic/selectClass <<<<<<
+[0m
+[32m2021-04-12 15:59:51.381[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: /v1/web/edugarden/statistic/classOverview >>>>>>[0m
+[32m2021-04-12 15:59:51.877[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 192.168.0.102, Port: 63674[0m
+[32m2021-04-12 15:59:51.878[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 119.29.116.47, Port: 80[0m
+[32m2021-04-12 15:59:51.880[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== request details ==================
+method   : GET
+url      : http://yadongitest.icampus.clife.net/v1/web/edugarden/statistic/classOverview?classId=11666912313345&date=2021-04-12&gradeId=5
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
+    "Cache-Control": "no-cache",
+    "Content-Type": "application/json;charset=utf-8",
+    "Host": "yadongitest.icampus.clife.net",
+    "Pragma": "no-cache",
+    "Referer": "http://yadongitest.icampus.clife.net/school/",
+    "X-Access-Token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjYyMDg0OTAwMSIsInVzZXJUeXBlIjoiMSIsImV4cCI6MTYxODIyMTU5NSwidXNlcklkIjoiMjQ5MDYwNzczMDY4OSIsIm9yZ0lkIjoiNjQzODczMzM0ODg2NiJ9.pmZi9x9KhD4rPp-kZGoirr6aHC-_IdJ0DAnGgbvfHMo",
+    "X-Requested-With": "XMLhttpRequest",
+    "domainName": "yadongitest",
+    "HRUN-Request-ID": "HRUN-609739f9-a289-40ed-8489-9a15f7e2e3db-391382"
+}
+cookies  : {}
+body     : None
+[0m
+[32m2021-04-12 15:59:51.882[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Mon, 12 Apr 2021 07:59:56 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "700",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Methods": "GET,POST,OPTIONS,PUT,DELETE, GET,POST,OPTIONS",
+    "Set-Cookie": "rememberMe=deleteMe; Path=/clife-campus-education-garden-api-web; Max-Age=0; Expires=Sun, 11-Apr-2021 07:59:55 GMT",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "X-Requested-With"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "code": 0,
+    "data": {
+        "infant": {
+            "total": 2,
+            "null": 0,
+            "thingsLeave": 0,
+            "absence": 2,
+            "leave": 0,
+            "illLeave": 0,
+            "unInKindergarten": 0,
+            "attendance": 0
+        },
+        "absence": null,
+        "time": "09:20:00",
+        "attendanceType": 1,
+        "classStudentList": [
+            {
+                "studentId": 16565454635009,
+                "img": "https://skinsecret.clife.cn/3eb06f730cc0ce2a7c9d74055b443ea9.jpg",
+                "classId": 11666912313345,
+                "studentName": "\u8ba1\u52124\u53f7",
+                "attendanceNum": 0,
+                "thingsLeaveNum": 0,
+                "illLeaveNum": 0,
+                "absenceNum": 8,
+                "totalDays": 8
+            },
+            {
+                "studentId": 6078570561537,
+                "img": "http://skinsecret.clife.cn/a228cd761cfafa9cd1df1ee0316110b5.jpeg",
+                "classId": 11666912313345,
+                "studentName": "\u8d75\u4e3d\u9896\u56db\u53f7\u6211\u6211\u800c\u6b27\u7f8e",
+                "attendanceNum": 1,
+                "thingsLeaveNum": 0,
+                "illLeaveNum": 0,
+                "absenceNum": 7,
+                "totalDays": 8
+            }
+        ]
+    }
+}
+[0m
+[32m2021-04-12 15:59:51.884[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m218[0m - [1mstatus_code: 200, response_time(ms): 486.7 ms, response_length: 0 bytes[0m
+[32m2021-04-12 15:59:51.885[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert status_code equal 200(int)	==> pass[0m
+[32m2021-04-12 15:59:51.886[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass[0m
+[32m2021-04-12 15:59:51.887[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert body.code equal 0(int)	==> pass[0m
+[32m2021-04-12 15:59:51.887[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: /v1/web/edugarden/statistic/classOverview <<<<<<
+[0m
+[32m2021-04-12 15:59:51.889[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: /v1/web/edugarden/statistic/classStatistic >>>>>>[0m
+[32m2021-04-12 15:59:52.662[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 192.168.0.102, Port: 63674[0m
+[32m2021-04-12 15:59:52.663[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 119.29.116.47, Port: 80[0m
+[32m2021-04-12 15:59:52.664[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== request details ==================
+method   : GET
+url      : http://yadongitest.icampus.clife.net/v1/web/edugarden/statistic/classStatistic?date=2021-04-12&pageIndex=1&pageRows=20&sort=0
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
+    "Cache-Control": "no-cache",
+    "Content-Type": "application/json;charset=utf-8",
+    "Host": "yadongitest.icampus.clife.net",
+    "Pragma": "no-cache",
+    "Referer": "http://yadongitest.icampus.clife.net/school/",
+    "X-Access-Token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjYyMDg0OTAwMSIsInVzZXJUeXBlIjoiMSIsImV4cCI6MTYxODIyMTU5NSwidXNlcklkIjoiMjQ5MDYwNzczMDY4OSIsIm9yZ0lkIjoiNjQzODczMzM0ODg2NiJ9.pmZi9x9KhD4rPp-kZGoirr6aHC-_IdJ0DAnGgbvfHMo",
+    "X-Requested-With": "XMLhttpRequest",
+    "domainName": "yadongitest",
+    "HRUN-Request-ID": "HRUN-609739f9-a289-40ed-8489-9a15f7e2e3db-391891"
+}
+cookies  : {}
+body     : None
+[0m
+[32m2021-04-12 15:59:52.677[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Mon, 12 Apr 2021 07:59:57 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Methods": "GET,POST,OPTIONS,PUT,DELETE, GET,POST,OPTIONS",
+    "Set-Cookie": "rememberMe=deleteMe; Path=/clife-campus-education-garden-api-web; Max-Age=0; Expires=Sun, 11-Apr-2021 07:59:56 GMT",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "X-Requested-With"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "code": 0,
+    "data": {
+        "list": [
+            {
+                "classId": 1,
+                "className": "\u5c0f\u4e00\u73ed",
+                "gradeName": "\u5c0f\u73ed",
+                "enterSchoolYear": "2020",
+                "total": 0,
+                "attendanceNum": 0,
+                "thingsLeaveNum": 0,
+                "illLeaveNum": 0,
+                "absenceNum": 0,
+                "attendance": 0.0
+            },
+            {
+                "classId": 2,
+                "className": "\u5c0f\u4e8c\u73ed",
+                "gradeName": "\u5c0f\u73ed",
+                "enterSchoolYear": "2020",
+                "total": 2,
+                "attendanceNum": 0,
+                "thingsLeaveNum": 0,
+                "illLeaveNum": 0,
+                "absenceNum": 2,
+                "attendance": 0.0
+            },
+            {
+                "classId": 3,
+                "className": "\u4e2d\u4e00\u73ed",
+                "gradeName": "\u4e2d\u73ed",
+                "enterSchoolYear": "2020",
+                "total": 5,
+                "attendanceNum": 0,
+                "thingsLeaveNum": 0,
+                "illLeaveNum": 0,
+                "absenceNum": 5,
+                "attendance": 0.0
+            },
+            {
+                "classId": 4,
+                "className": "\u5927\u4e00\u73ed",
+                "gradeName": "\u5927\u73ed",
+                "enterSchoolYear": "2020",
+                "total": 3,
+                "attendanceNum": 0,
+                "thingsLeaveNum": 0,
+                "illLeaveNum": 0,
+                "absenceNum": 3,
+                "attendance": 0.0
+            },
+            {
+                "classId": 11666912313345,
+                "className": "\u6258\u4e00\u73ed",
+                "gradeName": "\u6258\u73ed",
+                "enterSchoolYear": "2021",
+                "total": 2,
+                "attendanceNum": 0,
+                "thingsLeaveNum": 0,
+                "illLeaveNum": 0,
+                "absenceNum": 2,
+                "attendance": 0.0
+            },
+            {
+                "classId": 11667111542785,
+                "className": "\u5c0f\u4e09\u73ed",
+                "gradeName": "\u5c0f\u73ed",
+                "enterSchoolYear": "2020",
+                "total": 1,
+                "attendanceNum": 0,
+                "thingsLeaveNum": 0,
+                "illLeaveNum": 0,
+                "absenceNum": 1,
+                "attendance": 0.0
+            },
+            {
+                "classId": 15113126543361,
+                "className": "\u6258\u4e8c\u73ed",
+                "gradeName": "\u6258\u73ed",
+                "enterSchoolYear": "2019",
+                "total": 1,
+                "attendanceNum": 0,
+                "thingsLeaveNum": 0,
+                "illLeaveNum": 0,
+                "absenceNum": 1,
+                "attendance": 0.0
+            },
+            {
+                "classId": 15113176875009,
+                "className": "\u6258\u4e09\u73ed",
+                "gradeName": "\u6258\u73ed",
+                "enterSchoolYear": "2019",
+                "total": 2,
+                "attendanceNum": 0,
+                "thingsLeaveNum": 0,
+                "illLeaveNum": 0,
+                "absenceNum": 2,
+                "attendance": 0.0
+            },
+            {
+                "classId": 15113212526593,
+                "className": "\u6258\u56db\u73ed",
+                "gradeName": "\u6258\u73ed",
+                "enterSchoolYear": "2020",
+                "total": 2,
+                "attendanceNum": 0,
+                "thingsLeaveNum": 0,
+                "illLeaveNum": 0,
+                "absenceNum": 2,
+                "attendance": 0.0
+            },
+            {
+                "classId": 15113258663937,
+                "className": "\u6258\u4e94\u73ed",
+                "gradeName": "\u6258\u73ed",
+                "enterSchoolYear": "2021",
+                "total": 1,
+                "attendanceNum": 0,
+                "thingsLeaveNum": 0,
+                "illLeaveNum": 0,
+                "absenceNum": 1,
+                "attendance": 0.0
+            },
+            {
+                "classId": 15113839575041,
+                "className": "\u6258\u516d\u73ed",
+                "gradeName": "\u6258\u73ed",
+                "enterSchoolYear": "2022",
+                "total": 0,
+                "attendanceNum": 0,
+                "thingsLeaveNum": 0,
+                "illLeaveNum": 0,
+                "absenceNum": 0,
+                "attendance": 0.0
+            },
+            {
+                "classId": 15113873129473,
+                "className": "\u6258\u4e03\u73ed",
+                "gradeName": "\u6258\u73ed",
+                "enterSchoolYear": "2023",
+                "total": 0,
+                "attendanceNum": 0,
+                "thingsLeaveNum": 0,
+                "illLeaveNum": 0,
+                "absenceNum": 0,
+                "attendance": 0.0
+            },
+            {
+                "classId": 15113915072513,
+                "className": "\u6258\u516b\u73ed",
+                "gradeName": "\u6258\u73ed",
+                "enterSchoolYear": "2023",
+                "total": 0,
+                "attendanceNum": 0,
+                "thingsLeaveNum": 0,
+                "illLeaveNum": 0,
+                "absenceNum": 0,
+                "attendance": 0.0
+            },
+            {
+                "classId": 16234482106369,
+                "className": "\u5b66\u524d\u73ed-\u5b66\u4e00\u73ed-\u6d4b\u8bd5\u597d\u597d",
+                "gradeName": "\u5b66\u524d\u73ed",
+                "enterSchoolYear": "2020",
+                "total": 1,
+                "attendanceNum": 0,
+                "thingsLeaveNum": 0,
+                "illLeaveNum": 0,
+                "absenceNum": 1,
+                "attendance": 0.0
+            },
+            {
+                "classId": 20031000412161,
+                "className": "\u5b66\u524d\u73ed-\u5b66\u4e8c\u73ed",
+                "gradeName": "\u5b66\u524d\u73ed",
+                "enterSchoolYear": "2018",
+                "total": 1,
+                "attendanceNum": 0,
+                "thingsLeaveNum": 0,
+                "illLeaveNum": 0,
+                "absenceNum": 1,
+                "attendance": 0.0
+            },
+            {
+                "classId": 20031086395393,
+                "className": "\u5b66\u524d\u73ed-\u5b66\u4e09\u73ed",
+                "gradeName": "\u5b66\u524d\u73ed",
+                "enterSchoolYear": "2020",
+                "total": 1,
+                "attendanceNum": 0,
+                "thingsLeaveNum": 0,
+                "illLeaveNum": 0,
+                "absenceNum": 1,
+                "attendance": 0.0
+            }
+        ],
+        "pager": {
+            "totalRows": 16,
+            "pageRows": 20,
+            "pageIndex": 1,
+            "paged": false,
+            "totalPages": 1,
+            "currPageRows": 16,
+            "defaultPageRows": 20,
+            "pageStartRow": 0,
+            "pageEndRow": 19,
+            "hasPrevPage": false,
+            "hasNextPage": false
+        }
+    }
+}
+[0m
+[32m2021-04-12 15:59:52.678[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m218[0m - [1mstatus_code: 200, response_time(ms): 771.02 ms, response_length: 0 bytes[0m
+[32m2021-04-12 15:59:52.679[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert status_code equal 200(int)	==> pass[0m
+[32m2021-04-12 15:59:52.680[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass[0m
+[32m2021-04-12 15:59:52.681[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert body.code equal 0(int)	==> pass[0m
+[32m2021-04-12 15:59:52.681[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: /v1/web/edugarden/statistic/classStatistic <<<<<<
+[0m
+[32m2021-04-12 15:59:52.682[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: /v1/web/edugarden/attendance/student/getDailyList >>>>>>[0m
+[32m2021-04-12 15:59:52.940[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 192.168.0.102, Port: 63674[0m
+[32m2021-04-12 15:59:52.941[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 119.29.116.47, Port: 80[0m
+[32m2021-04-12 15:59:52.941[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== request details ==================
+method   : GET
+url      : http://yadongitest.icampus.clife.net/v1/web/edugarden/attendance/student/getDailyList?pageIndex=1&pageRows=20&statisticDate=2021-04-12
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
+    "Cache-Control": "no-cache",
+    "Content-Type": "application/json;charset=utf-8",
+    "Host": "yadongitest.icampus.clife.net",
+    "Pragma": "no-cache",
+    "Referer": "http://yadongitest.icampus.clife.net/school/",
+    "X-Access-Token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjYyMDg0OTAwMSIsInVzZXJUeXBlIjoiMSIsImV4cCI6MTYxODIyMTU5NSwidXNlcklkIjoiMjQ5MDYwNzczMDY4OSIsIm9yZ0lkIjoiNjQzODczMzM0ODg2NiJ9.pmZi9x9KhD4rPp-kZGoirr6aHC-_IdJ0DAnGgbvfHMo",
+    "X-Requested-With": "XMLhttpRequest",
+    "domainName": "yadongitest",
+    "HRUN-Request-ID": "HRUN-609739f9-a289-40ed-8489-9a15f7e2e3db-392683"
+}
+cookies  : {}
+body     : None
+[0m
+[32m2021-04-12 15:59:52.946[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Mon, 12 Apr 2021 07:59:57 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Methods": "GET,POST,OPTIONS,PUT,DELETE, GET,POST,OPTIONS",
+    "Set-Cookie": "rememberMe=deleteMe; Path=/clife-campus-education-garden-api-web; Max-Age=0; Expires=Sun, 11-Apr-2021 07:59:57 GMT",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "X-Requested-With"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "code": 0,
+    "data": {
+        "list": [
+            {
+                "enterSchoolYear": 2020,
+                "studentId": 2477378895874,
+                "orgId": 6438733348866,
+                "dataTime": "2021-04-12",
+                "classId": 2,
+                "amCardTime": null,
+                "pmCardTime": null,
+                "result": "2",
+                "content": null,
+                "updateTime": [
+                    2021,
+                    4,
+                    12,
+                    10,
+                    15
+                ],
+                "updateByUser": null,
+                "cardUrl": null,
+                "amUrl": null,
+                "pmUrl": null,
+                "studentName": "\u8d75\u4e3d\u9896\u4e00\u53f7~\u00a5@sm",
+                "sex": null,
+                "avatar": null,
+                "gradeId": null,
+                "gradeName": "\u5c0f\u73ed",
+                "className": "\u5c0f\u4e8c\u73ed",
+                "number": null
+            },
+            {
+                "enterSchoolYear": 2020,
+                "studentId": 2477806714882,
+                "orgId": 6438733348866,
+                "dataTime": "2021-04-12",
+                "classId": 4,
+                "amCardTime": null,
+                "pmCardTime": null,
+                "result": "2",
+                "content": null,
+                "updateTime": [
+                    2021,
+                    4,
+                    12,
+                    12,
+                    0
+                ],
+                "updateByUser": null,
+                "cardUrl": null,
+                "amUrl": null,
+                "pmUrl": null,
+                "studentName": "\u8d75\u4e3d\u9896\u4e8c\u53f7",
+                "sex": null,
+                "avatar": null,
+                "gradeId": null,
+                "gradeName": "\u5927\u73ed",
+                "className": "\u5927\u4e00\u73ed",
+                "number": null
+            },
+            {
+                "enterSchoolYear": 2020,
+                "studentId": 2479132114945,
+                "orgId": 6438733348866,
+                "dataTime": "2021-04-12",
+                "classId": 3,
+                "amCardTime": null,
+                "pmCardTime": null,
+                "result": "2",
+                "content": null,
+                "updateTime": [
+                    2021,
+                    4,
+                    12,
+                    10,
+                    0
+                ],
+                "updateByUser": null,
+                "cardUrl": null,
+                "amUrl": null,
+                "pmUrl": null,
+                "studentName": "\u5218\u4ea6\u83f2\u4e00\u53f7\u00a5\u00a5@",
+                "sex": null,
+                "avatar": null,
+                "gradeId": null,
+                "gradeName": "\u4e2d\u73ed",
+                "className": "\u4e2d\u4e00\u73ed",
+                "number": null
+            },
+            {
+                "enterSchoolYear": 2019,
+                "studentId": 2479570419713,
+                "orgId": 6438733348866,
+                "dataTime": "2021-04-12",
+                "classId": 15113176875009,
+                "amCardTime": null,
+                "pmCardTime": null,
+                "result": "2",
+                "content": null,
+                "updateTime": [
+                    2021,
+                    4,
+                    12,
+                    9,
+                    30
+                ],
+                "updateByUser": null,
+                "cardUrl": null,
+                "amUrl": null,
+                "pmUrl": null,
+                "studentName": "\u5218\u4ea6\u83f2\u4e8c\u53f7",
+                "sex": null,
+                "avatar": null,
+                "gradeId": null,
+                "gradeName": "\u6258\u73ed",
+                "className": "\u6258\u4e09\u73ed",
+                "number": null
+            },
+            {
+                "enterSchoolYear": 2020,
+                "studentId": 4275028230145,
+                "orgId": 6438733348866,
+                "dataTime": "2021-04-12",
+                "classId": 3,
+                "amCardTime": null,
+                "pmCardTime": null,
+                "result": "2",
+                "content": null,
+                "updateTime": [
+                    2021,
+                    4,
+                    12,
+                    10,
+                    0
+                ],
+                "updateByUser": null,
+                "cardUrl": null,
+                "amUrl": null,
+                "pmUrl": null,
+                "studentName": "\u8d75\u4e3d\u9896\u4e09\u53f7",
+                "sex": null,
+                "avatar": null,
+                "gradeId": null,
+                "gradeName": "\u4e2d\u73ed",
+                "className": "\u4e2d\u4e00\u73ed",
+                "number": null
+            },
+            {
+                "enterSchoolYear": 2020,
+                "studentId": 5014754557953,
+                "orgId": 6438733348866,
+                "dataTime": "2021-04-12",
+                "classId": 3,
+                "amCardTime": null,
+                "pmCardTime": null,
+                "result": "2",
+                "content": null,
+                "updateTime": [
+                    2021,
+                    4,
+                    12,
+                    10,
+                    0
+                ],
+                "updateByUser": null,
+                "cardUrl": null,
+                "amUrl": null,
+                "pmUrl": null,
+                "studentName": "\u5218\u4ea6\u83f2\u4e09\u53f7",
+                "sex": null,
+                "avatar": null,
+                "gradeId": null,
+                "gradeName": "\u4e2d\u73ed",
+                "className": "\u4e2d\u4e00\u73ed",
+                "number": null
+            },
+            {
+                "enterSchoolYear": 2021,
+                "studentId": 6078570561537,
+                "orgId": 6438733348866,
+                "dataTime": "2021-04-12",
+                "classId": 11666912313345,
+                "amCardTime": null,
+                "pmCardTime": null,
+                "result": "2",
+                "content": null,
+                "updateTime": [
+                    2021,
+                    4,
+                    12,
+                    9,
+                    30
+                ],
+                "updateByUser": null,
+                "cardUrl": null,
+                "amUrl": null,
+                "pmUrl": null,
+                "studentName": "\u8d75\u4e3d\u9896\u56db\u53f7\u6211\u6211\u800c\u6b27\u7f8e",
+                "sex": null,
+                "avatar": null,
+                "gradeId": null,
+                "gradeName": "\u6258\u73ed",
+                "className": "\u6258\u4e00\u73ed",
+                "number": null
+            },
+            {
+                "enterSchoolYear": 2019,
+                "studentId": 6080468484097,
+                "orgId": 6438733348866,
+                "dataTime": "2021-04-12",
+                "classId": 15113126543361,
+                "amCardTime": null,
+                "pmCardTime": null,
+                "result": "2",
+                "content": null,
+                "updateTime": [
+                    2021,
+                    4,
+                    12,
+                    9,
+                    30
+                ],
+                "updateByUser": null,
+                "cardUrl": null,
+                "amUrl": null,
+                "pmUrl": null,
+                "studentName": "\u8d75\u4e3d\u9896\u4e94\u53f7",
+                "sex": null,
+                "avatar": null,
+                "gradeId": null,
+                "gradeName": "\u6258\u73ed",
+                "className": "\u6258\u4e8c\u73ed",
+                "number": null
+            },
+            {
+                "enterSchoolYear": 2020,
+                "studentId": 6094418739201,
+                "orgId": 6438733348866,
+                "dataTime": "2021-04-12",
+                "classId": 4,
+                "amCardTime": null,
+                "pmCardTime": null,
+                "result": "2",
+                "content": null,
+                "updateTime": [
+                    2021,
+                    4,
+                    12,
+                    12,
+                    0
+                ],
+                "updateByUser": null,
+                "cardUrl": null,
+                "amUrl": null,
+                "pmUrl": null,
+                "studentName": "\u8d75\u4e3d\u9896\u516d\u53f7~~~~~",
+                "sex": null,
+                "avatar": null,
+                "gradeId": null,
+                "gradeName": "\u5927\u73ed",
+                "className": "\u5927\u4e00\u73ed",
+                "number": null
+            },
+            {
+                "enterSchoolYear": 2019,
+                "studentId": 15112753250305,
+                "orgId": 6438733348866,
+                "dataTime": "2021-04-12",
+                "classId": 15113176875009,
+                "amCardTime": null,
+                "pmCardTime": null,
+                "result": "2",
+                "content": null,
+                "updateTime": [
+                    2021,
+                    4,
+                    12,
+                    9,
+                    30
+                ],
+                "updateByUser": null,
+                "cardUrl": null,
+                "amUrl": null,
+                "pmUrl": null,
+                "studentName": "\u8d75\u4e3d\u9896\u4e03\u53f7",
+                "sex": null,
+                "avatar": null,
+                "gradeId": null,
+                "gradeName": "\u6258\u73ed",
+                "className": "\u6258\u4e09\u73ed",
+                "number": null
+            },
+            {
+                "enterSchoolYear": 2020,
+                "studentId": 15112849719297,
+                "orgId": 6438733348866,
+                "dataTime": "2021-04-12",
+                "classId": 15113212526593,
+                "amCardTime": null,
+                "pmCardTime": null,
+                "result": "2",
+                "content": null,
+                "updateTime": [
+                    2021,
+                    4,
+                    12,
+                    9,
+                    30
+                ],
+                "updateByUser": null,
+                "cardUrl": null,
+                "amUrl": null,
+                "pmUrl": null,
+                "studentName": "\u8d75\u4e3d\u9896\u516b\u53f7",
+                "sex": null,
+                "avatar": null,
+                "gradeId": null,
+                "gradeName": "\u6258\u73ed",
+                "className": "\u6258\u56db\u73ed",
+                "number": null
+            },
+            {
+                "enterSchoolYear": 2021,
+                "studentId": 15112971354113,
+                "orgId": 6438733348866,
+                "dataTime": "2021-04-12",
+                "classId": 15113258663937,
+                "amCardTime": null,
+                "pmCardTime": null,
+                "result": "2",
+                "content": null,
+                "updateTime": [
+                    2021,
+                    4,
+                    12,
+                    9,
+                    30
+                ],
+                "updateByUser": null,
+                "cardUrl": null,
+                "amUrl": null,
+                "pmUrl": null,
+                "studentName": "\u8d75\u4e3d\u9896\u4e5d\u53f7",
+                "sex": null,
+                "avatar": null,
+                "gradeId": null,
+                "gradeName": "\u6258\u73ed",
+                "className": "\u6258\u4e94\u73ed",
+                "number": null
+            },
+            {
+                "enterSchoolYear": 2020,
+                "studentId": 15114032513025,
+                "orgId": 6438733348866,
+                "dataTime": "2021-04-12",
+                "classId": 4,
+                "amCardTime": null,
+                "pmCardTime": null,
+                "result": "2",
+                "content": null,
+                "updateTime": [
+                    2021,
+                    4,
+                    12,
+                    12,
+                    0
+                ],
+                "updateByUser": null,
+                "cardUrl": null,
+                "amUrl": null,
+                "pmUrl": null,
+                "studentName": "\u8d75\u4e3d\u9896\u5341\u53f7",
+                "sex": null,
+                "avatar": null,
+                "gradeId": null,
+                "gradeName": "\u5927\u73ed",
+                "className": "\u5927\u4e00\u73ed",
+                "number": null
+            },
+            {
+                "enterSchoolYear": 2020,
+                "studentId": 16234675044353,
+                "orgId": 6438733348866,
+                "dataTime": "2021-04-12",
+                "classId": 16234482106369,
+                "amCardTime": null,
+                "pmCardTime": null,
+                "result": "2",
+                "content": null,
+                "updateTime": [
+                    2021,
+                    4,
+                    12,
+                    13,
+                    0
+                ],
+                "updateByUser": null,
+                "cardUrl": null,
+                "amUrl": null,
+                "pmUrl": null,
+                "studentName": "\u8ba1\u52121\u53f7",
+                "sex": null,
+                "avatar": null,
+                "gradeId": null,
+                "gradeName": "\u5b66\u524d\u73ed",
+                "className": "\u5b66\u524d\u73ed-\u5b66\u4e00\u73ed-\u6d4b\u8bd5\u597d\u597d",
+                "number": null
+            },
+            {
+                "enterSchoolYear": 2020,
+                "studentId": 16564515110913,
+                "orgId": 6438733348866,
+                "dataTime": "2021-04-12",
+                "classId": 20031086395393,
+                "amCardTime": null,
+                "pmCardTime": null,
+                "result": "2",
+                "content": null,
+                "updateTime": [
+                    2021,
+                    4,
+                    12,
+                    13,
+                    0
+                ],
+                "updateByUser": null,
+                "cardUrl": null,
+                "amUrl": null,
+                "pmUrl": null,
+                "studentName": "\u8ba1\u5212\u4e8c\u53f7",
+                "sex": null,
+                "avatar": null,
+                "gradeId": null,
+                "gradeName": "\u5b66\u524d\u73ed",
+                "className": "\u5b66\u524d\u73ed-\u5b66\u4e09\u73ed",
+                "number": null
+            },
+            {
+                "enterSchoolYear": 2020,
+                "studentId": 16564582219777,
+                "orgId": 6438733348866,
+                "dataTime": "2021-04-12",
+                "classId": 3,
+                "amCardTime": null,
+                "pmCardTime": null,
+                "result": "2",
+                "content": null,
+                "updateTime": [
+                    2021,
+                    4,
+                    12,
+                    10,
+                    0
+                ],
+                "updateByUser": null,
+                "cardUrl": null,
+                "amUrl": null,
+                "pmUrl": null,
+                "studentName": "\u8ba1\u5212\u4e09\u53f7",
+                "sex": null,
+                "avatar": null,
+                "gradeId": null,
+                "gradeName": "\u4e2d\u73ed",
+                "className": "\u4e2d\u4e00\u73ed",
+                "number": null
+            },
+            {
+                "enterSchoolYear": 2021,
+                "studentId": 16565454635009,
+                "orgId": 6438733348866,
+                "dataTime": "2021-04-12",
+                "classId": 11666912313345,
+                "amCardTime": null,
+                "pmCardTime": null,
+                "result": "2",
+                "content": null,
+                "updateTime": [
+                    2021,
+                    4,
+                    12,
+                    9,
+                    30
+                ],
+                "updateByUser": null,
+                "cardUrl": null,
+                "amUrl": null,
+                "pmUrl": null,
+                "studentName": "\u8ba1\u52124\u53f7",
+                "sex": null,
+                "avatar": null,
+                "gradeId": null,
+                "gradeName": "\u6258\u73ed",
+                "className": "\u6258\u4e00\u73ed",
+                "number": null
+            },
+            {
+                "enterSchoolYear": 2020,
+                "studentId": 16565511258113,
+                "orgId": 6438733348866,
+                "dataTime": "2021-04-12",
+                "classId": 15113212526593,
+                "amCardTime": null,
+                "pmCardTime": null,
+                "result": "2",
+                "content": null,
+                "updateTime": [
+                    2021,
+                    4,
+                    12,
+                    9,
+                    30
+                ],
+                "updateByUser": null,
+                "cardUrl": null,
+                "amUrl": null,
+                "pmUrl": null,
+                "studentName": "\u8ba1\u52125\u53f7",
+                "sex": null,
+                "avatar": null,
+                "gradeId": null,
+                "gradeName": "\u6258\u73ed",
+                "className": "\u6258\u56db\u73ed",
+                "number": null
+            },
+            {
+                "enterSchoolYear": 2020,
+                "studentId": 18945487273985,
+                "orgId": 6438733348866,
+                "dataTime": "2021-04-12",
+                "classId": 3,
+                "amCardTime": null,
+                "pmCardTime": null,
+                "result": "2",
+                "content": null,
+                "updateTime": [
+                    2021,
+                    4,
+                    12,
+                    10,
+                    0
+                ],
+                "updateByUser": null,
+                "cardUrl": null,
+                "amUrl": null,
+                "pmUrl": null,
+                "studentName": "\u8d75\u4e3d\u9896\u5341\u4e00\u53f7",
+                "sex": null,
+                "avatar": null,
+                "gradeId": null,
+                "gradeName": "\u4e2d\u73ed",
+                "className": "\u4e2d\u4e00\u73ed",
+                "number": null
+            },
+            {
+                "enterSchoolYear": 2020,
+                "studentId": 18946558918657,
+                "orgId": 6438733348866,
+                "dataTime": "2021-04-12",
+                "classId": 2,
+                "amCardTime": null,
+                "pmCardTime": null,
+                "result": "2",
+                "content": null,
+                "updateTime": [
+                    2021,
+                    4,
+                    12,
+                    10,
+                    15
+                ],
+                "updateByUser": null,
+                "cardUrl": null,
+                "amUrl": null,
+                "pmUrl": null,
+                "studentName": "\u8d75\u4e3d\u9896\u5341\u4e8c\u53f7",
+                "sex": null,
+                "avatar": null,
+                "gradeId": null,
+                "gradeName": "\u5c0f\u73ed",
+                "className": "\u5c0f\u4e8c\u73ed",
+                "number": null
+            }
+        ],
+        "pager": {
+            "totalRows": 22,
+            "pageRows": 20,
+            "pageIndex": 1,
+            "paged": false,
+            "totalPages": 2,
+            "currPageRows": 20,
+            "defaultPageRows": 20,
+            "pageStartRow": 0,
+            "pageEndRow": 19,
+            "hasPrevPage": false,
+            "hasNextPage": true
+        }
+    }
+}
+[0m
+[32m2021-04-12 15:59:52.947[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m218[0m - [1mstatus_code: 200, response_time(ms): 256.32 ms, response_length: 0 bytes[0m
+[32m2021-04-12 15:59:52.949[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert status_code equal 200(int)	==> pass[0m
+[32m2021-04-12 15:59:52.950[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass[0m
+[32m2021-04-12 15:59:52.950[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert body.code equal 0(int)	==> pass[0m
+[32m2021-04-12 15:59:52.951[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: /v1/web/edugarden/attendance/student/getDailyList <<<<<<
+[0m
+[32m2021-04-12 15:59:52.952[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: /v1/web/edugarden/attendance/student/getStuAttReportPager >>>>>>[0m
+[32m2021-04-12 15:59:53.399[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 192.168.0.102, Port: 63674[0m
+[32m2021-04-12 15:59:53.400[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 119.29.116.47, Port: 80[0m
+[32m2021-04-12 15:59:53.402[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== request details ==================
+method   : GET
+url      : http://yadongitest.icampus.clife.net/v1/web/edugarden/attendance/student/getStuAttReportPager?endDate=2021-04-12&pageIndex=1&pageRows=20&startDate=2021-04-01
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
+    "Cache-Control": "no-cache",
+    "Content-Type": "application/json;charset=utf-8",
+    "Host": "yadongitest.icampus.clife.net",
+    "Pragma": "no-cache",
+    "Referer": "http://yadongitest.icampus.clife.net/school/",
+    "X-Access-Token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjYyMDg0OTAwMSIsInVzZXJUeXBlIjoiMSIsImV4cCI6MTYxODIyMTU5NSwidXNlcklkIjoiMjQ5MDYwNzczMDY4OSIsIm9yZ0lkIjoiNjQzODczMzM0ODg2NiJ9.pmZi9x9KhD4rPp-kZGoirr6aHC-_IdJ0DAnGgbvfHMo",
+    "X-Requested-With": "XMLhttpRequest",
+    "domainName": "yadongitest",
+    "HRUN-Request-ID": "HRUN-609739f9-a289-40ed-8489-9a15f7e2e3db-392953"
+}
+cookies  : {}
+body     : None
+[0m
+[32m2021-04-12 15:59:53.793[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Mon, 12 Apr 2021 07:59:57 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Methods": "GET,POST,OPTIONS,PUT,DELETE, GET,POST,OPTIONS",
+    "Set-Cookie": "rememberMe=deleteMe; Path=/clife-campus-education-garden-api-web; Max-Age=0; Expires=Sun, 11-Apr-2021 07:59:57 GMT",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "X-Requested-With"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "code": 0,
+    "data": {
+        "list": [
+            {
+                "studentId": 2477378895874,
+                "studentName": "\u8d75\u4e3d\u9896\u4e00\u53f7~\u00a5@sm",
+                "enterSchoolYear": "2020",
+                "gradeName": "\u5c0f\u73ed",
+                "className": "\u5c0f\u4e8c\u73ed",
+                "totalNum": 12,
+                "shouldBeNum": 8,
+                "reallyBeNum": 1,
+                "attendanceRate": 12.5,
+                "thingLeaveNum": 1,
+                "sickLeaveNum": 0,
+                "absenceNum": 6,
+                "restNum": 4,
+                "dateList": [
+                    {
+                        "dataTime": "2021-04-01",
+                        "result": 1
+                    },
+                    {
+                        "dataTime": "2021-04-02",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-03",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-04",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-05",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-06",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-07",
+                        "result": 4
+                    },
+                    {
+                        "dataTime": "2021-04-08",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-09",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-10",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-11",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-12",
+                        "result": 2
+                    }
+                ]
+            },
+            {
+                "studentId": 2477806714882,
+                "studentName": "\u8d75\u4e3d\u9896\u4e8c\u53f7",
+                "enterSchoolYear": "2020",
+                "gradeName": "\u5927\u73ed",
+                "className": "\u5927\u4e00\u73ed",
+                "totalNum": 12,
+                "shouldBeNum": 8,
+                "reallyBeNum": 0,
+                "attendanceRate": 0.0,
+                "thingLeaveNum": 1,
+                "sickLeaveNum": 0,
+                "absenceNum": 7,
+                "restNum": 4,
+                "dateList": [
+                    {
+                        "dataTime": "2021-04-01",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-02",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-03",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-04",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-05",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-06",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-07",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-08",
+                        "result": 4
+                    },
+                    {
+                        "dataTime": "2021-04-09",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-10",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-11",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-12",
+                        "result": 2
+                    }
+                ]
+            },
+            {
+                "studentId": 2479132114945,
+                "studentName": "\u5218\u4ea6\u83f2\u4e00\u53f7\u00a5\u00a5@",
+                "enterSchoolYear": "2020",
+                "gradeName": "\u4e2d\u73ed",
+                "className": "\u4e2d\u4e00\u73ed",
+                "totalNum": 12,
+                "shouldBeNum": 8,
+                "reallyBeNum": 0,
+                "attendanceRate": 0.0,
+                "thingLeaveNum": 0,
+                "sickLeaveNum": 0,
+                "absenceNum": 1,
+                "restNum": 4,
+                "dateList": [
+                    {
+                        "dataTime": "2021-04-01",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-02",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-03",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-04",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-05",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-06",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-07",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-08",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-09",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-10",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-11",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-12",
+                        "result": 2
+                    }
+                ]
+            },
+            {
+                "studentId": 2479570419713,
+                "studentName": "\u5218\u4ea6\u83f2\u4e8c\u53f7",
+                "enterSchoolYear": "2019",
+                "gradeName": "\u6258\u73ed",
+                "className": "\u6258\u4e09\u73ed",
+                "totalNum": 12,
+                "shouldBeNum": 8,
+                "reallyBeNum": 0,
+                "attendanceRate": 0.0,
+                "thingLeaveNum": 0,
+                "sickLeaveNum": 0,
+                "absenceNum": 8,
+                "restNum": 4,
+                "dateList": [
+                    {
+                        "dataTime": "2021-04-01",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-02",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-03",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-04",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-05",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-06",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-07",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-08",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-09",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-10",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-11",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-12",
+                        "result": 2
+                    }
+                ]
+            },
+            {
+                "studentId": 4275028230145,
+                "studentName": "\u8d75\u4e3d\u9896\u4e09\u53f7",
+                "enterSchoolYear": "2020",
+                "gradeName": "\u4e2d\u73ed",
+                "className": "\u4e2d\u4e00\u73ed",
+                "totalNum": 12,
+                "shouldBeNum": 8,
+                "reallyBeNum": 0,
+                "attendanceRate": 0.0,
+                "thingLeaveNum": 0,
+                "sickLeaveNum": 0,
+                "absenceNum": 8,
+                "restNum": 4,
+                "dateList": [
+                    {
+                        "dataTime": "2021-04-01",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-02",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-03",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-04",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-05",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-06",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-07",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-08",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-09",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-10",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-11",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-12",
+                        "result": 2
+                    }
+                ]
+            },
+            {
+                "studentId": 5014754557953,
+                "studentName": "\u5218\u4ea6\u83f2\u4e09\u53f7",
+                "enterSchoolYear": "2020",
+                "gradeName": "\u4e2d\u73ed",
+                "className": "\u4e2d\u4e00\u73ed",
+                "totalNum": 12,
+                "shouldBeNum": 8,
+                "reallyBeNum": 0,
+                "attendanceRate": 0.0,
+                "thingLeaveNum": 0,
+                "sickLeaveNum": 0,
+                "absenceNum": 8,
+                "restNum": 4,
+                "dateList": [
+                    {
+                        "dataTime": "2021-04-01",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-02",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-03",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-04",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-05",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-06",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-07",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-08",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-09",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-10",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-11",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-12",
+                        "result": 2
+                    }
+                ]
+            },
+            {
+                "studentId": 6078570561537,
+                "studentName": "\u8d75\u4e3d\u9896\u56db\u53f7\u6211\u6211\u800c\u6b27\u7f8e",
+                "enterSchoolYear": "2021",
+                "gradeName": "\u6258\u73ed",
+                "className": "\u6258\u4e00\u73ed",
+                "totalNum": 12,
+                "shouldBeNum": 8,
+                "reallyBeNum": 1,
+                "attendanceRate": 12.5,
+                "thingLeaveNum": 0,
+                "sickLeaveNum": 0,
+                "absenceNum": 7,
+                "restNum": 4,
+                "dateList": [
+                    {
+                        "dataTime": "2021-04-01",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-02",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-03",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-04",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-05",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-06",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-07",
+                        "result": 1
+                    },
+                    {
+                        "dataTime": "2021-04-08",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-09",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-10",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-11",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-12",
+                        "result": 2
+                    }
+                ]
+            },
+            {
+                "studentId": 6080468484097,
+                "studentName": "\u8d75\u4e3d\u9896\u4e94\u53f7",
+                "enterSchoolYear": "2019",
+                "gradeName": "\u6258\u73ed",
+                "className": "\u6258\u4e8c\u73ed",
+                "totalNum": 12,
+                "shouldBeNum": 8,
+                "reallyBeNum": 0,
+                "attendanceRate": 0.0,
+                "thingLeaveNum": 0,
+                "sickLeaveNum": 0,
+                "absenceNum": 8,
+                "restNum": 4,
+                "dateList": [
+                    {
+                        "dataTime": "2021-04-01",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-02",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-03",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-04",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-05",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-06",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-07",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-08",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-09",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-10",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-11",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-12",
+                        "result": 2
+                    }
+                ]
+            },
+            {
+                "studentId": 6094418739201,
+                "studentName": "\u8d75\u4e3d\u9896\u516d\u53f7~~~~~",
+                "enterSchoolYear": "2020",
+                "gradeName": "\u5927\u73ed",
+                "className": "\u5927\u4e00\u73ed",
+                "totalNum": 12,
+                "shouldBeNum": 8,
+                "reallyBeNum": 0,
+                "attendanceRate": 0.0,
+                "thingLeaveNum": 0,
+                "sickLeaveNum": 0,
+                "absenceNum": 8,
+                "restNum": 4,
+                "dateList": [
+                    {
+                        "dataTime": "2021-04-01",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-02",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-03",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-04",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-05",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-06",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-07",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-08",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-09",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-10",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-11",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-12",
+                        "result": 2
+                    }
+                ]
+            },
+            {
+                "studentId": 15112753250305,
+                "studentName": "\u8d75\u4e3d\u9896\u4e03\u53f7",
+                "enterSchoolYear": "2019",
+                "gradeName": "\u6258\u73ed",
+                "className": "\u6258\u4e09\u73ed",
+                "totalNum": 12,
+                "shouldBeNum": 8,
+                "reallyBeNum": 0,
+                "attendanceRate": 0.0,
+                "thingLeaveNum": 0,
+                "sickLeaveNum": 0,
+                "absenceNum": 8,
+                "restNum": 4,
+                "dateList": [
+                    {
+                        "dataTime": "2021-04-01",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-02",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-03",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-04",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-05",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-06",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-07",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-08",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-09",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-10",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-11",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-12",
+                        "result": 2
+                    }
+                ]
+            },
+            {
+                "studentId": 15112849719297,
+                "studentName": "\u8d75\u4e3d\u9896\u516b\u53f7",
+                "enterSchoolYear": "2020",
+                "gradeName": "\u6258\u73ed",
+                "className": "\u6258\u56db\u73ed",
+                "totalNum": 12,
+                "shouldBeNum": 8,
+                "reallyBeNum": 0,
+                "attendanceRate": 0.0,
+                "thingLeaveNum": 0,
+                "sickLeaveNum": 0,
+                "absenceNum": 8,
+                "restNum": 4,
+                "dateList": [
+                    {
+                        "dataTime": "2021-04-01",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-02",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-03",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-04",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-05",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-06",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-07",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-08",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-09",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-10",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-11",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-12",
+                        "result": 2
+                    }
+                ]
+            },
+            {
+                "studentId": 15112971354113,
+                "studentName": "\u8d75\u4e3d\u9896\u4e5d\u53f7",
+                "enterSchoolYear": "2021",
+                "gradeName": "\u6258\u73ed",
+                "className": "\u6258\u4e94\u73ed",
+                "totalNum": 12,
+                "shouldBeNum": 8,
+                "reallyBeNum": 0,
+                "attendanceRate": 0.0,
+                "thingLeaveNum": 0,
+                "sickLeaveNum": 0,
+                "absenceNum": 8,
+                "restNum": 4,
+                "dateList": [
+                    {
+                        "dataTime": "2021-04-01",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-02",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-03",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-04",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-05",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-06",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-07",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-08",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-09",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-10",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-11",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-12",
+                        "result": 2
+                    }
+                ]
+            },
+            {
+                "studentId": 15114032513025,
+                "studentName": "\u8d75\u4e3d\u9896\u5341\u53f7",
+                "enterSchoolYear": "2020",
+                "gradeName": "\u5927\u73ed",
+                "className": "\u5927\u4e00\u73ed",
+                "totalNum": 12,
+                "shouldBeNum": 8,
+                "reallyBeNum": 0,
+                "attendanceRate": 0.0,
+                "thingLeaveNum": 0,
+                "sickLeaveNum": 0,
+                "absenceNum": 8,
+                "restNum": 4,
+                "dateList": [
+                    {
+                        "dataTime": "2021-04-01",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-02",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-03",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-04",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-05",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-06",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-07",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-08",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-09",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-10",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-11",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-12",
+                        "result": 2
+                    }
+                ]
+            },
+            {
+                "studentId": 16234675044353,
+                "studentName": "\u8ba1\u52121\u53f7",
+                "enterSchoolYear": "2020",
+                "gradeName": "\u5b66\u524d\u73ed",
+                "className": "\u5b66\u524d\u73ed-\u5b66\u4e00\u73ed-\u6d4b\u8bd5\u597d\u597d",
+                "totalNum": 12,
+                "shouldBeNum": 8,
+                "reallyBeNum": 1,
+                "attendanceRate": 12.5,
+                "thingLeaveNum": 0,
+                "sickLeaveNum": 0,
+                "absenceNum": 7,
+                "restNum": 4,
+                "dateList": [
+                    {
+                        "dataTime": "2021-04-01",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-02",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-03",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-04",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-05",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-06",
+                        "result": 1
+                    },
+                    {
+                        "dataTime": "2021-04-07",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-08",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-09",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-10",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-11",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-12",
+                        "result": 2
+                    }
+                ]
+            },
+            {
+                "studentId": 16564515110913,
+                "studentName": "\u8ba1\u5212\u4e8c\u53f7",
+                "enterSchoolYear": "2020",
+                "gradeName": "\u5b66\u524d\u73ed",
+                "className": "\u5b66\u524d\u73ed-\u5b66\u4e09\u73ed",
+                "totalNum": 12,
+                "shouldBeNum": 8,
+                "reallyBeNum": 0,
+                "attendanceRate": 0.0,
+                "thingLeaveNum": 0,
+                "sickLeaveNum": 0,
+                "absenceNum": 8,
+                "restNum": 4,
+                "dateList": [
+                    {
+                        "dataTime": "2021-04-01",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-02",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-03",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-04",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-05",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-06",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-07",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-08",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-09",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-10",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-11",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-12",
+                        "result": 2
+                    }
+                ]
+            },
+            {
+                "studentId": 16564582219777,
+                "studentName": "\u8ba1\u5212\u4e09\u53f7",
+                "enterSchoolYear": "2020",
+                "gradeName": "\u4e2d\u73ed",
+                "className": "\u4e2d\u4e00\u73ed",
+                "totalNum": 12,
+                "shouldBeNum": 8,
+                "reallyBeNum": 0,
+                "attendanceRate": 0.0,
+                "thingLeaveNum": 0,
+                "sickLeaveNum": 0,
+                "absenceNum": 8,
+                "restNum": 4,
+                "dateList": [
+                    {
+                        "dataTime": "2021-04-01",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-02",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-03",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-04",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-05",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-06",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-07",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-08",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-09",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-10",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-11",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-12",
+                        "result": 2
+                    }
+                ]
+            },
+            {
+                "studentId": 16565454635009,
+                "studentName": "\u8ba1\u52124\u53f7",
+                "enterSchoolYear": "2021",
+                "gradeName": "\u6258\u73ed",
+                "className": "\u6258\u4e00\u73ed",
+                "totalNum": 12,
+                "shouldBeNum": 8,
+                "reallyBeNum": 0,
+                "attendanceRate": 0.0,
+                "thingLeaveNum": 0,
+                "sickLeaveNum": 0,
+                "absenceNum": 8,
+                "restNum": 4,
+                "dateList": [
+                    {
+                        "dataTime": "2021-04-01",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-02",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-03",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-04",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-05",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-06",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-07",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-08",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-09",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-10",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-11",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-12",
+                        "result": 2
+                    }
+                ]
+            },
+            {
+                "studentId": 16565511258113,
+                "studentName": "\u8ba1\u52125\u53f7",
+                "enterSchoolYear": "2020",
+                "gradeName": "\u6258\u73ed",
+                "className": "\u6258\u56db\u73ed",
+                "totalNum": 12,
+                "shouldBeNum": 8,
+                "reallyBeNum": 0,
+                "attendanceRate": 0.0,
+                "thingLeaveNum": 0,
+                "sickLeaveNum": 0,
+                "absenceNum": 8,
+                "restNum": 4,
+                "dateList": [
+                    {
+                        "dataTime": "2021-04-01",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-02",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-03",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-04",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-05",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-06",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-07",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-08",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-09",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-10",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-11",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-12",
+                        "result": 2
+                    }
+                ]
+            },
+            {
+                "studentId": 18945487273985,
+                "studentName": "\u8d75\u4e3d\u9896\u5341\u4e00\u53f7",
+                "enterSchoolYear": "2020",
+                "gradeName": "\u4e2d\u73ed",
+                "className": "\u4e2d\u4e00\u73ed",
+                "totalNum": 12,
+                "shouldBeNum": 8,
+                "reallyBeNum": 0,
+                "attendanceRate": 0.0,
+                "thingLeaveNum": 0,
+                "sickLeaveNum": 0,
+                "absenceNum": 8,
+                "restNum": 4,
+                "dateList": [
+                    {
+                        "dataTime": "2021-04-01",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-02",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-03",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-04",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-05",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-06",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-07",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-08",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-09",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-10",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-11",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-12",
+                        "result": 2
+                    }
+                ]
+            },
+            {
+                "studentId": 18946558918657,
+                "studentName": "\u8d75\u4e3d\u9896\u5341\u4e8c\u53f7",
+                "enterSchoolYear": "2020",
+                "gradeName": "\u5c0f\u73ed",
+                "className": "\u5c0f\u4e8c\u73ed",
+                "totalNum": 12,
+                "shouldBeNum": 8,
+                "reallyBeNum": 1,
+                "attendanceRate": 12.5,
+                "thingLeaveNum": 0,
+                "sickLeaveNum": 0,
+                "absenceNum": 7,
+                "restNum": 4,
+                "dateList": [
+                    {
+                        "dataTime": "2021-04-01",
+                        "result": 1
+                    },
+                    {
+                        "dataTime": "2021-04-02",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-03",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-04",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-05",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-06",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-07",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-08",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-09",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-10",
+                        "result": 2
+                    },
+                    {
+                        "dataTime": "2021-04-11",
+                        "result": 6
+                    },
+                    {
+                        "dataTime": "2021-04-12",
+                        "result": 2
+                    }
+                ]
+            }
+        ],
+        "pager": {
+            "totalRows": 22,
+            "pageRows": 20,
+            "pageIndex": 1,
+            "paged": false,
+            "totalPages": 2,
+            "currPageRows": 20,
+            "defaultPageRows": 20,
+            "pageStartRow": 0,
+            "pageEndRow": 19,
+            "hasPrevPage": false,
+            "hasNextPage": true
+        }
+    }
+}
+[0m
+[32m2021-04-12 15:59:53.796[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m218[0m - [1mstatus_code: 200, response_time(ms): 444.87 ms, response_length: 0 bytes[0m
+[32m2021-04-12 15:59:53.797[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert status_code equal 200(int)	==> pass[0m
+[32m2021-04-12 15:59:53.797[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass[0m
+[32m2021-04-12 15:59:53.798[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert body.code equal 0(int)	==> pass[0m
+[32m2021-04-12 15:59:53.798[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: /v1/web/edugarden/attendance/student/getStuAttReportPager <<<<<<
+[0m
+[32m2021-04-12 15:59:53.798[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: /v1/web/edugarden/original/list >>>>>>[0m
+[32m2021-04-12 15:59:53.878[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 192.168.0.102, Port: 63674[0m
+[32m2021-04-12 15:59:53.878[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 119.29.116.47, Port: 80[0m
+[32m2021-04-12 15:59:53.879[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== request details ==================
+method   : GET
+url      : http://yadongitest.icampus.clife.net/v1/web/edugarden/original/list?endDate=2021-04-12&pageIndex=1&pageRows=20&startDate=2021-04-01
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
+    "Cache-Control": "no-cache",
+    "Content-Type": "application/json;charset=utf-8",
+    "Host": "yadongitest.icampus.clife.net",
+    "Pragma": "no-cache",
+    "Referer": "http://yadongitest.icampus.clife.net/school/",
+    "X-Access-Token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjYyMDg0OTAwMSIsInVzZXJUeXBlIjoiMSIsImV4cCI6MTYxODIyMTU5NSwidXNlcklkIjoiMjQ5MDYwNzczMDY4OSIsIm9yZ0lkIjoiNjQzODczMzM0ODg2NiJ9.pmZi9x9KhD4rPp-kZGoirr6aHC-_IdJ0DAnGgbvfHMo",
+    "X-Requested-With": "XMLhttpRequest",
+    "domainName": "yadongitest",
+    "HRUN-Request-ID": "HRUN-609739f9-a289-40ed-8489-9a15f7e2e3db-393798"
+}
+cookies  : {}
+body     : None
+[0m
+[32m2021-04-12 15:59:53.895[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Mon, 12 Apr 2021 07:59:58 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Methods": "GET,POST,OPTIONS,PUT,DELETE, GET,POST,OPTIONS",
+    "Set-Cookie": "rememberMe=deleteMe; Path=/clife-campus-education-garden-api-web; Max-Age=0; Expires=Sun, 11-Apr-2021 07:59:58 GMT",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "X-Requested-With"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "code": 0,
+    "data": {
+        "list": [
+            {
+                "orgId": null,
+                "originalId": null,
+                "deviceNo": "0",
+                "studentId": null,
+                "classId": null,
+                "schoolDeviceNo": "0",
+                "attendanceDate": "2021-04-07",
+                "cardTime": "2021-04-07 22:00:00",
+                "studentName": "\u8d75\u4e3d\u9896\u5341\u56db\u53f7",
+                "enterSchoolYear": "2018",
+                "gradeName": "\u5b66\u524d\u73ed",
+                "className": "\u5b66\u524d\u73ed-\u5b66\u4e8c\u73ed",
+                "result": "0",
+                "cardUrl": null,
+                "source": "2",
+                "clockSerialNo": null,
+                "dailyList": null
+            },
+            {
+                "orgId": null,
+                "originalId": null,
+                "deviceNo": "0",
+                "studentId": null,
+                "classId": null,
+                "schoolDeviceNo": "0",
+                "attendanceDate": "2021-04-07",
+                "cardTime": "2021-04-07 22:00:00",
+                "studentName": "\u8d75\u4e3d\u9896\u56db\u53f7\u6211\u6211\u800c\u6b27\u7f8e",
+                "enterSchoolYear": "2021",
+                "gradeName": "\u6258\u73ed",
+                "className": "\u6258\u4e00\u73ed",
+                "result": "1",
+                "cardUrl": null,
+                "source": "2",
+                "clockSerialNo": null,
+                "dailyList": null
+            },
+            {
+                "orgId": null,
+                "originalId": null,
+                "deviceNo": "0",
+                "studentId": null,
+                "classId": null,
+                "schoolDeviceNo": "0",
+                "attendanceDate": "2021-04-07",
+                "cardTime": "2021-04-07 15:50:00",
+                "studentName": "\u8d75\u4e3d\u9896\u56db\u53f7\u6211\u6211\u800c\u6b27\u7f8e",
+                "enterSchoolYear": "2021",
+                "gradeName": "\u6258\u73ed",
+                "className": "\u6258\u4e00\u73ed",
+                "result": "0",
+                "cardUrl": null,
+                "source": "2",
+                "clockSerialNo": null,
+                "dailyList": null
+            },
+            {
+                "orgId": null,
+                "originalId": null,
+                "deviceNo": "0",
+                "studentId": null,
+                "classId": null,
+                "schoolDeviceNo": "0",
+                "attendanceDate": "2021-04-06",
+                "cardTime": "2021-04-06 09:41:00",
+                "studentName": "\u8ba1\u52121\u53f7",
+                "enterSchoolYear": "2020",
+                "gradeName": "\u5b66\u524d\u73ed",
+                "className": "\u5b66\u524d\u73ed-\u5b66\u4e00\u73ed-\u6d4b\u8bd5\u597d\u597d",
+                "result": "0",
+                "cardUrl": null,
+                "source": "2",
+                "clockSerialNo": null,
+                "dailyList": null
+            },
+            {
+                "orgId": null,
+                "originalId": null,
+                "deviceNo": "f20cfb94421f",
+                "studentId": null,
+                "classId": null,
+                "schoolDeviceNo": "6655",
+                "attendanceDate": "2021-04-05",
+                "cardTime": "2021-04-05 17:55:25",
+                "studentName": "\u8d75\u4e3d\u9896\u4e09\u53f7",
+                "enterSchoolYear": "2020",
+                "gradeName": "\u4e2d\u73ed",
+                "className": "\u4e2d\u4e00\u73ed",
+                "result": "3",
+                "cardUrl": null,
+                "source": "1",
+                "clockSerialNo": null,
+                "dailyList": null
+            },
+            {
+                "orgId": null,
+                "originalId": null,
+                "deviceNo": "f20cfb94421f",
+                "studentId": null,
+                "classId": null,
+                "schoolDeviceNo": "6655",
+                "attendanceDate": "2021-04-04",
+                "cardTime": "2021-04-04 16:03:48",
+                "studentName": "\u8d75\u4e3d\u9896\u4e09\u53f7",
+                "enterSchoolYear": "2020",
+                "gradeName": "\u4e2d\u73ed",
+                "className": "\u4e2d\u4e00\u73ed",
+                "result": "3",
+                "cardUrl": null,
+                "source": "1",
+                "clockSerialNo": null,
+                "dailyList": null
+            },
+            {
+                "orgId": null,
+                "originalId": null,
+                "deviceNo": "f20cfb94421f",
+                "studentId": null,
+                "classId": null,
+                "schoolDeviceNo": "6655",
+                "attendanceDate": "2021-04-04",
+                "cardTime": "2021-04-04 16:03:15",
+                "studentName": "\u8d75\u4e3d\u9896\u4e09\u53f7",
+                "enterSchoolYear": "2020",
+                "gradeName": "\u4e2d\u73ed",
+                "className": "\u4e2d\u4e00\u73ed",
+                "result": "3",
+                "cardUrl": null,
+                "source": "1",
+                "clockSerialNo": null,
+                "dailyList": null
+            },
+            {
+                "orgId": null,
+                "originalId": null,
+                "deviceNo": "f20cfb94421f",
+                "studentId": null,
+                "classId": null,
+                "schoolDeviceNo": "6655",
+                "attendanceDate": "2021-04-04",
+                "cardTime": "2021-04-04 14:30:30",
+                "studentName": "\u8d75\u4e3d\u9896\u4e09\u53f7",
+                "enterSchoolYear": "2020",
+                "gradeName": "\u4e2d\u73ed",
+                "className": "\u4e2d\u4e00\u73ed",
+                "result": "3",
+                "cardUrl": null,
+                "source": "1",
+                "clockSerialNo": null,
+                "dailyList": null
+            },
+            {
+                "orgId": null,
+                "originalId": null,
+                "deviceNo": "f20cfb94421f",
+                "studentId": null,
+                "classId": null,
+                "schoolDeviceNo": "6655",
+                "attendanceDate": "2021-04-04",
+                "cardTime": "2021-04-04 14:29:23",
+                "studentName": "\u8d75\u4e3d\u9896\u4e09\u53f7",
+                "enterSchoolYear": "2020",
+                "gradeName": "\u4e2d\u73ed",
+                "className": "\u4e2d\u4e00\u73ed",
+                "result": "3",
+                "cardUrl": null,
+                "source": "1",
+                "clockSerialNo": null,
+                "dailyList": null
+            },
+            {
+                "orgId": null,
+                "originalId": null,
+                "deviceNo": "f20cfb94421f",
+                "studentId": null,
+                "classId": null,
+                "schoolDeviceNo": "6655",
+                "attendanceDate": "2021-04-04",
+                "cardTime": "2021-04-04 14:22:25",
+                "studentName": "\u8d75\u4e3d\u9896\u4e09\u53f7",
+                "enterSchoolYear": "2020",
+                "gradeName": "\u4e2d\u73ed",
+                "className": "\u4e2d\u4e00\u73ed",
+                "result": "3",
+                "cardUrl": null,
+                "source": "1",
+                "clockSerialNo": null,
+                "dailyList": null
+            },
+            {
+                "orgId": null,
+                "originalId": null,
+                "deviceNo": "f20cfb94421f",
+                "studentId": null,
+                "classId": null,
+                "schoolDeviceNo": "6655",
+                "attendanceDate": "2021-04-04",
+                "cardTime": "2021-04-04 12:06:40",
+                "studentName": "\u8d75\u4e3d\u9896\u4e09\u53f7",
+                "enterSchoolYear": "2020",
+                "gradeName": "\u4e2d\u73ed",
+                "className": "\u4e2d\u4e00\u73ed",
+                "result": "3",
+                "cardUrl": null,
+                "source": "1",
+                "clockSerialNo": null,
+                "dailyList": null
+            },
+            {
+                "orgId": null,
+                "originalId": null,
+                "deviceNo": "f20cfb94421f",
+                "studentId": null,
+                "classId": null,
+                "schoolDeviceNo": "6655",
+                "attendanceDate": "2021-04-04",
+                "cardTime": "2021-04-04 12:06:22",
+                "studentName": "\u8d75\u4e3d\u9896\u4e09\u53f7",
+                "enterSchoolYear": "2020",
+                "gradeName": "\u4e2d\u73ed",
+                "className": "\u4e2d\u4e00\u73ed",
+                "result": "3",
+                "cardUrl": null,
+                "source": "1",
+                "clockSerialNo": null,
+                "dailyList": null
+            },
+            {
+                "orgId": null,
+                "originalId": null,
+                "deviceNo": "f20cfb94421f",
+                "studentId": null,
+                "classId": null,
+                "schoolDeviceNo": "6655",
+                "attendanceDate": "2021-04-04",
+                "cardTime": "2021-04-04 12:01:44",
+                "studentName": "\u8d75\u4e3d\u9896\u4e09\u53f7",
+                "enterSchoolYear": "2020",
+                "gradeName": "\u4e2d\u73ed",
+                "className": "\u4e2d\u4e00\u73ed",
+                "result": "3",
+                "cardUrl": null,
+                "source": "1",
+                "clockSerialNo": null,
+                "dailyList": null
+            },
+            {
+                "orgId": null,
+                "originalId": null,
+                "deviceNo": "f20cfb94421f",
+                "studentId": null,
+                "classId": null,
+                "schoolDeviceNo": "6655",
+                "attendanceDate": "2021-04-04",
+                "cardTime": "2021-04-04 12:01:15",
+                "studentName": "\u8d75\u4e3d\u9896\u4e09\u53f7",
+                "enterSchoolYear": "2020",
+                "gradeName": "\u4e2d\u73ed",
+                "className": "\u4e2d\u4e00\u73ed",
+                "result": "3",
+                "cardUrl": null,
+                "source": "1",
+                "clockSerialNo": null,
+                "dailyList": null
+            },
+            {
+                "orgId": null,
+                "originalId": null,
+                "deviceNo": "f20cfb94421f",
+                "studentId": null,
+                "classId": null,
+                "schoolDeviceNo": "6655",
+                "attendanceDate": "2021-04-04",
+                "cardTime": "2021-04-04 11:55:52",
+                "studentName": "\u8d75\u4e3d\u9896\u4e09\u53f7",
+                "enterSchoolYear": "2020",
+                "gradeName": "\u4e2d\u73ed",
+                "className": "\u4e2d\u4e00\u73ed",
+                "result": "3",
+                "cardUrl": null,
+                "source": "1",
+                "clockSerialNo": null,
+                "dailyList": null
+            },
+            {
+                "orgId": null,
+                "originalId": null,
+                "deviceNo": "210269066",
+                "studentId": null,
+                "classId": null,
+                "schoolDeviceNo": "6655",
+                "attendanceDate": "2021-04-03",
+                "cardTime": "2021-04-03 10:00:00",
+                "studentName": "\u8d75\u4e3d\u9896\u4e8c\u53f7",
+                "enterSchoolYear": "2020",
+                "gradeName": "\u5927\u73ed",
+                "className": "\u5927\u4e00\u73ed",
+                "result": "3",
+                "cardUrl": null,
+                "source": "1",
+                "clockSerialNo": null,
+                "dailyList": null
+            },
+            {
+                "orgId": null,
+                "originalId": null,
+                "deviceNo": "0",
+                "studentId": null,
+                "classId": null,
+                "schoolDeviceNo": "0",
+                "attendanceDate": "2021-04-01",
+                "cardTime": "2021-04-01 16:16:00",
+                "studentName": "\u8d75\u4e3d\u9896\u4e00\u53f7~\u00a5@sm",
+                "enterSchoolYear": "2020",
+                "gradeName": "\u5c0f\u73ed",
+                "className": "\u5c0f\u4e8c\u73ed",
+                "result": "1",
+                "cardUrl": null,
+                "source": "2",
+                "clockSerialNo": null,
+                "dailyList": null
+            },
+            {
+                "orgId": null,
+                "originalId": null,
+                "deviceNo": "0",
+                "studentId": null,
+                "classId": null,
+                "schoolDeviceNo": "0",
+                "attendanceDate": "2021-04-01",
+                "cardTime": "2021-04-01 16:11:00",
+                "studentName": "\u8d75\u4e3d\u9896\u4e00\u53f7~\u00a5@sm",
+                "enterSchoolYear": "2020",
+                "gradeName": "\u5c0f\u73ed",
+                "className": "\u5c0f\u4e8c\u73ed",
+                "result": "0",
+                "cardUrl": null,
+                "source": "2",
+                "clockSerialNo": null,
+                "dailyList": null
+            },
+            {
+                "orgId": null,
+                "originalId": null,
+                "deviceNo": "0",
+                "studentId": null,
+                "classId": null,
+                "schoolDeviceNo": "0",
+                "attendanceDate": "2021-04-01",
+                "cardTime": "2021-04-01 16:08:00",
+                "studentName": "\u8d75\u4e3d\u9896\u4e00\u53f7~\u00a5@sm",
+                "enterSchoolYear": "2020",
+                "gradeName": "\u5c0f\u73ed",
+                "className": "\u5c0f\u4e8c\u73ed",
+                "result": "5",
+                "cardUrl": null,
+                "source": "2",
+                "clockSerialNo": null,
+                "dailyList": null
+            },
+            {
+                "orgId": null,
+                "originalId": null,
+                "deviceNo": "0",
+                "studentId": null,
+                "classId": null,
+                "schoolDeviceNo": "0",
+                "attendanceDate": "2021-04-01",
+                "cardTime": "2021-04-01 10:24:00",
+                "studentName": "\u8d75\u4e3d\u9896\u5341\u4e8c\u53f7",
+                "enterSchoolYear": "2020",
+                "gradeName": "\u5c0f\u73ed",
+                "className": "\u5c0f\u4e8c\u73ed",
+                "result": "0",
+                "cardUrl": null,
+                "source": "2",
+                "clockSerialNo": null,
+                "dailyList": null
+            }
+        ],
+        "pager": {
+            "totalRows": 21,
+            "pageRows": 20,
+            "pageIndex": 1,
+            "paged": false,
+            "totalPages": 2,
+            "currPageRows": 20,
+            "defaultPageRows": 20,
+            "pageStartRow": 0,
+            "pageEndRow": 19,
+            "hasPrevPage": false,
+            "hasNextPage": true
+        }
+    }
+}
+[0m
+[32m2021-04-12 15:59:53.895[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m218[0m - [1mstatus_code: 200, response_time(ms): 80.19 ms, response_length: 0 bytes[0m
+[32m2021-04-12 15:59:53.896[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert status_code equal 200(int)	==> pass[0m
+[32m2021-04-12 15:59:53.896[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass[0m
+[32m2021-04-12 15:59:53.896[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert body.code equal 0(int)	==> pass[0m
+[32m2021-04-12 15:59:53.896[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: /v1/web/edugarden/original/list <<<<<<
+[0m
+[32m2021-04-12 15:59:53.897[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: /v1/web/edugarden/infantAttendance/list >>>>>>[0m
+[32m2021-04-12 15:59:54.011[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 192.168.0.102, Port: 63674[0m
+[32m2021-04-12 15:59:54.011[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 119.29.116.47, Port: 80[0m
+[32m2021-04-12 15:59:54.011[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== request details ==================
+method   : GET
+url      : http://yadongitest.icampus.clife.net/v1/web/edugarden/infantAttendance/list
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
+    "Cache-Control": "no-cache",
+    "Content-Type": "application/json;charset=utf-8",
+    "Host": "yadongitest.icampus.clife.net",
+    "Pragma": "no-cache",
+    "Referer": "http://yadongitest.icampus.clife.net/school/",
+    "X-Access-Token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjYyMDg0OTAwMSIsInVzZXJUeXBlIjoiMSIsImV4cCI6MTYxODIyMTU5NSwidXNlcklkIjoiMjQ5MDYwNzczMDY4OSIsIm9yZ0lkIjoiNjQzODczMzM0ODg2NiJ9.pmZi9x9KhD4rPp-kZGoirr6aHC-_IdJ0DAnGgbvfHMo",
+    "X-Requested-With": "XMLhttpRequest",
+    "domainName": "yadongitest",
+    "HRUN-Request-ID": "HRUN-609739f9-a289-40ed-8489-9a15f7e2e3db-393897"
+}
+cookies  : {}
+body     : None
+[0m
+[32m2021-04-12 15:59:54.012[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Mon, 12 Apr 2021 07:59:58 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Methods": "GET,POST,OPTIONS,PUT,DELETE, GET,POST,OPTIONS",
+    "Set-Cookie": "rememberMe=deleteMe; Path=/clife-campus-education-garden-api-web; Max-Age=0; Expires=Sun, 11-Apr-2021 07:59:58 GMT",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "X-Requested-With"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "code": 0,
+    "data": {
+        "time": "09:20:00",
+        "orgId": 6438733348866,
+        "holidayWeek": "1-2-3-4-5-6",
+        "startTime": "07:00:00",
+        "endTime": "23:00:00",
+        "ruleList": [
+            {
+                "ruleId": 16815940567041,
+                "orgId": 6438733348866,
+                "gradeId": 5,
+                "gradeName": "\u6258\u73ed",
+                "amNormalTime": "09:20:00",
+                "pmNormalTime": "11:00:00",
+                "createTime": "2021-03-04 22:32:18",
+                "updateTime": "2021-04-12 15:53:33"
+            },
+            {
+                "ruleId": 16815940567042,
+                "orgId": 6438733348866,
+                "gradeId": 6,
+                "gradeName": "\u5c0f\u73ed",
+                "amNormalTime": "10:10:00",
+                "pmNormalTime": "13:30:00",
+                "createTime": "2021-03-04 22:32:18",
+                "updateTime": "2021-04-12 15:53:33"
+            },
+            {
+                "ruleId": 16815940567043,
+                "orgId": 6438733348866,
+                "gradeId": 7,
+                "gradeName": "\u4e2d\u73ed",
+                "amNormalTime": "10:00:00",
+                "pmNormalTime": "14:30:00",
+                "createTime": "2021-03-04 22:32:18",
+                "updateTime": "2021-04-12 15:53:33"
+            },
+            {
+                "ruleId": 16815940567044,
+                "orgId": 6438733348866,
+                "gradeId": 8,
+                "gradeName": "\u5927\u73ed",
+                "amNormalTime": "12:00:00",
+                "pmNormalTime": "15:11:00",
+                "createTime": "2021-03-04 22:32:18",
+                "updateTime": "2021-04-12 15:53:33"
+            },
+            {
+                "ruleId": 16815940567045,
+                "orgId": 6438733348866,
+                "gradeId": 9,
+                "gradeName": "\u5b66\u524d\u73ed",
+                "amNormalTime": "12:50:00",
+                "pmNormalTime": "18:00:00",
+                "createTime": "2021-03-04 22:32:18",
+                "updateTime": "2021-04-12 15:53:33"
+            }
+        ],
+        "holidayList": [
+            {
+                "dataId": 9524726071297,
+                "orgId": null,
+                "holidayYear": "2021",
+                "holidayName": "2021\u56fd\u5bb6\u6cd5\u5b9a\u8282\u5047\u65e5",
+                "holidayType": 0,
+                "isLegal": 0,
+                "legalHoliday": [
+                    {
+                        "holidayName": "\u5143\u65e6",
+                        "holidayDate": "2021-01-01~2021-01-03"
+                    },
+                    {
+                        "holidayName": "\u9664\u5915",
+                        "holidayDate": "2021-02-11~2021-02-11"
+                    },
+                    {
+                        "holidayName": "\u6625\u8282",
+                        "holidayDate": "2021-02-12~2021-02-17"
+                    },
+                    {
+                        "holidayName": "\u6e05\u660e\u8282",
+                        "holidayDate": "2021-04-03~2021-04-05"
+                    },
+                    {
+                        "holidayName": "\u52b3\u52a8\u8282",
+                        "holidayDate": "2021-05-01~2021-05-05"
+                    },
+                    {
+                        "holidayName": "\u516d\u4e00",
+                        "holidayDate": "2021-06-01~2021-06-01"
+                    },
+                    {
+                        "holidayName": "\u7aef\u5348\u8282",
+                        "holidayDate": "2021-06-12~2021-06-14"
+                    },
+                    {
+                        "holidayName": "\u4e2d\u79cb\u8282",
+                        "holidayDate": "2021-09-19~2021-09-21"
+                    },
+                    {
+                        "holidayName": "\u56fd\u5e86\u8282",
+                        "holidayDate": "2021-10-01~2021-10-07"
+                    }
+                ],
+                "holidayBeginDate": "2021-04-03",
+                "holidayEndDate": "2021-04-05",
+                "deleted": 1,
+                "createTime": "2021-01-23 14:41:11",
+                "moduleType": null,
+                "dateType": null
+            }
+        ],
+        "noList": [
+            {
+                "studentId": 23841850654721,
+                "orgId": 6438733348866,
+                "studentName": null,
+                "sex": null,
+                "className": null,
+                "remark": "234567890-=-09\u5455iu\u9884\u70ed\u6211\u53bb\u800c\u9000\u54e6iu\u72b9\u592a\u4eba\u88ab1234",
+                "status": null,
+                "deleted": 1,
+                "createTime": "2021-04-12 15:53:33",
+                "updateTime": "2021-04-12 15:53:33"
+            }
+        ],
+        "permit": 1,
+        "broadcastList": [
+            {
+                "broadcastId": 103,
+                "orgId": 6438733348866,
+                "type": 1,
+                "message": "\u6b22\u8fce{sn}\u5c0f\u670b\u53cb\u5165\u56ed",
+                "updateTime": "2021-04-12 07:53:33"
+            },
+            {
+                "broadcastId": 104,
+                "orgId": 6438733348866,
+                "type": 2,
+                "message": "{sn}\u5c0f\u670b\u53cb\uff0c\u5bb6\u957f\u6765\u63a5\u5566",
+                "updateTime": "2021-04-12 07:53:33"
+            }
+        ]
+    }
+}
+[0m
+[32m2021-04-12 15:59:54.012[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m218[0m - [1mstatus_code: 200, response_time(ms): 113.7 ms, response_length: 0 bytes[0m
+[32m2021-04-12 15:59:54.012[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert status_code equal 200(int)	==> pass[0m
+[32m2021-04-12 15:59:54.013[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass[0m
+[32m2021-04-12 15:59:54.013[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert body.code equal 0(int)	==> pass[0m
+[32m2021-04-12 15:59:54.013[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: /v1/web/edugarden/infantAttendance/list <<<<<<
+[0m
+[32m2021-04-12 15:59:54.013[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: /v1/web/edugarden/infantAttendance/setting >>>>>>[0m
+[32m2021-04-12 15:59:54.163[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 192.168.0.102, Port: 63674[0m
+[32m2021-04-12 15:59:54.163[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 119.29.116.47, Port: 80[0m
+[32m2021-04-12 15:59:54.164[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== request details ==================
+method   : POST
+url      : http://yadongitest.icampus.clife.net/v1/web/edugarden/infantAttendance/setting
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
+    "Content-Length": "1987",
+    "Content-Type": "application/json",
+    "Host": "yadongitest.icampus.clife.net",
+    "Origin": "http://yadongitest.icampus.clife.net",
+    "Referer": "http://yadongitest.icampus.clife.net/school/",
+    "X-Access-Token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjYyMDg0OTAwMSIsInVzZXJUeXBlIjoiMSIsImV4cCI6MTYxODIyMTU5NSwidXNlcklkIjoiMjQ5MDYwNzczMDY4OSIsIm9yZ0lkIjoiNjQzODczMzM0ODg2NiJ9.pmZi9x9KhD4rPp-kZGoirr6aHC-_IdJ0DAnGgbvfHMo",
+    "X-Requested-With": "XMLhttpRequest",
+    "domainName": "yadongitest",
+    "HRUN-Request-ID": "HRUN-609739f9-a289-40ed-8489-9a15f7e2e3db-394014"
+}
+cookies  : {}
+body     : {
+    "broadcastList": [
+        {
+            "message": "\u6b22\u8fce{sn}\u5c0f\u670b\u53cb\u5165\u56ed",
+            "type": 1
+        },
+        {
+            "message": "{sn}\u5c0f\u670b\u53cb\uff0c\u5bb6\u957f\u6765\u63a5\u5566",
+            "type": 2
+        }
+    ],
+    "endTime": "23:00:00",
+    "holidayWeek": "1-2-3-4-5-6",
+    "noList": [
+        {
+            "className": null,
+            "createTime": "2021-04-12 15:04:33",
+            "deleted": 1,
+            "orgId": 6438733348866,
+            "remark": "234567890-=-09\u5455iu\u9884\u70ed\u6211\u53bb\u800c\u9000\u54e6iu\u72b9\u592a\u4eba\u88ab1234",
+            "sex": null,
+            "status": null,
+            "studentId": 23841850654721,
+            "studentName": null,
+            "updateTime": "2021-04-12 15:04:33"
+        }
+    ],
+    "permit": 1,
+    "ruleList": [
+        {
+            "amNormalTime": "09:20:00",
+            "createTime": "2021-03-04 22:32:18",
+            "gradeId": 5,
+            "gradeName": "\u6258\u73ed",
+            "orgId": 6438733348866,
+            "pmNormalTime": "11:00:00",
+            "ruleId": 16815940567041,
+            "updateTime": "2021-04-12 15:04:33",
+            "uuid": "c8450bc7-d5d2-4bab-8754-0b77d355a5aa"
+        },
+        {
+            "amNormalTime": "10:10:00",
+            "createTime": "2021-03-04 22:32:18",
+            "gradeId": 6,
+            "gradeName": "\u5c0f\u73ed",
+            "orgId": 6438733348866,
+            "pmNormalTime": "13:30:00",
+            "ruleId": 16815940567042,
+            "updateTime": "2021-04-12 15:04:33",
+            "uuid": "7aaef610-a827-42be-8af7-f2ece4b46b30"
+        },
+        {
+            "amNormalTime": "10:00:00",
+            "createTime": "2021-03-04 22:32:18",
+            "gradeId": 7,
+            "gradeName": "\u4e2d\u73ed",
+            "orgId": 6438733348866,
+            "pmNormalTime": "14:30:00",
+            "ruleId": 16815940567043,
+            "updateTime": "2021-04-12 15:04:33",
+            "uuid": "f7e643dd-d19a-4c30-80e2-9f806f4a5c7b"
+        },
+        {
+            "amNormalTime": "12:00:00",
+            "createTime": "2021-03-04 22:32:18",
+            "gradeId": 8,
+            "gradeName": "\u5927\u73ed",
+            "orgId": 6438733348866,
+            "pmNormalTime": "15:11:00",
+            "ruleId": 16815940567044,
+            "updateTime": "2021-04-12 15:04:33",
+            "uuid": "cb6b998b-c3f3-45d9-8f06-4f8ea4509655"
+        },
+        {
+            "amNormalTime": "12:50:00",
+            "createTime": "2021-03-04 22:32:18",
+            "gradeId": 9,
+            "gradeName": "\u5b66\u524d\u73ed",
+            "orgId": 6438733348866,
+            "pmNormalTime": "18:00:00",
+            "ruleId": 16815940567045,
+            "updateTime": "2021-04-12 15:04:33",
+            "uuid": "07d1e632-fe67-44b0-a59f-a3e1bab0c3f6"
+        }
+    ],
+    "startTime": "07:00:00"
+}
+[0m
+[32m2021-04-12 15:59:54.165[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Mon, 12 Apr 2021 07:59:58 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "32",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Methods": "GET,POST,OPTIONS,PUT,DELETE, GET,POST,OPTIONS",
+    "Access-Control-Allow-Origin": "http://yadongitest.icampus.clife.net, *",
+    "Set-Cookie": "rememberMe=deleteMe; Path=/clife-campus-education-garden-api-web; Max-Age=0; Expires=Sun, 11-Apr-2021 07:59:58 GMT",
+    "Access-Control-Allow-Headers": "X-Requested-With"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "code": 0,
+    "data": "\u64cd\u4f5c\u6210\u529f"
+}
+[0m
+[32m2021-04-12 15:59:54.165[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m218[0m - [1mstatus_code: 200, response_time(ms): 149.61 ms, response_length: 0 bytes[0m
+[32m2021-04-12 15:59:54.165[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert status_code equal 200(int)	==> pass[0m
+[32m2021-04-12 15:59:54.165[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass[0m
+[32m2021-04-12 15:59:54.165[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert body.code equal 0(int)	==> pass[0m
+[32m2021-04-12 15:59:54.166[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert body.data equal 操作成功(str)	==> pass[0m
+[32m2021-04-12 15:59:54.166[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: /v1/web/edugarden/infantAttendance/setting <<<<<<
+[0m
+[32m2021-04-12 15:59:54.166[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: /v1/web/edugarden/infantAttendance/list >>>>>>[0m
+[32m2021-04-12 15:59:54.266[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 192.168.0.102, Port: 63674[0m
+[32m2021-04-12 15:59:54.266[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 119.29.116.47, Port: 80[0m
+[32m2021-04-12 15:59:54.266[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== request details ==================
+method   : GET
+url      : http://yadongitest.icampus.clife.net/v1/web/edugarden/infantAttendance/list
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
+    "Cache-Control": "no-cache",
+    "Content-Type": "application/json;charset=utf-8",
+    "Host": "yadongitest.icampus.clife.net",
+    "Pragma": "no-cache",
+    "Referer": "http://yadongitest.icampus.clife.net/school/",
+    "X-Access-Token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjYyMDg0OTAwMSIsInVzZXJUeXBlIjoiMSIsImV4cCI6MTYxODIyMTU5NSwidXNlcklkIjoiMjQ5MDYwNzczMDY4OSIsIm9yZ0lkIjoiNjQzODczMzM0ODg2NiJ9.pmZi9x9KhD4rPp-kZGoirr6aHC-_IdJ0DAnGgbvfHMo",
+    "X-Requested-With": "XMLhttpRequest",
+    "domainName": "yadongitest",
+    "HRUN-Request-ID": "HRUN-609739f9-a289-40ed-8489-9a15f7e2e3db-394166"
+}
+cookies  : {}
+body     : None
+[0m
+[32m2021-04-12 15:59:54.267[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Mon, 12 Apr 2021 07:59:58 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Methods": "GET,POST,OPTIONS,PUT,DELETE, GET,POST,OPTIONS",
+    "Set-Cookie": "rememberMe=deleteMe; Path=/clife-campus-education-garden-api-web; Max-Age=0; Expires=Sun, 11-Apr-2021 07:59:58 GMT",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "X-Requested-With"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "code": 0,
+    "data": {
+        "time": "09:20:00",
+        "orgId": 6438733348866,
+        "holidayWeek": "1-2-3-4-5-6",
+        "startTime": "07:00:00",
+        "endTime": "23:00:00",
+        "ruleList": [
+            {
+                "ruleId": 16815940567041,
+                "orgId": 6438733348866,
+                "gradeId": 5,
+                "gradeName": "\u6258\u73ed",
+                "amNormalTime": "09:20:00",
+                "pmNormalTime": "11:00:00",
+                "createTime": "2021-03-04 22:32:18",
+                "updateTime": "2021-04-12 15:59:59"
+            },
+            {
+                "ruleId": 16815940567042,
+                "orgId": 6438733348866,
+                "gradeId": 6,
+                "gradeName": "\u5c0f\u73ed",
+                "amNormalTime": "10:10:00",
+                "pmNormalTime": "13:30:00",
+                "createTime": "2021-03-04 22:32:18",
+                "updateTime": "2021-04-12 15:59:59"
+            },
+            {
+                "ruleId": 16815940567043,
+                "orgId": 6438733348866,
+                "gradeId": 7,
+                "gradeName": "\u4e2d\u73ed",
+                "amNormalTime": "10:00:00",
+                "pmNormalTime": "14:30:00",
+                "createTime": "2021-03-04 22:32:18",
+                "updateTime": "2021-04-12 15:59:59"
+            },
+            {
+                "ruleId": 16815940567044,
+                "orgId": 6438733348866,
+                "gradeId": 8,
+                "gradeName": "\u5927\u73ed",
+                "amNormalTime": "12:00:00",
+                "pmNormalTime": "15:11:00",
+                "createTime": "2021-03-04 22:32:18",
+                "updateTime": "2021-04-12 15:59:59"
+            },
+            {
+                "ruleId": 16815940567045,
+                "orgId": 6438733348866,
+                "gradeId": 9,
+                "gradeName": "\u5b66\u524d\u73ed",
+                "amNormalTime": "12:50:00",
+                "pmNormalTime": "18:00:00",
+                "createTime": "2021-03-04 22:32:18",
+                "updateTime": "2021-04-12 15:59:59"
+            }
+        ],
+        "holidayList": [
+            {
+                "dataId": 9524726071297,
+                "orgId": null,
+                "holidayYear": "2021",
+                "holidayName": "2021\u56fd\u5bb6\u6cd5\u5b9a\u8282\u5047\u65e5",
+                "holidayType": 0,
+                "isLegal": 0,
+                "legalHoliday": [
+                    {
+                        "holidayName": "\u5143\u65e6",
+                        "holidayDate": "2021-01-01~2021-01-03"
+                    },
+                    {
+                        "holidayName": "\u9664\u5915",
+                        "holidayDate": "2021-02-11~2021-02-11"
+                    },
+                    {
+                        "holidayName": "\u6625\u8282",
+                        "holidayDate": "2021-02-12~2021-02-17"
+                    },
+                    {
+                        "holidayName": "\u6e05\u660e\u8282",
+                        "holidayDate": "2021-04-03~2021-04-05"
+                    },
+                    {
+                        "holidayName": "\u52b3\u52a8\u8282",
+                        "holidayDate": "2021-05-01~2021-05-05"
+                    },
+                    {
+                        "holidayName": "\u516d\u4e00",
+                        "holidayDate": "2021-06-01~2021-06-01"
+                    },
+                    {
+                        "holidayName": "\u7aef\u5348\u8282",
+                        "holidayDate": "2021-06-12~2021-06-14"
+                    },
+                    {
+                        "holidayName": "\u4e2d\u79cb\u8282",
+                        "holidayDate": "2021-09-19~2021-09-21"
+                    },
+                    {
+                        "holidayName": "\u56fd\u5e86\u8282",
+                        "holidayDate": "2021-10-01~2021-10-07"
+                    }
+                ],
+                "holidayBeginDate": "2021-04-03",
+                "holidayEndDate": "2021-04-05",
+                "deleted": 1,
+                "createTime": "2021-01-23 14:41:11",
+                "moduleType": null,
+                "dateType": null
+            }
+        ],
+        "noList": [
+            {
+                "studentId": 23841850654721,
+                "orgId": 6438733348866,
+                "studentName": null,
+                "sex": null,
+                "className": null,
+                "remark": "234567890-=-09\u5455iu\u9884\u70ed\u6211\u53bb\u800c\u9000\u54e6iu\u72b9\u592a\u4eba\u88ab1234",
+                "status": null,
+                "deleted": 1,
+                "createTime": "2021-04-12 15:59:59",
+                "updateTime": "2021-04-12 15:59:59"
+            }
+        ],
+        "permit": 1,
+        "broadcastList": [
+            {
+                "broadcastId": 105,
+                "orgId": 6438733348866,
+                "type": 1,
+                "message": "\u6b22\u8fce{sn}\u5c0f\u670b\u53cb\u5165\u56ed",
+                "updateTime": "2021-04-12 07:59:59"
+            },
+            {
+                "broadcastId": 106,
+                "orgId": 6438733348866,
+                "type": 2,
+                "message": "{sn}\u5c0f\u670b\u53cb\uff0c\u5bb6\u957f\u6765\u63a5\u5566",
+                "updateTime": "2021-04-12 07:59:59"
+            }
+        ]
+    }
+}
+[0m
+[32m2021-04-12 15:59:54.267[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m218[0m - [1mstatus_code: 200, response_time(ms): 99.5 ms, response_length: 0 bytes[0m
+[32m2021-04-12 15:59:54.268[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert status_code equal 200(int)	==> pass[0m
+[32m2021-04-12 15:59:54.268[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass[0m
+[32m2021-04-12 15:59:54.268[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert body.code equal 0(int)	==> pass[0m
+[32m2021-04-12 15:59:54.268[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: /v1/web/edugarden/infantAttendance/list <<<<<<
+[0m
+[32m2021-04-12 15:59:54.268[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36mtest_start[0m:[36m460[0m - [1mgenerate testcase log: D:\WorkSpace\Python\HogWort9\interfacedemo\logs\609739f9-a289-40ed-8489-9a15f7e2e3db.run.log[0m
