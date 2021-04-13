@@ -42,7 +42,7 @@ teststeps:
     -   eq:
         - body.code
         - 0
--   name: /v1/web/edudistrict/apps/personal
+-   name: 应用-列表收藏应用（账号收藏的应用）
     request:
         headers:
             Accept: application/json, text/plain, */*
@@ -71,38 +71,7 @@ teststeps:
     -   eq:
         - body.code
         - 0
--   name: /v1/web/edumessage/msg/index/list
-    request:
-        headers:
-            Accept: application/json, text/plain, */*
-            Accept-Encoding: gzip, deflate
-            Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
-            Connection: keep-alive
-            Content-Type: application/json;charset=utf-8
-            Host: $host
-            Referer: $Protocol://$host/school/m/
-            User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15
-                (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1
-            X-Access-Token: $token
-            X-Requested-With: XMLHttpRequest
-            domainName: $domainName
-        method: GET
-        params:
-            accessType: '1'
-            queryNum: '4'
-            userType: '1'
-        url: $Protocol://$host/v1/web/edumessage/msg/index/list
-    validate:
-    -   eq:
-        - status_code
-        - 200
-    -   eq:
-        - headers.Content-Type
-        - application/json;charset=UTF-8
-    -   eq:
-        - body.code
-        - 0
--   name: /v1/web/eduaccount/user/h5/identitys
+-   name: 登录相关-获取身份列表(H5)
     request:
         headers:
             Accept: application/json, text/plain, */*
@@ -132,47 +101,7 @@ teststeps:
     -   eq:
         - body.code
         - 0
--   name: /school/m/static/css/24.cf098998.chunk.css
-    request:
-        headers:
-            Accept: text/css,*/*;q=0.1
-            Accept-Encoding: gzip, deflate
-            Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
-            Connection: keep-alive
-            Host: $host
-            Referer: $Protocol://$host/school/m/
-            User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15
-                (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1
-        method: GET
-        url: $Protocol://$host/school/m/static/css/24.cf098998.chunk.css
-    validate:
-    -   eq:
-        - status_code
-        - 200
-    -   eq:
-        - headers.Content-Type
-        - text/css
--   name: /school/m/static/css/143.4c4d8f1e.chunk.css
-    request:
-        headers:
-            Accept: text/css,*/*;q=0.1
-            Accept-Encoding: gzip, deflate
-            Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
-            Connection: keep-alive
-            Host: $host
-            Referer: $Protocol://$host/school/m/
-            User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15
-                (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1
-        method: GET
-        url: $Protocol://$host/school/m/static/css/143.4c4d8f1e.chunk.css
-    validate:
-    -   eq:
-        - status_code
-        - 200
-    -   eq:
-        - headers.Content-Type
-        - text/css
--   name: /v1/web/edugarden/attendance/statistics/monthDataList
+-   name: 考勤统计-月度数据列表
     request:
         headers:
             Accept: application/json, text/plain, */*
@@ -203,7 +132,7 @@ teststeps:
     -   eq:
         - body.code
         - 0
--   name: /v1/web/edugarden/attendance/statistics/attendanceDayItem
+-   name: 考勤统计-日考勤详情
     request:
         headers:
             Accept: application/json, text/plain, */*
@@ -234,58 +163,7 @@ teststeps:
     -   eq:
         - body.code
         - 0
--   name: /school/m/static/css/107.14fb9bc1.chunk.css
-    request:
-        headers:
-            Accept: text/css,*/*;q=0.1
-            Accept-Encoding: gzip, deflate
-            Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
-            Connection: keep-alive
-            Host: $host
-            Referer: $Protocol://$host/school/m/
-            User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15
-                (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1
-        method: GET
-        url: $Protocol://$host/school/m/static/css/107.14fb9bc1.chunk.css
-    validate:
-    -   eq:
-        - status_code
-        - 200
-    -   eq:
-        - headers.Content-Type
-        - text/css
--   name: /v1/web/edugarden/attendance/statistics/monthDataList
-    request:
-        headers:
-            Accept: application/json, text/plain, */*
-            Accept-Encoding: gzip, deflate
-            Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
-            Connection: keep-alive
-            Content-Type: application/json;charset=utf-8
-            Host: $host
-            Referer: $Protocol://$host/school/m/
-            User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15
-                (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1
-            X-Access-Token: $token
-            X-Requested-With: XMLHttpRequest
-            domainName: $domainName
-        method: GET
-        params:
-            endTime: ${get_date()}
-            startTime: ${get_date(-12)}
-            systemCode: H5
-        url: $Protocol://$host/v1/web/edugarden/attendance/statistics/monthDataList
-    validate:
-    -   eq:
-        - status_code
-        - 200
-    -   eq:
-        - headers.Content-Type
-        - application/json;charset=UTF-8
-    -   eq:
-        - body.code
-        - 0
--   name: /v1/web/edugarden/attendance/statistics/getAttendanceYearItem
+-   name: 考勤统计-有数据得月份
     request:
         headers:
             Accept: application/json, text/plain, */*
@@ -315,7 +193,7 @@ teststeps:
     -   eq:
         - body.code
         - 0
--   name: /v1/web/edugarden/attendance/statistics/attendanceMonthItem
+-   name: 考勤统计-人员考勤月汇总
     request:
         headers:
             Accept: application/json, text/plain, */*
