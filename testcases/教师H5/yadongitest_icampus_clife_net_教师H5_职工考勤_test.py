@@ -2,13 +2,22 @@
 # FROM: testcases\教师H5\yadongitest.icampus.clife.net_教师H5_职工考勤.yml
 
 
+import pytest
+from httprunner import Parameters
+
+
 from httprunner import HttpRunner, Config, Step, RunRequest, RunTestCase
 
 
 class TestCaseYadongitestIcampusClifeNet教师H5职工考勤(HttpRunner):
+    @pytest.mark.parametrize(
+        "param", Parameters({"validnum": ["1", "2", "3", "4", "5", "6", "8", "9"]})
+    )
+    def test_start(self, param):
+        super().test_start(param)
 
     config = (
-        Config("testcase description")
+        Config("教师H5_职工考勤")
         .variables(
             **{
                 "Protocol": "${ENV(Protocol)}",
@@ -21,7 +30,7 @@ class TestCaseYadongitestIcampusClifeNet教师H5职工考勤(HttpRunner):
 
     teststeps = [
         Step(
-            RunRequest("/v1/web/eduaccount/sys/login")
+            RunRequest("教师H5_登陆")
             .post("$Protocol://$host/v1/web/eduaccount/sys/login")
             .with_headers(
                 **{
@@ -303,7 +312,6 @@ class TestCaseYadongitestIcampusClifeNet教师H5职工考勤(HttpRunner):
         ),
         Step(
             RunRequest("/v1/web/edugarden/attendance/statistics/attendanceMonthItem")
-            .with_variables(**{"validnum": ["1", "2", "3", "4"]})
             .get(
                 "$Protocol://$host/v1/web/edugarden/attendance/statistics/attendanceMonthItem"
             )
