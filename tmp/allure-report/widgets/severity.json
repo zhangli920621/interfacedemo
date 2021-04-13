@@ -1,100 +1,110 @@
 [ {
-  "uid" : "610fdc6c5ab306eb",
+  "uid" : "72900dc8674053b5",
   "name" : "教师H5_职工考勤",
   "time" : {
-    "start" : 1618301565511,
-    "stop" : 1618301567073,
-    "duration" : 1562
+    "start" : 1618319525225,
+    "stop" : 1618319526262,
+    "duration" : 1037
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "ba82d1856b38b35c",
+  "uid" : "e22e26d837a2bcc",
   "name" : "教师H5_职工考勤",
   "time" : {
-    "start" : 1618301580949,
-    "stop" : 1618301598335,
-    "duration" : 17386
+    "start" : 1618319528206,
+    "stop" : 1618319529089,
+    "duration" : 883
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "f00343baa6dbebfc",
+  "uid" : "7e66cef94d33f4e3",
+  "name" : "教师H5_职工考勤",
+  "time" : {
+    "start" : 1618319527241,
+    "stop" : 1618319528189,
+    "duration" : 948
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4a3f072caa465c84",
+  "name" : "教师H5_职工考勤",
+  "time" : {
+    "start" : 1618319522274,
+    "stop" : 1618319523238,
+    "duration" : 964
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "606331817c121746",
+  "name" : "教师H5_职工考勤",
+  "time" : {
+    "start" : 1618319529107,
+    "stop" : 1618319530998,
+    "duration" : 1891
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b0eeb93a798ce78e",
+  "name" : "教师H5_职工考勤",
+  "time" : {
+    "start" : 1618319523255,
+    "stop" : 1618319524237,
+    "duration" : 982
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "57f80996876d7762",
+  "name" : "园业务_web登陆",
+  "time" : {
+    "start" : 1618319522092,
+    "stop" : 1618319522255,
+    "duration" : 163
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c8712e6e3c997cf9",
+  "name" : "教师H5_职工考勤",
+  "time" : {
+    "start" : 1618319526282,
+    "stop" : 1618319527209,
+    "duration" : 927
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "72bc08b9ae950187",
+  "name" : "教师H5_职工考勤",
+  "time" : {
+    "start" : 1618319524256,
+    "stop" : 1618319525195,
+    "duration" : 939
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3789314695c6eac6",
   "name" : "testcase description",
   "time" : {
-    "start" : 1618301598342,
-    "stop" : 1618301608404,
-    "duration" : 10062
+    "start" : 1618319518245,
+    "stop" : 1618319522085,
+    "duration" : 3840
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "c2a1bf9aa66bb339",
-  "name" : "教师H5_职工考勤",
-  "time" : {
-    "start" : 1618301568257,
-    "stop" : 1618301569298,
-    "duration" : 1041
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "2f0d651e79842cd3",
-  "name" : "教师H5_职工考勤",
-  "time" : {
-    "start" : 1618301573914,
-    "stop" : 1618301579051,
-    "duration" : 5137
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "3a0126f8e69cdaff",
-  "name" : "教师H5_职工考勤",
-  "time" : {
-    "start" : 1618301567092,
-    "stop" : 1618301568237,
-    "duration" : 1145
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "f13b422e904d45c9",
+  "uid" : "3755f981476d22d9",
   "name" : "testcase description",
   "time" : {
-    "start" : 1618301562106,
-    "stop" : 1618301565507,
-    "duration" : 3401
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "f7a61b79cfb0d14b",
-  "name" : "教师H5_职工考勤",
-  "time" : {
-    "start" : 1618301570453,
-    "stop" : 1618301573903,
-    "duration" : 3450
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "c5ec8c3339f048f7",
-  "name" : "教师H5_职工考勤",
-  "time" : {
-    "start" : 1618301569302,
-    "stop" : 1618301570439,
-    "duration" : 1137
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "5356e659a03c16f4",
-  "name" : "教师H5_职工考勤",
-  "time" : {
-    "start" : 1618301579057,
-    "stop" : 1618301580944,
-    "duration" : 1887
+    "start" : 1618319531020,
+    "stop" : 1618319532636,
+    "duration" : 1616
   },
   "status" : "passed",
   "severity" : "normal"

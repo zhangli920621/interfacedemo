@@ -2,7 +2,17 @@
 # FROM: testcases\园业务web\yadongitest.icampus.clife.net_园业务web_教职工考勤管理.yml
 
 
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).parent.parent.parent))
+
+
 from httprunner import HttpRunner, Config, Step, RunRequest, RunTestCase
+
+from testcases.园业务web.yadongitest_icampus_clife_net_园业务web_登陆_test import (
+    TestCaseYadongitestIcampusClifeNet园业务Web登陆 as YadongitestIcampusClifeNet园业务Web登陆,
+)
 
 
 class TestCaseYadongitestIcampusClifeNet园业务Web教职工考勤管理(HttpRunner):
@@ -21,40 +31,12 @@ class TestCaseYadongitestIcampusClifeNet园业务Web教职工考勤管理(HttpRu
 
     teststeps = [
         Step(
-            RunRequest("园业务_登陆")
-            .post("$Protocol://$host/v1/web/eduaccount/sys/login")
-            .with_headers(
-                **{
-                    "Accept": "application/json, text/plain, */*",
-                    "Accept-Encoding": "gzip, deflate",
-                    "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
-                    "Connection": "keep-alive",
-                    "Content-Length": "76",
-                    "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
-                    "Host": "$host",
-                    "Origin": "$Protocol://$host",
-                    "Referer": "$Protocol://$host/school/",
-                    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36",
-                    "X-Requested-With": "XMLhttpRequest",
-                    "domainName": "$domainName",
-                }
-            )
-            .with_data(
-                {
-                    "systemCode": "garden",
-                    "password": "${ENV(GARDEN_PASSWORD)}",
-                    "username": "${ENV(GARDEN_USERNAME)}",
-                }
-            )
-            .extract()
-            .with_jmespath("body.data.token", "token")
-            .validate()
-            .assert_equal("status_code", 200)
-            .assert_equal('headers."Content-Type"', "application/json;charset=UTF-8")
-            .assert_equal("body.code", 0)
+            RunTestCase("园业务_登陆")
+            .call(YadongitestIcampusClifeNet园业务Web登陆)
+            .export(*["token"])
         ),
         Step(
-            RunRequest("/v1/web/edugarden/attendance/shift/list")
+            RunRequest("考勤班次")
             .get("$Protocol://$host/v1/web/edugarden/attendance/shift/list")
             .with_params(**{"pageIndex": "1", "pageRows": "20"})
             .with_headers(
@@ -80,7 +62,7 @@ class TestCaseYadongitestIcampusClifeNet园业务Web教职工考勤管理(HttpRu
             .assert_equal("body.code", 0)
         ),
         Step(
-            RunRequest("/v1/web/edugarden/attendance/shift/get")
+            RunRequest("考勤班次详情")
             .post("$Protocol://$host/v1/web/edugarden/attendance/shift/get")
             .with_headers(
                 **{
@@ -106,7 +88,7 @@ class TestCaseYadongitestIcampusClifeNet园业务Web教职工考勤管理(HttpRu
             .assert_equal("body.code", 0)
         ),
         Step(
-            RunRequest("/v1/web/edugarden/attendance/shift/insertOrUpdate")
+            RunRequest("考勤班次编辑")
             .post("$Protocol://$host/v1/web/edugarden/attendance/shift/insertOrUpdate")
             .with_headers(
                 **{
@@ -151,32 +133,6 @@ class TestCaseYadongitestIcampusClifeNet园业务Web教职工考勤管理(HttpRu
             .assert_equal('headers."Content-Type"', "application/json;charset=UTF-8")
             .assert_equal("body.code", 0)
             .assert_equal("body.data", "成功")
-        ),
-        Step(
-            RunRequest("/v1/web/edugarden/attendance/shift/list")
-            .get("$Protocol://$host/v1/web/edugarden/attendance/shift/list")
-            .with_params(**{"pageIndex": "1", "pageRows": "20"})
-            .with_headers(
-                **{
-                    "Accept": "application/json, text/plain, */*",
-                    "Accept-Encoding": "gzip, deflate",
-                    "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
-                    "Cache-Control": "no-cache",
-                    "Connection": "keep-alive",
-                    "Content-Type": "application/json;charset=utf-8",
-                    "Host": "$host",
-                    "Pragma": "no-cache",
-                    "Referer": "$Protocol://$host/school/",
-                    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36",
-                    "X-Access-Token": "$token",
-                    "X-Requested-With": "XMLhttpRequest",
-                    "domainName": "$domainName",
-                }
-            )
-            .validate()
-            .assert_equal("status_code", 200)
-            .assert_equal('headers."Content-Type"', "application/json;charset=UTF-8")
-            .assert_equal("body.code", 0)
         ),
         Step(
             RunRequest("/v1/web/edugarden/attendance/shift/selectAll")

@@ -7,40 +7,9 @@ config:
     verify: false
 teststeps:
 -   name: 园业务_登陆
-    request:
-        data:
-            systemCode: garden
-            password: ${ENV(GARDEN_PASSWORD)}
-            username: ${ENV(GARDEN_USERNAME)}
-        headers:
-            Accept: application/json, text/plain, */*
-            Accept-Encoding: gzip, deflate
-            Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
-            Connection: keep-alive
-            Content-Length: '76'
-            Content-Type: application/x-www-form-urlencoded;charset=UTF-8
-            Host: $host
-            Origin: $Protocol://$host
-            Referer: $Protocol://$host/school/
-            User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-                like Gecko) Chrome/86.0.4240.198 Safari/537.36
-            X-Requested-With: XMLhttpRequest
-            domainName: $domainName
-        method: POST
-        url: $Protocol://$host/v1/web/eduaccount/sys/login
-    extract:
-        token: body.data.token
-    validate:
-    -   eq:
-        - status_code
-        - 200
-    -   eq:
-        - headers.Content-Type
-        - application/json;charset=UTF-8
-    -   eq:
-        - body.code
-        - 0
--   name: /v1/web/edugarden/attendance/shift/list
+    testcase: testcases/园业务web/yadongitest.icampus.clife.net_园业务web_登陆.yml
+    export: ['token']
+-   name: 考勤班次
     request:
         headers:
             Accept: application/json, text/plain, */*
@@ -72,7 +41,7 @@ teststeps:
     -   eq:
         - body.code
         - 0
--   name: /v1/web/edugarden/attendance/shift/get
+-   name: 考勤班次详情
     request:
         data:
             shiftId: '18797967310849'
@@ -103,7 +72,7 @@ teststeps:
     -   eq:
         - body.code
         - 0
--   name: /v1/web/edugarden/attendance/shift/insertOrUpdate
+-   name: 考勤班次编辑
     request:
         headers:
             Accept: application/json, text/plain, */*
@@ -153,38 +122,6 @@ teststeps:
     -   eq:
         - body.data
         - 成功
--   name: /v1/web/edugarden/attendance/shift/list
-    request:
-        headers:
-            Accept: application/json, text/plain, */*
-            Accept-Encoding: gzip, deflate
-            Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
-            Cache-Control: no-cache
-            Connection: keep-alive
-            Content-Type: application/json;charset=utf-8
-            Host: $host
-            Pragma: no-cache
-            Referer: $Protocol://$host/school/
-            User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-                like Gecko) Chrome/86.0.4240.198 Safari/537.36
-            X-Access-Token: $token
-            X-Requested-With: XMLhttpRequest
-            domainName: $domainName
-        method: GET
-        params:
-            pageIndex: '1'
-            pageRows: '20'
-        url: $Protocol://$host/v1/web/edugarden/attendance/shift/list
-    validate:
-    -   eq:
-        - status_code
-        - 200
-    -   eq:
-        - headers.Content-Type
-        - application/json;charset=UTF-8
-    -   eq:
-        - body.code
-        - 0
 -   name: /v1/web/edugarden/attendance/shift/selectAll
     request:
         data: {}
