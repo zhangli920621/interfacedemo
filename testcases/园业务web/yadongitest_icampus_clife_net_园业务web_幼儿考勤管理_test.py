@@ -21,7 +21,7 @@ class TestCaseYadongitestIcampusClifeNet园业务Web幼儿考勤管理(HttpRunne
 
     teststeps = [
         Step(
-            RunRequest("/v1/web/eduaccount/sys/login")
+            RunRequest("园业务_登陆")
             .post("$Protocol://$host/v1/web/eduaccount/sys/login")
             .with_headers(
                 **{
@@ -54,7 +54,7 @@ class TestCaseYadongitestIcampusClifeNet园业务Web幼儿考勤管理(HttpRunne
             .assert_equal("body.code", 0)
         ),
         Step(
-            RunRequest("/v1/web/edugarden/statistic/attendanceStatistic")
+            RunRequest("全园概况")
             .get("$Protocol://$host/v1/web/edugarden/statistic/attendanceStatistic")
             .with_params(**{"date": "${get_date()}"})
             .with_headers(
@@ -80,7 +80,7 @@ class TestCaseYadongitestIcampusClifeNet园业务Web幼儿考勤管理(HttpRunne
             .assert_equal("body.code", 0)
         ),
         Step(
-            RunRequest("/v1/web/edugarden/statistic/selectClass")
+            RunRequest("获取{年级{班级}} 二级树形结构")
             .get("$Protocol://$host/v1/web/edugarden/statistic/selectClass?")
             .with_headers(
                 **{
@@ -105,7 +105,7 @@ class TestCaseYadongitestIcampusClifeNet园业务Web幼儿考勤管理(HttpRunne
             .assert_equal("body.code", 0)
         ),
         Step(
-            RunRequest("/v1/web/edugarden/statistic/classOverview")
+            RunRequest("班级概况")
             .get("$Protocol://$host/v1/web/edugarden/statistic/classOverview")
             .with_params(
                 **{"classId": "11666912313345", "date": "${get_date()}", "gradeId": "5"}
@@ -166,7 +166,7 @@ class TestCaseYadongitestIcampusClifeNet园业务Web幼儿考勤管理(HttpRunne
             .assert_equal("body.code", 0)
         ),
         Step(
-            RunRequest("/v1/web/edugarden/attendance/student/getDailyList")
+            RunRequest("每日统计列表数据")
             .get("$Protocol://$host/v1/web/edugarden/attendance/student/getDailyList")
             .with_params(
                 **{"pageIndex": "1", "pageRows": "20", "statisticDate": "${get_date()}"}
@@ -194,7 +194,7 @@ class TestCaseYadongitestIcampusClifeNet园业务Web幼儿考勤管理(HttpRunne
             .assert_equal("body.code", 0)
         ),
         Step(
-            RunRequest("/v1/web/edugarden/attendance/student/getStuAttReportPager")
+            RunRequest("月度数据-获取月度数据列表")
             .get(
                 "$Protocol://$host/v1/web/edugarden/attendance/student/getStuAttReportPager"
             )
@@ -229,7 +229,7 @@ class TestCaseYadongitestIcampusClifeNet园业务Web幼儿考勤管理(HttpRunne
             .assert_equal("body.code", 0)
         ),
         Step(
-            RunRequest("/v1/web/edugarden/original/list")
+            RunRequest("原始记录")
             .get("$Protocol://$host/v1/web/edugarden/original/list")
             .with_params(
                 **{
@@ -262,7 +262,7 @@ class TestCaseYadongitestIcampusClifeNet园业务Web幼儿考勤管理(HttpRunne
             .assert_equal("body.code", 0)
         ),
         Step(
-            RunRequest("/v1/web/edugarden/infantAttendance/list")
+            RunRequest("出勤设置-展示已有的设置")
             .get("$Protocol://$host/v1/web/edugarden/infantAttendance/list?")
             .with_headers(
                 **{
@@ -287,7 +287,7 @@ class TestCaseYadongitestIcampusClifeNet园业务Web幼儿考勤管理(HttpRunne
             .assert_equal("body.code", 0)
         ),
         Step(
-            RunRequest("/v1/web/edugarden/infantAttendance/setting")
+            RunRequest("出勤设置-保存")
             .post("$Protocol://$host/v1/web/edugarden/infantAttendance/setting")
             .with_headers(
                 **{
@@ -394,31 +394,6 @@ class TestCaseYadongitestIcampusClifeNet园业务Web幼儿考勤管理(HttpRunne
             .assert_equal('headers."Content-Type"', "application/json;charset=UTF-8")
             .assert_equal("body.code", 0)
             .assert_equal("body.data", "操作成功")
-        ),
-        Step(
-            RunRequest("/v1/web/edugarden/infantAttendance/list")
-            .get("$Protocol://$host/v1/web/edugarden/infantAttendance/list?")
-            .with_headers(
-                **{
-                    "Accept": "application/json, text/plain, */*",
-                    "Accept-Encoding": "gzip, deflate",
-                    "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
-                    "Cache-Control": "no-cache",
-                    "Connection": "keep-alive",
-                    "Content-Type": "application/json;charset=utf-8",
-                    "Host": "$host",
-                    "Pragma": "no-cache",
-                    "Referer": "$Protocol://$host/school/",
-                    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36",
-                    "X-Access-Token": "$token",
-                    "X-Requested-With": "XMLHttpRequest",
-                    "domainName": "$domainName",
-                }
-            )
-            .validate()
-            .assert_equal("status_code", 200)
-            .assert_equal('headers."Content-Type"', "application/json;charset=UTF-8")
-            .assert_equal("body.code", 0)
         ),
     ]
 

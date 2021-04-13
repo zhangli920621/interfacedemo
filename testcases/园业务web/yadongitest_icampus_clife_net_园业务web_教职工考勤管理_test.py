@@ -21,7 +21,7 @@ class TestCaseYadongitestIcampusClifeNet园业务Web教职工考勤管理(HttpRu
 
     teststeps = [
         Step(
-            RunRequest("/v1/web/eduaccount/sys/login")
+            RunRequest("园业务_登陆")
             .post("$Protocol://$host/v1/web/eduaccount/sys/login")
             .with_headers(
                 **{

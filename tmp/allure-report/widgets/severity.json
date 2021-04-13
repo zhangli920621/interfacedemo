@@ -1,100 +1,100 @@
 [ {
-  "uid" : "fb76083f0bc63492",
+  "uid" : "610fdc6c5ab306eb",
   "name" : "教师H5_职工考勤",
   "time" : {
-    "start" : 1618231278349,
-    "stop" : 1618231279770,
-    "duration" : 1421
+    "start" : 1618301565511,
+    "stop" : 1618301567073,
+    "duration" : 1562
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "e5e1ed9817c7e229",
+  "uid" : "ba82d1856b38b35c",
   "name" : "教师H5_职工考勤",
   "time" : {
-    "start" : 1618231279794,
-    "stop" : 1618231281620,
-    "duration" : 1826
+    "start" : 1618301580949,
+    "stop" : 1618301598335,
+    "duration" : 17386
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "aded71ef150b9b01",
+  "uid" : "f00343baa6dbebfc",
   "name" : "testcase description",
   "time" : {
-    "start" : 1618231292497,
-    "stop" : 1618231296329,
-    "duration" : 3832
+    "start" : 1618301598342,
+    "stop" : 1618301608404,
+    "duration" : 10062
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "d919e50b944c4da7",
+  "uid" : "c2a1bf9aa66bb339",
+  "name" : "教师H5_职工考勤",
+  "time" : {
+    "start" : 1618301568257,
+    "stop" : 1618301569298,
+    "duration" : 1041
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2f0d651e79842cd3",
+  "name" : "教师H5_职工考勤",
+  "time" : {
+    "start" : 1618301573914,
+    "stop" : 1618301579051,
+    "duration" : 5137
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3a0126f8e69cdaff",
+  "name" : "教师H5_职工考勤",
+  "time" : {
+    "start" : 1618301567092,
+    "stop" : 1618301568237,
+    "duration" : 1145
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f13b422e904d45c9",
   "name" : "testcase description",
   "time" : {
-    "start" : 1618231275679,
-    "stop" : 1618231278321,
-    "duration" : 2642
+    "start" : 1618301562106,
+    "stop" : 1618301565507,
+    "duration" : 3401
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "2044acb253c5f3ea",
+  "uid" : "f7a61b79cfb0d14b",
   "name" : "教师H5_职工考勤",
   "time" : {
-    "start" : 1618231287188,
-    "stop" : 1618231289410,
-    "duration" : 2222
+    "start" : 1618301570453,
+    "stop" : 1618301573903,
+    "duration" : 3450
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "b21290080581e5c4",
+  "uid" : "c5ec8c3339f048f7",
   "name" : "教师H5_职工考勤",
   "time" : {
-    "start" : 1618231285551,
-    "stop" : 1618231287166,
-    "duration" : 1615
+    "start" : 1618301569302,
+    "stop" : 1618301570439,
+    "duration" : 1137
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "13ff9a810c95ac4e",
+  "uid" : "5356e659a03c16f4",
   "name" : "教师H5_职工考勤",
   "time" : {
-    "start" : 1618231289436,
-    "stop" : 1618231290826,
-    "duration" : 1390
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "5a7acc1c504cce9a",
-  "name" : "教师H5_职工考勤",
-  "time" : {
-    "start" : 1618231281639,
-    "stop" : 1618231283838,
-    "duration" : 2199
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "a0f7a90088cd42e6",
-  "name" : "教师H5_职工考勤",
-  "time" : {
-    "start" : 1618231283873,
-    "stop" : 1618231285521,
-    "duration" : 1648
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "72ba388377f281c4",
-  "name" : "教师H5_职工考勤",
-  "time" : {
-    "start" : 1618231290861,
-    "stop" : 1618231292463,
-    "duration" : 1602
+    "start" : 1618301579057,
+    "stop" : 1618301580944,
+    "duration" : 1887
   },
   "status" : "passed",
   "severity" : "normal"

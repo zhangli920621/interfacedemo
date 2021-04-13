@@ -1,0 +1,2120 @@
+[32m2021-04-13 16:13:00.954[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36mtest_start[0m:[36m451[0m - [1mStart to run testcase: 教师H5_职工考勤, TestCase ID: 2c21eede-c5d9-4bfa-aed6-02245f32b2b8[0m
+[32m2021-04-13 16:13:00.958[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: 教师H5_登陆 >>>>>>[0m
+[32m2021-04-13 16:13:01.136[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 192.168.0.102, Port: 56027[0m
+[32m2021-04-13 16:13:01.137[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 119.29.116.47, Port: 80[0m
+[32m2021-04-13 16:13:01.139[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== request details ==================
+method   : POST
+url      : http://yadongitest.icampus.clife.net/v1/web/eduaccount/sys/login
+headers  : {
+    "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
+    "Content-Length": "78",
+    "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
+    "Host": "yadongitest.icampus.clife.net",
+    "Origin": "http://yadongitest.icampus.clife.net",
+    "Referer": "http://yadongitest.icampus.clife.net/school/m/",
+    "X-Requested-With": "XMLHttpRequest",
+    "domainName": "yadongitest",
+    "HRUN-Request-ID": "HRUN-2c21eede-c5d9-4bfa-aed6-02245f32b2b8-580959"
+}
+cookies  : {}
+body     : systemCode=h5garden&password=VUsFjBeODaABgu37tXzPbw%3D%3D&username=16620849001
+[0m
+[32m2021-04-13 16:13:01.141[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Tue, 13 Apr 2021 08:13:02 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "667",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "X-Requested-With",
+    "Access-Control-Allow-Methods": "GET,POST,OPTIONS"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "code": 0,
+    "data": {
+        "positionName": "院长",
+        "orgType": 3,
+        "userInfo": {
+            "userId": 2490607730689,
+            "username": "16620849001",
+            "realname": "亚东县幼儿园-1号-",
+            "password": null,
+            "orgId": 6438733348866,
+            "orgCode": null,
+            "avatar": null,
+            "status": null,
+            "userType": 1,
+            "createTime": null
+        },
+        "classSize": 16,
+        "orgName": "亚东幼儿园-张丽不准动",
+        "domainName": "yadongitest",
+        "userType": 1,
+        "systemUrl": "./user_manage.html",
+        "orgId": 6438733348866,
+        "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjYyMDg0OTAwMSIsInVzZXJUeXBlIjoiMSIsImV4cCI6MTYxODMwODc4MiwidXNlcklkIjoiMjQ5MDYwNzczMDY4OSIsIm9yZ0lkIjoiNjQzODczMzM0ODg2NiJ9.lvCK2UW4c-_CFrh-btY0PeU0RBCGLlKb0RxCo9zf900",
+        "dataPermission": 1
+    }
+}
+[0m
+[32m2021-04-13 16:13:01.143[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m218[0m - [1mstatus_code: 200, response_time(ms): 176.53 ms, response_length: 0 bytes[0m
+[32m2021-04-13 16:13:01.144[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mextract[0m:[36m176[0m - [1mextract mapping: {'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjYyMDg0OTAwMSIsInVzZXJUeXBlIjoiMSIsImV4cCI6MTYxODMwODc4MiwidXNlcklkIjoiMjQ5MDYwNzczMDY4OSIsIm9yZ0lkIjoiNjQzODczMzM0ODg2NiJ9.lvCK2UW4c-_CFrh-btY0PeU0RBCGLlKb0RxCo9zf900'}[0m
+[32m2021-04-13 16:13:01.145[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert status_code equal 200(int)	==> pass[0m
+[32m2021-04-13 16:13:01.146[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass[0m
+[32m2021-04-13 16:13:01.146[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert body.code equal 0(int)	==> pass[0m
+[32m2021-04-13 16:13:01.147[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: 教师H5_登陆 <<<<<<
+[0m
+[32m2021-04-13 16:13:01.148[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: 应用-列表收藏应用（账号收藏的应用） >>>>>>[0m
+[32m2021-04-13 16:13:01.234[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 192.168.0.102, Port: 56027[0m
+[32m2021-04-13 16:13:01.235[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 119.29.116.47, Port: 80[0m
+[32m2021-04-13 16:13:01.237[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== request details ==================
+method   : GET
+url      : http://yadongitest.icampus.clife.net/v1/web/edudistrict/apps/personal?platform=2
+headers  : {
+    "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
+    "Content-Type": "application/json;charset=utf-8",
+    "Host": "yadongitest.icampus.clife.net",
+    "Referer": "http://yadongitest.icampus.clife.net/school/m/",
+    "X-Access-Token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjYyMDg0OTAwMSIsInVzZXJUeXBlIjoiMSIsImV4cCI6MTYxODMwODc4MiwidXNlcklkIjoiMjQ5MDYwNzczMDY4OSIsIm9yZ0lkIjoiNjQzODczMzM0ODg2NiJ9.lvCK2UW4c-_CFrh-btY0PeU0RBCGLlKb0RxCo9zf900",
+    "X-Requested-With": "XMLHttpRequest",
+    "domainName": "yadongitest",
+    "HRUN-Request-ID": "HRUN-2c21eede-c5d9-4bfa-aed6-02245f32b2b8-581150"
+}
+cookies  : {}
+body     : None
+[0m
+[32m2021-04-13 16:13:01.249[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Tue, 13 Apr 2021 08:13:02 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Methods": "GET,POST,OPTIONS,PUT,DELETE, GET,POST,OPTIONS",
+    "Set-Cookie": "rememberMe=deleteMe; Path=/clife-campus-education-district-api-web; Max-Age=0; Expires=Mon, 12-Apr-2021 08:13:02 GMT",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "X-Requested-With"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "code": 0,
+    "data": [
+        {
+            "resourceId": 32000,
+            "resourceName": "智能膳食管理",
+            "actionUrl": "intelligentDietManagement",
+            "h5ActionUrl": "/intelligentDietManagement",
+            "parentId": 0,
+            "resourceIcon": "icon-intelligentDietManagement",
+            "selected": 1,
+            "sortId": null,
+            "commendStation": 0,
+            "startDate": "2021-01-06",
+            "endDate": "2117-08-19",
+            "expired": null,
+            "children": [
+                {
+                    "resourceId": 32003,
+                    "resourceName": "营养分析",
+                    "actionUrl": "/intelligentDietManagement/dietaryNutritionAnalysis",
+                    "h5ActionUrl": null,
+                    "parentId": 32000,
+                    "resourceIcon": null,
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                },
+                {
+                    "resourceId": 32004,
+                    "resourceName": "采购计划",
+                    "actionUrl": "/intelligentDietManagement/procurementPlan",
+                    "h5ActionUrl": null,
+                    "parentId": 32000,
+                    "resourceIcon": null,
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                },
+                {
+                    "resourceId": 32005,
+                    "resourceName": "食品留样",
+                    "actionUrl": "/intelligentDietManagement/FoodReservedSample",
+                    "h5ActionUrl": null,
+                    "parentId": 32000,
+                    "resourceIcon": null,
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                },
+                {
+                    "resourceId": 32006,
+                    "resourceName": "陪餐管理",
+                    "actionUrl": "/intelligentDietManagement/accompanyingMealMng",
+                    "h5ActionUrl": null,
+                    "parentId": 32000,
+                    "resourceIcon": null,
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                }
+            ]
+        },
+        {
+            "resourceId": 13173,
+            "resourceName": "教学计划管理",
+            "actionUrl": "teachPlanManage",
+            "h5ActionUrl": "/teachPlanManage/weekPlan",
+            "parentId": 0,
+            "resourceIcon": "icon-teachPlanManage",
+            "selected": 1,
+            "sortId": null,
+            "commendStation": 0,
+            "startDate": "2021-01-06",
+            "endDate": "2117-08-19",
+            "expired": null,
+            "children": [
+                {
+                    "resourceId": 13174,
+                    "resourceName": "周计划",
+                    "actionUrl": "/teachPlanManage/weekPlan",
+                    "h5ActionUrl": "",
+                    "parentId": 13173,
+                    "resourceIcon": "",
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                }
+            ]
+        },
+        {
+            "resourceId": 50000,
+            "resourceName": "身高体重",
+            "actionUrl": "childrenBmi",
+            "h5ActionUrl": "/childBmi",
+            "parentId": 0,
+            "resourceIcon": "icon-bmi",
+            "selected": 1,
+            "sortId": null,
+            "commendStation": 0,
+            "startDate": "2021-01-06",
+            "endDate": "2117-08-19",
+            "expired": null,
+            "children": [
+                {
+                    "resourceId": 50001,
+                    "resourceName": "身高体重概况",
+                    "actionUrl": "/childrenBmi/bmiBasic",
+                    "h5ActionUrl": "/childBmi/general",
+                    "parentId": 50000,
+                    "resourceIcon": null,
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                },
+                {
+                    "resourceId": 50002,
+                    "resourceName": "班级身高体重",
+                    "actionUrl": "/childrenBmi/classBmi",
+                    "h5ActionUrl": "/childBmi/class",
+                    "parentId": 50000,
+                    "resourceIcon": null,
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                },
+                {
+                    "resourceId": 50003,
+                    "resourceName": "身高体重详情",
+                    "actionUrl": "/childrenBmi/bmiDetail",
+                    "h5ActionUrl": "/childBmi/data",
+                    "parentId": 50000,
+                    "resourceIcon": null,
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                },
+                {
+                    "resourceId": 50004,
+                    "resourceName": "身高体重记录",
+                    "actionUrl": "/childrenBmi/bmiData",
+                    "h5ActionUrl": "/childBmi/growthLine",
+                    "parentId": 50000,
+                    "resourceIcon": null,
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                }
+            ]
+        },
+        {
+            "resourceId": 41000,
+            "resourceName": "幼儿请假",
+            "actionUrl": "childrenAttendance",
+            "h5ActionUrl": "/childrenLeave/teachRecord",
+            "parentId": 0,
+            "resourceIcon": "icon-childrenAttendance",
+            "selected": 1,
+            "sortId": null,
+            "commendStation": 0,
+            "startDate": "2021-01-06",
+            "endDate": "2117-08-19",
+            "expired": null,
+            "children": [
+                {
+                    "resourceId": 41002,
+                    "resourceName": "请假记录",
+                    "actionUrl": "/childrenAttendance/childLeaveRecord",
+                    "h5ActionUrl": "",
+                    "parentId": 41000,
+                    "resourceIcon": "",
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                }
+            ]
+        },
+        {
+            "resourceId": 60000,
+            "resourceName": "宝宝报告",
+            "actionUrl": "babyReport",
+            "h5ActionUrl": "/babyDayReport",
+            "parentId": 0,
+            "resourceIcon": "icon-babyReport",
+            "selected": 1,
+            "sortId": null,
+            "commendStation": 0,
+            "startDate": "2021-01-06",
+            "endDate": "2117-08-19",
+            "expired": null,
+            "children": [
+                {
+                    "resourceId": 60003,
+                    "resourceName": "日报概况",
+                    "actionUrl": "",
+                    "h5ActionUrl": "/gardenDayReport/teacher",
+                    "parentId": 60000,
+                    "resourceIcon": "icon-gardenDayReport",
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                },
+                {
+                    "resourceId": 60004,
+                    "resourceName": "班级日报",
+                    "actionUrl": "",
+                    "h5ActionUrl": "/classDayReport/teacher",
+                    "parentId": 60000,
+                    "resourceIcon": "icon-classDayReport",
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                },
+                {
+                    "resourceId": 60005,
+                    "resourceName": "日报详情",
+                    "actionUrl": "",
+                    "h5ActionUrl": "/dayReportDetail/teacher",
+                    "parentId": 60000,
+                    "resourceIcon": "icon-dayReportDetail",
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                }
+            ]
+        },
+        {
+            "resourceId": 1121,
+            "resourceName": "幼儿成长档案",
+            "actionUrl": "growthFiles",
+            "h5ActionUrl": "/trackRecord",
+            "parentId": 0,
+            "resourceIcon": "icon-trackRecord",
+            "selected": 1,
+            "sortId": null,
+            "commendStation": 0,
+            "startDate": "2021-01-06",
+            "endDate": "2117-08-19",
+            "expired": null,
+            "children": [
+                {
+                    "resourceId": 1122,
+                    "resourceName": "幼儿成长档案",
+                    "actionUrl": "/growthFiles",
+                    "h5ActionUrl": "/trackRecord",
+                    "parentId": 1121,
+                    "resourceIcon": "",
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                }
+            ]
+        },
+        {
+            "resourceId": 49000,
+            "resourceName": "幼儿午睡",
+            "actionUrl": "childSiesta",
+            "h5ActionUrl": "/childSiesta",
+            "parentId": 0,
+            "resourceIcon": "icon-sleep",
+            "selected": 1,
+            "sortId": null,
+            "commendStation": 0,
+            "startDate": "2021-01-06",
+            "endDate": "2117-08-19",
+            "expired": null,
+            "children": [
+                {
+                    "resourceId": 49001,
+                    "resourceName": "午睡概况",
+                    "actionUrl": "/childSiesta/siestaOverview",
+                    "h5ActionUrl": "/childSiesta/siestaOverview",
+                    "parentId": 49000,
+                    "resourceIcon": "",
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                },
+                {
+                    "resourceId": 49002,
+                    "resourceName": "班级午睡",
+                    "actionUrl": "/childSiesta/classSiesta",
+                    "h5ActionUrl": "",
+                    "parentId": 49000,
+                    "resourceIcon": "",
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                },
+                {
+                    "resourceId": 49003,
+                    "resourceName": "午睡明细",
+                    "actionUrl": "/childSiesta/siestaDetail",
+                    "h5ActionUrl": "",
+                    "parentId": 49000,
+                    "resourceIcon": "",
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                }
+            ]
+        },
+        {
+            "resourceId": 1151,
+            "resourceName": "信息上报",
+            "actionUrl": "infoReport",
+            "h5ActionUrl": "/messageReport/infoReceive",
+            "parentId": 0,
+            "resourceIcon": "icon-messageReport",
+            "selected": 1,
+            "sortId": null,
+            "commendStation": 0,
+            "startDate": "2021-01-06",
+            "endDate": "2117-08-19",
+            "expired": null,
+            "children": [
+                {
+                    "resourceId": 1152,
+                    "resourceName": "已发送",
+                    "actionUrl": "/infoReport/infoDelivery",
+                    "h5ActionUrl": "",
+                    "parentId": 1151,
+                    "resourceIcon": "",
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                },
+                {
+                    "resourceId": 1153,
+                    "resourceName": "新建上报信息",
+                    "actionUrl": "/infoReport/addInfo",
+                    "h5ActionUrl": "",
+                    "parentId": 1151,
+                    "resourceIcon": "",
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                }
+            ]
+        },
+        {
+            "resourceId": 1141,
+            "resourceName": "幼儿晨午检",
+            "actionUrl": "mornArvoCheck",
+            "h5ActionUrl": "/mornArvoCheck/entrance",
+            "parentId": 0,
+            "resourceIcon": "icon-mornArvoCheck",
+            "selected": 1,
+            "sortId": null,
+            "commendStation": 0,
+            "startDate": "2021-01-06",
+            "endDate": "2117-08-19",
+            "expired": null,
+            "children": [
+                {
+                    "resourceId": 1142,
+                    "resourceName": "晨午检概况",
+                    "actionUrl": "/mornArvoCheck/survey",
+                    "h5ActionUrl": "/mornArvoCheck/entrance",
+                    "parentId": 1141,
+                    "resourceIcon": "",
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                },
+                {
+                    "resourceId": 1143,
+                    "resourceName": "记录查询",
+                    "actionUrl": "/mornArvoCheck/query",
+                    "h5ActionUrl": "",
+                    "parentId": 1141,
+                    "resourceIcon": "",
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                },
+                {
+                    "resourceId": 1144,
+                    "resourceName": "晨午检处理",
+                    "actionUrl": "/mornArvoCheck/recordQuery",
+                    "h5ActionUrl": "",
+                    "parentId": 1141,
+                    "resourceIcon": "",
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                }
+            ]
+        },
+        {
+            "resourceId": 43000,
+            "resourceName": "幼儿兴趣",
+            "actionUrl": "interestAreaManage",
+            "h5ActionUrl": "/interest",
+            "parentId": 0,
+            "resourceIcon": "icon-interestAreaManage",
+            "selected": 1,
+            "sortId": null,
+            "commendStation": 0,
+            "startDate": "2021-01-06",
+            "endDate": "2117-08-19",
+            "expired": null,
+            "children": [
+                {
+                    "resourceId": 43005,
+                    "resourceName": "兴趣概况",
+                    "actionUrl": "/interestAreaManage/schoolProfile",
+                    "h5ActionUrl": "/interest/schoolProfile",
+                    "parentId": 43000,
+                    "resourceIcon": "",
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                },
+                {
+                    "resourceId": 43006,
+                    "resourceName": "班级兴趣",
+                    "actionUrl": "/interestAreaManage/classProfile",
+                    "h5ActionUrl": "/interest/classProfile",
+                    "parentId": 43000,
+                    "resourceIcon": "",
+                    "selected": 1,
+                    "sortId": null,
+                    "commendStation": 0,
+                    "startDate": "2021-01-06",
+                    "endDate": "2117-08-19",
+                    "expired": null,
+                    "children": null
+                }
+            ]
+        },
+        {
+            "resourceId": 62000,
+            "resourceName": "教职工出勤",
+            "actionUrl": "attendance",
+            "h5ActionUrl": "/staff/attendance",
+            "parentId": 0,
+            "resourceIcon": "icon-attendance",
+            "selected": 1,
+            "sortId": null,
+            "commendStation": 0,
+            "startDate": "2021-01-06",
+            "endDate": "2117-08-19",
+            "expired": null,
+            "children": null
+        }
+    ]
+}
+[0m
+[32m2021-04-13 16:13:01.251[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m218[0m - [1mstatus_code: 200, response_time(ms): 83.74 ms, response_length: 0 bytes[0m
+[32m2021-04-13 16:13:01.253[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert status_code equal 200(int)	==> pass[0m
+[32m2021-04-13 16:13:01.254[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass[0m
+[32m2021-04-13 16:13:01.255[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert body.code equal 0(int)	==> pass[0m
+[32m2021-04-13 16:13:01.256[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: 应用-列表收藏应用（账号收藏的应用） <<<<<<
+[0m
+[32m2021-04-13 16:13:01.257[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: 登录相关-获取身份列表(H5) >>>>>>[0m
+[32m2021-04-13 16:13:01.663[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 192.168.0.102, Port: 56027[0m
+[32m2021-04-13 16:13:01.664[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 119.29.116.47, Port: 80[0m
+[32m2021-04-13 16:13:01.664[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== request details ==================
+method   : GET
+url      : http://yadongitest.icampus.clife.net/v1/web/eduaccount/user/h5/identitys?showMsgCount=1&systemCode=h5garden
+headers  : {
+    "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
+    "Content-Type": "application/json;charset=utf-8",
+    "Host": "yadongitest.icampus.clife.net",
+    "Referer": "http://yadongitest.icampus.clife.net/school/m/",
+    "X-Access-Token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjYyMDg0OTAwMSIsInVzZXJUeXBlIjoiMSIsImV4cCI6MTYxODMwODc4MiwidXNlcklkIjoiMjQ5MDYwNzczMDY4OSIsIm9yZ0lkIjoiNjQzODczMzM0ODg2NiJ9.lvCK2UW4c-_CFrh-btY0PeU0RBCGLlKb0RxCo9zf900",
+    "X-Requested-With": "XMLHttpRequest",
+    "domainName": "yadongitest",
+    "HRUN-Request-ID": "HRUN-2c21eede-c5d9-4bfa-aed6-02245f32b2b8-581259"
+}
+cookies  : {}
+body     : None
+[0m
+[32m2021-04-13 16:13:02.242[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Tue, 13 Apr 2021 08:13:02 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Methods": "GET,POST,OPTIONS,PUT,DELETE, GET,POST,OPTIONS",
+    "Set-Cookie": "rememberMe=deleteMe; Path=/clife-campus-education-account-api-web; Max-Age=0; Expires=Mon, 12-Apr-2021 08:13:02 GMT",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "X-Requested-With"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "code": 0,
+    "data": {
+        "studentList": [
+            {
+                "userId": 2490607730689,
+                "studentId": 2477378895874,
+                "userName": "16620849001",
+                "realName": "赵丽颖一号~¥@sm",
+                "domainName": "yadongitest",
+                "orgName": "亚东幼儿园-张丽不准动",
+                "orgId": 6438733348866,
+                "positionName": null,
+                "className": "小二班",
+                "gradeName": "小班",
+                "createTime": null,
+                "parentUserId": null,
+                "parentUserName": null,
+                "roleNames": null,
+                "avatar": "http://200.200.200.58/group1/M00/08/C8/yMjIOmBsKaKAIatNAAGAuIse_6U199.jpg",
+                "mobile": null,
+                "sex": 1,
+                "userType": 2,
+                "orgType": null,
+                "status": null,
+                "classSize": null,
+                "unreadMsgCount": 1
+            },
+            {
+                "userId": 2490607730689,
+                "studentId": 2477806714882,
+                "userName": "16620849001",
+                "realName": "赵丽颖二号",
+                "domainName": "yadongitest",
+                "orgName": "亚东幼儿园-张丽不准动",
+                "orgId": 6438733348866,
+                "positionName": null,
+                "className": "大一班",
+                "gradeName": "大班",
+                "createTime": null,
+                "parentUserId": null,
+                "parentUserName": null,
+                "roleNames": null,
+                "avatar": null,
+                "mobile": null,
+                "sex": 1,
+                "userType": 2,
+                "orgType": null,
+                "status": null,
+                "classSize": null,
+                "unreadMsgCount": 0
+            },
+            {
+                "userId": 2490607730689,
+                "studentId": 2479132114945,
+                "userName": "16620849001",
+                "realName": "刘亦菲一号¥¥@",
+                "domainName": "yadongitest",
+                "orgName": "亚东幼儿园-张丽不准动",
+                "orgId": 6438733348866,
+                "positionName": null,
+                "className": "中一班",
+                "gradeName": "中班",
+                "createTime": null,
+                "parentUserId": null,
+                "parentUserName": null,
+                "roleNames": null,
+                "avatar": "http://skinsecret.clife.cn/f360457e41db42b470830c5ca8b94fea.jpeg",
+                "mobile": null,
+                "sex": 2,
+                "userType": 2,
+                "orgType": null,
+                "status": null,
+                "classSize": null,
+                "unreadMsgCount": 0
+            },
+            {
+                "userId": 2490607730689,
+                "studentId": 2479570419713,
+                "userName": "16620849001",
+                "realName": "刘亦菲二号",
+                "domainName": "yadongitest",
+                "orgName": "亚东幼儿园-张丽不准动",
+                "orgId": 6438733348866,
+                "positionName": null,
+                "className": "托三班",
+                "gradeName": "托班",
+                "createTime": null,
+                "parentUserId": null,
+                "parentUserName": null,
+                "roleNames": null,
+                "avatar": "https://skinsecret.clife.cn/292659ff6a714ce5efc0f7c274ad1274.jpg",
+                "mobile": null,
+                "sex": 1,
+                "userType": 2,
+                "orgType": null,
+                "status": null,
+                "classSize": null,
+                "unreadMsgCount": 0
+            },
+            {
+                "userId": 2490607730689,
+                "studentId": 4275028230145,
+                "userName": "16620849001",
+                "realName": "赵丽颖三号",
+                "domainName": "yadongitest",
+                "orgName": "亚东幼儿园-张丽不准动",
+                "orgId": 6438733348866,
+                "positionName": null,
+                "className": "中一班",
+                "gradeName": "中班",
+                "createTime": null,
+                "parentUserId": null,
+                "parentUserName": null,
+                "roleNames": null,
+                "avatar": "https://skinsecret.clife.cn/3bd4cd386607f4ae0c7e78ba8b1a0f76.jpg",
+                "mobile": null,
+                "sex": 1,
+                "userType": 2,
+                "orgType": null,
+                "status": null,
+                "classSize": null,
+                "unreadMsgCount": 0
+            },
+            {
+                "userId": 2490607730689,
+                "studentId": 5014754557953,
+                "userName": "16620849001",
+                "realName": "刘亦菲三号",
+                "domainName": "yadongitest",
+                "orgName": "亚东幼儿园-张丽不准动",
+                "orgId": 6438733348866,
+                "positionName": null,
+                "className": "中一班",
+                "gradeName": "中班",
+                "createTime": null,
+                "parentUserId": null,
+                "parentUserName": null,
+                "roleNames": null,
+                "avatar": "https://skinsecret.clife.cn/c977692e7aa7c7cef41e88f2959985ae.jpg",
+                "mobile": null,
+                "sex": 2,
+                "userType": 2,
+                "orgType": null,
+                "status": null,
+                "classSize": null,
+                "unreadMsgCount": 0
+            },
+            {
+                "userId": 2490607730689,
+                "studentId": 6078570561537,
+                "userName": "16620849001",
+                "realName": "赵丽颖四号我我而欧美",
+                "domainName": "yadongitest",
+                "orgName": "亚东幼儿园-张丽不准动",
+                "orgId": 6438733348866,
+                "positionName": null,
+                "className": "托一班",
+                "gradeName": "托班",
+                "createTime": null,
+                "parentUserId": null,
+                "parentUserName": null,
+                "roleNames": null,
+                "avatar": "http://skinsecret.clife.cn/a228cd761cfafa9cd1df1ee0316110b5.jpeg",
+                "mobile": null,
+                "sex": 1,
+                "userType": 2,
+                "orgType": null,
+                "status": null,
+                "classSize": null,
+                "unreadMsgCount": 1
+            },
+            {
+                "userId": 2490607730689,
+                "studentId": 6080468484097,
+                "userName": "16620849001",
+                "realName": "赵丽颖五号",
+                "domainName": "yadongitest",
+                "orgName": "亚东幼儿园-张丽不准动",
+                "orgId": 6438733348866,
+                "positionName": null,
+                "className": "托二班",
+                "gradeName": "托班",
+                "createTime": null,
+                "parentUserId": null,
+                "parentUserName": null,
+                "roleNames": null,
+                "avatar": "https://skinsecret.clife.cn/b3eb1e473e107de2b1c3e0ed47f88fd8.png",
+                "mobile": null,
+                "sex": 1,
+                "userType": 2,
+                "orgType": null,
+                "status": null,
+                "classSize": null,
+                "unreadMsgCount": 0
+            },
+            {
+                "userId": 2490607730689,
+                "studentId": 6094418739201,
+                "userName": "16620849001",
+                "realName": "赵丽颖六号~~~~~",
+                "domainName": "yadongitest",
+                "orgName": "亚东幼儿园-张丽不准动",
+                "orgId": 6438733348866,
+                "positionName": null,
+                "className": "大一班",
+                "gradeName": "大班",
+                "createTime": null,
+                "parentUserId": null,
+                "parentUserName": null,
+                "roleNames": null,
+                "avatar": null,
+                "mobile": null,
+                "sex": 1,
+                "userType": 2,
+                "orgType": null,
+                "status": null,
+                "classSize": null,
+                "unreadMsgCount": 0
+            },
+            {
+                "userId": 2490607730689,
+                "studentId": 15112753250305,
+                "userName": "16620849001",
+                "realName": "赵丽颖七号",
+                "domainName": "yadongitest",
+                "orgName": "亚东幼儿园-张丽不准动",
+                "orgId": 6438733348866,
+                "positionName": null,
+                "className": "托三班",
+                "gradeName": "托班",
+                "createTime": null,
+                "parentUserId": null,
+                "parentUserName": null,
+                "roleNames": null,
+                "avatar": "https://skinsecret.clife.cn/17822eacd85ae21f0976de63099e3fd9.png",
+                "mobile": null,
+                "sex": 2,
+                "userType": 2,
+                "orgType": null,
+                "status": null,
+                "classSize": null,
+                "unreadMsgCount": 0
+            },
+            {
+                "userId": 2490607730689,
+                "studentId": 15112849719297,
+                "userName": "16620849001",
+                "realName": "赵丽颖八号",
+                "domainName": "yadongitest",
+                "orgName": "亚东幼儿园-张丽不准动",
+                "orgId": 6438733348866,
+                "positionName": null,
+                "className": "托四班",
+                "gradeName": "托班",
+                "createTime": null,
+                "parentUserId": null,
+                "parentUserName": null,
+                "roleNames": null,
+                "avatar": "https://skinsecret.clife.cn/5568c5d32d2aa8025db4e9f246298536.jpg",
+                "mobile": null,
+                "sex": 1,
+                "userType": 2,
+                "orgType": null,
+                "status": null,
+                "classSize": null,
+                "unreadMsgCount": 0
+            },
+            {
+                "userId": 2490607730689,
+                "studentId": 15112971354113,
+                "userName": "16620849001",
+                "realName": "赵丽颖九号",
+                "domainName": "yadongitest",
+                "orgName": "亚东幼儿园-张丽不准动",
+                "orgId": 6438733348866,
+                "positionName": null,
+                "className": "托五班",
+                "gradeName": "托班",
+                "createTime": null,
+                "parentUserId": null,
+                "parentUserName": null,
+                "roleNames": null,
+                "avatar": null,
+                "mobile": null,
+                "sex": 2,
+                "userType": 2,
+                "orgType": null,
+                "status": null,
+                "classSize": null,
+                "unreadMsgCount": 0
+            },
+            {
+                "userId": 2490607730689,
+                "studentId": 15114032513025,
+                "userName": "16620849001",
+                "realName": "赵丽颖十号",
+                "domainName": "yadongitest",
+                "orgName": "亚东幼儿园-张丽不准动",
+                "orgId": 6438733348866,
+                "positionName": null,
+                "className": "大一班",
+                "gradeName": "大班",
+                "createTime": null,
+                "parentUserId": null,
+                "parentUserName": null,
+                "roleNames": null,
+                "avatar": null,
+                "mobile": null,
+                "sex": 1,
+                "userType": 2,
+                "orgType": null,
+                "status": null,
+                "classSize": null,
+                "unreadMsgCount": 0
+            },
+            {
+                "userId": 2490607730689,
+                "studentId": 18945487273985,
+                "userName": "16620849001",
+                "realName": "赵丽颖十一号",
+                "domainName": "yadongitest",
+                "orgName": "亚东幼儿园-张丽不准动",
+                "orgId": 6438733348866,
+                "positionName": null,
+                "className": "中一班",
+                "gradeName": "中班",
+                "createTime": null,
+                "parentUserId": null,
+                "parentUserName": null,
+                "roleNames": null,
+                "avatar": "https://skinsecret.clife.cn/d2a7751f22ecbd2542d606a6e864a011.jpg",
+                "mobile": null,
+                "sex": 2,
+                "userType": 2,
+                "orgType": null,
+                "status": null,
+                "classSize": null,
+                "unreadMsgCount": 0
+            },
+            {
+                "userId": 2490607730689,
+                "studentId": 18946558918657,
+                "userName": "16620849001",
+                "realName": "赵丽颖十二号",
+                "domainName": "yadongitest",
+                "orgName": "亚东幼儿园-张丽不准动",
+                "orgId": 6438733348866,
+                "positionName": null,
+                "className": "小二班",
+                "gradeName": "小班",
+                "createTime": null,
+                "parentUserId": null,
+                "parentUserName": null,
+                "roleNames": null,
+                "avatar": "https://skinsecret.clife.cn/04ac176e50568267464a684d139bbb0a.jpg",
+                "mobile": null,
+                "sex": 1,
+                "userType": 2,
+                "orgType": null,
+                "status": null,
+                "classSize": null,
+                "unreadMsgCount": 0
+            },
+            {
+                "userId": 2490607730689,
+                "studentId": 20026107756545,
+                "userName": "16620849001",
+                "realName": "赵丽颖十三号",
+                "domainName": "yadongitest",
+                "orgName": "亚东幼儿园-张丽不准动",
+                "orgId": 6438733348866,
+                "positionName": null,
+                "className": "小三班",
+                "gradeName": "小班",
+                "createTime": null,
+                "parentUserId": null,
+                "parentUserName": null,
+                "roleNames": null,
+                "avatar": "https://skinsecret.clife.cn/2f4ebd7fb5acb741b24ce27441f6fb86.jpg",
+                "mobile": null,
+                "sex": 1,
+                "userType": 2,
+                "orgType": null,
+                "status": null,
+                "classSize": null,
+                "unreadMsgCount": 0
+            },
+            {
+                "userId": 2490607730689,
+                "studentId": 20026426523649,
+                "userName": "16620849001",
+                "realName": "赵丽颖十四号",
+                "domainName": "yadongitest",
+                "orgName": "亚东幼儿园-张丽不准动",
+                "orgId": 6438733348866,
+                "positionName": null,
+                "className": "学前班-学二班",
+                "gradeName": "学前班",
+                "createTime": null,
+                "parentUserId": null,
+                "parentUserName": null,
+                "roleNames": null,
+                "avatar": "https://skinsecret.clife.cn/eb9b7ab282f0677d459e795a0d3ec6b1.jpg",
+                "mobile": null,
+                "sex": 2,
+                "userType": 2,
+                "orgType": null,
+                "status": null,
+                "classSize": null,
+                "unreadMsgCount": 0
+            }
+        ],
+        "teacherList": [
+            {
+                "userId": 2490607730689,
+                "studentId": null,
+                "userName": "16620849001",
+                "realName": "亚东县幼儿园-1号-",
+                "domainName": "yadongitest",
+                "orgName": "亚东幼儿园-张丽不准动",
+                "orgId": 6438733348866,
+                "positionName": "院长",
+                "className": null,
+                "gradeName": null,
+                "createTime": null,
+                "parentUserId": null,
+                "parentUserName": null,
+                "roleNames": null,
+                "avatar": null,
+                "mobile": null,
+                "sex": null,
+                "userType": 1,
+                "orgType": 3,
+                "status": null,
+                "classSize": 16,
+                "unreadMsgCount": 0
+            },
+            {
+                "userId": 2490607730689,
+                "studentId": null,
+                "userName": "16620849001",
+                "realName": "亚东县幼儿园-1号-",
+                "domainName": "yyyyy",
+                "orgName": "园级门户",
+                "orgId": 2681557614593,
+                "positionName": null,
+                "className": null,
+                "gradeName": null,
+                "createTime": null,
+                "parentUserId": null,
+                "parentUserName": null,
+                "roleNames": null,
+                "avatar": null,
+                "mobile": null,
+                "sex": null,
+                "userType": 1,
+                "orgType": 3,
+                "status": null,
+                "classSize": 22,
+                "unreadMsgCount": 0
+            }
+        ]
+    }
+}
+[0m
+--- Logging error in Loguru Handler #9 ---
+Record was: {'elapsed': datetime.timedelta(seconds=23, microseconds=206778), 'exception': None, 'extra': {}, 'file': (name='client.py', path='d:\\workspace\\python\\env\\lib\\site-packages\\httprunner\\client.py'), 'function': 'log_print', 'level': (name='DEBUG', no=10, icon='🐞'), 'line': 40, 'message': '\n================== response details ==================\nstatus_code : 200\nheaders  : {\n    "Server": "nginx",\n    "Date": "Tue, 13 Apr 2021 08:13:02 GMT",\n    "Content-Type": "application/json;charset=UTF-8",\n    "Transfer-Encoding": "chunked",\n    "Connection": "keep-alive",\n    "Access-Control-Allow-Methods": "GET,POST,OPTIONS,PUT,DELETE, GET,POST,OPTIONS",\n    "Set-Cookie": "rememberMe=deleteMe; Path=/clife-campus-education-account-api-web; Max-Age=0; Expires=Mon, 12-Apr-2021 08:13:02 GMT",\n    "Access-Control-Allow-Origin": "*",\n    "Access-Control-Allow-Headers": "X-Requested-With"\n}\ncookies  : {}\nencoding : UTF-8\ncontent_type : application/json;charset=UTF-8\nbody     : {\n    "code": 0,\n    "data": {\n        "studentList": [\n            {\n                "userId": 2490607730689,\n                "studentId": 2477378895874,\n                "userName": "16620849001",\n                "realName": "赵丽颖一号~¥@sm",\n                "domainName": "yadongitest",\n                "orgName": "亚东幼儿园-张丽不准动",\n                "orgId": 6438733348866,\n                "positionName": null,\n                "className": "小二班",\n                "gradeName": "小班",\n                "createTime": null,\n                "parentUserId": null,\n                "parentUserName": null,\n                "roleNames": null,\n                "avatar": "http://200.200.200.58/group1/M00/08/C8/yMjIOmBsKaKAIatNAAGAuIse_6U199.jpg",\n                "mobile": null,\n                "sex": 1,\n                "userType": 2,\n                "orgType": null,\n                "status": null,\n                "classSize": null,\n                "unreadMsgCount": 1\n            },\n            {\n                "userId": 2490607730689,\n                "studentId": 2477806714882,\n                "userName": "16620849001",\n                "realName": "赵丽颖二号",\n                "domainName": "yadongitest",\n                "orgName": "亚东幼儿园-张丽不准动",\n                "orgId": 6438733348866,\n                "positionName": null,\n                "className": "大一班",\n                "gradeName": "大班",\n                "createTime": null,\n                "parentUserId": null,\n                "parentUserName": null,\n                "roleNames": null,\n                "avatar": null,\n                "mobile": null,\n                "sex": 1,\n                "userType": 2,\n                "orgType": null,\n                "status": null,\n                "classSize": null,\n                "unreadMsgCount": 0\n            },\n            {\n                "userId": 2490607730689,\n                "studentId": 2479132114945,\n                "userName": "16620849001",\n                "realName": "刘亦菲一号¥¥@",\n                "domainName": "yadongitest",\n                "orgName": "亚东幼儿园-张丽不准动",\n                "orgId": 6438733348866,\n                "positionName": null,\n                "className": "中一班",\n                "gradeName": "中班",\n                "createTime": null,\n                "parentUserId": null,\n                "parentUserName": null,\n                "roleNames": null,\n                "avatar": "http://skinsecret.clife.cn/f360457e41db42b470830c5ca8b94fea.jpeg",\n                "mobile": null,\n                "sex": 2,\n                "userType": 2,\n                "orgType": null,\n                "status": null,\n                "classSize": null,\n                "unreadMsgCount": 0\n            },\n            {\n                "userId": 2490607730689,\n                "studentId": 2479570419713,\n                "userName": "16620849001",\n                "realName": "刘亦菲二号",\n                "domainName": "yadongitest",\n                "orgName": "亚东幼儿园-张丽不准动",\n                "orgId": 6438733348866,\n                "positionName": null,\n                "className": "托三班",\n                "gradeName": "托班",\n                "createTime": null,\n                "parentUserId": null,\n                "parentUserName": null,\n                "roleNames": null,\n                "avatar": "https://skinsecret.clife.cn/292659ff6a714ce5efc0f7c274ad1274.jpg",\n                "mobile": null,\n                "sex": 1,\n                "userType": 2,\n                "orgType": null,\n                "status": null,\n                "classSize": null,\n                "unreadMsgCount": 0\n            },\n            {\n                "userId": 2490607730689,\n                "studentId": 4275028230145,\n                "userName": "16620849001",\n                "realName": "赵丽颖三号",\n                "domainName": "yadongitest",\n                "orgName": "亚东幼儿园-张丽不准动",\n                "orgId": 6438733348866,\n                "positionName": null,\n                "className": "中一班",\n                "gradeName": "中班",\n                "createTime": null,\n                "parentUserId": null,\n                "parentUserName": null,\n                "roleNames": null,\n                "avatar": "https://skinsecret.clife.cn/3bd4cd386607f4ae0c7e78ba8b1a0f76.jpg",\n                "mobile": null,\n                "sex": 1,\n                "userType": 2,\n                "orgType": null,\n                "status": null,\n                "classSize": null,\n                "unreadMsgCount": 0\n            },\n            {\n                "userId": 2490607730689,\n                "studentId": 5014754557953,\n                "userName": "16620849001",\n                "realName": "刘亦菲三号",\n                "domainName": "yadongitest",\n                "orgName": "亚东幼儿园-张丽不准动",\n                "orgId": 6438733348866,\n                "positionName": null,\n                "className": "中一班",\n                "gradeName": "中班",\n                "createTime": null,\n                "parentUserId": null,\n                "parentUserName": null,\n                "roleNames": null,\n                "avatar": "https://skinsecret.clife.cn/c977692e7aa7c7cef41e88f2959985ae.jpg",\n                "mobile": null,\n                "sex": 2,\n                "userType": 2,\n                "orgType": null,\n                "status": null,\n                "classSize": null,\n                "unreadMsgCount": 0\n            },\n            {\n                "userId": 2490607730689,\n                "studentId": 6078570561537,\n                "userName": "16620849001",\n                "realName": "赵丽颖四号我我而欧美",\n                "domainName": "yadongitest",\n                "orgName": "亚东幼儿园-张丽不准动",\n                "orgId": 6438733348866,\n                "positionName": null,\n                "className": "托一班",\n                "gradeName": "托班",\n                "createTime": null,\n                "parentUserId": null,\n                "parentUserName": null,\n                "roleNames": null,\n                "avatar": "http://skinsecret.clife.cn/a228cd761cfafa9cd1df1ee0316110b5.jpeg",\n                "mobile": null,\n                "sex": 1,\n                "userType": 2,\n                "orgType": null,\n                "status": null,\n                "classSize": null,\n                "unreadMsgCount": 1\n            },\n            {\n                "userId": 2490607730689,\n                "studentId": 6080468484097,\n                "userName": "16620849001",\n                "realName": "赵丽颖五号",\n                "domainName": "yadongitest",\n                "orgName": "亚东幼儿园-张丽不准动",\n                "orgId": 6438733348866,\n                "positionName": null,\n                "className": "托二班",\n                "gradeName": "托班",\n                "createTime": null,\n                "parentUserId": null,\n                "parentUserName": null,\n                "roleNames": null,\n                "avatar": "https://skinsecret.clife.cn/b3eb1e473e107de2b1c3e0ed47f88fd8.png",\n                "mobile": null,\n                "sex": 1,\n                "userType": 2,\n                "orgType": null,\n                "status": null,\n                "classSize": null,\n                "unreadMsgCount": 0\n            },\n            {\n                "userId": 2490607730689,\n                "studentId": 6094418739201,\n                "userName": "16620849001",\n                "realName": "赵丽颖六号~~~~~",\n                "domainName": "yadongitest",\n                "orgName": "亚东幼儿园-张丽不准动",\n                "orgId": 6438733348866,\n                "positionName": null,\n                "className": "大一班",\n                "gradeName": "大班",\n                "createTime": null,\n                "parentUserId": null,\n                "parentUserName": null,\n                "roleNames": null,\n                "avatar": null,\n                "mobile": null,\n                "sex": 1,\n                "userType": 2,\n                "orgType": null,\n                "status": null,\n                "classSize": null,\n                "unreadMsgCount": 0\n            },\n            {\n                "userId": 2490607730689,\n                "studentId": 15112753250305,\n                "userName": "16620849001",\n                "realName": "赵丽颖七号",\n                "domainName": "yadongitest",\n                "orgName": "亚东幼儿园-张丽不准动",\n                "orgId": 6438733348866,\n                "positionName": null,\n                "className": "托三班",\n                "gradeName": "托班",\n                "createTime": null,\n                "parentUserId": null,\n                "parentUserName": null,\n                "roleNames": null,\n                "avatar": "https://skinsecret.clife.cn/17822eacd85ae21f0976de63099e3fd9.png",\n                "mobile": null,\n                "sex": 2,\n                "userType": 2,\n                "orgType": null,\n                "status": null,\n                "classSize": null,\n                "unreadMsgCount": 0\n            },\n            {\n                "userId": 2490607730689,\n                "studentId": 15112849719297,\n                "userName": "16620849001",\n                "realName": "赵丽颖八号",\n                "domainName": "yadongitest",\n                "orgName": "亚东幼儿园-张丽不准动",\n                "orgId": 6438733348866,\n                "positionName": null,\n                "className": "托四班",\n                "gradeName": "托班",\n                "createTime": null,\n                "parentUserId": null,\n                "parentUserName": null,\n                "roleNames": null,\n                "avatar": "https://skinsecret.clife.cn/5568c5d32d2aa8025db4e9f246298536.jpg",\n                "mobile": null,\n                "sex": 1,\n                "userType": 2,\n                "orgType": null,\n                "status": null,\n                "classSize": null,\n                "unreadMsgCount": 0\n            },\n            {\n                "userId": 2490607730689,\n                "studentId": 15112971354113,\n                "userName": "16620849001",\n                "realName": "赵丽颖九号",\n                "domainName": "yadongitest",\n                "orgName": "亚东幼儿园-张丽不准动",\n                "orgId": 6438733348866,\n                "positionName": null,\n                "className": "托五班",\n                "gradeName": "托班",\n                "createTime": null,\n                "parentUserId": null,\n                "parentUserName": null,\n                "roleNames": null,\n                "avatar": null,\n                "mobile": null,\n                "sex": 2,\n                "userType": 2,\n                "orgType": null,\n                "status": null,\n                "classSize": null,\n                "unreadMsgCount": 0\n            },\n            {\n                "userId": 2490607730689,\n                "studentId": 15114032513025,\n                "userName": "16620849001",\n                "realName": "赵丽颖十号",\n                "domainName": "yadongitest",\n                "orgName": "亚东幼儿园-张丽不准动",\n                "orgId": 6438733348866,\n                "positionName": null,\n                "className": "大一班",\n                "gradeName": "大班",\n                "createTime": null,\n                "parentUserId": null,\n                "parentUserName": null,\n                "roleNames": null,\n                "avatar": null,\n                "mobile": null,\n                "sex": 1,\n                "userType": 2,\n                "orgType": null,\n                "status": null,\n                "classSize": null,\n                "unreadMsgCount": 0\n            },\n            {\n                "userId": 2490607730689,\n                "studentId": 18945487273985,\n                "userName": "16620849001",\n                "realName": "赵丽颖十一号",\n                "domainName": "yadongitest",\n                "orgName": "亚东幼儿园-张丽不准动",\n                "orgId": 6438733348866,\n                "positionName": null,\n                "className": "中一班",\n                "gradeName": "中班",\n                "createTime": null,\n                "parentUserId": null,\n                "parentUserName": null,\n                "roleNames": null,\n                "avatar": "https://skinsecret.clife.cn/d2a7751f22ecbd2542d606a6e864a011.jpg",\n                "mobile": null,\n                "sex": 2,\n                "userType": 2,\n                "orgType": null,\n                "status": null,\n                "classSize": null,\n                "unreadMsgCount": 0\n            },\n            {\n                "userId": 2490607730689,\n                "studentId": 18946558918657,\n                "userName": "16620849001",\n                "realName": "赵丽颖十二号",\n                "domainName": "yadongitest",\n                "orgName": "亚东幼儿园-张丽不准动",\n                "orgId": 6438733348866,\n                "positionName": null,\n                "className": "小二班",\n                "gradeName": "小班",\n                "createTime": null,\n                "parentUserId": null,\n                "parentUserName": null,\n                "roleNames": null,\n                "avatar": "https://skinsecret.clife.cn/04ac176e50568267464a684d139bbb0a.jpg",\n                "mobile": null,\n                "sex": 1,\n                "userType": 2,\n                "orgType": null,\n                "status": null,\n                "classSize": null,\n                "unreadMsgCount": 0\n            },\n            {\n                "userId": 2490607730689,\n                "studentId": 20026107756545,\n                "userName": "16620849001",\n                "realName": "赵丽颖十三号",\n                "domainName": "yadongitest",\n                "orgName": "亚东幼儿园-张丽不准动",\n                "orgId": 6438733348866,\n                "positionName": null,\n                "className": "小三班",\n                "gradeName": "小班",\n                "createTime": null,\n                "parentUserId": null,\n                "parentUserName": null,\n                "roleNames": null,\n                "avatar": "https://skinsecret.clife.cn/2f4ebd7fb5acb741b24ce27441f6fb86.jpg",\n                "mobile": null,\n                "sex": 1,\n                "userType": 2,\n                "orgType": null,\n                "status": null,\n                "classSize": null,\n                "unreadMsgCount": 0\n            },\n            {\n                "userId": 2490607730689,\n                "studentId": 20026426523649,\n                "userName": "16620849001",\n                "realName": "赵丽颖十四号",\n                "domainName": "yadongitest",\n                "orgName": "亚东幼儿园-张丽不准动",\n                "orgId": 6438733348866,\n                "positionName": null,\n                "className": "学前班-学二班",\n                "gradeName": "学前班",\n                "createTime": null,\n                "parentUserId": null,\n                "parentUserName": null,\n                "roleNames": null,\n                "avatar": "https://skinsecret.clife.cn/eb9b7ab282f0677d459e795a0d3ec6b1.jpg",\n                "mobile": null,\n                "sex": 2,\n                "userType": 2,\n                "orgType": null,\n                "status": null,\n                "classSize": null,\n                "unreadMsgCount": 0\n            }\n        ],\n        "teacherList": [\n            {\n                "userId": 2490607730689,\n                "studentId": null,\n                "userName": "16620849001",\n                "realName": "亚东县幼儿园-1号-",\n                "domainName": "yadongitest",\n                "orgName": "亚东幼儿园-张丽不准动",\n                "orgId": 6438733348866,\n                "positionName": "院长",\n                "className": null,\n                "gradeName": null,\n                "createTime": null,\n                "parentUserId": null,\n                "parentUserName": null,\n                "roleNames": null,\n                "avatar": null,\n                "mobile": null,\n                "sex": null,\n                "userType": 1,\n                "orgType": 3,\n                "status": null,\n                "classSize": 16,\n                "unreadMsgCount": 0\n            },\n            {\n                "userId": 2490607730689,\n                "studentId": null,\n                "userName": "16620849001",\n                "realName": "亚东县幼儿园-1号-",\n                "domainName": "yyyyy",\n                "orgName": "园级门户",\n                "orgId": 2681557614593,\n                "positionName": null,\n                "className": null,\n                "gradeName": null,\n                "createTime": null,\n                "parentUserId": null,\n                "parentUserName": null,\n                "roleNames": null,\n                "avatar": null,\n                "mobile": null,\n                "sex": null,\n                "userType": 1,\n                "orgType": 3,\n                "status": null,\n                "classSize": 22,\n                "unreadMsgCount": 0\n            }\n        ]\n    }\n}\n', 'module': 'client', 'name': 'httprunner.client', 'process': (id=41580, name='MainProcess'), 'thread': (id=1224, name='MainThread'), 'time': datetime(2021, 4, 13, 16, 13, 2, 242321, tzinfo=datetime.timezone(datetime.timedelta(seconds=28800), '?D1¨²¡À¨º¡Á?¨º¡À??'))}
+Traceback (most recent call last):
+  File "d:\workspace\python\env\lib\site-packages\loguru\_handler.py", line 177, in emit
+    self._sink.write(str_record)
+  File "d:\workspace\python\env\lib\site-packages\loguru\_file_sink.py", line 179, in write
+    self._file.write(message)
+UnicodeEncodeError: 'gbk' codec can't encode character '\xa5' in position 1012: illegal multibyte sequence
+--- End of logging error ---
+[32m2021-04-13 16:13:02.243[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m218[0m - [1mstatus_code: 200, response_time(ms): 404.34 ms, response_length: 0 bytes[0m
+[32m2021-04-13 16:13:02.243[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert status_code equal 200(int)	==> pass[0m
+[32m2021-04-13 16:13:02.243[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass[0m
+[32m2021-04-13 16:13:02.244[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert body.code equal 0(int)	==> pass[0m
+[32m2021-04-13 16:13:02.244[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: 登录相关-获取身份列表(H5) <<<<<<
+[0m
+[32m2021-04-13 16:13:02.244[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: 考勤统计-月度数据列表 >>>>>>[0m
+[32m2021-04-13 16:13:03.837[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 192.168.0.102, Port: 56027[0m
+[32m2021-04-13 16:13:03.837[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 119.29.116.47, Port: 80[0m
+[32m2021-04-13 16:13:03.838[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== request details ==================
+method   : GET
+url      : http://yadongitest.icampus.clife.net/v1/web/edugarden/attendance/statistics/monthDataList?endTime=2021-04-13&startTime=2021-04-01&systemCode=H5
+headers  : {
+    "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
+    "Content-Type": "application/json;charset=utf-8",
+    "Host": "yadongitest.icampus.clife.net",
+    "Referer": "http://yadongitest.icampus.clife.net/school/m/",
+    "X-Access-Token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjYyMDg0OTAwMSIsInVzZXJUeXBlIjoiMSIsImV4cCI6MTYxODMwODc4MiwidXNlcklkIjoiMjQ5MDYwNzczMDY4OSIsIm9yZ0lkIjoiNjQzODczMzM0ODg2NiJ9.lvCK2UW4c-_CFrh-btY0PeU0RBCGLlKb0RxCo9zf900",
+    "X-Requested-With": "XMLHttpRequest",
+    "domainName": "yadongitest",
+    "HRUN-Request-ID": "HRUN-2c21eede-c5d9-4bfa-aed6-02245f32b2b8-582244"
+}
+cookies  : {}
+body     : None
+[0m
+[32m2021-04-13 16:13:09.329[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Tue, 13 Apr 2021 08:13:03 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Methods": "GET,POST,OPTIONS,PUT,DELETE, GET,POST,OPTIONS",
+    "Set-Cookie": "rememberMe=deleteMe; Path=/clife-campus-education-garden-api-web; Max-Age=0; Expires=Mon, 12-Apr-2021 08:13:03 GMT",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "X-Requested-With"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "code": 0,
+    "data": {
+        "list": [
+            {
+                "recordId": 6694,
+                "orgId": 6438733348866,
+                "staffId": 18985643540487,
+                "realName": "亚东县幼儿园-1号-",
+                "shiftId": 18950757416961,
+                "shiftName": null,
+                "groupId": 19095106486273,
+                "groupName": "固定制-考勤组-1",
+                "deptId": null,
+                "deptName": "管理处",
+                "positionName": "院长",
+                "createTime": null,
+                "updateTime": null,
+                "attendanceDays": 11,
+                "workHours": 0.0,
+                "shiftArray": [
+                    {
+                        "shiftId": 18951187333121,
+                        "shiftName": "考勤班次D",
+                        "useNum": 1,
+                        "shift": {
+                            "shiftId": 18951187333121,
+                            "orgId": 6438733348866,
+                            "shiftName": "考勤班次D",
+                            "clockType": 1,
+                            "clockTimeOne": "09:00:00",
+                            "clockOneCurrentMorrow": 1,
+                            "clockTimeOneBegin": "08:50:00",
+                            "clockTimeOneEnd": "09:30:00",
+                            "clockOneNeed": 1,
+                            "closingTimeOne": "00:30:00",
+                            "closingOneCurrentMorrow": 2,
+                            "closingTimeOneBegin": "17:00:00",
+                            "closingTimeOneEnd": "02:00:00",
+                            "closingOneNeed": 1,
+                            "clockTimeTwo": null,
+                            "clockTwoCurrentMorrow": 0,
+                            "clockTimeTwoBegin": null,
+                            "clockTimeTwoEnd": null,
+                            "clockTwoNeed": 0,
+                            "closingTimeTwo": null,
+                            "closingTwoCurrentMorrow": 0,
+                            "closingTimeTwoBegin": null,
+                            "closingTimeTwoEnd": null,
+                            "closingTwoNeed": 0,
+                            "deleted": 1,
+                            "createTime": "2021-03-16 15:16:02",
+                            "updateTime": "2021-03-16 15:12:01",
+                            "groupList": [],
+                            "workday": 0,
+                            "unit1": 1,
+                            "unit2": 1,
+                            "unit3": 1,
+                            "unit4": 2,
+                            "unit5": 0,
+                            "unit6": 0,
+                            "unit7": 0,
+                            "unit8": 0
+                        }
+                    },
+                    {
+                        "shiftId": 18950757416961,
+                        "shiftName": "考勤班次C",
+                        "useNum": 2,
+                        "shift": {
+                            "shiftId": 18950757416961,
+                            "orgId": 6438733348866,
+                            "shiftName": "考勤班次C",
+                            "clockType": 1,
+                            "clockTimeOne": "09:00:00",
+                            "clockOneCurrentMorrow": 1,
+                            "clockTimeOneBegin": "08:40:00",
+                            "clockTimeOneEnd": "09:30:00",
+                            "clockOneNeed": 1,
+                            "closingTimeOne": "14:00:00",
+                            "closingOneCurrentMorrow": 1,
+                            "closingTimeOneBegin": "13:00:00",
+                            "closingTimeOneEnd": "15:30:00",
+                            "closingOneNeed": 1,
+                            "clockTimeTwo": null,
+                            "clockTwoCurrentMorrow": 0,
+                            "clockTimeTwoBegin": null,
+                            "clockTimeTwoEnd": null,
+                            "clockTwoNeed": 0,
+                            "closingTimeTwo": null,
+                            "closingTwoCurrentMorrow": 0,
+                            "closingTimeTwoBegin": null,
+                            "closingTimeTwoEnd": null,
+                            "closingTwoNeed": 0,
+                            "deleted": 1,
+                            "createTime": "2021-03-16 15:12:36",
+                            "updateTime": "2021-03-16 15:12:01",
+                            "groupList": [],
+                            "workday": 0,
+                            "unit1": 1,
+                            "unit2": 1,
+                            "unit3": 1,
+                            "unit4": 1,
+                            "unit5": 0,
+                            "unit6": 0,
+                            "unit7": 0,
+                            "unit8": 0
+                        }
+                    }
+                ],
+                "restDays": 1,
+                "lateNum": 3,
+                "lateTime": 17.0,
+                "leaveEarlyNum": 0,
+                "leaveEarlyTime": 0.0,
+                "upLackCardNum": 10,
+                "downLackCardNum": 13,
+                "absentDays": 8,
+                "validRecordList": null,
+                "validJsonArray": [
+                    {
+                        "date": "2021-04-01",
+                        "item": [
+                            {
+                                "recordId": 6694,
+                                "orgId": 6438733348866,
+                                "staffId": 18985643540487,
+                                "realName": null,
+                                "shiftId": 18950757416961,
+                                "shiftName": null,
+                                "groupId": 19095106486273,
+                                "groupName": null,
+                                "deptId": null,
+                                "deptName": null,
+                                "positionName": null,
+                                "createTime": null,
+                                "updateTime": null,
+                                "attendanceDate": "2021-04-01",
+                                "attendanceTime": "2021-04-01 09:00:00",
+                                "clockTime": "2021-04-01 09:15:00",
+                                "clockResult": "迟到15分钟",
+                                "clockPhoto": "图片",
+                                "dataSource": "测试打卡",
+                                "clockSerialNo": null,
+                                "valid": 2,
+                                "workClosing": 1,
+                                "lateAdvMin": 15,
+                                "shift": null
+                            },
+                            {
+                                "recordId": 6695,
+                                "orgId": 6438733348866,
+                                "staffId": 18985643540487,
+                                "realName": null,
+                                "shiftId": 18950757416961,
+                                "shiftName": null,
+                                "groupId": 19095106486273,
+                                "groupName": null,
+                                "deptId": null,
+                                "deptName": null,
+                                "positionName": null,
+                                "createTime": null,
+                                "updateTime": null,
+                                "attendanceDate": "2021-04-01",
+                                "attendanceTime": "2021-04-01 14:00:00",
+                                "clockTime": null,
+                                "clockResult": "下班缺卡",
+                                "clockPhoto": "图片",
+                                "dataSource": null,
+                                "clockSerialNo": null,
+                                "valid": 5,
+                                "workClosing": 2,
+                                "lateAdvMin": 0,
+                                "shift": null
+                            }
+                        ]
+                    },
+                    {
+                        "date": "2021-04-02",
+                        "item": [
+                            {
+                                "recordId": 6820,
+                                "orgId": 6438733348866,
+                                "staffId": 18985643540487,
+                                "realName": null,
+                                "shiftId": 18913600077825,
+                                "shiftName": null,
+                                "groupId": 19095106486273,
+                                "groupName": null,
+                                "deptId": null,
+                                "deptName": null,
+                                "positionName": null,
+                                "createTime": null,
+                                "updateTime": null,
+                                "attendanceDate": "2021-04-02",
+                                "attendanceTime": "2021-04-02 00:00:00",
+                                "clockTime": null,
+                                "clockResult": "旷工",
+                                "clockPhoto": null,
+                                "dataSource": null,
+                                "clockSerialNo": null,
+                                "valid": 6,
+                                "workClosing": 1,
+                                "lateAdvMin": 0,
+                                "shift": null
+                            }
+                        ]
+                    },
+                    {
+                        "date": "2021-04-03",
+                        "item": [
+                            {
+                                "recordId": 6880,
+                                "orgId": 6438733348866,
+                                "staffId": 18985643540487,
+                                "realName": null,
+                                "shiftId": 18913769947137,
+                                "shiftName": null,
+                                "groupId": 19095106486273,
+                                "groupName": null,
+                                "deptId": null,
+                                "deptName": null,
+                                "positionName": null,
+                                "createTime": null,
+                                "updateTime": null,
+                                "attendanceDate": "2021-04-03",
+                                "attendanceTime": "2021-04-03 00:00:00",
+                                "clockTime": null,
+                                "clockResult": "旷工",
+                                "clockPhoto": null,
+                                "dataSource": null,
+                                "clockSerialNo": null,
+                                "valid": 6,
+                                "workClosing": 1,
+                                "lateAdvMin": 0,
+                                "shift": null
+                            }
+                        ]
+                    },
+                    {
+                        "date": "2021-04-04",
+                        "item": [
+                            {
+                                "recordId": 6930,
+                                "orgId": 6438733348866,
+                                "staffId": 18985643540487,
+                                "realName": null,
+                                "shiftId": null,
+                                "shiftName": null,
+                                "groupId": 19095106486273,
+                                "groupName": null,
+                                "deptId": null,
+                                "deptName": null,
+                                "positionName": null,
+                                "createTime": null,
+                                "updateTime": null,
+                                "attendanceDate": "2021-04-04",
+                                "attendanceTime": null,
+                                "clockTime": null,
+                                "clockResult": "休息",
+                                "clockPhoto": null,
+                                "dataSource": null,
+                                "clockSerialNo": null,
+                                "valid": 8,
+                                "workClosing": 0,
+                                "lateAdvMin": 0,
+                                "shift": null
+                            }
+                        ]
+                    },
+                    {
+                        "date": "2021-04-05",
+                        "item": [
+                            {
+                                "recordId": 6995,
+                                "orgId": 6438733348866,
+                                "staffId": 18985643540487,
+                                "realName": null,
+                                "shiftId": 18797967310849,
+                                "shiftName": null,
+                                "groupId": 19095106486273,
+                                "groupName": null,
+                                "deptId": null,
+                                "deptName": null,
+                                "positionName": null,
+                                "createTime": null,
+                                "updateTime": null,
+                                "attendanceDate": "2021-04-05",
+                                "attendanceTime": "2021-04-05 00:00:00",
+                                "clockTime": null,
+                                "clockResult": "旷工",
+                                "clockPhoto": null,
+                                "dataSource": null,
+                                "clockSerialNo": null,
+                                "valid": 6,
+                                "workClosing": 1,
+                                "lateAdvMin": 0,
+                                "shift": null
+                            }
+                        ]
+                    },
+                    {
+                        "date": "2021-04-06",
+                        "item": [
+                            {
+                                "recordId": 7067,
+                                "orgId": 6438733348866,
+                                "staffId": 18985643540487,
+                                "realName": null,
+                                "shiftId": 18951839547393,
+                                "shiftName": null,
+                                "groupId": 19095106486273,
+                                "groupName": null,
+                                "deptId": null,
+                                "deptName": null,
+                                "positionName": null,
+                                "createTime": null,
+                                "updateTime": null,
+                                "attendanceDate": "2021-04-06",
+                                "attendanceTime": "2021-04-06 00:00:00",
+                                "clockTime": null,
+                                "clockResult": "旷工",
+                                "clockPhoto": null,
+                                "dataSource": null,
+                                "clockSerialNo": null,
+                                "valid": 6,
+                                "workClosing": 2,
+                                "lateAdvMin": 0,
+                                "shift": null
+                            }
+                        ]
+                    },
+                    {
+                        "date": "2021-04-07",
+                        "item": [
+                            {
+                                "recordId": 7145,
+                                "orgId": 6438733348866,
+                                "staffId": 18985643540487,
+                                "realName": null,
+                                "shiftId": 18951187333121,
+                                "shiftName": null,
+                                "groupId": 19095106486273,
+                                "groupName": null,
+                                "deptId": null,
+                                "deptName": null,
+                                "positionName": null,
+                                "createTime": null,
+                                "updateTime": null,
+                                "attendanceDate": "2021-04-07",
+                                "attendanceTime": "2021-04-07 09:00:00",
+                                "clockTime": null,
+                                "clockResult": "下班缺卡",
+                                "clockPhoto": null,
+                                "dataSource": null,
+                                "clockSerialNo": null,
+                                "valid": 5,
+                                "workClosing": 2,
+                                "lateAdvMin": 0,
+                                "shift": null
+                            },
+                            {
+                                "recordId": 7146,
+                                "orgId": 6438733348866,
+                                "staffId": 18985643540487,
+                                "realName": null,
+                                "shiftId": 18951187333121,
+                                "shiftName": null,
+                                "groupId": 19095106486273,
+                                "groupName": null,
+                                "deptId": null,
+                                "deptName": null,
+                                "positionName": null,
+                                "createTime": null,
+                                "updateTime": null,
+                                "attendanceDate": "2021-04-07",
+                                "attendanceTime": "2021-04-08 00:30:00",
+                                "clockTime": "2021-04-08 00:31:00",
+                                "clockResult": "迟到1分钟",
+                                "clockPhoto": null,
+                                "dataSource": "管理员修改",
+                                "clockSerialNo": null,
+                                "valid": 2,
+                                "workClosing": 3,
+                                "lateAdvMin": 1,
+                                "shift": null
+                            }
+                        ]
+                    },
+                    {
+                        "date": "2021-04-08",
+                        "item": [
+                            {
+                                "recordId": 7215,
+                                "orgId": 6438733348866,
+                                "staffId": 18985643540487,
+                                "realName": null,
+                                "shiftId": 18950757416961,
+                                "shiftName": null,
+                                "groupId": 19095106486273,
+                                "groupName": null,
+                                "deptId": null,
+                                "deptName": null,
+                                "positionName": null,
+                                "createTime": null,
+                                "updateTime": null,
+                                "attendanceDate": "2021-04-08",
+                                "attendanceTime": "2021-04-08 09:00:00",
+                                "clockTime": "2021-04-08 09:01:00",
+                                "clockResult": "迟到1分钟",
+                                "clockPhoto": null,
+                                "dataSource": "管理员修改",
+                                "clockSerialNo": null,
+                                "valid": 2,
+                                "workClosing": 1,
+                                "lateAdvMin": 1,
+                                "shift": null
+                            },
+                            {
+                                "recordId": 7216,
+                                "orgId": 6438733348866,
+                                "staffId": 18985643540487,
+                                "realName": null,
+                                "shiftId": 18950757416961,
+                                "shiftName": null,
+                                "groupId": 19095106486273,
+                                "groupName": null,
+                                "deptId": null,
+                                "deptName": null,
+                                "positionName": null,
+                                "createTime": null,
+                                "updateTime": null,
+                                "attendanceDate": "2021-04-08",
+                                "attendanceTime": "2021-04-08 14:00:00",
+                                "clockTime": null,
+                                "clockResult": "缺卡",
+                                "clockPhoto": null,
+                                "dataSource": null,
+                                "clockSerialNo": null,
+                                "valid": 5,
+                                "workClosing": 2,
+                                "lateAdvMin": 0,
+                                "shift": null
+                            }
+                        ]
+                    },
+                    {
+                        "date": "2021-04-09",
+                        "item": [
+                            {
+                                "recordId": 7289,
+                                "orgId": 6438733348866,
+                                "staffId": 18985643540487,
+                                "realName": null,
+                                "shiftId": 18913600077825,
+                                "shiftName": null,
+                                "groupId": 19095106486273,
+                                "groupName": null,
+                                "deptId": null,
+                                "deptName": null,
+                                "positionName": null,
+                                "createTime": null,
+                                "updateTime": null,
+                                "attendanceDate": "2021-04-09",
+                                "attendanceTime": "2021-04-09 00:00:00",
+                                "clockTime": null,
+                                "clockResult": "旷工",
+                                "clockPhoto": null,
+                                "dataSource": null,
+                                "clockSerialNo": null,
+                                "valid": 6,
+                                "workClosing": 1,
+                                "lateAdvMin": 0,
+                                "shift": null
+                            }
+                        ]
+                    },
+                    {
+                        "date": "2021-04-10",
+                        "item": [
+                            {
+                                "recordId": 7340,
+                                "orgId": 6438733348866,
+                                "staffId": 18985643540487,
+                                "realName": null,
+                                "shiftId": 18913769947137,
+                                "shiftName": null,
+                                "groupId": 19095106486273,
+                                "groupName": null,
+                                "deptId": null,
+                                "deptName": null,
+                                "positionName": null,
+                                "createTime": null,
+                                "updateTime": null,
+                                "attendanceDate": "2021-04-10",
+                                "attendanceTime": "2021-04-10 00:00:00",
+                                "clockTime": null,
+                                "clockResult": "旷工",
+                                "clockPhoto": null,
+                                "dataSource": null,
+                                "clockSerialNo": null,
+                                "valid": 6,
+                                "workClosing": 1,
+                                "lateAdvMin": 0,
+                                "shift": null
+                            }
+                        ]
+                    },
+                    {
+                        "date": "2021-04-11",
+                        "item": [
+                            {
+                                "recordId": 7385,
+                                "orgId": 6438733348866,
+                                "staffId": 18985643540487,
+                                "realName": null,
+                                "shiftId": 18951839547393,
+                                "shiftName": null,
+                                "groupId": 19095106486273,
+                                "groupName": null,
+                                "deptId": null,
+                                "deptName": null,
+                                "positionName": null,
+                                "createTime": null,
+                                "updateTime": null,
+                                "attendanceDate": "2021-04-11",
+                                "attendanceTime": "2021-04-11 00:00:00",
+                                "clockTime": null,
+                                "clockResult": "旷工",
+                                "clockPhoto": null,
+                                "dataSource": null,
+                                "clockSerialNo": null,
+                                "valid": 6,
+                                "workClosing": 1,
+                                "lateAdvMin": 0,
+                                "shift": null
+                            }
+                        ]
+                    },
+                    {
+                        "date": "2021-04-12",
+                        "item": [
+                            {
+                                "recordId": 7458,
+                                "orgId": 6438733348866,
+                                "staffId": 18985643540487,
+                                "realName": null,
+                                "shiftId": 18797967310849,
+                                "shiftName": null,
+                                "groupId": 19095106486273,
+                                "groupName": null,
+                                "deptId": null,
+                                "deptName": null,
+                                "positionName": null,
+                                "createTime": null,
+                                "updateTime": null,
+                                "attendanceDate": "2021-04-12",
+                                "attendanceTime": "2021-04-12 00:00:00",
+                                "clockTime": null,
+                                "clockResult": "旷工",
+                                "clockPhoto": null,
+                                "dataSource": null,
+                                "clockSerialNo": null,
+                                "valid": 6,
+                                "workClosing": 1,
+                                "lateAdvMin": 0,
+                                "shift": null
+                            }
+                        ]
+                    },
+                    {
+                        "date": "2021-04-13"
+                    }
+                ],
+                "staffIds": null,
+                "notShift": 0
+            }
+        ],
+        "pager": {
+            "totalRows": 1,
+            "pageRows": 10,
+            "pageIndex": 1,
+            "paged": false,
+            "totalPages": 1,
+            "currPageRows": 1,
+            "defaultPageRows": 20,
+            "pageStartRow": 0,
+            "pageEndRow": 9,
+            "hasPrevPage": false,
+            "hasNextPage": false
+        }
+    }
+}
+[0m
+[32m2021-04-13 16:13:09.331[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m218[0m - [1mstatus_code: 200, response_time(ms): 1592.37 ms, response_length: 0 bytes[0m
+[32m2021-04-13 16:13:09.332[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert status_code equal 200(int)	==> pass[0m
+[32m2021-04-13 16:13:09.332[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass[0m
+[32m2021-04-13 16:13:09.333[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert body.code equal 0(int)	==> pass[0m
+[32m2021-04-13 16:13:09.333[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: 考勤统计-月度数据列表 <<<<<<
+[0m
+[32m2021-04-13 16:13:09.334[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: 考勤统计-日考勤详情 >>>>>>[0m
+[32m2021-04-13 16:13:16.720[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 192.168.0.102, Port: 56027[0m
+[32m2021-04-13 16:13:16.720[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 119.29.116.47, Port: 80[0m
+[32m2021-04-13 16:13:16.720[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== request details ==================
+method   : GET
+url      : http://yadongitest.icampus.clife.net/v1/web/edugarden/attendance/statistics/attendanceDayItem?endTime=2021-04-13&startTime=2021-04-13&systemCode=H5
+headers  : {
+    "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
+    "Content-Type": "application/json;charset=utf-8",
+    "Host": "yadongitest.icampus.clife.net",
+    "Referer": "http://yadongitest.icampus.clife.net/school/m/",
+    "X-Access-Token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjYyMDg0OTAwMSIsInVzZXJUeXBlIjoiMSIsImV4cCI6MTYxODMwODc4MiwidXNlcklkIjoiMjQ5MDYwNzczMDY4OSIsIm9yZ0lkIjoiNjQzODczMzM0ODg2NiJ9.lvCK2UW4c-_CFrh-btY0PeU0RBCGLlKb0RxCo9zf900",
+    "X-Requested-With": "XMLHttpRequest",
+    "domainName": "yadongitest",
+    "HRUN-Request-ID": "HRUN-2c21eede-c5d9-4bfa-aed6-02245f32b2b8-589335"
+}
+cookies  : {}
+body     : None
+[0m
+[32m2021-04-13 16:13:16.893[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Tue, 13 Apr 2021 08:13:10 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Methods": "GET,POST,OPTIONS,PUT,DELETE, GET,POST,OPTIONS",
+    "Set-Cookie": "rememberMe=deleteMe; Path=/clife-campus-education-garden-api-web; Max-Age=0; Expires=Mon, 12-Apr-2021 08:13:10 GMT",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "X-Requested-With"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "code": 0,
+    "data": {
+        "clockItem": [
+            {
+                "recordId": null,
+                "orgId": null,
+                "staffId": 18985643540487,
+                "realName": null,
+                "shiftId": 18951839547393,
+                "shiftName": null,
+                "groupId": null,
+                "groupName": null,
+                "deptId": null,
+                "deptName": null,
+                "positionName": null,
+                "createTime": null,
+                "updateTime": null,
+                "attendanceDate": "2021-04-13",
+                "attendanceTime": null,
+                "clockTime": null,
+                "clockResult": "缺卡",
+                "clockPhoto": null,
+                "dataSource": null,
+                "clockSerialNo": null,
+                "attendanceSync": null,
+                "valid": 4,
+                "complete": 0,
+                "staffIds": null,
+                "workClosing": 0,
+                "lateAdvMin": 0
+            },
+            {
+                "recordId": null,
+                "orgId": null,
+                "staffId": 18985643540487,
+                "realName": null,
+                "shiftId": 18951839547393,
+                "shiftName": null,
+                "groupId": null,
+                "groupName": null,
+                "deptId": null,
+                "deptName": null,
+                "positionName": null,
+                "createTime": null,
+                "updateTime": null,
+                "attendanceDate": "2021-04-13",
+                "attendanceTime": null,
+                "clockTime": "2021-04-13 11:00:00",
+                "clockResult": "系统自动打卡",
+                "clockPhoto": null,
+                "dataSource": null,
+                "clockSerialNo": null,
+                "attendanceSync": null,
+                "valid": 1,
+                "complete": 0,
+                "staffIds": null,
+                "workClosing": 0,
+                "lateAdvMin": 0
+            },
+            {
+                "recordId": null,
+                "orgId": null,
+                "staffId": 18985643540487,
+                "realName": null,
+                "shiftId": 18951839547393,
+                "shiftName": null,
+                "groupId": null,
+                "groupName": null,
+                "deptId": null,
+                "deptName": null,
+                "positionName": null,
+                "createTime": null,
+                "updateTime": null,
+                "attendanceDate": "2021-04-13",
+                "attendanceTime": null,
+                "clockTime": "2021-04-13 14:00:00",
+                "clockResult": "系统自动打卡",
+                "clockPhoto": null,
+                "dataSource": null,
+                "clockSerialNo": null,
+                "attendanceSync": null,
+                "valid": 1,
+                "complete": 0,
+                "staffIds": null,
+                "workClosing": 0,
+                "lateAdvMin": 0
+            }
+        ],
+        "shift": {
+            "shiftId": 18951839547393,
+            "orgId": 6438733348866,
+            "shiftName": "考勤班次E",
+            "clockType": 2,
+            "clockTimeOne": "09:00:00",
+            "clockOneCurrentMorrow": 1,
+            "clockTimeOneBegin": "08:30:00",
+            "clockTimeOneEnd": "10:00:00",
+            "clockOneNeed": 1,
+            "closingTimeOne": "11:00:00",
+            "closingOneCurrentMorrow": 1,
+            "closingTimeOneBegin": "10:30:00",
+            "closingTimeOneEnd": "11:30:00",
+            "closingOneNeed": 0,
+            "clockTimeTwo": "14:00:00",
+            "clockTwoCurrentMorrow": 1,
+            "clockTimeTwoBegin": "13:30:00",
+            "clockTimeTwoEnd": "14:30:00",
+            "clockTwoNeed": 0,
+            "closingTimeTwo": "01:00:00",
+            "closingTwoCurrentMorrow": 2,
+            "closingTimeTwoBegin": "20:00:00",
+            "closingTimeTwoEnd": "02:00:00",
+            "closingTwoNeed": 1,
+            "deleted": 1,
+            "createTime": "2021-03-16 15:21:12",
+            "updateTime": "2021-03-22 14:07:25",
+            "groupList": [],
+            "workday": 0,
+            "unit1": 1,
+            "unit2": 1,
+            "unit3": 1,
+            "unit4": 1,
+            "unit5": 1,
+            "unit6": 1,
+            "unit7": 1,
+            "unit8": 2
+        },
+        "staffName": null,
+        "attendanceDate": 1618243200000
+    }
+}
+[0m
+[32m2021-04-13 16:13:16.893[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m218[0m - [1mstatus_code: 200, response_time(ms): 7385.35 ms, response_length: 0 bytes[0m
+[32m2021-04-13 16:13:16.894[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert status_code equal 200(int)	==> pass[0m
+[32m2021-04-13 16:13:16.894[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass[0m
+[32m2021-04-13 16:13:16.894[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert body.code equal 0(int)	==> pass[0m
+[32m2021-04-13 16:13:16.894[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: 考勤统计-日考勤详情 <<<<<<
+[0m
+[32m2021-04-13 16:13:16.895[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: 考勤统计-有数据得月份 >>>>>>[0m
+[32m2021-04-13 16:13:17.000[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 192.168.0.102, Port: 56027[0m
+[32m2021-04-13 16:13:17.001[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 119.29.116.47, Port: 80[0m
+[32m2021-04-13 16:13:17.001[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== request details ==================
+method   : GET
+url      : http://yadongitest.icampus.clife.net/v1/web/edugarden/attendance/statistics/getAttendanceYearItem?systemCode=H5&year=2021
+headers  : {
+    "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
+    "Content-Type": "application/json;charset=utf-8",
+    "Host": "yadongitest.icampus.clife.net",
+    "Referer": "http://yadongitest.icampus.clife.net/school/m/",
+    "X-Access-Token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjYyMDg0OTAwMSIsInVzZXJUeXBlIjoiMSIsImV4cCI6MTYxODMwODc4MiwidXNlcklkIjoiMjQ5MDYwNzczMDY4OSIsIm9yZ0lkIjoiNjQzODczMzM0ODg2NiJ9.lvCK2UW4c-_CFrh-btY0PeU0RBCGLlKb0RxCo9zf900",
+    "X-Requested-With": "XMLHttpRequest",
+    "domainName": "yadongitest",
+    "HRUN-Request-ID": "HRUN-2c21eede-c5d9-4bfa-aed6-02245f32b2b8-596895"
+}
+cookies  : {}
+body     : None
+[0m
+[32m2021-04-13 16:13:17.001[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Tue, 13 Apr 2021 08:13:18 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "39",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Methods": "GET,POST,OPTIONS,PUT,DELETE, GET,POST,OPTIONS",
+    "Set-Cookie": "rememberMe=deleteMe; Path=/clife-campus-education-garden-api-web; Max-Age=0; Expires=Mon, 12-Apr-2021 08:13:18 GMT",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "X-Requested-With"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "code": 0,
+    "data": [
+        "2021-03",
+        "2021-04"
+    ]
+}
+[0m
+[32m2021-04-13 16:13:17.002[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m218[0m - [1mstatus_code: 200, response_time(ms): 105.32 ms, response_length: 0 bytes[0m
+[32m2021-04-13 16:13:17.002[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert status_code equal 200(int)	==> pass[0m
+[32m2021-04-13 16:13:17.002[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass[0m
+[32m2021-04-13 16:13:17.002[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert body.code equal 0(int)	==> pass[0m
+[32m2021-04-13 16:13:17.002[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: 考勤统计-有数据得月份 <<<<<<
+[0m
+[32m2021-04-13 16:13:17.003[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: 考勤统计-人员考勤月汇总 >>>>>>[0m
+[32m2021-04-13 16:13:18.332[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 192.168.0.102, Port: 56027[0m
+[32m2021-04-13 16:13:18.332[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 119.29.116.47, Port: 80[0m
+[32m2021-04-13 16:13:18.332[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== request details ==================
+method   : GET
+url      : http://yadongitest.icampus.clife.net/v1/web/edugarden/attendance/statistics/attendanceMonthItem?endTime=2021-04-13&startTime=2021-04-01&systemCode=H5&valid=9
+headers  : {
+    "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
+    "Content-Type": "application/json;charset=utf-8",
+    "Host": "yadongitest.icampus.clife.net",
+    "Referer": "http://yadongitest.icampus.clife.net/school/m/",
+    "X-Access-Token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjYyMDg0OTAwMSIsInVzZXJUeXBlIjoiMSIsImV4cCI6MTYxODMwODc4MiwidXNlcklkIjoiMjQ5MDYwNzczMDY4OSIsIm9yZ0lkIjoiNjQzODczMzM0ODg2NiJ9.lvCK2UW4c-_CFrh-btY0PeU0RBCGLlKb0RxCo9zf900",
+    "X-Requested-With": "XMLHttpRequest",
+    "domainName": "yadongitest",
+    "HRUN-Request-ID": "HRUN-2c21eede-c5d9-4bfa-aed6-02245f32b2b8-597003"
+}
+cookies  : {}
+body     : None
+[0m
+[32m2021-04-13 16:13:18.333[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Tue, 13 Apr 2021 08:13:18 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "83",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Methods": "GET,POST,OPTIONS,PUT,DELETE, GET,POST,OPTIONS",
+    "Set-Cookie": "rememberMe=deleteMe; Path=/clife-campus-education-garden-api-web; Max-Age=0; Expires=Mon, 12-Apr-2021 08:13:18 GMT",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "X-Requested-With"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "code": 0,
+    "data": {
+        "date": "2021-04-01至2021-04-13",
+        "dataItem": [],
+        "staffName": null
+    }
+}
+[0m
+[32m2021-04-13 16:13:18.333[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m218[0m - [1mstatus_code: 200, response_time(ms): 1329.06 ms, response_length: 0 bytes[0m
+[32m2021-04-13 16:13:18.333[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert status_code equal 200(int)	==> pass[0m
+[32m2021-04-13 16:13:18.333[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass[0m
+[32m2021-04-13 16:13:18.334[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert body.code equal 0(int)	==> pass[0m
+[32m2021-04-13 16:13:18.334[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: 考勤统计-人员考勤月汇总 <<<<<<
+[0m
+[32m2021-04-13 16:13:18.334[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36mtest_start[0m:[36m460[0m - [1mgenerate testcase log: D:\WorkSpace\Python\HogWort9\interfacedemo\logs\2c21eede-c5d9-4bfa-aed6-02245f32b2b8.run.log[0m

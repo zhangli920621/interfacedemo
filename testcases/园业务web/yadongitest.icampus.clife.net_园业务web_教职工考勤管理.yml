@@ -6,7 +6,7 @@ config:
         domainName: ${ENV(DONAIN_NAME)}
     verify: false
 teststeps:
--   name: /v1/web/eduaccount/sys/login
+-   name: 园业务_登陆
     request:
         data:
             systemCode: garden

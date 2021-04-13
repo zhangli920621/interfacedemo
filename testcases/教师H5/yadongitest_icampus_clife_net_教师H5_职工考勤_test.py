@@ -63,7 +63,7 @@ class TestCaseYadongitestIcampusClifeNet教师H5职工考勤(HttpRunner):
             .assert_equal("body.code", 0)
         ),
         Step(
-            RunRequest("/v1/web/edudistrict/apps/personal")
+            RunRequest("应用-列表收藏应用（账号收藏的应用）")
             .get("$Protocol://$host/v1/web/edudistrict/apps/personal")
             .with_params(**{"platform": "2"})
             .with_headers(
@@ -87,31 +87,7 @@ class TestCaseYadongitestIcampusClifeNet教师H5职工考勤(HttpRunner):
             .assert_equal("body.code", 0)
         ),
         Step(
-            RunRequest("/v1/web/edumessage/msg/index/list")
-            .get("$Protocol://$host/v1/web/edumessage/msg/index/list")
-            .with_params(**{"accessType": "1", "queryNum": "4", "userType": "1"})
-            .with_headers(
-                **{
-                    "Accept": "application/json, text/plain, */*",
-                    "Accept-Encoding": "gzip, deflate",
-                    "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
-                    "Connection": "keep-alive",
-                    "Content-Type": "application/json;charset=utf-8",
-                    "Host": "$host",
-                    "Referer": "$Protocol://$host/school/m/",
-                    "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1",
-                    "X-Access-Token": "$token",
-                    "X-Requested-With": "XMLHttpRequest",
-                    "domainName": "$domainName",
-                }
-            )
-            .validate()
-            .assert_equal("status_code", 200)
-            .assert_equal('headers."Content-Type"', "application/json;charset=UTF-8")
-            .assert_equal("body.code", 0)
-        ),
-        Step(
-            RunRequest("/v1/web/eduaccount/user/h5/identitys")
+            RunRequest("登录相关-获取身份列表(H5)")
             .get("$Protocol://$host/v1/web/eduaccount/user/h5/identitys")
             .with_params(**{"showMsgCount": "1", "systemCode": "h5garden"})
             .with_headers(
@@ -135,43 +111,7 @@ class TestCaseYadongitestIcampusClifeNet教师H5职工考勤(HttpRunner):
             .assert_equal("body.code", 0)
         ),
         Step(
-            RunRequest("/school/m/static/css/24.cf098998.chunk.css")
-            .get("$Protocol://$host/school/m/static/css/24.cf098998.chunk.css")
-            .with_headers(
-                **{
-                    "Accept": "text/css,*/*;q=0.1",
-                    "Accept-Encoding": "gzip, deflate",
-                    "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
-                    "Connection": "keep-alive",
-                    "Host": "$host",
-                    "Referer": "$Protocol://$host/school/m/",
-                    "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1",
-                }
-            )
-            .validate()
-            .assert_equal("status_code", 200)
-            .assert_equal('headers."Content-Type"', "text/css")
-        ),
-        Step(
-            RunRequest("/school/m/static/css/143.4c4d8f1e.chunk.css")
-            .get("$Protocol://$host/school/m/static/css/143.4c4d8f1e.chunk.css")
-            .with_headers(
-                **{
-                    "Accept": "text/css,*/*;q=0.1",
-                    "Accept-Encoding": "gzip, deflate",
-                    "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
-                    "Connection": "keep-alive",
-                    "Host": "$host",
-                    "Referer": "$Protocol://$host/school/m/",
-                    "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1",
-                }
-            )
-            .validate()
-            .assert_equal("status_code", 200)
-            .assert_equal('headers."Content-Type"', "text/css")
-        ),
-        Step(
-            RunRequest("/v1/web/edugarden/attendance/statistics/monthDataList")
+            RunRequest("考勤统计-月度数据列表")
             .get(
                 "$Protocol://$host/v1/web/edugarden/attendance/statistics/monthDataList"
             )
@@ -203,7 +143,7 @@ class TestCaseYadongitestIcampusClifeNet教师H5职工考勤(HttpRunner):
             .assert_equal("body.code", 0)
         ),
         Step(
-            RunRequest("/v1/web/edugarden/attendance/statistics/attendanceDayItem")
+            RunRequest("考勤统计-日考勤详情")
             .get(
                 "$Protocol://$host/v1/web/edugarden/attendance/statistics/attendanceDayItem"
             )
@@ -235,57 +175,7 @@ class TestCaseYadongitestIcampusClifeNet教师H5职工考勤(HttpRunner):
             .assert_equal("body.code", 0)
         ),
         Step(
-            RunRequest("/school/m/static/css/107.14fb9bc1.chunk.css")
-            .get("$Protocol://$host/school/m/static/css/107.14fb9bc1.chunk.css")
-            .with_headers(
-                **{
-                    "Accept": "text/css,*/*;q=0.1",
-                    "Accept-Encoding": "gzip, deflate",
-                    "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
-                    "Connection": "keep-alive",
-                    "Host": "$host",
-                    "Referer": "$Protocol://$host/school/m/",
-                    "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1",
-                }
-            )
-            .validate()
-            .assert_equal("status_code", 200)
-            .assert_equal('headers."Content-Type"', "text/css")
-        ),
-        Step(
-            RunRequest("/v1/web/edugarden/attendance/statistics/monthDataList")
-            .get(
-                "$Protocol://$host/v1/web/edugarden/attendance/statistics/monthDataList"
-            )
-            .with_params(
-                **{
-                    "endTime": "${get_date()}",
-                    "startTime": "${get_date(-12)}",
-                    "systemCode": "H5",
-                }
-            )
-            .with_headers(
-                **{
-                    "Accept": "application/json, text/plain, */*",
-                    "Accept-Encoding": "gzip, deflate",
-                    "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
-                    "Connection": "keep-alive",
-                    "Content-Type": "application/json;charset=utf-8",
-                    "Host": "$host",
-                    "Referer": "$Protocol://$host/school/m/",
-                    "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1",
-                    "X-Access-Token": "$token",
-                    "X-Requested-With": "XMLHttpRequest",
-                    "domainName": "$domainName",
-                }
-            )
-            .validate()
-            .assert_equal("status_code", 200)
-            .assert_equal('headers."Content-Type"', "application/json;charset=UTF-8")
-            .assert_equal("body.code", 0)
-        ),
-        Step(
-            RunRequest("/v1/web/edugarden/attendance/statistics/getAttendanceYearItem")
+            RunRequest("考勤统计-有数据得月份")
             .get(
                 "$Protocol://$host/v1/web/edugarden/attendance/statistics/getAttendanceYearItem"
             )
@@ -311,7 +201,7 @@ class TestCaseYadongitestIcampusClifeNet教师H5职工考勤(HttpRunner):
             .assert_equal("body.code", 0)
         ),
         Step(
-            RunRequest("/v1/web/edugarden/attendance/statistics/attendanceMonthItem")
+            RunRequest("考勤统计-人员考勤月汇总")
             .get(
                 "$Protocol://$host/v1/web/edugarden/attendance/statistics/attendanceMonthItem"
             )
