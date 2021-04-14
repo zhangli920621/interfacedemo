@@ -1,6 +1,4 @@
-tmp/allure-report/*
-tmp/allure-results/*
-testcases/__pycache__/*
+tmp/*
 logs/*
 __pycache__/*
 *.pyc

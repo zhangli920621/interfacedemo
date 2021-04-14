@@ -1,5 +1,5 @@
 config:
-    name: testcase description
+    name: 幼儿考勤管理模块
     variables: 
         Protocol: ${ENV(Protocol)}
         host: ${ENV(HOST)}

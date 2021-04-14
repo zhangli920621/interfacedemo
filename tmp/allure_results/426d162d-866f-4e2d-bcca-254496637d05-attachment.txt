@@ -1,0 +1,78 @@
+[32m2021-04-14 20:23:11.287[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36mtest_start[0m:[36m451[0m - [1mStart to run testcase: 园业务_web登陆, TestCase ID: 35f9f8e8-48ba-4824-a1dd-3d60b156f668[0m
+[32m2021-04-14 20:23:11.289[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m292[0m - [1mrun step begin: 园业务_登陆 >>>>>>[0m
+[32m2021-04-14 20:23:11.458[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m186[0m - [34m[1mclient IP: 192.168.0.102, Port: 60927[0m
+[32m2021-04-14 20:23:11.459[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m194[0m - [34m[1mserver IP: 119.29.116.47, Port: 80[0m
+[32m2021-04-14 20:23:11.460[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== request details ==================
+method   : POST
+url      : http://yadongitest.icampus.clife.net/v1/web/eduaccount/sys/login
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
+    "Content-Length": "76",
+    "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
+    "Host": "yadongitest.icampus.clife.net",
+    "Origin": "http://yadongitest.icampus.clife.net",
+    "Referer": "http://yadongitest.icampus.clife.net/school/",
+    "X-Requested-With": "XMLHttpRequest",
+    "domainName": "yadongitest",
+    "HRUN-Request-ID": "HRUN-35f9f8e8-48ba-4824-a1dd-3d60b156f668-991291"
+}
+cookies  : {}
+body     : systemCode=garden&password=VUsFjBeODaABgu37tXzPbw%3D%3D&username=16620849001
+[0m
+[32m2021-04-14 20:23:11.461[0m | [34m[1mDEBUG   [0m | [36mhttprunner.client[0m:[36mlog_print[0m:[36m40[0m - [34m[1m
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Wed, 14 Apr 2021 12:23:13 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "667",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "X-Requested-With",
+    "Access-Control-Allow-Methods": "GET,POST,OPTIONS"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "code": 0,
+    "data": {
+        "positionName": "院长",
+        "orgType": 3,
+        "userInfo": {
+            "userId": 2490607730689,
+            "username": "16620849001",
+            "realname": "亚东县幼儿园-1号-",
+            "password": null,
+            "orgId": 6438733348866,
+            "orgCode": null,
+            "avatar": null,
+            "status": null,
+            "userType": 1,
+            "createTime": null
+        },
+        "classSize": 16,
+        "orgName": "亚东幼儿园-张丽不准动",
+        "domainName": "yadongitest",
+        "userType": 1,
+        "systemUrl": "./user_manage.html",
+        "orgId": 6438733348866,
+        "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjYyMDg0OTAwMSIsInVzZXJUeXBlIjoiMSIsImV4cCI6MTYxODQxMDE5MywidXNlcklkIjoiMjQ5MDYwNzczMDY4OSIsIm9yZ0lkIjoiNjQzODczMzM0ODg2NiJ9.LhKtcm50pO9Nf5H3jnSsEVEs1l-jejZ97_jPWzyMyck",
+        "dataPermission": 1
+    }
+}
+[0m
+[32m2021-04-14 20:23:11.462[0m | [1mINFO    [0m | [36mhttprunner.client[0m:[36mrequest[0m:[36m218[0m - [1mstatus_code: 200, response_time(ms): 166.6 ms, response_length: 0 bytes[0m
+[32m2021-04-14 20:23:11.462[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mextract[0m:[36m176[0m - [1mextract mapping: {'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjYyMDg0OTAwMSIsInVzZXJUeXBlIjoiMSIsImV4cCI6MTYxODQxMDE5MywidXNlcklkIjoiMjQ5MDYwNzczMDY4OSIsIm9yZ0lkIjoiNjQzODczMzM0ODg2NiJ9.LhKtcm50pO9Nf5H3jnSsEVEs1l-jejZ97_jPWzyMyck'}[0m
+[32m2021-04-14 20:23:11.463[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert status_code equal 200(int)	==> pass[0m
+[32m2021-04-14 20:23:11.464[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass[0m
+[32m2021-04-14 20:23:11.464[0m | [1mINFO    [0m | [36mhttprunner.response[0m:[36mvalidate[0m:[36m246[0m - [1massert body.code equal 0(int)	==> pass[0m
+[32m2021-04-14 20:23:11.465[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36m__run_step[0m:[36m304[0m - [1mrun step end: 园业务_登陆 <<<<<<
+[0m
+[32m2021-04-14 20:23:11.466[0m | [1mINFO    [0m | [36mhttprunner.runner[0m:[36mtest_start[0m:[36m460[0m - [1mgenerate testcase log: D:\WorkSpace\Python\HogWort9\interfacedemo\logs\35f9f8e8-48ba-4824-a1dd-3d60b156f668.run.log[0m
