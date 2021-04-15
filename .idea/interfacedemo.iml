@@ -5,8 +5,11 @@
       <excludeFolder url="file://$MODULE_DIR$/logs" />
       <excludeFolder url="file://$MODULE_DIR$/testcases/园业务web/.pytest_cache" />
       <excludeFolder url="file://$MODULE_DIR$/testcases/家长H5/.pytest_cache" />
+      <excludeFolder url="file://$MODULE_DIR$/testcases/教师H5/.pytest_cache" />
       <excludeFolder url="file://$MODULE_DIR$/tmp/allure-report/data/attachments" />
       <excludeFolder url="file://$MODULE_DIR$/tmp/allure-report/data/test-cases" />
+      <excludeFolder url="file://$MODULE_DIR$/tmp/allure-report/export" />
+      <excludeFolder url="file://$MODULE_DIR$/tmp/allure-report/plugins" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
