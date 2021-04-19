@@ -11,7 +11,13 @@ from httprunner import HttpRunner, Config, Step, RunRequest, RunTestCase
 
 class TestCaseYadongitestIcampusClifeNet教师H5职工考勤(HttpRunner):
     @pytest.mark.parametrize(
-        "param", Parameters({"validnum": ["1", "2", "3", "4", "5", "6", "8", "9"]})
+        "param",
+        Parameters(
+            {
+                "username-password": "${P(data/accounts.csv)}",
+                "validnum": ["1", "2", "3", "4", "5", "6", "8", "9"],
+            }
+        ),
     )
     def test_start(self, param):
         super().test_start(param)
@@ -51,8 +57,8 @@ class TestCaseYadongitestIcampusClifeNet教师H5职工考勤(HttpRunner):
             .with_data(
                 {
                     "systemCode": "h5garden",
-                    "password": "${ENV(GARDEN_PASSWORD)}",
-                    "username": "${ENV(GARDEN_USERNAME)}",
+                    "username": "$username",
+                    "password": "$password",
                 }
             )
             .extract()

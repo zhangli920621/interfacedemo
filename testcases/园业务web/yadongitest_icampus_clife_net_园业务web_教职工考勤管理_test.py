@@ -18,7 +18,7 @@ from testcases.园业务web.yadongitest_icampus_clife_net_园业务web_登陆_te
 class TestCaseYadongitestIcampusClifeNet园业务Web教职工考勤管理(HttpRunner):
 
     config = (
-        Config("testcase description")
+        Config("教职工考勤管理模块")
         .variables(
             **{
                 "Protocol": "${ENV(Protocol)}",
